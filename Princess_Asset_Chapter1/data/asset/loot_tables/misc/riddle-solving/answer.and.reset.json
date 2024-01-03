@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "dark_oak_sign",
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": {
+                "text": "謎解き回答看板",
+                "italic": false
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{BlockEntityTag:{front_text:{has_glowing_text:1b,color:\"yellow\",messages:['{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute unless entity @s[level=208] run function asset:move/13005/open/locking\"}}','{\"text\":\"回答\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute if entity @s[level=208] run function asset:move/13005/open/open\"}}','{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/xp set @s 0 levels\"}}','{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/xp set @s 0 points\"}}']}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

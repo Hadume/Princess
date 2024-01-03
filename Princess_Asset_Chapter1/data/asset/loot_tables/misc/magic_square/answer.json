@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "dark_oak_sign",
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": {
+                "text": "魔法陣回答看板",
+                "italic": false
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{BlockEntityTag:{front_text:{has_glowing_text:1b,color:\"yellow\",messages:['{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute if blocks 159 20 -60 162 20 -57 139 20 -64 all run function asset:move/13007/open/open\"}}','{\"text\":\"回答\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/execute unless blocks 159 20 -60 162 20 -57 139 20 -64 all run function asset:move/13007/open/locking\"}}','{\"text\":\"\"}','{\"text\":\"\"}']}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "birch_sign",
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": {
+                "text": "正直者看板",
+                "italic": false
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{BlockEntityTag:{front_text:{has_glowing_text:1b,color:\"yellow\",messages:['{\"text\":\"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function asset:misc/17001/correct\"}}','{\"text\":\"回答\"}','{\"text\":\"\"}','{\"text\":\"\"}']}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
