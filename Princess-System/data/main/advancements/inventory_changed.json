@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "inventory_changed"
+        }
+    },
+    "rewards": {
+        "function": "main:advancements/inventory_changed"
+    }
+}
