@@ -1,0 +1,51 @@
+UIアイテムに格納するデータのパス
+storage "ui:data"の中に格納しておく
+
+格納フォルダ    -   inv_ui:asset/~
+
+・どこでも
+    ・戻る
+        名前    -   ui.back.name
+        説明    -   ui.back.lore
+
+・メニュー
+
+    ・スキルツリー
+        名前    -   menu.skill.name
+        説明    -   menu.skill.lore
+
+    ・クリスタル
+        名前    -   menu.crystal.name
+        説明    -   menu.crystal.lore
+    
+    ・魔法設定
+        名前    -   menu.magic.name
+        説明    -   menu.magic.lore
+    
+    ・ステータス
+        名前    -   menu.status.name
+    
+    ・ストレージ
+        名前    -   menu.storage.name
+        説明    -   menu.storage.lore
+    
+    ・クエスト
+        名前    -   menu.quest.name
+        説明    -   menu.quest.lore
+
+    ・コミュニケート
+        名前    -   menu.com.name
+        説明    -   menu.com.lore
+
+・ストレージ
+    ・ストレージ
+        名前    -   storage.storage.name
+        説明    -   storage.storage.lore
+
+・コミュニケート
+    ・パーティ
+        名前    -   com.party.name
+        説明    -   com.party.lore
+    ・トレード
+        名前    -   com.trade.name
+        説明    -   com.trade.lore
