@@ -1,0 +1,11 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "nbt": "ui.next.name",
+      "storage": "ui:data",
+      "color": "gray"
+    }
+  }
+]

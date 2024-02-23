@@ -1,0 +1,21 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "score": {
+          "name": "@s",
+          "objective": "ui_storage_page"
+        },
+        "color": "white",
+        "extra": [
+          {
+            "text": "ページ目に進む",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  }
+]

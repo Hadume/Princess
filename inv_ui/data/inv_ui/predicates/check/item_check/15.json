@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Inventory:[{Slot:24b, tag:{UiItem:1b}}]}"
+    }
+  }
+  
