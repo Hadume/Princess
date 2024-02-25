@@ -1,0 +1,22 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": {
+        "nbt": "com.trade.name",
+        "storage": "ui:data",
+        "color": "gray"
+      }
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "nbt": "com.trade.lore",
+          "storage": "ui:data",
+          "color": "white"
+        }
+      ]
+    }
+  ]

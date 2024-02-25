@@ -1,0 +1,26 @@
+{
+    "values": [
+        "minecraft:arrow",
+
+        "minecraft:black_stained_glass_pane",
+        "minecraft:gray_stained_glass_pane",
+        "minecraft:oak_sapling",
+        "minecraft:iron_chestplate",
+        "minecraft:player_head",
+        "minecraft:red_dye",
+        "minecraft:chest",
+        "minecraft:paper",
+        "minecraft:emerald",
+
+        "minecraft:red_stained_glass_pane",
+
+        "minecraft:yellow_stained_glass_pane",
+
+        "minecraft:barrel",
+
+        "minecraft:book",
+
+        "minecraft:compass"
+        
+    ]
+}

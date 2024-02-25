@@ -1,0 +1,22 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": {
+        "nbt": "menu.crystal.name",
+        "storage": "ui:data",
+        "color": "gray"
+      }
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        {
+          "nbt": "menu.crystal.lore",
+          "storage": "ui:data",
+          "color": "white"
+        }
+      ]
+    }
+  ]
