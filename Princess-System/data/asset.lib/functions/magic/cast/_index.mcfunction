@@ -12,12 +12,8 @@
  #declare tag Spell.Init
  #declare tag SmartMotion
  #declare tag Break
-#> scoreboard
-# @within function asset.lib:magic/cast/init/*
-  scoreboard objectives add sm.Speed dummy
-#> Function
-# @within function asset.lib:magic/cast/init/*
- #declare function smart_motion:core/tp
-#> Predicate
-# @within function asset.lib:magic/cast/init/*
- #declare predicate player:sneaking
+#> ScoreHolder
+# @within function
+#   asset.lib:magic/cast/**
+#   asset:magic/*/cast/check.mp
+ #declare score_holder #MagicMP
