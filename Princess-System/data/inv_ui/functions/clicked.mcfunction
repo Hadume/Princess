@@ -1,6 +1,6 @@
 #> inv_ui:clicked
 #   clicked Inventory UI
-# @within advancement inv_ui:clicked
+# @within function main:advancements/inventory_changed
 
 # 音を出す
     playsound ui.button.click master @s ~ ~ ~ 0.3 1.2

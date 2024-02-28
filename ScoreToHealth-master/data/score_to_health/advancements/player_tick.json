@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "score_to_health:player_tick"
+    }
+}
