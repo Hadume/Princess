@@ -1,7 +1,7 @@
 #> inv_ui:_init
 #   インベントリUIの初期化
 #   他ファイルから適当に参照するとぶっ壊れるかも
-# @public
+# @within 
 
 #UIロック
     tag @s add ui_locked
