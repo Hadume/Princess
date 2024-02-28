@@ -10,4 +10,4 @@
  #declare storage api.temp:
 #> ScoreHolder
 # @within function api:**
- #declare score_holder $LeastTime
+ #declare score_holder #LeastTime
