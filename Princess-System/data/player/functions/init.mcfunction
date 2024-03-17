@@ -19,5 +19,7 @@
     scoreboard players set @s MP.Max 100
     data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.MP.RcvrPer set value 5
     data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.MP.RcvrIntrvl set value 40
+  ### Speed
+    data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.Speed set value 100
 ## レベル、経験値を表示
   function api:display/exp

@@ -1,6 +1,6 @@
-#> lib:mp/recover/main
+#> lib:status/mp/recover/main
 # MPを回復
-# @within function lib:mp/recover/tick
+# @within function lib:status/mp/recover/tick
 
 #> ScoreHolder
 # @private
@@ -15,7 +15,7 @@
 ## 回復
   scoreboard players operation @s MP += #MP.Max.Copy Temp
 ## MPを更新
-  function lib:mp/update
+  function lib:status/mp/update
 ## 一時使用ScoreHolderをリセット
   scoreboard players reset #MP.Max.Copy
   scoreboard players reset #MP.RcvrPer.Copy

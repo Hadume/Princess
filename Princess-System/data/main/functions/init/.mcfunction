@@ -18,6 +18,7 @@
   scoreboard objectives add Asset dummy
   scoreboard objectives add Const dummy
   scoreboard objectives add Temp dummy
+  scoreboard objectives add Lib dummy
   ### Status
     scoreboard objectives add Level dummy
     #### Exp
@@ -41,13 +42,19 @@
     scoreboard objectives add AssetID dummy
 #> ScoreHolder
 # @public
+ #declare score_holder #2
  #declare score_holder #4
  #declare score_holder #100
  #declare score_holder #200
+ #declare score_holder #10000
+ #declare score_holder #2^18
  #declare score_holder #2^24
+  scoreboard players set #2 Const 2
   scoreboard players set #4 Const 4
   scoreboard players set #100 Const 100
   scoreboard players set #200 Const 200
+  scoreboard players set #10000 Const 10000
+  scoreboard players set #2^18 Const 262144
   scoreboard players set #2^24 Const 16777216
 ## ゲームルール
   function main:init/gamerule

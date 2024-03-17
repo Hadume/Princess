@@ -1,4 +1,4 @@
-#> lib:hp/update
+#> lib:status/hp/update
 # HPを更新
 # @public
 
