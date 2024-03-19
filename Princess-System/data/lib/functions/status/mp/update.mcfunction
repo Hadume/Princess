@@ -1,4 +1,4 @@
-#> lib:mp/update
+#> lib:status/mp/update
 # MPを更新
 # @public
 
