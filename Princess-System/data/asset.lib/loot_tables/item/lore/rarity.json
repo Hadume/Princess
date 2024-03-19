@@ -1,0 +1,359 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "cod",
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "#Rarity"
+                },
+                "score": "Asset"
+              },
+              "range": 1
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "★",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "☆☆☆☆☆☆☆☆☆",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "cod",
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "#Rarity"
+                },
+                "score": "Asset"
+              },
+              "range": 2
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "★★",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "☆☆☆☆☆☆☆☆",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "cod",
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "#Rarity"
+                },
+                "score": "Asset"
+              },
+              "range": 3
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "★★★",
+                  "italic": false,
+                  "color": "white"
+                },
+                {
+                  "text": "☆☆☆☆☆☆☆",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "cod",
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "#Rarity"
+                },
+                "score": "Asset"
+              },
+              "range": 4
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "★★★★",
+                  "italic": false,
+                  "color": "yellow"
+                },
+                {
+                  "text": "☆☆☆☆☆☆",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "cod",
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "#Rarity"
+                },
+                "score": "Asset"
+              },
+              "range": 5
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "★★★★★",
+                  "italic": false,
+                  "color": "yellow"
+                },
+                {
+                  "text": "☆☆☆☆☆",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "cod",
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "#Rarity"
+                },
+                "score": "Asset"
+              },
+              "range": 6
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "★★★★★★",
+                  "italic": false,
+                  "color": "yellow"
+                },
+                {
+                  "text": "☆☆☆☆",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "cod",
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "#Rarity"
+                },
+                "score": "Asset"
+              },
+              "range": 7
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "★★★★★★★",
+                  "italic": false,
+                  "color": "green"
+                },
+                {
+                  "text": "☆☆☆",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "cod",
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "#Rarity"
+                },
+                "score": "Asset"
+              },
+              "range": 8
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "★★★★★★★★",
+                  "italic": false,
+                  "color": "blue"
+                },
+                {
+                  "text": "☆☆",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "cod",
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "#Rarity"
+                },
+                "score": "Asset"
+              },
+              "range": 9
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "★★★★★★★★★",
+                  "italic": false,
+                  "color": "dark_purple"
+                },
+                {
+                  "text": "☆",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "cod",
+          "conditions": [
+            {
+              "condition": "value_check",
+              "value": {
+                "type": "score",
+                "target": {
+                  "type": "fixed",
+                  "name": "#Rarity"
+                },
+                "score": "Asset"
+              },
+              "range": 10
+            }
+          ],
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "text": "★★★★★★★★★★",
+                  "italic": false,
+                  "color": "red"
+                },
+                {
+                  "text": "",
+                  "color": "white"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

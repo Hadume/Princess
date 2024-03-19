@@ -60,9 +60,9 @@
   function main:init/gamerule
 #> 汎用ArmorStand
 # @public
- #alias uuid AS 0-0-1-0-0
-  execute in overworld run summon armor_stand 0 0 0 {UUID:[I; 0, 1, 0, 0],Marker:1b,Silent:1b,Invisible:1b,NoBasePlate:1b,Pose:{Head:[180f,0f,0f]},Small:1b}
+ #alias entity AS 0-0-1-0-0
+  execute in overworld run summon armor_stand 0 -64 0 {UUID:[I; 0, 1, 0, 0],Marker:1b,Silent:1b,Invisible:1b,NoBasePlate:1b,Pose:{Head:[180f,0f,0f]},Small:1b}
 #> 汎用ShulkerBox
 # @public
- #alias vector ShulkerBox 0 0 0
-  setblock 0 0 0 shulker_box{Lock:"§§§"}
+ #alias vector ShulkerBox 0 -64 0
+  setblock 0 -64 0 shulker_box{Lock:"§§§"}
