@@ -7,7 +7,7 @@
 ## 手に持っているアイテムを取得
   function api:get.nbt/selected_item/
 ## 魔法を唱える
-  execute if data storage api: SelectedItem.tag.Magic run function asset.lib:magic/cast/
+  execute if data storage api: {SelectedItem:{tag:{Category:"Wand"}}} run function asset.lib:magic/cast/
 ## クロスボウをリロードする
   item modify entity @s weapon.mainhand main:charge_crossbow
 ## 一時使用Storageを削除

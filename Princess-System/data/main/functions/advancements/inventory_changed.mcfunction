@@ -8,6 +8,8 @@
   function inv_ui:clicked
 ## インベントリーを取得
   function api:get.nbt/inventory/
+## 効果反映
+  function player:stats/armor
 ## オフハンドにアイテムがあったら
   execute if data storage api: {Inventory:[{Slot:-106b}]} run function player:offhand
 ## 一時使用Storageを削除
