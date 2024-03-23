@@ -1,6 +1,6 @@
 {
     "values": [
         "main:load",
-        "inv_ui:load"
+        "inv.ui:load"
     ]
 }
