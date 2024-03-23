@@ -1,6 +1,6 @@
-#> lib:hp/recover/main
+#> lib:status/hp/recover/main
 # HPを回復
-# @within function lib:hp/recover/tick
+# @within function lib:status/hp/recover/tick
 
 #> ScoreHolder
 # @private
@@ -15,7 +15,7 @@
 ## 回復
   scoreboard players operation @s HP += #HP.Max.Copy Temp
 ## HPを更新
-  function lib:hp/update
+  function lib:status/hp/update
 ## 一時使用ScoreHolderをリセット
   scoreboard players reset #HP.Max.Copy
   scoreboard players reset #HP.RcvrPer.Copy
