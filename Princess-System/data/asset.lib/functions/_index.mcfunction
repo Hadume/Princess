@@ -1,4 +1,4 @@
-#> asset.lib:magic/_index
+#> asset.lib:_index
 # 
 # @within 
 

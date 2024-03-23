@@ -1,5 +1,5 @@
 #> asset.lib:item/give/main
-# 
+# アイテムを生成
 # @within function asset.lib:item/give/check.condition
 
 ## Storageを初期化
@@ -8,9 +8,10 @@
   data modify storage asset:temp Item.Count set value 1b
 ## データを移行
   data modify storage asset:temp Item.id set from storage asset:item id
-  data modify storage asset:temp Item.tag.Ctgry set from storage asset:item Ctgry
+  data modify storage asset:temp Item.tag.Category set from storage asset:item Category
   data modify storage asset:temp Item.tag.rawText.Name set from storage asset:item Name
   execute if data storage asset:item Lore run data modify storage asset:temp Item.tag.rawText.Lore set from storage asset:item Lore
+  execute if data storage asset:item Stats run data modify storage asset:temp Item.tag.Stats set from storage asset:item Stats
 ## NBT
   ### 設定
     data modify storage asset:temp Item.tag.Unbreakable set value 1b
@@ -25,6 +26,8 @@
 ## 説明を設定
   ### 通常
     function asset.lib:item/give/lore/basic.loop
+  ### 効果
+    execute if data storage asset:item Stats run function asset.lib:item/give/lore/stats/
   ### レアリティ
     data modify storage asset:temp Lore append value '{"text":""}'
     loot replace block 0 -64 0 container.0 loot asset.lib:item/lore/rarity
