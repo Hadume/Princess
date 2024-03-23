@@ -1,0 +1,11 @@
+{
+    "criteria": {
+      "click_inv": {
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "rewards": {
+      "function": "inv.ui:"
+    }
+  }
+  
