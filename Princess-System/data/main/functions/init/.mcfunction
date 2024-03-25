@@ -11,7 +11,7 @@
  #declare storage main:temp
 ## 初期化完了
   #data modify storage main: Init set value 1b
-#> Scoreboard
+#> Scoreboard.Public
 # @public
   scoreboard objectives add Global dummy
   scoreboard objectives add Asset dummy
@@ -19,18 +19,27 @@
   scoreboard objectives add Temp dummy
   scoreboard objectives add Lib dummy
   ### Status
-    scoreboard objectives add Level dummy
+    scoreboard objectives add Lvl dummy
     #### Exp
       scoreboard objectives add Exp dummy
       scoreboard objectives add Exp.Need dummy
     #### HP
       scoreboard objectives add HP dummy
       scoreboard objectives add HP.Max dummy
+      scoreboard objectives add HP.Max.Base dummy
+      scoreboard objectives add HP.Rcvr.Intrvl dummy
       scoreboard objectives add HP.Rcvr.Timer dummy
+      scoreboard objectives add HP.Rcvr.Per dummy
     #### MP
       scoreboard objectives add MP dummy
       scoreboard objectives add MP.Max dummy
+      scoreboard objectives add MP.Max.Base dummy
+      scoreboard objectives add MP.Rcvr.Intrvl dummy
       scoreboard objectives add MP.Rcvr.Timer dummy
+      scoreboard objectives add MP.Rcvr.Per dummy
+    #### Speed
+      scoreboard objectives add Speed dummy
+      scoreboard objectives add Speed.Base dummy
   ### Magic
     scoreboard objectives add Duration dummy
     scoreboard objectives add CT.Click dummy
@@ -42,14 +51,14 @@
 #> ScoreHolder
 # @public
  #declare score_holder #2
- #declare score_holder #4
+ #declare score_holder #2^2
  #declare score_holder #100
  #declare score_holder #200
  #declare score_holder #10000
  #declare score_holder #2^18
  #declare score_holder #2^24
   scoreboard players set #2 Const 2
-  scoreboard players set #4 Const 4
+  scoreboard players set #2^2 Const 4
   scoreboard players set #100 Const 100
   scoreboard players set #200 Const 200
   scoreboard players set #10000 Const 10000

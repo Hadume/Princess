@@ -2,10 +2,6 @@
 # 
 # @within function main:advancements/inventory_changed
 
-#> ScoreHolder
-# @within function players:equipments/*
- #declare score_holder $Updated
- #declare score_holder $Updated1
 ## データを用意
   data modify storage main:temp Armor set value [{},{},{},{}]
 ## 各装備を変更
@@ -17,6 +13,6 @@
   execute store success storage main:temp Updated byte 1 run data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Armor set from storage main:temp Armor
 ## ステータスを更新
   execute if data storage main:temp {Updated:1b} run function #lib:stats
-## 一時使用Storageをリセット
+## 一時使用Storageを削除
   data remove storage main:temp Updated
   data remove storage main:temp Armor
