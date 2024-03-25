@@ -1,6 +1,6 @@
-#> asset.lib:item/give/lore/basic.loop
+#> asset.lib:item/create/lore/basic.loop
 # 
-# @within function asset.lib:item/give/main
+# @within function asset.lib:item/create/main
 # @private
 
 ## 説明を取得
@@ -10,4 +10,4 @@
 ## 元のデータを削除
   data remove storage asset: Item.Lore[0]
 ## ループ
-  execute if data storage asset: Item.Lore[] run function asset.lib:item/give/lore/basic.loop
+  execute if data storage asset: Item.Lore[] run function asset.lib:item/create/lore/basic.loop

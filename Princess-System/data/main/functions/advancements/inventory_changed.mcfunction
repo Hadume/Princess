@@ -4,8 +4,6 @@
 
 ## 
   data modify storage main: InventoryChanged set value 1b
-## インベントリーUI
-  function inv_ui:clicked
 ## インベントリーを取得
   function api:get.nbt/inventory/
 ## 効果反映

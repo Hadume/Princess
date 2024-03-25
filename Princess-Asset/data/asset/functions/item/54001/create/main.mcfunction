@@ -1,6 +1,6 @@
-#> asset:item/54001/give/main
+#> asset:item/54001/create/main
 # 
-# @within function asset:item/54001/give/
+# @within function asset:item/54001/create/
 
 ## アイテムid; String
   data modify storage asset:item id set value "iron_helmet"
@@ -20,4 +20,4 @@
 ## NBT; Compound; (任意)
   #data modify storage asset:item NBT set value {}
 ## アイテムを生成
-  function asset.lib:item/give/check.condition
+  function asset.lib:item/create/check.condition

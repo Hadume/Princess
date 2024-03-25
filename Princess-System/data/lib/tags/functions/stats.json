@@ -1,0 +1,7 @@
+{
+    "values": [
+        "lib:stats/hp.max",
+        "lib:stats/mp.max",
+        "lib:stats/speed"
+    ]
+}

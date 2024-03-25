@@ -8,7 +8,7 @@
 ## MPを取得
   scoreboard players operation #MP.Copy Temp = @s MP
 ## 足りていたら
-  execute store success storage asset: CanCast byte 1 if score #MP.Copy Temp >= #MagicMP Asset
+  execute store success storage asset:magic CanCast byte 1 if score #MP.Copy Temp >= #MagicMP Asset
 ## 足りなかったら
   execute unless score #MP.Copy Temp >= #MagicMP Asset run tellraw @s {"text": "MPが足りないにゃん♡","color": "red"}
   #execute unless score @s MP >= #MagicMP Asset run playsound
