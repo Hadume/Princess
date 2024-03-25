@@ -1,6 +1,6 @@
-#> asset.lib:item/give/main
+#> asset.lib:item/create/main
 # アイテムを生成
-# @within function asset.lib:item/give/check.condition
+# @within function asset.lib:item/create/check.condition
 
 ## Storageを初期化
   data remove storage asset:temp Item
@@ -25,9 +25,9 @@
   data modify storage asset:temp Item.tag.display.Name set from block 0 -64 0 Items[0].tag.display.Name
 ## 説明を設定
   ### 通常
-    function asset.lib:item/give/lore/basic.loop
+    function asset.lib:item/create/lore/basic.loop
   ### 効果
-    execute if data storage asset:item Stats run function asset.lib:item/give/lore/stats/
+    execute if data storage asset:item Stats run function asset.lib:item/create/lore/stats/
   ### レアリティ
     data modify storage asset:temp Lore append value '{"text":""}'
     loot replace block 0 -64 0 container.0 loot asset.lib:item/lore/rarity

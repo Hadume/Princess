@@ -1,6 +1,6 @@
-#> asset.lib:item/give/lore/stats/main.loop
+#> asset.lib:item/create/lore/stats/main.loop
 # 
-# @within function asset.lib:item/give/lore/stats/*
+# @within function asset.lib:item/create/lore/stats/*
 
 ## 効果をコピー
   data modify storage asset:temp Stat set from storage asset:item Stats[0]
@@ -20,4 +20,4 @@
 ## 元のデータを削除
   data remove storage asset:item Stats[0]
 ## ループ
-  execute if data storage asset:item Stats[] run function asset.lib:item/give/lore/stats/main.loop
+  execute if data storage asset:item Stats[] run function asset.lib:item/create/lore/stats/main.loop

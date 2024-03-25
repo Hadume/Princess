@@ -1,11 +1,11 @@
-#> asset.lib:item/give/_index
+#> asset.lib:item/create/_index
 # 
 # @within 
 
 #> ScoreHolder
 # @within function
-#   asset:item/*/give/main
-#   asset.lib:item/give/*
+#   asset:item/*/create/main
+#   asset.lib:item/create/*
 # @within loot_table
 #   asset.lib:item/lore/rarity
  #declare score_holder #Rarity
