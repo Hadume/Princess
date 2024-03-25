@@ -9,8 +9,6 @@
 # @public
  #declare storage main:
  #declare storage main:temp
- #declare storage entity:
- #declare storage player:
 ## 初期化完了
   #data modify storage main: Init set value 1b
 #> Scoreboard

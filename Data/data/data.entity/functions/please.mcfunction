@@ -6,8 +6,8 @@
 # IDを持っていなければ、IDを割り当て
 execute unless score @s EntityID matches 1.. run function data.entity:sys/allocate
 # IDを一時変数にコピー
-execute store result storage entity: target_id int 1 run scoreboard players operation _ EntityID = @s EntityID
+execute store result storage data:entity target_id int 1 run scoreboard players operation #_ EntityID = @s EntityID
 # 取得するIDに変化があるかどうか確認
-execute store result storage entity: update byte 1 run data modify storage entity: last_id set from storage entity: target_id
+execute store result storage data:entity update byte 1 run data modify storage data:entity last_id set from storage data:entity target_id
 # ストレージ提供
-execute if data storage entity: {update:true} run function data.entity:sys/provide
+execute if data storage data:entity {update:true} run function data.entity:sys/provide

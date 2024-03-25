@@ -7,7 +7,7 @@
  #declare score_holder #HP.Max.Copy
  #declare score_holder #HP.RcvrPer.Copy
 ## 数値を取得
-  execute store result score #HP.RcvrPer.Copy Temp run data get storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.HP.RcvrPer
+  execute store result score #HP.RcvrPer.Copy Temp run data get storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Status.HP.RcvrPer
 ## 回復値
   scoreboard players operation #HP.Max.Copy Temp = @s HP.Max
   scoreboard players operation #HP.Max.Copy Temp *= #HP.RcvrPer.Copy Temp

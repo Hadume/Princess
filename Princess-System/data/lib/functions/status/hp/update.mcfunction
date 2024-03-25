@@ -16,7 +16,7 @@
   execute store result score @s ScoreToHealth run scoreboard players operation #HP.Display Temp /= @s HP.Max
 ## 回復
   execute if score #HP.Copy Temp < @s HP.Max run function data.player:please
-  execute if score #HP.Copy Temp < @s HP.Max store result score @s HP.Rcvr.Timer run data get storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.HP.RcvrIntrvl
+  execute if score #HP.Copy Temp < @s HP.Max store result score @s HP.Rcvr.Timer run data get storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Status.HP.RcvrIntrvl
 ## 一時使用ScoreHolderをリセット
   scoreboard players reset #HP.Copy
   scoreboard players reset #HP.Display

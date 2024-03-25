@@ -30,8 +30,8 @@
   attribute @s generic.movement_speed modifier remove d73e9ff7-9063-4380-8736-12288
 ## スピードを更新
   ### スピードを取得
-    function data.player:please
-    execute store result score #Speed.Copy Temp run data get storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.Speed.Amount
+    function data:please
+    execute store result score #Speed.Copy Temp run data get storage data: _.Status.Speed.Amount
   ### 4^6
     scoreboard players operation #Speed.Copy Temp *= #2^18 Const
     execute if score #Speed.Copy Temp matches -1073741824..-1 run attribute @s generic.movement_speed modifier add d73e9ff7-9063-4380-8736-12288 "generic.movement_speed" 12.288 add

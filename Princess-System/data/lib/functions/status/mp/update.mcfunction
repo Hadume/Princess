@@ -11,6 +11,6 @@
   execute if score #MP.Copy Temp matches ..0 run scoreboard players set @s MP 0
 ## 回復
   execute if score #MP.Copy Temp < @s MP.Max run function data.player:please
-  execute if score #MP.Copy Temp < @s MP.Max store result score @s MP.Rcvr.Timer run data get storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.MP.RcvrIntrvl
+  execute if score #MP.Copy Temp < @s MP.Max store result score @s MP.Rcvr.Timer run data get storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Status.MP.RcvrIntrvl
 ## 一時使用ScoreHolderをリセット
   scoreboard players reset #MP.Copy

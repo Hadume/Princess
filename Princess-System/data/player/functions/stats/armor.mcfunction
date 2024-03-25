@@ -14,8 +14,9 @@
   execute if data storage api: Inventory[{Slot:101b}] run data modify storage main:temp Armor[-2] set from storage api: Inventory[{Slot:101b}]
   execute if data storage api: Inventory[{Slot:100b}] run data modify storage main:temp Armor[-1] set from storage api: Inventory[{Slot:100b}]
 ## 装備が変更されたか確認
-  execute store success storage main:temp Updated byte 1 run data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Armor set from storage main:temp Armor
+  execute store success storage main:temp Updated byte 1 run data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Armor set from storage main:temp Armor
 ## ステータスを更新
-  execute if data storage main:temp {Updated:1b} run function player:stats/update
+  execute if data storage main:temp {Updated:1b} run function #lib:stats
 ## 一時使用Storageをリセット
+  data remove storage main:temp Updated
   data remove storage main:temp Armor

@@ -3,12 +3,12 @@
 # @public
 
 ## 個人ストレージ
-  function data.player:please
+  function data:please
 ## データをコピー
-  data modify storage lib:temp Stats append from storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Armor[].tag.Stats[{Name:"MP.Max"}]
-  data modify storage lib:temp Stats append from storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Mainhand.tag.Stats[{Name:"MP.Max"}]
+  data modify storage lib:temp Stats append from storage data: _.Armor[].tag.Stats[{Name:"MP.Max"}]
+  data modify storage lib:temp Stats append from storage data: _.Mainhand.tag.Stats[{Name:"MP.Max"}]
 ## ステータスをコピー
-  execute store result score #Amount Temp run data get storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.MP.MaxBase
+  execute store result score #Amount Temp run data get storage data: _.Status.MP.MaxBase
 ## 追加効果があったら
   execute if data storage lib:temp Stats[] run function lib:stats/common/
 ## 1以上になるように

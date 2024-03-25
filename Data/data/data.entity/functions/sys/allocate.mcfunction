@@ -7,15 +7,15 @@
 function data.entity:sys/gc
 
 # id[0] + id[-1] / 2 を割り当てIDに取る
-execute store result score _ EntityID run data get storage entity: id[-1]
-execute store result score _ Entity run data get storage entity: id[0]
-execute if score _ EntityID matches 0 run scoreboard players set _ EntityID 65536
-scoreboard players operation _ EntityID += _ Entity
-scoreboard players set _ Entity 2
-scoreboard players operation _ EntityID /= _ Entity
+execute store result score #_ EntityID run data get storage data:entity id[-1]
+execute store result score #_ Entity run data get storage data:entity id[0]
+execute if score #_ EntityID matches 0 run scoreboard players set #_ EntityID 65536
+scoreboard players operation #_ EntityID += #_ Entity
+scoreboard players set #_ Entity 2
+scoreboard players operation #_ EntityID /= #_ Entity
 
 # 割り当てIDに追加
-data modify storage entity: id append value -1
-execute store result storage entity: id[-1] int 1 run scoreboard players get _ EntityID
+data modify storage data:entity id append value -1
+execute store result storage data:entity id[-1] int 1 run scoreboard players get #_ EntityID
 # 割り当てる
-scoreboard players operation @s EntityID = _ EntityID
+scoreboard players operation @s EntityID = #_ EntityID
