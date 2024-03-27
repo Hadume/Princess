@@ -5,10 +5,10 @@
 # @output vector 0 -64 0 Items[0]
 
 ## 足りていなかったら
-  execute store success storage asset:temp Error byte 1 unless data storage asset:item id run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "id","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:item Name run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "Name","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:item Category run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "Category","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless score #Rarity Asset = #Rarity Asset run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "Rarity","italic": true,"color": "red"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:item id run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:item id","italic": true,"color": "red"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:item Name run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:item Name","italic": true,"color": "red"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:item Category run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:item Category","italic": true,"color": "red"}]
+  execute store success storage asset:temp Error byte 1 unless score #Rarity Asset = #Rarity Asset run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:item Rarity","italic": true,"color": "red"}]
 ## 足りていたら
   execute unless data storage asset:temp Error run function asset.lib:item/create/main
 ## Storageを削除
