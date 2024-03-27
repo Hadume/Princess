@@ -3,7 +3,5 @@
 # @within 
 
 #> Storage
-# @within *
-#   asset:item/*/**
-#   asset.lib:item/**
+# @public
  #declare storage asset:item

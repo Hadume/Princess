@@ -52,6 +52,7 @@
 # @public
  #declare score_holder #2
  #declare score_holder #2^2
+ #declare score_holder #51
  #declare score_holder #100
  #declare score_holder #200
  #declare score_holder #10000
@@ -59,6 +60,7 @@
  #declare score_holder #2^24
   scoreboard players set #2 Const 2
   scoreboard players set #2^2 Const 4
+  scoreboard players set #51 Const 51
   scoreboard players set #100 Const 100
   scoreboard players set #200 Const 200
   scoreboard players set #10000 Const 10000
@@ -74,3 +76,5 @@
 # @public
  #alias vector ShulkerBox 0 -64 0
   setblock 0 -64 0 shulker_box{Lock:"§§§"}
+## エラーログ
+  data modify storage main: Tell.Error set value "§c[Error]: §r"

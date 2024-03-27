@@ -7,8 +7,8 @@
 ## ステータスをコピー
   scoreboard players operation #Amount Temp = @s HP.Max.Base
 ## データをコピー
-  data modify storage lib:temp Stats append from storage data: _.Armor[].tag.Stats[{Name:"HP.Max"}]
-  data modify storage lib:temp Stats append from storage data: _.Mainhand.tag.Stats[{Name:"HP.Max"}]
+  data modify storage lib:temp Stats append from storage data: _.Armor[{tag:{Category:"Armor"}}].tag.Stats[{Name:"HP.Max"}]
+  data modify storage lib:temp Stats append from storage data: _.Weapon[{tag:{Category:"Wand"}}].tag.Stats[{Name:"HP.Max"}]
 ## 追加効果があったら
   execute if data storage lib:temp Stats[] run function lib:stats/common/
 ## ステータスを反映

@@ -7,13 +7,13 @@
 ## ステータスをコピー
   scoreboard players operation #Amount Temp = @s Speed.Base
 ## データをコピー
-  data modify storage lib:temp Stats append from storage data: _.Armor[].tag.Stats[{Name:"Speed"}]
-  data modify storage lib:temp Stats append from storage data: _.Mainhand.tag.Stats[{Name:"Speed"}]
+  data modify storage lib:temp Stats append from storage data: _.Armor[{tag:{Category:"Armor"}}].tag.Stats[{Name:"Speed"}]
+  data modify storage lib:temp Stats append from storage data: _.Weapon[{tag:{Category:"Wand"}}].tag.Stats[{Name:"Speed"}]
 ## 
   execute if data storage lib:temp Stats[] run function lib:stats/common/
 ## ステータスを反映
   execute if score #Amount Temp matches ..0 run scoreboard players set #Amount Temp 1
-  scoreboard players operation @s Speed.Base = #Amount Temp
+  scoreboard players operation @s Speed = #Amount Temp
 ## 更新
   function lib:status/speed/update
 ## 一時使用Storageを削除
