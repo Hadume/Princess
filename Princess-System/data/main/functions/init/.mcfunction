@@ -37,11 +37,17 @@
       scoreboard objectives add MP.Rcvr.Intrvl dummy
       scoreboard objectives add MP.Rcvr.Timer dummy
       scoreboard objectives add MP.Rcvr.Per dummy
+    #### ATK
+      scoreboard objectives add ATK dummy
+      scoreboard objectives add ATK.Base dummy
+    #### DEF
+      scoreboard objectives add DEF dummy
+      scoreboard objectives add DEF.Base dummy
     #### Speed
       scoreboard objectives add Speed dummy
       scoreboard objectives add Speed.Base dummy
   ### Magic
-    scoreboard objectives add Duration dummy
+    scoreboard objectives add Mgc.Duration dummy
     scoreboard objectives add CT.Click dummy
     scoreboard objectives add CT.ClickS dummy
     scoreboard objectives add CT.Offhand dummy
@@ -50,20 +56,22 @@
     scoreboard objectives add AssetID dummy
 #> ScoreHolder
 # @public
+ #declare score_holder #-1
  #declare score_holder #2
- #declare score_holder #2^2
  #declare score_holder #51
  #declare score_holder #100
  #declare score_holder #200
  #declare score_holder #10000
+ #declare score_holder #2^2
  #declare score_holder #2^18
  #declare score_holder #2^24
+  scoreboard players set #-1 Const -1
   scoreboard players set #2 Const 2
-  scoreboard players set #2^2 Const 4
   scoreboard players set #51 Const 51
   scoreboard players set #100 Const 100
   scoreboard players set #200 Const 200
   scoreboard players set #10000 Const 10000
+  scoreboard players set #2^2 Const 4
   scoreboard players set #2^18 Const 262144
   scoreboard players set #2^24 Const 16777216
 ## ゲームルール

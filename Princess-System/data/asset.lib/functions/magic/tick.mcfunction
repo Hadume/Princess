@@ -3,8 +3,8 @@
 # @within function main:tick/
 
 ## 持続時間
-  scoreboard players remove @s Duration 1
+  scoreboard players remove @s Mgc.Duration 1
 ## 魔法を消す
-  execute if entity @s[scores={Duration=..0}] run kill @s
+  execute if entity @s[scores={Mgc.Duration=..0}] run kill @s
 ## 
-  execute if entity @s[scores={Duration=1..}] run function #asset:magic/tick
+  execute if entity @s[scores={Mgc.Duration=1..}] run function #asset:magic/tick

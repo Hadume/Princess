@@ -6,6 +6,8 @@
   summon zombie ~ ~ ~ {Tags:["Init"]}
 ## 名前; JsonText
   data modify storage asset:mob Name set value '{"text":"ゾンビ将軍"}'
+## タイプ; String; ["Enemy"]
+  data modify storage asset:mob Type set value "Enemy"
 ## 装備; Compound
 ###   id; String => Default
 ###   ID; Int => Asset.Items
