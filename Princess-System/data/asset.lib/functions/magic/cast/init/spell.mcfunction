@@ -4,8 +4,8 @@
 
 ## IDを保存
   execute store result score @s AssetID run data get storage asset: Magic.ID
-## 持続時間を代入
-  execute if data storage asset: Magic.Duration store result score @s Duration run data get storage asset: Magic.Duration
+## スコアを代入
+  execute if data storage asset: Magic.Duration store result score @s Mgc.Duration run data get storage asset: Magic.Duration
 ## 速度を代入
   execute if data storage asset: Magic.Speed run function asset.lib:magic/cast/init/speed
 ## データを保存

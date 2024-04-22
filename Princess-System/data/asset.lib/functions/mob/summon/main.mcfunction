@@ -6,6 +6,8 @@
   function data.entity:please
 ## 名前
   data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].rawName set from storage asset:mob Name
+## タイプ
+  execute if data storage asset:mob {Type:"Enemy"} run tag @s add Enemy
 ## 装備
   ### Assetから
     execute if data storage asset:mob Armor.Head.ID run function asset.lib:mob/summon/equipments/head
@@ -31,7 +33,7 @@
     data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Armor set from storage asset:temp ArmorItems
     data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Weapon set from storage asset:temp HandItems
 ## NBT反映
-  data modify entity @s {} merge value {ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f],DeathLootTable:"asset.lib:entities/empty",CanPickUpLoot:0b,PersistenceRequired:0b,LeftHanded:0b}
+  data modify entity @s {} merge value {ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f],DeathLootTable:"asset.lib:entities/empty",CanPickUpLoot:0b,PersistenceRequired:1b,LeftHanded:0b}
 ## ステータスを移行
   execute store result score @s Lvl run data get storage asset:mob Status.Lvl
   execute store result score @s Exp run data get storage asset:mob Status.Exp
@@ -42,7 +44,7 @@
   #execute store result score @s DEF.Base run data get storage asset:mob Status.DEF
   execute store result score @s Speed.Base run data get storage asset:mob Status.Speed
 ## HitBoxを保存
-  function asset.lib:mob/summon/hitbox/
+  function asset.lib:mob/summon/id/
 ## ステータスを反映
   function #lib:stats
 ## 初期化Tagを外す

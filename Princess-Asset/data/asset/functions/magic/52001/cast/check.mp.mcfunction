@@ -7,4 +7,4 @@
 ## 
   function asset.lib:magic/cast/check.mp
 ## 
-  execute if data storage asset: {CanCast:1b} run function asset:magic/52001/cast/main
+  execute if data storage asset:magic {CanCast:1b} run function asset:magic/52001/cast/main

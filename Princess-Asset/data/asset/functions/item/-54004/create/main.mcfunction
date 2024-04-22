@@ -7,7 +7,7 @@
 ## 名前; JsonText
   data modify storage asset:item Name set value '{"text":"鉄袴"}'
 ## 説明; List.JsonText; (任意)
-  #data modify storage asset:item Lore set value ['{"text":"チンアナゴー！"}']
+  #data modify storage asset:item Lore set value []
 ## 種類; String; ["Wand","Armor","Crystal","Meal","Misc"]
   data modify storage asset:item Category set value "Armor"
 ## レアリティ

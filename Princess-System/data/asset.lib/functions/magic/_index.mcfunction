@@ -2,9 +2,8 @@
 # 
 # @within 
 
-#> storage
-# @public
- #declare storage asset:
-#> storage.internal
-# @internal
- #declare storage asset:temp
+#> Storage
+# @within function
+#   asset:magic/*/**
+#   asset.lib:magic/**
+ #declare storage asset:magic
