@@ -3,7 +3,7 @@
 # @within function asset.lib:magic/cast/condition/click/
 
 ## IDをコピー
-  data modify storage asset: Magic.ID set from storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Magic.Key.Click
+  data modify storage asset:magic ID set from storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Magic.Key.Click
 ## 
   execute anchored eyes positioned ^ ^ ^ run function #asset:magic/cast
 ## クールタイムを設定

@@ -12,3 +12,5 @@
   scoreboard players reset #Amount.Stored
   scoreboard players reset #Amount.Stored.1
   scoreboard players reset #Amount.Stored.2
+## 一時使用Storageを削除
+  data remove storage lib:temp Stat

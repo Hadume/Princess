@@ -4,13 +4,13 @@
 
 #> ScoreHolder
 # @private
- #declare score_holder #MP.Copy
-## 現在のMPをコピー
-  scoreboard players operation #MP.Copy Temp = @s MP
-## 0以下だったら0に
-  execute if score #MP.Copy Temp matches ..0 run scoreboard players set @s MP 0
+ #declare score_holder #MP.Display
+## 表示
+  scoreboard players set #MP.Display Temp 2000
+  scoreboard players operation #MP.Display Temp *= @s MP
+  scoreboard players operation #MP.Display Temp /= @s MP.Max
+  scoreboard players operation @s ScoreToHealth = #MP.Display Temp
 ## 回復
-  execute if score #MP.Copy Temp < @s MP.Max run function data.player:please
-  execute if score #MP.Copy Temp < @s MP.Max store result score @s MP.Rcvr.Timer run data get storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.MP.RcvrIntrvl
+  execute if score @s MP < @s MP.Max run scoreboard players operation @s MP.Rcvr.Timer = @s MP.Rcvr.Intrvl
 ## 一時使用ScoreHolderをリセット
-  scoreboard players reset #MP.Copy
+  scoreboard players reset #MP.Display

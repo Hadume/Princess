@@ -5,4 +5,4 @@
 ## スコアを減らす
   scoreboard players remove @s HP.Rcvr.Timer 1
 ## 回復
-  execute if score @s HP.Rcvr.Timer matches ..0 run function lib:status/hp/recover/main
+  execute if entity @s[scores={HP.Rcvr.Timer=..0}] run function lib:status/hp/recover/main
