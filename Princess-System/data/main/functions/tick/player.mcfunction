@@ -5,8 +5,8 @@
 ## 魔法のクールタイム
   execute if predicate asset.lib:cooltime run function asset.lib:magic/cooltime
 ## MP,HPの回復
-  execute if score @s MP.Rcvr.Timer matches 1.. run function lib:status/mp/recover/tick
-  execute if score @s HP.Rcvr.Timer matches 1.. run function lib:status/hp/recover/tick
+  execute if entity @s[scores={MP.Rcvr.Timer=1..}] run function lib:status/mp/recover/tick
+  execute if entity @s[scores={HP.Rcvr.Timer=1..}] run function lib:status/hp/recover/tick
 ## メインハンドに持ったときの効果を反映
   function player:stats/mainhand
 ## ステータス表示

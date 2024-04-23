@@ -5,6 +5,6 @@
 
 # データを削除
 execute if score @s EntityID matches 1.. run function data.entity:please
-execute if score @s EntityID matches 1.. run data modify storage entity: _[-4][-4][-4][-4][-4][-4][-4][-4] set value {}
+execute if score @s EntityID matches 1.. run data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4] set value {}
 # IDを削除
 scoreboard players reset @s EntityID

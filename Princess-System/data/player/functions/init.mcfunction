@@ -4,27 +4,26 @@
 
 ## 個人ストレージを呼ぶ
   function data.player:please
+## id
+  data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].id set value "player"
 ## Status
-  scoreboard players set @s Level 1
+  scoreboard players set @s Lvl 1
   ### Exp
-    scoreboard players set @s Exp 10
-    scoreboard players set @s Exp.Need 10
+    execute store result score @s Exp.Need run scoreboard players set @s Exp 10
   ### HP
-    scoreboard players set @s HP 100
-    scoreboard players set @s HP.Max 100
-    data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.HP.MaxBase set value 100
-    data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.HP.RcvrPer set value 5
-    data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.HP.RcvrIntrvl set value 40
+    execute store result score @s HP run scoreboard players set @s HP.Max.Base 100
+    scoreboard players set @s HP.Rcvr.Intrvl 40
+    scoreboard players set @s HP.Rcvr.Per 5
   ### MP
-    scoreboard players set @s MP 100
-    scoreboard players set @s MP.Max 100
-    data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.MP.MaxBase set value 100
-    data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.MP.RcvrPer set value 5
-    data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.MP.RcvrIntrvl set value 40
+    execute store result score @s MP run scoreboard players set @s MP.Max.Base 100
+    scoreboard players set @s MP.Rcvr.Intrvl 40
+    scoreboard players set @s MP.Rcvr.Per 5
+  ## ATK
+    scoreboard players set @s ATK.Base 1
+  ## DEF
+    scoreboard players set @s DEF.Base 0
   ### Speed
-    data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.Speed.Amount set value 100
-    data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Status.Speed.Base set value 100
-## レベル、経験値を表示
+    scoreboard players set @s Speed.Base 100
+## ステータスの反映
+  function #lib:stats
   function api:display/exp
-## スピードの更新
-  function lib:status/speed/update

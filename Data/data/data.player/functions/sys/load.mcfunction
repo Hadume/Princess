@@ -2,4 +2,4 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### データパックが初期化されていなければ、初期化する
-execute unless data storage player: _ run function data.player:sys/init
+execute unless data storage data:player _ run function data.player:sys/init

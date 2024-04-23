@@ -6,8 +6,8 @@
 # IDを持っていなければ、IDを割り当て
 execute unless score @s PlayerID matches 1.. run function data.player:sys/allocate
 # IDを一時変数にコピー
-execute store result storage player: target_id int 1 run scoreboard players operation _ PlayerID = @s PlayerID
+execute store result storage data:player target_id int 1 run scoreboard players operation #_ PlayerID = @s PlayerID
 # 取得するIDに変化があるかどうか確認
-execute store result storage player: update byte 1 run data modify storage player: last_id set from storage player: target_id
+execute store result storage data:player update byte 1 run data modify storage data:player last_id set from storage data:player target_id
 # ストレージ提供
-execute if data storage player: {update:true} run function data.player:sys/provide
+execute if data storage data:player {update:true} run function data.player:sys/provide
