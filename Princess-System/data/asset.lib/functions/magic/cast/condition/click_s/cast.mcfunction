@@ -7,4 +7,4 @@
 ## 
   execute anchored eyes positioned ^ ^ ^ run function #asset:magic/cast
 ## クールタイムを設定
-  execute store result score @s CT.ClickS run data get storage asset: Magic.CoolTime
+  execute store result score @s CT.ClickS run data get storage asset:magic CoolTime

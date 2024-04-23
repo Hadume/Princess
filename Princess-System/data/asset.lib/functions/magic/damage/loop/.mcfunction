@@ -1,8 +1,8 @@
-#> asset.lib:magic/attack/loop/
+#> asset.lib:magic/damage/loop/
 # 
 # @within function
-#   asset.lib:magic/attack/
-#   asset.lib:magic/attack/loop/1
+#   asset.lib:magic/damage/
+#   asset.lib:magic/damage/loop/1
 
 ## 座標を取得
   function api:get.nbt/pos/
@@ -56,4 +56,4 @@
     scoreboard players operation #Pos.Y1 Temp += #Pos.Z1 Temp
     scoreboard players operation #Pos.X1 Temp += #Pos.Y1 Temp
 ## 結果
-  execute if score #Pos.X1 Temp <= #Range Temp run function asset.lib:magic/attack/loop/1
+  execute if score #Pos.X1 Temp <= #Range Temp run function asset.lib:magic/damage/loop/1
