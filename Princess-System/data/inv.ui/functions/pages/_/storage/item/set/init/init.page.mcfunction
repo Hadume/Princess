@@ -1,7 +1,7 @@
 #> inv.ui:pages/_/storage/item/set/init/init.page
 # 
 # @within function inv.ui:pages/_/storage/item/set/check.init
-
+say インベントリ初期化！
 ### 操作UI
     #### back
         function inv.ui:asset/any/back 

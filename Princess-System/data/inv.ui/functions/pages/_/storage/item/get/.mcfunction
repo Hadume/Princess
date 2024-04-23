@@ -3,7 +3,7 @@
 # @within function inv.ui:pages/_/storage/item/
 
 # シュルカーボックスにデータ書き込み(Page番号代入)
-    $data modify block 0 0 0 Items set from storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Storage.Page$(PageNumber)
+    $data modify block 0 0 0 Items set from storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Storage.Page$(PageNumber)
 
 # シュルカーボックスからプレイヤーにデータ代入
-    #loot replace entity @s inventory.9 fish blocks/shulker_box 0 0 0
+    loot replace entity @s inventory.0 26 mine 0 0 0 minecraft:debug_stick

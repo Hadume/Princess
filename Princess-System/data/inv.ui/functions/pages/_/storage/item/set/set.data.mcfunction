@@ -21,7 +21,7 @@ $say $(PageNumber)ページ目
             data modify storage inv.ui: Storage.SlotLoop set value 27
         function inv.ui:pages/_/storage/item/set/slot.num with storage inv.ui: Storage.
     ## データの移行
-        $data modify storage player: _[-4][-4][-4][-4][-4][-4][-4][-4].Storage.Page$(PageNumber) set from storage inv.ui: Storage.SetWork
+        $data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Storage.Page$(PageNumber) set from storage inv.ui: Storage.SetWork
     ## 終了処理
         data remove storage inv.ui: Storage.ItemWork
         data remove storage inv.ui: Storage.SetWork
