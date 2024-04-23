@@ -8,6 +8,6 @@
 ## 取得したデータを移行
   data modify storage asset:temp Lore append from block 0 -64 0 Items[0].tag.display.Name
 ## 元のデータを削除
-  data remove storage asset: Item.Lore[0]
+  data remove storage asset:item Lore[0]
 ## ループ
-  execute if data storage asset: Item.Lore[] run function asset.lib:item/create/lore/basic.loop
+  execute if data storage asset:item Lore[] run function asset.lib:item/create/lore/basic.loop

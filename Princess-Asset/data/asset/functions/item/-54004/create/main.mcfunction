@@ -13,7 +13,7 @@
 ## レアリティ
   scoreboard players set #Rarity Asset 3
 ## 効果; List.Compound
-###   Name; String; [HP.Max, MP.Max, Speed]
+###   Name; String; [HP.Max, MP.Max, ATK, DEF, Speed]
 ###   Operation; Int ; [0: 元の値にAmountを加算, 1: 元の値にAmount＊100％を加算, 2: 元の値にAmount＊100％を乗算]
 ###   Amount; Int
   data modify storage asset:item Stats set value [{Name:"HP.Max",Operation:1,Amount:100},{Name:"MP.Max",Operation:1,Amount:100}]

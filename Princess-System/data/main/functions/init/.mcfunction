@@ -18,6 +18,8 @@
   scoreboard objectives add Const dummy
   scoreboard objectives add Temp dummy
   scoreboard objectives add Lib dummy
+  ### Custom
+    scoreboard objectives add LeaveGame custom:leave_game
   ### Status
     scoreboard objectives add Lvl dummy
     #### Exp

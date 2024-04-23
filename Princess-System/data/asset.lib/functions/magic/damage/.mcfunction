@@ -1,9 +1,9 @@
-#> asset.lib:magic/attack/
+#> asset.lib:magic/damage/
 # 
 # @within asset:magic/*/tick
 
 #> ScoreHolder
-# @within function asset.lib:magic/attack/**
+# @within function asset.lib:magic/damage/**
  #declare score_holder #Pierce
  #declare score_holder #Range
  #declare score_holder #Pos.X1
@@ -18,7 +18,7 @@
  #declare score_holder #Size.X
  #declare score_holder #Size.Y
 #> Tags
-# @within function asset.lib:magic/attack/**
+# @within function asset.lib:magic/damage/**
  #declare tag Pierced
 ## 個人ストレージを呼ぶ
   function data.entity:please
@@ -36,7 +36,7 @@
     execute store result score #Range Temp run data get storage asset:temp Magic.Range 1000
     scoreboard players operation #Range Temp *= #Range Temp
 ## 攻撃する対象を特定
-  execute if data storage asset:temp {Magic:{Target:["Enemy"]}} as @e[type=#main:living,tag=Enemy,distance=..16,sort=nearest,limit=1] at @s run function asset.lib:magic/attack/loop/
+  execute if data storage asset:temp {Magic:{Target:["Enemy"]}} as @e[type=#main:living,tag=Enemy,distance=..16,sort=nearest,limit=1] at @s run function asset.lib:magic/damage/loop/
   #execute if data storage asset:temp {Magic:{Target:["Player"]}}
 ## 魔法を消す
   execute if data storage asset:temp {Pierced:1b} run kill @s
