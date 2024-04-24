@@ -1,0 +1,51 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "cod",
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": [
+                {
+                  "storage": "api:temp",
+                  "nbt": "NameColor",
+                  "interpret": true,
+                  "italic": false
+                },
+                {
+                  "text": "[",
+                  "color": "dark_gray"
+                },
+                {
+                  "text": "Lv.",
+                  "color": "white"
+                },
+                {
+                  "score": {
+                    "name": "@s",
+                    "objective": "Lvl"
+                  },
+                  "color": "white"
+                },
+                {
+                  "text": "] ",
+                  "color": "dark_gray"
+                },
+                {
+                  "storage": "data:entity",
+                  "nbt": "_[-4][-4][-4][-4][-4][-4][-4][-4].rawName",
+                  "interpret": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

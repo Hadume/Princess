@@ -33,20 +33,26 @@
     data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Armor set from storage asset:temp ArmorItems
     data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Weapon set from storage asset:temp HandItems
 ## NBT反映
-  data modify entity @s {} merge value {ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f],DeathLootTable:"asset.lib:entities/empty",CanPickUpLoot:0b,PersistenceRequired:1b,LeftHanded:0b}
+  data modify entity @s {} merge value {ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f],DeathLootTable:"asset.lib:entities/empty",CanPickUpLoot:0b,PersistenceRequired:1b,LeftHanded:0b,CustomNameVisible:1b}
 ## ステータスを移行
   execute store result score @s Lvl run data get storage asset:mob Status.Lvl
   execute store result score @s Exp run data get storage asset:mob Status.Exp
   #execute store result score @s Money run data get storage asset:mob Status.Money
-  execute store result score @s HP.Max.Base store result score @s HP run data get storage asset:mob Status.HP
-  execute store result score @s MP.Max.Base store result score @s MP run data get storage asset:mob Status.MP
-  #execute store result score @s ATK.Base run data get storage asset:mob Status.ATK
-  #execute store result score @s DEF.Base run data get storage asset:mob Status.DEF
+  execute store result score @s HP.Max.Base run data get storage asset:mob Status.HP
+  execute store result score @s MP.Max.Base run data get storage asset:mob Status.MP
+  execute store result score @s ATK.Base run data get storage asset:mob Status.ATK
+  execute store result score @s DEF.Base run data get storage asset:mob Status.DEF
   execute store result score @s Speed.Base run data get storage asset:mob Status.Speed
+## 仮ステータス
+  scoreboard players set @s HP 1073741
+  scoreboard players set @s MP 1073741
 ## HitBoxを保存
   function asset.lib:mob/summon/id/
 ## ステータスを反映
   function #lib:stats
+## ステータスを反映
+  scoreboard players operation @s HP = @s HP.Max
+  scoreboard players operation @s MP = @s MP.Max
 ## 初期化Tagを外す
   tag @s remove Init
 ## 一時使用Storageを削除

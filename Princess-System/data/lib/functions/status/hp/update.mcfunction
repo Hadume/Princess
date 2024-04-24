@@ -10,7 +10,9 @@
   scoreboard players operation #HP.Display Temp *= @s HP
   scoreboard players operation #HP.Display Temp /= @s HP.Max
   scoreboard players operation @s ScoreToHealth = #HP.Display Temp
-## 回復
-  execute if score @s HP < @s HP.Max run scoreboard players operation @s HP.Rcvr.Timer = @s HP.Rcvr.Intrvl
+## プレイヤーを回復
+  execute if entity @s[type=player] if score @s HP < @s HP.Max run scoreboard players operation @s HP.Rcvr.Timer = @s HP.Rcvr.Intrvl
+## MOBのステータス表示
+  execute if entity @s[type=!player] run function api:display/mob.name
 ## 一時使用ScoreHolderをリセット
   scoreboard players reset #HP.Display
