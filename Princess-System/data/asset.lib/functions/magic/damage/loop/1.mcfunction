@@ -8,13 +8,14 @@
   function lib:damage/
 ## HPを減らす
   scoreboard players operation @s HP -= #Lib.Damage Lib
+  function lib:status/hp/update
 ## ダメージ表示
   damage @s 0.00000000000000001 out_of_world
 ## 貫通した
   scoreboard players remove #Pierce Temp 1
   tag @s add Pierced
 ## まだ貫通できるなら
-  execute if score #Pierce Temp matches ..0 run data modify storage asset:temp Pierced set value 1b
+  execute store success storage asset:temp Pierced byte 1 if score #Pierce Temp matches ..0
 ## 
   #say 範囲内にいるよ
 ## まだ貫通できるなら
