@@ -3,7 +3,7 @@
 # @within function asset.lib:magic/cast/spell/
 
 ## IDを保存
-  execute store result score @s AssetID run data get storage asset:magic ID
+  execute store result score @s ID.Asset run data get storage asset:magic ID
 ## スコアを代入
   execute if data storage asset:magic Duration store result score @s Mgc.Duration run data get storage asset:magic Duration
 ## 速度を代入

@@ -36,9 +36,9 @@
   ### 魔力
     data modify storage asset:mob Status.MP set value 100
   ### 攻撃力
-    #data modify storage asset:mob Status.ATK set value 1
+    data modify storage asset:mob Status.ATK set value 1
   ### 防御力
-    #data modify storage asset:mob Status.DEF set value 1
+    data modify storage asset:mob Status.DEF set value 0
   ### スピード
     data modify storage asset:mob Status.Speed set value 0
   ### 運
