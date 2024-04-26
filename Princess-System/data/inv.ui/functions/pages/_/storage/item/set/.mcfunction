@@ -1,7 +1,7 @@
 #> inv.ui:pages/_/storage/item/set/
 #   ストレージアイテムセット
 # @within function inv.ui:pages/_/storage/item/
-
+say data set
 # 個人ストレージ呼び出し
     function data.player:please
 
