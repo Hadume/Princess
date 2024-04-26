@@ -1,6 +1,6 @@
-#> enemy:kill
+#> mob:kill
 # 消す
-# @within function enemy:tick
+# @within function mob:tick
 
 ## デスポーンするように
   data modify entity @s PersistenceRequired set value 0b
