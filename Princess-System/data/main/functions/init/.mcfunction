@@ -55,7 +55,8 @@
     scoreboard objectives add CT.Offhand dummy
     scoreboard objectives add CT.OffhandS dummy
   ### 
-    scoreboard objectives add AssetID dummy
+    scoreboard objectives add ID.Asset dummy
+    scoreboard objectives add ID.DmgFlag dummy
 #> ScoreHolder
 # @public
  #declare score_holder #-1
@@ -65,6 +66,8 @@
  #declare score_holder #200
  #declare score_holder #10000
  #declare score_holder #2^2
+ #declare score_holder #2^15
+ #declare score_holder #2^16
  #declare score_holder #2^18
  #declare score_holder #2^24
   scoreboard players set #-1 Const -1
@@ -74,6 +77,8 @@
   scoreboard players set #200 Const 200
   scoreboard players set #10000 Const 10000
   scoreboard players set #2^2 Const 4
+  scoreboard players set #2^15 Const 32768
+  scoreboard players set #2^16 Const 65536
   scoreboard players set #2^18 Const 262144
   scoreboard players set #2^24 Const 16777216
 ## ゲームルール
