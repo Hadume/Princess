@@ -4,7 +4,7 @@
 #   function inv.ui:pages/_/storage/item/set/
 #   function inv.ui:pages/_/storage/item/set/init/init.page
 
-$say $(PageNumber)ページ目
+$say $(PageNumber)ページ目のデータを保存
 
 # Inventoryデータ取得
     ## インベントリ読み込み
@@ -12,6 +12,9 @@ $say $(PageNumber)ページ目
     ## セット
         data modify storage inv.ui: Storage.InventoryWork set from storage api: Inventory
         data modify storage inv.ui: Storage.Test set from storage api: Inventory
+
+# 配列が用意されていない場合初期化
+    $execute unless data storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Storage.Page[$(PageNumber)] run function inv.ui:pages/_/storage/item/set/init.list with storage inv.ui: Storage.
 
 # データセット
     ## ホットバーのアイテム除去
@@ -24,9 +27,9 @@ $say $(PageNumber)ページ目
             data modify storage inv.ui: Storage.SlotLoop set value 27
         function inv.ui:pages/_/storage/item/set/slot.num with storage inv.ui: Storage.
     ## データの移行
-        $data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Storage.Page$(PageNumber) set from storage inv.ui: Storage.SetWork
+        $data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Storage.Page[$(PageNumber)] set from storage inv.ui: Storage.SetWork
     ## UIアイテムの削除
-        $data remove storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Storage.Page$(PageNumber)[{tag:{UiItem:1b}}]
+        $data remove storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Storage.Page[$(PageNumber)][{tag:{UiItem:1b}}]
     ## 終了処理
         data remove storage inv.ui: Storage.ItemWork
         data remove storage inv.ui: Storage.SetWork
