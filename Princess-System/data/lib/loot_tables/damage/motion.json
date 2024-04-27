@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "cod",
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": {
+                "score": {
+                  "name": "#Damage",
+                  "objective": "Temp"
+                }
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Lib:{Damage:1b,Init:1b}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

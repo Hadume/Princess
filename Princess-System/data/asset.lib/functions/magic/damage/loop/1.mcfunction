@@ -5,7 +5,7 @@
 ## 防御力を取得
   scoreboard players operation #Lib.DEF Lib = @s DEF
 ## ダメージを与える
-  function lib:damage/
+  execute at @s anchored eyes run function lib:damage/
 ## ダメージ表示
   damage @s 0.00000000000000001 out_of_world
 ## 貫通した
