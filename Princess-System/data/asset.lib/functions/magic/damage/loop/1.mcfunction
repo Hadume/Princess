@@ -2,6 +2,9 @@
 # 
 # @within function asset.lib:magic/damage/loop/
 
+## 攻撃者のIDを保存
+  execute if entity @s[type=player] run data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].AttackBy append from storage asset:temp Magic.CasterID
+  execute if entity @s[type=!player] run data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].AttackBy append from storage asset:temp Magic.CasterID
 ## 防御力を取得
   scoreboard players operation #Lib.DEF Lib = @s DEF
 ## ダメージを与える

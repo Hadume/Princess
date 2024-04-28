@@ -19,6 +19,8 @@
   ### 
     function data.entity:please
     data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Magic set from storage asset:temp Magic
+## プレイヤーのIDを保存
+  execute store result storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Magic.CasterID int 1 run scoreboard players get @a[tag=This,limit=1] PlayerID
 ## 向きを変更
   execute rotated as @a[tag=This,limit=1] run tp @s ~ ~ ~ ~ ~
 ## 初期化tagを削除

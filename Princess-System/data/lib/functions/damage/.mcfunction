@@ -19,7 +19,7 @@
 ## HPを減らす
   scoreboard players operation @s HP -= #Damage Temp
 ## 体力を更新
-  function lib:status/hp/update
+  function lib:status/hp/update/
 ## ダメージ表示
   ### 表示を拡散
     data modify storage lib: Spread.Amount set value [0.1d,0.0d]
