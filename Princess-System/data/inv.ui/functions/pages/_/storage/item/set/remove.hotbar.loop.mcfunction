@@ -23,7 +23,7 @@
 
 # 更新処理
     ## ホットバーのアイテムではなかったら、リストに追加
-        execute unless data storage inv.ui: {Storage:{InventoryItemFlag:1b}} run data modify storage inv.ui: Storage.SetWork append from storage inv.ui: Storage.InventoryWork[-1]
+        execute if data storage inv.ui: {Storage:{InventoryItemFlag:0b}} run data modify storage inv.ui: Storage.SetWork append from storage inv.ui: Storage.InventoryWork[-1]
     ## リストの最後尾を削除
         data remove storage inv.ui: Storage.InventoryWork[-1]
     ## データが残っていれば再帰
