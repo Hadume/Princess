@@ -3,7 +3,7 @@
 # @within function asset:magic/52001/cast/check.mp
 
 ## 本体を召喚
-  summon armor_stand ~ ~ ~ {Invulnerable:1b,Silent:1b,Invisible:1b,NoBasePlate:1b,Pose:{Head:[180f,0f,0f]},Small:1b,Tags:["Spell","Spell.Init"]}
+  summon armor_stand ~ ~ ~ {Invulnerable:1b,Silent:1b,Invisible:1b,NoBasePlate:1b,Pose:{Head:[180f,0f,0f]},Small:1b,FallDistance:-4096f,Tags:["Spell","Spell.Init"]}
 ## 魔法名; JsonText
   data modify storage asset:magic Name set value '{"text":"ファイア","color":"red"}'
 ## タイプを設定

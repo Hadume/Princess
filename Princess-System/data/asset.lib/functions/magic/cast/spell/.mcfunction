@@ -9,7 +9,5 @@
 ## MPを減らす
   scoreboard players operation @s MP -= #MagicMP Asset
   function lib:status/mp/update
-## 魔法名を叫ぶ
-  tellraw @a[distance=..8] [{"storage":"asset:magic","nbt":"Name","interpret": true,"bold": true},{"text": "ッ!"}]
 ## 実行者tagを削除
   tag @s remove This

@@ -15,7 +15,7 @@
   execute if score #Amount Temp matches ..0 run scoreboard players set #Amount Temp 1
   scoreboard players operation @s HP.Max = #Amount Temp
 ## 更新
-  function lib:status/hp/update
+  function lib:status/hp/update/
 ## 一時使用Storageを削除
   execute if data storage lib:temp Stats run data remove storage lib:temp Stats
 ## 一時使用ScoreHolderをリセット
