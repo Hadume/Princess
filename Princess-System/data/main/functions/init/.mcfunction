@@ -22,6 +22,7 @@
     scoreboard objectives add LeaveGame custom:leave_game
   ### Status
     scoreboard objectives add Lvl dummy
+    scoreboard objectives add Money dummy
     #### Exp
       scoreboard objectives add Exp dummy
       scoreboard objectives add Exp.Need dummy
@@ -61,6 +62,7 @@
 # @public
  #declare score_holder #-1
  #declare score_holder #2
+ #declare score_holder #10
  #declare score_holder #51
  #declare score_holder #100
  #declare score_holder #200
@@ -72,6 +74,7 @@
  #declare score_holder #2^24
   scoreboard players set #-1 Const -1
   scoreboard players set #2 Const 2
+  scoreboard players set #10 Const 10
   scoreboard players set #51 Const 51
   scoreboard players set #100 Const 100
   scoreboard players set #200 Const 200

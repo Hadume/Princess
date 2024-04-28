@@ -36,7 +36,7 @@
   ### 移行
     execute store result score @s Lvl run data get storage asset:mob Status.Lvl
     execute store result score @s Exp run data get storage asset:mob Status.Exp
-    #execute store result score @s Money run data get storage asset:mob Status.Money
+    execute store result score @s Money run data get storage asset:mob Status.Money
     execute store result score @s HP.Max.Base run data get storage asset:mob Status.HP
     execute store result score @s MP.Max.Base run data get storage asset:mob Status.MP
     execute store result score @s ATK.Base run data get storage asset:mob Status.ATK
