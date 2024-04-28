@@ -12,6 +12,6 @@
 ## 回復
   scoreboard players operation @s HP += #HP.RcvrPer.Copy Temp
 ## HPを更新
-  function lib:status/hp/update
+  function lib:status/hp/update/
 ## 一時使用ScoreHolderをリセット
   scoreboard players reset #HP.RcvrPer.Copy

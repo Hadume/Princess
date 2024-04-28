@@ -11,3 +11,5 @@
 ## 名前を表示
   loot replace block 0 -64 0 container.0 loot api:display/mob.status
   data modify entity @s CustomName set from block 0 -64 0 Items[0].tag.display.Name
+## 一時使用Storageを削除
+  data remove storage api:temp NameColor

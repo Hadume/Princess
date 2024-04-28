@@ -39,7 +39,8 @@
                 {
                   "storage": "data:entity",
                   "nbt": "_[-4][-4][-4][-4][-4][-4][-4][-4].rawName",
-                  "interpret": true
+                  "interpret": true,
+                  "bold": true
                 }
               ]
             }
