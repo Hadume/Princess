@@ -10,10 +10,7 @@
         scoreboard objectives add InventoryUI.Slot dummy
         scoreboard objectives add InventoryUI.ItemStorage.PageLimit dummy
     # Player
-        scoreboard objectives add InventoryUI.Player.Pos.X dummy
-        scoreboard objectives add InventoryUI.Player.Pos.Z dummy
-        scoreboard objectives add InventoryUI.Player.Pos.XWork dummy
-        scoreboard objectives add InventoryUI.Player.Pos.ZWork dummy
+        scoreboard objectives add InventoryUI.Player.Moving custom:walk_one_cm
 
 # init(これは後で分離)
     data modify storage inv.ui: PageLock set value 0b
