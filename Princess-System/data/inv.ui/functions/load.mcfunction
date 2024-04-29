@@ -3,11 +3,17 @@
 # @within tag/function minecraft:load
 
 # scores
-    scoreboard objectives add InventoryUI.Page dummy
-    scoreboard objectives add InventoryUI.ItemStorage.Page dummy
-    scoreboard objectives add InventoryUI.MaterialStorage.Page dummy
-    scoreboard objectives add InventoryUI.Slot dummy
-    scoreboard objectives add InventoryUI.ItemStorage.PageLimit dummy
+    # Inventory
+        scoreboard objectives add InventoryUI.Page dummy
+        scoreboard objectives add InventoryUI.ItemStorage.Page dummy
+        scoreboard objectives add InventoryUI.MaterialStorage.Page dummy
+        scoreboard objectives add InventoryUI.Slot dummy
+        scoreboard objectives add InventoryUI.ItemStorage.PageLimit dummy
+    # Player
+        scoreboard objectives add InventoryUI.Player.Pos.X dummy
+        scoreboard objectives add InventoryUI.Player.Pos.Z dummy
+        scoreboard objectives add InventoryUI.Player.Pos.XWork dummy
+        scoreboard objectives add InventoryUI.Player.Pos.ZWork dummy
 
 # init(これは後で分離)
     data modify storage inv.ui: PageLock set value 0b
