@@ -3,7 +3,7 @@
 # @within function inv.ui:pages/_/com
 
 # UICode
-    data modify storage inv.ui: Asset.UICode set value -1
+    data modify storage inv.ui: Asset.UICode set value 701
 # Id
     data modify storage inv.ui: Asset.ItemID set value "compass"
 # Slot

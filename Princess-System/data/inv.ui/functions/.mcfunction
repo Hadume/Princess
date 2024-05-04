@@ -16,3 +16,5 @@
         execute if score @s InventoryUI.Page matches 0..99 run function inv.ui:check/menu/
     # ストレージ
         execute if score @s InventoryUI.Page matches 500..599 run function inv.ui:check/storage/
+    # コミュニケート
+        execute if score @s InventoryUI.Page matches 700..799 run function inv.ui:check/com/

@@ -4,8 +4,6 @@
 #   function inv.ui:pages/_/storage/item/set/
 #   function inv.ui:pages/_/storage/item/set/init/init.page
 
-$say $(PageNumber)ページ目のデータを保存
-
 # Inventoryデータ取得
     ## インベントリ読み込み
         function api:get.nbt/inventory/

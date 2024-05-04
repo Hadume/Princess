@@ -10,3 +10,12 @@
 # @internal
  #declare objective InventoryUI.Slot
  #declare objective InventoryUI.Loop
+
+#> Tags
+# @internal
+ #declare tag UI.ComRequest
+
+#> function
+# @within
+#   function inv.ui:pages/_/com/trade/**
+ #declare function inv.ui:pages/_/com/player.select/

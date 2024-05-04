@@ -15,6 +15,8 @@
         execute if score @s InventoryUI.Page matches 0..99 run function inv.ui:pages/branch/menu
     ## storage
         execute if score @s InventoryUI.Page matches 500..599 run function inv.ui:pages/branch/storage
+    ## communicate
+        execute if score @s InventoryUI.Page matches 700..799 run function inv.ui:pages/branch/com
 
 # 終了処理
     ## ストレージ削除
