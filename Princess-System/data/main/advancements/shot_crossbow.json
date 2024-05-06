@@ -3,8 +3,5 @@
         "trigger": {
             "trigger": "shot_crossbow"
         }
-    },
-    "rewards": {
-        "function": "main:advancements/shot_crossbow"
     }
 }

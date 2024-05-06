@@ -1,6 +1,6 @@
 #> main:advancements/inventory_changed
 # インベントリーを更新した
-# @within advancement main:inventory_changed
+# @within function main:tick/player
 
 ## 
   data modify storage main: InventoryChanged set value 1b

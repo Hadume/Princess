@@ -1,6 +1,6 @@
 #> main:advancements/shot_crossbow
 # クロスボウを撃った
-# @within advancement main:shot_crossbow
+# @within function main:tick/player
 
 ## 
   data modify storage main: ShotCrossbow set value 1b
