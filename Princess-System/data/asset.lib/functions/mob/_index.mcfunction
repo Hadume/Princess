@@ -3,9 +3,7 @@
 # @within 
 
 #> Storage
-# @within *
-#   asset:mob/*/**
-#   asset.lib:mob/**
+# @public
  #declare storage asset:mob
 #> Tags.Public
 # @public

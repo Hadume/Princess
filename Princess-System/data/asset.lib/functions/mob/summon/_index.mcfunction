@@ -6,7 +6,7 @@
 # @within *
 #   asset:mob/*/summon/*
 #   asset.lib:mob/summon/**
- #declare tag Init
+ #declare tag MOB.Init
 #> Tag.Flag
 # @within *
 #   asset.lib:mob/**
