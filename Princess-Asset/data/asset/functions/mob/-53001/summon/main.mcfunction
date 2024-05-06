@@ -3,7 +3,7 @@
 # @within function asset:mob/-53001/summon/
 
 ## 元になるEntityを召喚
-  summon zombie ~ ~ ~ {Tags:["Init"]}
+  summon zombie ~ ~ ~ {Tags:["MOB.Init"]}
 ## 名前; JsonText
   data modify storage asset:mob Name set value '{"text":"ゾンビ"}'
 ## タイプ; String; ["Enemy"]
@@ -45,7 +45,7 @@
     data modify storage asset:mob Status.Speed set value 0
   ### 運
     #data modify storage asset:mob Status.Luck set value 1
-## NBT
+## NBT; Compound
   #data modify storage asset:mob NBT set value {}
 ## MOBを生成
   function asset.lib:mob/summon/check.condition

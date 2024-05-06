@@ -12,10 +12,10 @@
   execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.MP run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:mob Status.MP","italic": true,"color": "red"}]
   execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Speed run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:mob Status.Speed","italic": true,"color": "red"}]
   ### 
-    execute if data storage asset:temp Error as @e[tag=Init,limit=1] at @s run tp @s ~ -3000 ~
-    execute if data storage asset:temp Error as @e[tag=Init,limit=1] run kill @s
+    execute if data storage asset:temp Error as @e[tag=MOB.Init,limit=1] at @s run tp @s ~ -3000 ~
+    execute if data storage asset:temp Error as @e[tag=MOB.Init,limit=1] run kill @s
 ## 足りていたら
-  execute unless data storage asset:temp Error as @e[tag=Init,limit=1] run function asset.lib:mob/summon/main
+  execute unless data storage asset:temp Error as @e[tag=MOB.Init,limit=1] run function asset.lib:mob/summon/main
 ## Storageを削除
   data remove storage asset:mob Name
   data remove storage asset:mob Type
