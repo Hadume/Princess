@@ -56,6 +56,7 @@
     scoreboard objectives add CT.Offhand dummy
     scoreboard objectives add CT.OffhandS dummy
   ### 
+    scoreboard objectives add Spawner.Delay dummy
     scoreboard objectives add ID.Asset dummy
     scoreboard objectives add ID.DmgFlag dummy
 #> ScoreHolder
