@@ -1,8 +1,8 @@
-#>  inv.ui:pages/_/com/trade/select/remove.hotbar.loop
+#> inv.ui:pages/_/com/player.select/remove.hotbar.loop
 # 
 # @within
-#   function inv.ui:pages/_/com/trade/**
-#   function inv.ui:pages/_/com/trade/select/remove.hotbar.loop
+#   function inv.ui:pages/_/com/player.select/select.player
+#   function inv.ui:pages/_/com/player.select/remove.hotbar.loop
 
 # 探索準備
     ## データを探索データ格納
@@ -27,4 +27,4 @@
     ## リストの最後尾を削除
         data remove storage inv.ui: Com.PlayerWork[-1]
     ## データが残っていれば再帰
-        execute if data storage inv.ui: Com.PlayerWork[-1] run function inv.ui:pages/_/com/trade/select/remove.hotbar.loop
+        execute if data storage inv.ui: Com.PlayerWork[-1] run function inv.ui:pages/_/com/player.select/remove.hotbar.loop

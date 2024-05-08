@@ -1,11 +1,11 @@
-#> inv.ui:pages/_/com/trade/select/get.select
+#> inv.ui:pages/_/com/player.select/get.select
 #   選択されたプレイヤーを取得
 #   引数 $(SelectWork) <= inv.ui: Com.PlayerStorage.tag.SkullOwner.Id
 #       data:player SetWork[-1]と$(SelectWork)を比較
 #           inv.ui: Com.SetWorkにはUUIDのみが格納されている
 # @within
-#   function inv.ui:pages/_/com/trade/select/select.player
-#   function inv.ui:pages/_/com/trade/select/get.select
+#   function inv.ui:pages/_/com/player.select/select.player
+#   function inv.ui:pages/_/com/player.select/get.select
 
 # 前処理
     ## 比較データ代入
@@ -23,4 +23,4 @@
             data remove storage inv.ui: Com.Select
             data remove storage inv.ui: Com.SelectWork
     ## まだデータがあれば再帰処理
-        execute if data storage inv.ui: Com.SetWork[-1] run function inv.ui:pages/_/com/trade/select/get.select with storage inv.ui: Com.
+        execute if data storage inv.ui: Com.SetWork[-1] run function inv.ui:pages/_/com/player.select/get.select with storage inv.ui: Com.
