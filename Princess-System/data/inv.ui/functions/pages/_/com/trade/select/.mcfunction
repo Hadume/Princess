@@ -17,7 +17,7 @@
         ### 自身にリクエスト者タグをつける
             tag @s add UI.ComRequest
         ### リクエスト送信(半径nメートル以内のプレイヤー)
-            execute as @a[tag=UI.ComRequest,distance=..2] run function inv.ui:pages/_/com/player.select/
+            execute as @a[tag=!UI.ComRequest,distance=..2] run function inv.ui:pages/_/com/player.select/
     ## アイテムをプレイヤーに代入
         loot replace entity @s inventory.0 27 mine 0 -64 0 minecraft:debug_stick
     ## 個人ストレージ <- シュルカーのitems

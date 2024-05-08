@@ -12,12 +12,12 @@
         data modify storage inv.ui: Com.Select set from storage inv.ui: Com.SetWork[-1]
 
 # データ比較
-    $execute unless data storage inv.ui: {Com:{Select:$(SelectWork)}} run data modify storage inv.ui: Com.SelectedPlayer set from storage inv.ui: Com.PlayerStorage[-1].tag.SkullOwner.Id
+    $execute unless data storage inv.ui: {Com:{Select:$(SelectWork)}} run data modify storage inv.ui: Com.SelectedPlayer set from storage inv.ui: Com.PersonalStorage[-1].tag.SkullOwner.Id
 
 # 再帰処理
     ## データ削除
         ### 比較データ
-            data remove storage inv.ui: Com.PlayerStorage[-1]
+            data remove storage inv.ui: Com.PersonalStorage[-1]
             data remove storage inv.ui: Com.SetWork[-1]
         ### 比較用変数
             data remove storage inv.ui: Com.Select
