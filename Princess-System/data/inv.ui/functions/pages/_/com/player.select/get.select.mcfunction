@@ -1,8 +1,8 @@
 #> inv.ui:pages/_/com/player.select/get.select
 #   選択されたプレイヤーを取得
-#   引数 $(SelectWork) <= inv.ui: Com.PlayerStorage.tag.SkullOwner.Id
+#   引数 $(SelectWork) <= inv.ui: Com.PlayerStorage.tag.PlayerID
 #       data:player SetWork[-1]と$(SelectWork)を比較
-#           inv.ui: Com.SetWorkにはUUIDのみが格納されている
+#           inv.ui: Com.SetWorkにはPlayerIDのみが格納されている
 # @within
 #   function inv.ui:pages/_/com/player.select/select.player
 #   function inv.ui:pages/_/com/player.select/get.select
@@ -12,7 +12,7 @@
         data modify storage inv.ui: Com.Select set from storage inv.ui: Com.SetWork[-1]
 
 # データ比較
-    $execute unless data storage inv.ui: {Com:{Select:$(SelectWork)}} run data modify storage inv.ui: Com.SelectedPlayer set from storage inv.ui: Com.PersonalStorage[-1].tag.SkullOwner.Id
+    $execute unless data storage inv.ui: {Com:{Select:$(SelectWork)}} run data modify storage inv.ui: Com.SelectedPlayer set from storage inv.ui: Com.PersonalStorage[-1].tag.PlayerID
 
 # 再帰処理
     ## データ削除

@@ -23,7 +23,7 @@
 
 # 更新処理
     ## ホットバーのアイテムではなかったら、リストに追加
-        execute if data storage inv.ui: {Com:{PlayerFlag:0b}} run data modify storage inv.ui: Com.SetWork append from storage inv.ui: Com.PlayerWork[-1].tag.SkullOwner.Id
+        execute if data storage inv.ui: {Com:{PlayerFlag:0b}} run data modify storage inv.ui: Com.SetWork append from storage inv.ui: Com.PlayerWork[-1].tag.PlayerID
     ## リストの最後尾を削除
         data remove storage inv.ui: Com.PlayerWork[-1]
     ## データが残っていれば再帰

@@ -19,6 +19,20 @@
               }
             },
             {
+              "function": "minecraft:copy_nbt",
+              "source": {
+                "type": "minecraft:storage",
+                "source": "inv.ui:"
+              },
+              "ops": [
+                {
+                  "source": "Com.PlayerID",
+                  "target": "PlayerID",
+                  "op": "replace"
+                }
+              ]
+            },
+            {
               "function": "minecraft:set_nbt",
               "tag": "{UiItem:1b}"
             }

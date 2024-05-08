@@ -15,7 +15,7 @@
         data remove storage inv.ui: Com.SelectedPlayer
         data remove storage inv.ui: Com.Select
         data modify storage inv.ui: Com.PersonalStorage set from storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Com.Player
-        data modify storage inv.ui: Com.SelectWork set from storage inv.ui: Com.PersonalStorage[-1].tag.SkullOwner.Id
+        data modify storage inv.ui: Com.SelectWork set from storage inv.ui: Com.PersonalStorage[-1].tag.PlayerID
         function inv.ui:pages/_/com/player.select/get.select with storage inv.ui: Com.
     ## データ削除
         data remove storage inv.ui: Com.PlayerWork
