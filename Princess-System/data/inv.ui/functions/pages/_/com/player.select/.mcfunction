@@ -1,7 +1,7 @@
 #> inv.ui:pages/_/com/player.select/
 # 
 # @within 
-say 関数がほかのプレイヤーによって呼び出されたよ！
+
 # プレイヤーヘッドをエンダーチェストに生成
     loot replace entity @s enderchest.0 loot inv.ui:communicate/get.player_head
 
