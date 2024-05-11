@@ -12,4 +12,5 @@
     scoreboard players set @a InventoryUI.ItemStorage.PageLimit 5
 
 # 個人ストレージの削除
-    #data remove storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Storage
+    ## アイテムストレージ(危険！)
+        #data remove storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Storage

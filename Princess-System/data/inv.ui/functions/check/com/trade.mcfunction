@@ -9,5 +9,8 @@
 # プレイヤーセレクトチェック
     execute if predicate inv.ui:check/any/back run function inv.ui:pages/_/com/player.select/select.player
 
+# 個人ストレージ削除
+    execute unless predicate inv.ui:check/any/back run data remove storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Com.Player
+
 # 遷移
     function inv.ui:pages/

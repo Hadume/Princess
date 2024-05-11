@@ -8,6 +8,10 @@
 # ストレージページ初期化
     scoreboard players set @s InventoryUI.ItemStorage.Page 0
 
+# 個人ストレージ削除
+    ## コミュニケートセレクト
+        data remove storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Com.Player
+
 # Moveスコアリセット
     scoreboard players reset @s InventoryUI.Player.Moving
 

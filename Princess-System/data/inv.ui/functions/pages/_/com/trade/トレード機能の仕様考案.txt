@@ -47,3 +47,16 @@ UUIDではなくPlayerIDの数値を用いて再帰で確認、#UI.Com Tempに�
 execute if score @a PlayerID = #UI.Com Temp で実行者特定
 
 ----------
+
+トレードするプレイヤー同士をどうやって判定する？
+1. プレイヤー同士に一意のトレードIDを持たせて、同じトレードIDのプレイヤー同士をトレードさせる
+　もし数値が衝突したら？ -> execute as @a if score @s InventoryUI.TradeID matchese XXX run scoreboard players add #dummy Temp 1 で人数確認してみる？
+
+2. お互いの個人ストレージにお互いのPlayerIDを持たせて通信させる方法。 -> これお互いのインベントリを更新するときにちょっとめんどい可能性ある
+
+[1,2,3,4,5]
+[1,2,4,5]
+
+execute store success で数値の比較
+data modify でストレージの中身が書き換えられなかった = 戻り値が0 -> 一致
+マクロ抜きでつくりなおす。
