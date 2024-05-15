@@ -60,3 +60,11 @@ execute if score @a PlayerID = #UI.Com Temp で実行者特定
 execute store success で数値の比較
 data modify でストレージの中身が書き換えられなかった = 戻り値が0 -> 一致
 マクロ抜きでつくりなおす。
+
+----------
+
+tradeIDをどうにかしてtellrawに仕込みたい！？(無理)
+どうにか送信相手にTradeIDを受け渡す方法を考える。
+
+受信者の個人ストレージに送信者のTradeIDを一旦保存してみる？
+Recastタイムを設定して、一度リクエストを受け取ったら一定時間受け取れないようにする -> 送信者も同じく
