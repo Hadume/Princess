@@ -22,7 +22,7 @@
         data remove storage inv.ui: Com.SetWork
 
 # プレイヤーにリクエスト送信
-    function inv.ui:pages/_/com/player.select/sent.request with storage inv.ui: Com.
+    execute if data storage inv.ui: Com.SelectedPlayer run function inv.ui:pages/_/com/player.select/sent.request with storage inv.ui: Com.
 
 # セレクトプレイヤーデータ削除
     data remove storage inv.ui: Com.SelectedPlayer

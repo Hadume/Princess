@@ -5,6 +5,7 @@
 #> Objective
 # @internal
  #declare objective InventoryUI.TradeID
+ #declare objective InventoryUI.TradeCooldown
 
 #> ScoreHolder
 # @internal
