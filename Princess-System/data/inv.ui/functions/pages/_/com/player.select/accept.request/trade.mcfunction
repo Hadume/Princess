@@ -13,4 +13,4 @@
     scoreboard players reset @s InventoryUI.TradeAccept
 
 # ページ遷移
-    function inv.ui:pages/
+    execute as @a if score @s InventoryUI.TradeID = #InventoryUI.Com InventoryUI.TradeID run function inv.ui:pages/

@@ -14,3 +14,6 @@
 # 個人ストレージの削除
     ## アイテムストレージ(危険！)
         #data remove storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Storage
+
+# ページ遷移
+    function inv.ui:pages/

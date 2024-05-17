@@ -15,6 +15,8 @@
     ## 操作UI
         ### back
             function inv.ui:asset/any/back 
+        ### ready
+            function inv.ui:asset/com/ready
     ## 枠
         item replace entity @s inventory.4 with black_stained_glass_pane{display:{Name:'[{"text":""}]'},UiItem:1b}
         item replace entity @s inventory.8 with black_stained_glass_pane{display:{Name:'[{"text":""}]'},UiItem:1b}

@@ -17,10 +17,11 @@
         ### 自身にリクエスト者タグをつける
             tag @s add UI.ComRequest
         ### プレイヤーヘッドを生成(半径nメートル以内のプレイヤー)
-            execute as @a[tag=UI.ComRequest,distance=..2] run function inv.ui:pages/_/com/player.select/player/insert.player_head
+            execute as @a[tag=!UI.ComRequest,distance=..2] run function inv.ui:pages/_/com/player.select/player/insert.player_head
     ## アイテムをプレイヤーに代入
         loot replace entity @s inventory.0 27 mine 0 -64 0 minecraft:debug_stick
     ## 個人ストレージ <- シュルカーのitems
+        function data.player:please
         data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Com.Player set from block 0 -64 0 Items
     ## タグ削除
         tag @s remove UI.ComRequest
