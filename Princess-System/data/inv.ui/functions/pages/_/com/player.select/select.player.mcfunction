@@ -1,6 +1,6 @@
 #> inv.ui:pages/_/com/player.select/select.player
 # 
-# @within function inv.ui:check/com/trade
+# @within function inv.ui:check/com/player.select
 
 # ストレージにデータ代入
     ## 現在のインベントリ

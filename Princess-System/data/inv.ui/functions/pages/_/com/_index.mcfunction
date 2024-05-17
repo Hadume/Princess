@@ -10,3 +10,9 @@
 #> ScoreHolder
 # @internal
  #declare score_holder #InventoryUI.Com
+
+#> Tags
+# @internal
+ #declare tag UI.InTrade
+ #declare tag UI.TradeMaster
+ #declare tag UI.TradeSync
