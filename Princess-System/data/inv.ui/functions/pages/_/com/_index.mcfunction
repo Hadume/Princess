@@ -16,3 +16,4 @@
  #declare tag UI.InTrade
  #declare tag UI.TradeMaster
  #declare tag UI.TradeSync
+ #declare tag UI.TradeReady

@@ -5,6 +5,9 @@
 # check
     ## 戻る
         execute unless predicate inv.ui:check/any/back run scoreboard players set @s InventoryUI.Page 70
+        execute unless predicate inv.ui:check/any/back run function inv.ui:pages/_/com/trade/_/destruct
+    ## トレード準備完了
+        execute unless predicate inv.ui:check/com/trade/ready run function inv.ui:pages/_/com/trade/_/ready
 
 # アイテム更新
     execute if predicate inv.ui:check/any/back run function inv.ui:pages/_/com/trade/_/sync

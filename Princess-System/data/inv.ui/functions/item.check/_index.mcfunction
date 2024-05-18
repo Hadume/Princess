@@ -11,5 +11,5 @@
  #declare objective InventoryUI.Slot
 
 #> Tags
-# @within * inv.ui:item.check/page/*
+# @within * inv.ui:item.check/page/**
  #declare tag Item.Return

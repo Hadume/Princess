@@ -17,9 +17,11 @@
             function inv.ui:asset/any/back 
         ### ready
             function inv.ui:asset/com/ready
+    ## 準備表示
+        execute if entity @s[tag=!UI.TradeReady] run item replace entity @s inventory.18 with red_stained_glass_pane{display:{Name:'[{"text":"UnReady..."}]'},UiItem:1b}
+        execute if entity @s[tag=UI.TradeReady] run item replace entity @s inventory.18 with lime_stained_glass_pane{display:{Name:'[{"text":"Ready!"}]'},UiItem:1b}
+        item replace entity @s inventory.26 with red_stained_glass_pane{display:{Name:'[{"text":"UnReady..."}]'},UiItem:1b}
     ## 枠
         item replace entity @s inventory.4 with black_stained_glass_pane{display:{Name:'[{"text":""}]'},UiItem:1b}
         item replace entity @s inventory.8 with black_stained_glass_pane{display:{Name:'[{"text":""}]'},UiItem:1b}
-        item replace entity @s inventory.18 with black_stained_glass_pane{display:{Name:'[{"text":""}]'},UiItem:1b}
         item replace entity @s inventory.22 with black_stained_glass_pane{display:{Name:'[{"text":""}]'},UiItem:1b}
-        item replace entity @s inventory.26 with black_stained_glass_pane{display:{Name:'[{"text":""}]'},UiItem:1b}

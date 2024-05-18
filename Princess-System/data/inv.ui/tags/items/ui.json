@@ -20,7 +20,8 @@
 
         "minecraft:book",
 
-        "minecraft:compass"
+        "minecraft:compass",
+        "lime_stained_glass_pane"
         
     ]
 }

@@ -18,6 +18,7 @@
     scoreboard players set @a InventoryUI.MaterialStorage.Page 0
     scoreboard players set @a InventoryUI.ItemStorage.PageLimit 5
     scoreboard players set #InventoryUI.Com InventoryUI.TradeID 0
+    tag @a remove UI.TradeReady
 
 # load text
     tellraw @a {"text":"loaded Inventory UI"}

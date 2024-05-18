@@ -8,6 +8,8 @@
 
 # 返品処理
     execute if score @s InventoryUI.Page matches 0..70 run function inv.ui:item.check/page/any
+    execute if score @s InventoryUI.Page matches 711 run function inv.ui:item.check/page/any
+    execute if score @s InventoryUI.Page matches 7712 run function inv.ui:item.check/page/com/trade
 
 # ストレージ削除
     data remove storage inv.ui: Player.
