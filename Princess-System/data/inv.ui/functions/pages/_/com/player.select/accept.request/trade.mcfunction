@@ -12,5 +12,8 @@
 # トリガースコアリセット
     scoreboard players reset @s InventoryUI.TradeAccept
 
+# プレイヤートレードキャッシュ初期化
+    execute as @a if score @s InventoryUI.TradeID = #InventoryUI.Com InventoryUI.TradeID run function inv.ui:pages/_/com/trade/player/init
+
 # ページ遷移
     execute as @a if score @s InventoryUI.TradeID = #InventoryUI.Com InventoryUI.TradeID run function inv.ui:pages/

@@ -30,11 +30,6 @@
             item replace entity @s inventory.23 from entity @a[tag=UI.TradeSync,limit=1] inventory.19
             item replace entity @s inventory.24 from entity @a[tag=UI.TradeSync,limit=1] inventory.20
             item replace entity @s inventory.25 from entity @a[tag=UI.TradeSync,limit=1] inventory.21
-    ## ready表示
-        ### 相手
-            execute if entity @s[tag=UI.TradeReady] run item replace entity @a[tag=UI.TradeSync,limit=1] inventory.26 with lime_stained_glass_pane{display:{Name:'[{"text":"Ready!"}]'},UiItem:1b}
-        ### 自分
-            execute if entity @a[tag=UI.TradeSync,tag=UI.TradeReady,limit=1] run item replace entity @s inventory.26 with lime_stained_glass_pane{display:{Name:'[{"text":"Ready!"}]'},UiItem:1b}
 
 # トレードプレビューアイテムにタグを付与
     #item modify entity @s inventory.5 inv.ui:any/set.uiitem
@@ -47,4 +42,5 @@
     #item modify entity @s inventory.24 inv.ui:any/set.uiitem
     #item modify entity @s inventory.25 inv.ui:any/set.uiitem
 
-tag @a remove UI.TradeSync
+# タグ削除
+    tag @a remove UI.TradeSync
