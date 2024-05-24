@@ -4,3 +4,4 @@
 
 # タグ削除
     tag @s remove UI.TradeReady
+    tag @s remove UI.TradeSync
