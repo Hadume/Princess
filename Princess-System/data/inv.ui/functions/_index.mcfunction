@@ -3,13 +3,13 @@
 # @within 
 
 #> Objectives
-# @within * **
+# @internal
  #declare objective InventoryUI.Page
 
 #> storage
-# @within * **
+# @internal
  #declare storage inv.ui:
 
 #> tag.item
-# @within * **
+# @internal
  #declare tag/item inv.ui:ui
