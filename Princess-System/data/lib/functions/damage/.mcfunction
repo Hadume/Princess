@@ -16,17 +16,15 @@
   scoreboard players operation #DEF.Copy Temp /= #2^2 Const
   scoreboard players operation #Damage Temp /= #2 Const
   scoreboard players operation #Damage Temp -= #DEF.Copy Temp
+## ダメージを蓄積しておく
+  scoreboard players operation #StoredDamage Lib += #Damage Temp
 ## HPを減らす
   scoreboard players operation @s HP -= #Damage Temp
 ## 体力を更新
   function lib:status/hp/update/
 ## ダメージ表示
-  ### 表示を拡散
-    data modify storage lib: Spread.Amount set value [0.1d,0.0d]
-    function lib:spread/
-  ### 表示用Entity
-    loot spawn ^ ^ ^ loot lib:damage/motion
-    execute as @e[type=item,nbt={Item:{tag:{Lib:{Damage:1b,Init:1b}}}}] run function lib:damage/display
+  loot spawn ^ ^ ^ loot lib:damage/motion
+  execute as @e[type=item,nbt={Item:{tag:{Lib:{Damage:1b,Init:1b}}}}] at @s run function lib:damage/display
 ## 回復
   execute if entity @s[type=!#mob:undead] run effect give @s instant_health 1 200 true
   execute if entity @s[type=#mob:undead] run effect give @s instant_damage 1 200 true

@@ -1,6 +1,6 @@
 #> api:get.nbt/_index
 # 
-# @within 
+# @private
 
 #> ScoreHolder
 # @within function api:get.nbt/**

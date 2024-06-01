@@ -5,7 +5,9 @@
 ## スポナー
   execute as @e[type=marker,tag=Spawner] at @s run function asset.lib:spawner/tick/
 ## 魔法常時実行
-  execute as @e[type=armor_stand,tag=Spell] at @s run function asset.lib:magic/tick
+  execute as @e[type=armor_stand,tag=Spell] at @s run function asset.lib:magic/tick/spell/
+## 魔法
+  function #asset:magic/tick/
 ## プレイヤーで常時実行
   execute as @a at @s run function main:tick/player
 ## MOBで常時実行

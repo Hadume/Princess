@@ -1,7 +1,7 @@
 #> asset.lib:_index
 # 
-# @within 
+# @private
 
 #> storage.internal
-# @internal
+# @public
  #declare storage asset:temp

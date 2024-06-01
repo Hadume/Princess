@@ -1,6 +1,6 @@
 #> lib:_index
 # 
-# @within 
+# @private
 
 #> Storage.Public
 # @public

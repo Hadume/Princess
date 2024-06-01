@@ -7,8 +7,10 @@
 ## 進捗
   execute if entity @s[advancements={main:inventory_changed=true}] run function main:advancements/inventory_changed
   execute if entity @s[advancements={main:shot_crossbow=true}] run function main:advancements/shot_crossbow
+## 魔法
+  function asset.lib:magic/tick/player/
 ## 魔法のクールタイム
-  execute if predicate asset.lib:cooltime run function asset.lib:magic/cooltime
+  execute if predicate asset.lib:cooltime run function player:reduce.cooltime
 ## MP,HPの回復
   execute if entity @s[scores={MP.Rcvr.Timer=1..}] run function lib:status/mp/recover/tick
   execute if entity @s[scores={HP.Rcvr.Timer=1..}] run function lib:status/hp/recover/tick

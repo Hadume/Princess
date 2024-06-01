@@ -1,6 +1,6 @@
 #> asset.lib:magic/cast/_index
 # 
-# @within 
+# @private
 
 #> Tags.Public
 # @public
@@ -15,5 +15,6 @@
 #> ScoreHolder
 # @within function
 #   asset.lib:magic/cast/**
-#   asset:magic/*/cast/check.mp
- #declare score_holder #MagicMP
+#   asset:magic/*/cast/*
+ #declare score_holder #Magic.MP
+ #declare score_holder #Magic.Multiple

@@ -1,6 +1,6 @@
 #> asset.lib:item/_index
 # 
-# @within 
+# @private
 
 #> Storage
 # @within function

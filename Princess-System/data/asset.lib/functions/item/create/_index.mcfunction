@@ -1,6 +1,6 @@
 #> asset.lib:item/create/_index
 # 
-# @within 
+# @private
 
 #> ScoreHolder
 # @within function
