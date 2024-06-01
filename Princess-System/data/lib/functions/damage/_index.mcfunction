@@ -1,6 +1,6 @@
 #> lib:damage/_index
 # 
-# @within 
+# @private
 
 #> ScoreHolder
 # @public

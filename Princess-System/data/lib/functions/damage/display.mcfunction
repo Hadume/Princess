@@ -2,8 +2,9 @@
 # 
 # @within function lib:damage/
 
-## 座標を代入
-  data modify entity @s Pos set from storage lib: Spread.At1
+## 表示を拡散
+  data modify storage lib: Spread.Amount set value [0.1d,0.2d]
+  function lib:spread/
 ## NBTを変更
   data modify entity @s PickupDelay set value 32767s
   data modify entity @s CustomNameVisible set value 1b

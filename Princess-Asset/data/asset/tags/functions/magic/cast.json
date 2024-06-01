@@ -1,5 +1,14 @@
 {
     "values": [
-        "asset:magic/52001/cast/"
+        "asset:magic/52101/cast/",
+        "asset:magic/52102/cast/",
+        "asset:magic/52201/cast/",
+        "asset:magic/52202/cast/",
+        "asset:magic/52301/cast/",
+        "asset:magic/52302/cast/",
+        "asset:magic/52401/cast/",
+        "asset:magic/52402/cast/",
+        "asset:magic/52501/cast/",
+        "asset:magic/52502/cast/"
     ]
 }

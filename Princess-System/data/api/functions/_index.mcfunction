@@ -1,6 +1,6 @@
 #> api:_index
 # 
-# @within 
+# @private
 
 #> Storage
 # @public

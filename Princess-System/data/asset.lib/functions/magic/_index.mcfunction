@@ -1,6 +1,6 @@
 #> asset.lib:magic/_index
 # 
-# @within 
+# @private
 
 #> Storage
 # @within function
