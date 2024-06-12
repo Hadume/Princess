@@ -6,12 +6,14 @@
 #> Tags
 # @private
  #declare tag Pos
+
 ## リストの何番目を選択するか
   execute store result score #List.Length Temp if data storage asset:temp dataCopy.Data[]
   execute store result score #Rand Temp run random value 1..
   scoreboard players operation #Rand Temp %= #List.Length Temp
   execute if score #Rand Temp matches 1.. run function asset.lib:spawner/spawn/select.list.loop
 ## 座標を算出
+  data remove storage lib: Spread.At
   data modify storage lib: Spread.Amount set value [0.0f,0.0f]
   data modify storage lib: Spread.Amount[0] set from storage asset:temp dataCopy.Range
   data modify storage lib: Spread.Amount[1] set from storage asset:temp dataCopy.Range

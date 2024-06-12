@@ -5,6 +5,7 @@
 #> ScoreHolder
 # @private
  #declare score_holder #Exp.Per
+
 ## 経験値バーをリセット
   experience set @s 40 levels
   experience set @s 0 points
@@ -34,7 +35,7 @@
     execute if score #Exp.Per Temp matches -1073741824..-1 run experience add @s 3 points
     execute if score #Exp.Per Temp matches ..-1073741825 run experience add @s 2 points
     execute if score #Exp.Per Temp matches 1073741824.. run experience add @s 1 points
-## 一時使用ScoreHolderをリセット
-  scoreboard players reset #Exp.Per
 ## レベルを表示
   function api:display/level
+## 一時使用ScoreHolderをリセット
+  scoreboard players reset #Exp.Per

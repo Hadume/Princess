@@ -1,10 +1,12 @@
 #> lib:status/hp/update/
 # 
-# @public
+# @input as entity
+# @api
 
 #> ScoreHolder
 # @within function lib:status/hp/update/*
  #declare score_holder #HP.Copy
+
 ## 体力をコピー
   scoreboard players operation #HP.Copy Temp = @s HP
 ## 体力が0以下だったら

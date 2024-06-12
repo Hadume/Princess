@@ -1,10 +1,11 @@
 #> lib:status/speed/update
 # スピードを更新
-# @public
+# @api
 
 #> ScoreHolder
 # @private
  #declare score_holder #Speed.Copy
+
 ## スピードをリセット
   attribute @s generic.movement_speed base set 0
   attribute @s generic.movement_speed modifier remove d73e9ff7-9063-4380-8736-00001

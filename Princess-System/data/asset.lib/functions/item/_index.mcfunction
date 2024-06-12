@@ -3,8 +3,8 @@
 # @private
 
 #> Storage
-# @within function
+# @within *
 #   asset:item/*/**
 #   asset.lib:item/**
-# @within loot_table asset.lib:item/**
+#   asset.lib:mob/summon/equipments/*
  #declare storage asset:item

@@ -1,38 +1,24 @@
 #> lib:range/
 # 
-# @public
-# @input storage
-#   lib: Range.Amount
-#   lib: Range.Pierce
-#   lib: Range.Target
+# @input
+#   as entity
+#   storage lib:
+#     Range.Amount : float
+#     Range.Pierce : int
+#     Range.Targets? : [String] @ ..2
 # @output
 #   tag Lib.InRange
-#   lib: Range.Pierce
+#   storage lib: Range.Pierced : int
+# @api
 
-## 座標取得
-  function api:get.nbt/pos/
-  data modify storage lib:temp Pos set from storage api: Pos
-## 範囲^2
-  scoreboard players operation #Range Lib *= #Range Lib
-## 攻撃する対象を特定
-  tag @s add This
-  execute if data storage lib: {Range:{Target:["Enemy"]}} as @e[type=#mob:living,tag=Enemy,distance=..16,sort=nearest,limit=1] at @s run function lib:range/loop/
-  execute if data storage lib: {Range:{Target:["Player"]}} as @p[distance=..16] at @s run function lib:range/loop/
-  tag @s remove This
-## 一時使用ScoreHolderをリセット
-  scoreboard players reset #Range
-  scoreboard players reset #Pos.X1
-  scoreboard players reset #Pos.Y1
-  scoreboard players reset #Pos.Z1
-  scoreboard players reset #Pos.X2
-  scoreboard players reset #Pos.Y2
-  scoreboard players reset #Pos.Z2
-  scoreboard players reset #Pos.X3
-  scoreboard players reset #Pos.Y3
-  scoreboard players reset #Pos.Z3
-  scoreboard players reset #Size.X
-  scoreboard players reset #Size.Y
+## 引数の確認
+  execute store success storage lib:temp Error byte 1 unless data storage lib: Range.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "Range.Amount"}]
+  execute store success storage lib:temp Error byte 1 unless data storage lib: Range.Pierce run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "Range.Pierce"}]
+## 
+  execute unless data storage lib:temp Error run function lib:range/main
+## 引数を削除
+  data remove storage lib: Range.Amount
+  data remove storage lib: Range.Pierce
+  execute if data storage lib: Range.Targets run data remove storage lib: Range.Targets
 ## 一時使用Storageを削除
-  data remove storage lib: Range
-  data remove storage lib:temp Pos
-  data remove storage lib:temp Pos1
+  data remove storage lib:temp Error

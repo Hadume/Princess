@@ -1,6 +1,6 @@
 #> asset.lib:magic/action/damage/entity
 # 
-# @within function asset.lib:magic/action/damage/
+# @within function asset.lib:magic/action/damage/main
 
 ## 個人ストレージを呼ぶ
   function data.entity:please
@@ -10,6 +10,8 @@
 ## 防御力を取得
   scoreboard players operation #Lib.DEF Lib = @s DEF
 ## ダメージを与える
-  execute anchored eyes run function lib:damage/
+  execute at @s anchored eyes run function lib:damage/
+## ダメージを保存
+  scoreboard players operation #StoredDamage Temp += #Lib.Damage Lib
 ## ダメージ表示
   damage @s 0.00000000000000001 out_of_world by @e[tag=This,limit=1]

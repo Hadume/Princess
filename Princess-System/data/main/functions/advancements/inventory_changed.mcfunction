@@ -5,7 +5,7 @@
 ## 
   data modify storage main: InventoryChanged set value 1b
 ## インベントリーを取得
-  function api:get.nbt/inventory/
+  function api:get.nbt/inventory
 ## 効果反映
   function player:stats/armor
 ## オフハンドにアイテムがあったら

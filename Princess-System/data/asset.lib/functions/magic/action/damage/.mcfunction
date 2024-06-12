@@ -1,18 +1,23 @@
 #> asset.lib:magic/action/damage/
 # 
-# @within asset:magic/*/*/**
+# @input
+#   as entity
+#   storage asset:magic
+#     Amount : int
+#     CasterID? : int
+#     Elements? : String
+# @output storage asset:magic SroredDamage
+# @within function
+#   asset:magic/*/*/**
+#   asset.lib:magic/action/range/main
 
-## 魔法データをコピー
-  execute if entity @s[tag=Spell] run function data.entity:please
-  execute if entity @s[tag=Spell] run data modify storage asset:temp Magic set from storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Magic
-## 攻撃力
-  execute store result score #Lib.ATK Lib run data get storage asset:temp Magic.Amount
-## 
-  tag @s add This
-  execute as @e[tag=Lib.InRange] at @s run function asset.lib:magic/action/damage/entity
-  tag @s remove This
-## パーティクル表示
-  execute if data storage asset:temp {Magic:{Element:"Flamme"}} as @e[tag=Lib.InRange] at @s run particle dust 0.75 0.25 0.25 1 ~ ~1 ~ 0.25 0.5 0.25 0 25
-  execute if data storage asset:temp {Magic:{Element:"Wasser"}} as @e[tag=Lib.InRange] at @s run particle dust 0.5 0.5 0.9 1 ~ ~1 ~ 0.25 0.5 0.25 0 25
+## 引数の確認
+  execute store success storage asset:temp Error byte 1 unless data storage asset:magic Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:magic Amount"}]
+## 実行
+  execute unless data storage asset:temp Error run function asset.lib:magic/action/damage/main
+## 引数を削除
+  data remove storage asset:magic Amount
+  data remove storage asset:magic CasterID
+  execute if data storage asset:magic Elements run data remove storage asset:magic Elements
 ## 一時使用Storageを削除
-  data remove storage asset:temp Magic
+  execute if data storage asset:temp Error run data remove storage asset:temp Error

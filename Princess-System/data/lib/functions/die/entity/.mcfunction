@@ -2,18 +2,19 @@
 # 
 # @within function lib:die/
 
-#> ScoreHolder
+#> ScoreHolder.Temp
 # @within function lib:die/entity/**
  #declare score_holder #Exp.Copy
  #declare score_holder #Money.Copy
  #declare score_holder #ID.Copy
-#> Tags
+#> Tags.Temp
 # @within function lib:die/entity/**
  #declare tag Looted
+
 ## データ変更
-  data modify entity @s PersistenceRequired set value 0b
-  data modify entity @s CustomNameVisible set value 0b
   data modify entity @s CustomName set value ''
+  data modify entity @s CustomNameVisible set value 0b
+  data modify entity @s PersistenceRequired set value 0b
 ## スコアをコピー
   scoreboard players operation #Exp.Copy Temp = @s Exp
   scoreboard players operation #Money.Copy Temp = @s Money
@@ -33,3 +34,5 @@
   scoreboard players reset #Exp.Copy Temp
   scoreboard players reset #Money.Copy Temp
   scoreboard players reset #ID.Copy
+## 一時使用Storageを削除
+  data remove storage lib:temp AttackBy

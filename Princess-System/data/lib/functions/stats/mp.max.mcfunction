@@ -1,6 +1,7 @@
 #> lib:stats/mp.max
 # 最大魔力
-# @public
+# @input as entity
+# @api
 
 ## 個人ストレージ
   function data:please

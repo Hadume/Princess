@@ -2,6 +2,12 @@
 # 
 # @within function lib:stats/*
 
+#> ScoreHolder
+# @within function lib:stats/common/**
+ #declare score_holder #Amount.Stored
+ #declare score_holder #Amount.Stored.1
+ #declare score_holder #Amount.Stored.2
+
 ## 装備ごとに数値を取得
   function lib:stats/common/get.amount.loop
 ## 元の値に*100%を加算

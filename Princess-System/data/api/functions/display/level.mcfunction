@@ -5,6 +5,7 @@
 #> ScoreHolder
 # @private
  #declare score_holder #Level.Copy
+
 ## 経験値バーをリセット
   experience set @s 0 levels
 ## レベルをコピー

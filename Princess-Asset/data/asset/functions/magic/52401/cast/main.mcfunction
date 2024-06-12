@@ -1,28 +1,16 @@
 #> asset:magic/52401/cast/main
 # 
-# @within function asset:magic/52401/cast/check.mp
+# @within function asset:magic/52401/cast/check.condition
 
-## 魔法名; JsonText
-  data modify storage asset:magic Name set value '{"text":"ルシフェル","color":"red"}'
-## 音を鳴らす
-  #execute at @s run playsound entity.generic.splash master @s ~ ~ ~ 0.5 1
-  #execute at @s run playsound block.bubble_column.upwards_ambient master @s ~ ~ ~ 0.5 2
-## タイプを設定
-  ### クールタイム; Int
-    data modify storage asset:magic CoolTime set value 200
-  ### 対象; List.String; ["Enemy", "Player"]
-    data modify storage asset:magic Target set value ["Player"]
-  ### 
-    data modify storage asset:magic Duration set value 200
-  ### 発射数; Int
-    execute unless score #Magic.Multiple Asset = #Magic.Multiple Asset run scoreboard players set #Magic.Multiple Asset 1
-  ### 貫通数; Int (任意)
-    data modify storage asset:magic Pierce set value 1
-  ### 属性; String; ["Flamme", "Wasser", "Wind", "Licht", "Dunkel"]; (任意)
-    data modify storage asset:magic Element set value "Licht"
-  ### 範囲; Float; (任意)
-    data modify storage asset:magic Range set value 5.0f
-## 初期化
-  function asset.lib:magic/cast/check.condition
+#> Tags
+# @private
+ #declare tag AEC.Init
+
+## 範囲内のMObを特定
+  function asset.lib:magic/action/range/
 ## 
-  function asset:magic/52401/cast/action with storage asset:magic {}
+  execute as @e[tag=Lib.InRange] at @s run summon area_effect_cloud ~ ~ ~ {effects:[{ambient:1b,amplifier:0b,duration:464,id:"night_vision",show_particles:0b,show_icon:1b}],Duration:4,Age:4,WaitTime:2,Particle:"block air",Tags:["AEC.Init"]}
+  execute as @e[type=area_effect_cloud,tag=AEC.Init] run data modify entity @s effects[{id:"minecraft:night_vision"}].duration set from storage asset:magic Duration
+  execute as @e[type=area_effect_cloud,tag=AEC.Init] run tag @s remove AEC.Init
+## 音
+  execute at @s run playsound entity.player.levelup master @a ~ ~ ~ 1 2
