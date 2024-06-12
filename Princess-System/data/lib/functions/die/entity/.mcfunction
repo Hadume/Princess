@@ -28,6 +28,8 @@
   execute as @a[tag=Looted] run tag @s remove Looted
 ## kill
   kill @s
+## 一時使用Storageを削除
+  data remove storage lib:temp AttackBy
 ## 一時使用ScoreHolderをリセット
   scoreboard players reset #Exp.Copy Temp
   scoreboard players reset #Money.Copy Temp

@@ -6,9 +6,6 @@
 # @private
  #declare tag AEC.Init
 
-## 音を鳴らす
-  #execute at @s run playsound entity.generic.splash master @s ~ ~ ~ 0.5 1
-  #execute at @s run playsound block.bubble_column.upwards_ambient master @s ~ ~ ~ 0.5 2
 ## 範囲内のMObを特定
   function asset.lib:magic/action/range/
 ## 
