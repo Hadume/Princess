@@ -1,5 +1,5 @@
 #> lib:status/hp/recover/tick
-# 
+# 体力回復までの間隔
 # @within function main:tick/player
 
 ## スコアを減らす

@@ -1,12 +1,17 @@
 #> asset.lib:spawner/set/check.condition
 # 
+# @input storage asset:spawner
+#   Data : [{ID : id(asset:mob)}] @ N
+#   Count : int
+#   Delay : int
+#   Range : float
 # @within function asset:spawner/*/set/main
 
 ## 引数が足りてるか確認
-  execute store success storage asset:temp Error byte 1 unless data storage asset:spawner Data run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:spawner Data","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:spawner Count run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:spawner Count","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:spawner Delay run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:spawner Delay","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:spawner Range run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:spawner Range","italic": true,"color": "red"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:spawner Data run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner Data"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:spawner Count run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner Count"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:spawner Delay run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner Delay"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:spawner Range run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner Range"}]
   ### 足りなかったら
     execute if data storage asset:temp Error as @e[tag=Spawner.Init,limit=1] run kill @s
 ## 足りていたら

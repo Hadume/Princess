@@ -1,6 +1,6 @@
 #> asset.lib:mob/_index
 # 
-# @within 
+# @private
 
 #> Storage
 # @public

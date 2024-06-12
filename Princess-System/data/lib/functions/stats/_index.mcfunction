@@ -1,10 +1,7 @@
 #> lib:stats/_index
 # 
-# @within 
+# @private
 
 #> ScoreHolder
 # @within function lib:stats/**
  #declare score_holder #Amount
- #declare score_holder #Amount.Stored
- #declare score_holder #Amount.Stored.1
- #declare score_holder #Amount.Stored.2

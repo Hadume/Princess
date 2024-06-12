@@ -5,6 +5,7 @@
 #> ScoreHolder
 # @private
  #declare score_holder #MP.RcvrPer.Copy
+
 ## 回復値
   scoreboard players operation #MP.RcvrPer.Copy Temp = @s MP.Rcvr.Per
   scoreboard players operation #MP.RcvrPer.Copy Temp *= @s MP.Max

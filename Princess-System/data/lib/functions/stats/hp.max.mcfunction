@@ -1,6 +1,7 @@
 #> lib:stats/hp.max
 # 最大体力
-# @public
+# @input as entity
+# @api
 
 ## 個人ストレージ
   function data:please

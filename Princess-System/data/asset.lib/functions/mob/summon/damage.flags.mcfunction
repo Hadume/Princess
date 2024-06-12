@@ -6,6 +6,7 @@
 # @private
  #declare score_holder #DmgFlag.Copy
  #declare score_holder #DmgFlag
+
 ### 値を増加
   scoreboard players add #DmgFlag Global 1
 ### MOBに渡す

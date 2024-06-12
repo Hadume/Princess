@@ -1,16 +1,23 @@
 #> asset.lib:mob/summon/check.condition
 # 
+# @input storage asset:mob
+#   Name : JsonText
+#   Type : String
+#   Status : {Lvl : int, Exp : int, Money : int, HP : int, MP : int, Speed : int} @ ..6
+#   Armor? : [{id : id(minecraft:item), Count : int , tag : Compound} || {ID : id(asset:item)}] @ 4
+#   Weapon? : [{id : id(minecraft:item), Count : int , tag : Compound} || {ID : id(asset:item)}] @ 2
+#   NBT? : Compound
 # @within asset:mob/*/summon/main
 
 ## 足りていなかったら
-  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Name run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:mob Name","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Type run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:mob Type","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Lvl run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:mob Status.Lvl","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Exp run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:mob Status.Exp","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Money run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:mob Status.Money","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.HP run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:mob Status.HP","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.MP run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:mob Status.MP","italic": true,"color": "red"}]
-  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Speed run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "引数が足りません; "},{"text": "asset:mob Status.Speed","italic": true,"color": "red"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Name"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Type run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Type"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Lvl run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Lvl"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Exp run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Exp"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Money run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Money"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.HP run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.HP"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.MP run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.MP"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Speed run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Speed"}]
   ### 
     execute if data storage asset:temp Error as @e[tag=MOB.Init,limit=1] at @s run tp @s ~ -3000 ~
     execute if data storage asset:temp Error as @e[tag=MOB.Init,limit=1] run kill @s

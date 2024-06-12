@@ -1,11 +1,11 @@
 #> lib:range/loop/
 # 
 # @within function
-#   lib:range/
+#   lib:range/main
 #   lib:range/loop/1
 
 ## 座標を取得
-  function api:get.nbt/pos/
+  function api:get.nbt/pos
 ## 座標を取得
   ### 魔法
     execute store result score #Pos.X1 Temp run data get storage lib:temp Pos[0] 1000
@@ -22,11 +22,11 @@
 ## MOBのサイズを取得
   ### 
     function data:please
-    data modify storage lib: id set from storage data: _.id
+    data modify storage lib: Hitbox.id set from storage data: _.id
     function lib:hitbox/
   ### データを移行
-    execute store result score #Size.X Temp run data get storage lib: HitBox[0] 1000
-    execute store result score #Size.Y Temp run data get storage lib: HitBox[1] 1000
+    execute store result score #Size.X Temp run data get storage lib: Hitbox.Size[0] 1000
+    execute store result score #Size.Y Temp run data get storage lib: Hitbox.Size[1] 1000
 ## Y座標を調整
   scoreboard players operation #Pos.Y1 Temp -= #Size.Y Temp
 ## プラスに
@@ -56,4 +56,4 @@
     scoreboard players operation #Pos.Y1 Temp += #Pos.Z1 Temp
     scoreboard players operation #Pos.X1 Temp += #Pos.Y1 Temp
 ## 結果
-  execute if score #Pos.X1 Temp <= #Range Lib run function lib:range/loop/1
+  execute if score #Pos.X1 Temp <= #Range Temp run function lib:range/loop/1

@@ -5,6 +5,7 @@
 #> ScoreHolder
 # @private
  #declare score_holder #HP.Display
+
 ## 表示
   scoreboard players set #HP.Display Temp 2000
   scoreboard players operation #HP.Display Temp *= #HP.Copy Temp

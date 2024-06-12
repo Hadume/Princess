@@ -1,6 +1,7 @@
 #> lib:stats/speed
 # スピード
-# @public
+# @input as entity
+# @api
 
 ## 個人ストレージ
   function data:please

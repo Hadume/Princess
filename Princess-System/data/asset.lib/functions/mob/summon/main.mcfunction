@@ -57,7 +57,7 @@
 ## HitBoxを保存
   function asset.lib:mob/summon/id/
 ## 初期化Tagを外す
-  tag @s remove Init
+  tag @s remove MOB.Init
 ## 一時使用Storageを削除
   data remove storage asset:temp ArmorItems
   data remove storage asset:temp HandItems

@@ -2,7 +2,7 @@
 # SelectedItemを保存
 # @input as player
 # @output storage api: SelectedItem
-# @public
+# @api
 
 ## 個人ストレージを呼ぶ
   function data.player:please

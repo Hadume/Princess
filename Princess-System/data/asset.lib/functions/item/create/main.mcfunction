@@ -2,6 +2,11 @@
 # アイテムを生成
 # @within function asset.lib:item/create/check.condition
 
+#> ScoreHolder
+# @private
+# @within loot_table asset.lib:item/lore/rarity
+ #declare score_holder #Rarity.Copy
+
 ## Storageを初期化
   data remove storage asset:temp Item
 ## Countを設定
@@ -25,10 +30,11 @@
   data modify storage asset:temp Item.tag.display.Name set from block 0 -64 0 Items[0].tag.display.Name
 ## 説明を設定
   ### 通常
-    function asset.lib:item/create/lore/basic.loop
+    execute if data storage asset:item Lore run function asset.lib:item/create/lore/basic.loop
   ### 効果
     execute if data storage asset:item Stats run function asset.lib:item/create/lore/stats/
   ### レアリティ
+    execute store result score #Rarity.Copy Temp run data get storage asset:item Rarity
     data modify storage asset:temp Lore append value '{"text":""}'
     loot replace block 0 -64 0 container.0 loot asset.lib:item/lore/rarity
     data modify storage asset:temp Lore append from block 0 -64 0 Items[0].tag.display.Name
@@ -37,6 +43,8 @@
 ## アイテムを用意
   item replace block 0 -64 0 container.0 with cod
   data modify block 0 -64 0 Items[0] set from storage asset:temp Item
+## 一時使用ScoreHolderをリセット
+  scoreboard players reset #Rarity.Copy
 ## 一時使用Storageを削除
   data remove storage asset:temp Item
   data remove storage asset:temp Lore

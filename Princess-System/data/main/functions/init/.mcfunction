@@ -63,6 +63,7 @@
 # @public
  #declare score_holder #-1
  #declare score_holder #2
+ #declare score_holder #4
  #declare score_holder #10
  #declare score_holder #51
  #declare score_holder #100
@@ -75,6 +76,7 @@
  #declare score_holder #2^24
   scoreboard players set #-1 Const -1
   scoreboard players set #2 Const 2
+  scoreboard players set #4 Const 4
   scoreboard players set #10 Const 10
   scoreboard players set #51 Const 51
   scoreboard players set #100 Const 100
@@ -96,4 +98,6 @@
  #alias vector ShulkerBox 0 -64 0
   setblock 0 -64 0 shulker_box{Lock:"§§§"}
 ## エラーログ
-  data modify storage main: Tell.Error set value "§c[Error]: §r"
+  data modify storage main: Tell.ArgumentError set value "§c[Error] 引数が足りません: §o§n"
+## Assetの初期化
+  function #asset:magic/load

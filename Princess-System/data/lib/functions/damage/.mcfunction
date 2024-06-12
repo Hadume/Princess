@@ -1,33 +1,22 @@
 #> lib:damage/
-# ダメージを計算
-# @public
-# @input score_holder
-#   #Lib.ATK
-#   #Lib.DEF
+# 
+# @input
+#   as entity
+#   position
+#   rotation
+#   score
+#     #Lib.ATK Lib
+#     #Lib.DEF Lib
+# @output score #Lib.Damage Lib
+# @api
 
-#> ScoreHolder.Temp
-# @private
- #declare score_holder #DEF.Copy
- #declare score_holder #Damage
-## スコアをコピー
-  scoreboard players operation #DEF.Copy Temp = #Lib.DEF Lib
-  scoreboard players operation #Damage Temp = #Lib.ATK Lib
-## Damage = (ATK / 2) - (DEF / 4)
-  scoreboard players operation #DEF.Copy Temp /= #2^2 Const
-  scoreboard players operation #Damage Temp /= #2 Const
-  scoreboard players operation #Damage Temp -= #DEF.Copy Temp
-## ダメージを蓄積しておく
-  scoreboard players operation #StoredDamage Lib += #Damage Temp
-## HPを減らす
-  scoreboard players operation @s HP -= #Damage Temp
-## 体力を更新
-  function lib:status/hp/update/
-## ダメージ表示
-  loot spawn ^ ^ ^ loot lib:damage/motion
-  execute as @e[type=item,nbt={Item:{tag:{Lib:{Damage:1b,Init:1b}}}}] at @s run function lib:damage/display
-## 回復
-  execute if entity @s[type=!#mob:undead] run effect give @s instant_health 1 200 true
-  execute if entity @s[type=#mob:undead] run effect give @s instant_damage 1 200 true
-## 一時使用ScoreHolderをリセット
-  scoreboard players reset #DEF.Copy
-  scoreboard players reset #Damage
+## 引数の確認
+  execute store success storage lib:temp Error byte 1 unless score #Lib.ATK Lib matches ..2147483647 run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "#Lib.ATK"}]
+  execute store success storage lib:temp Error byte 1 unless score #Lib.DEF Lib matches ..2147483647 run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "#Lib.DEF"}]
+## 
+  execute unless data storage lib:temp Error run function lib:damage/main
+## 引数を削除
+  scoreboard players reset #Lib.ATK
+  scoreboard players reset #Lib.DEF
+## 一時使用Storageを削除
+  execute if data storage lib:temp Error run data remove storage lib:temp Error

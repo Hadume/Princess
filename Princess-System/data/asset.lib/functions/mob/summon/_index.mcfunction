@@ -1,6 +1,6 @@
 #> asset.lib:mob/summon/_index
 # 
-# @within 
+# @private
 
 #> Tags
 # @within *
@@ -9,7 +9,7 @@
  #declare tag MOB.Init
 #> Tag.Flag
 # @within *
-#   asset.lib:mob/**
+#   asset.lib:mob/summon/damage.flags
 #   mob:hurt/*/**
 # @within advancement
 #   mob:entity_hurt_player

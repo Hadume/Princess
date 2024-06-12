@@ -11,7 +11,7 @@
 ## 種類; String; ["Wand","Armor","Crystal","Meal","Misc"]
   data modify storage asset:item Category set value "Armor"
 ## レアリティ
-  scoreboard players set #Rarity Asset 3
+  data modify storage asset:item Rarity set value 3
 ## 効果; List.Compound
 ###   Name; String; [HP.Max, MP.Max, ATK, DEF, Speed]
 ###   Operation; Int ; [0: 元の値にAmountを加算, 1: 元の値にAmount＊100％を加算, 2: 元の値にAmount＊100％を乗算]

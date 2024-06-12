@@ -1,5 +1,5 @@
 #> lib:die/entity/loot/main
-# 
+# 報酬を渡す
 # @within function lib:die/entity/loot/loop
 
 ## スコア

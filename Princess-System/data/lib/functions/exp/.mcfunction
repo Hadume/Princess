@@ -1,6 +1,7 @@
 #> lib:exp/
 # 経験値の計算とか
-# @public
+# @input as entity
+# @api
 
 ## expが0以下だったら
   execute if entity @s[scores={Exp=..0}] run function lib:exp/levelup/
