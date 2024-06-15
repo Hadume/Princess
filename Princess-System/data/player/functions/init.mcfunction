@@ -25,5 +25,7 @@
   ### Speed
     scoreboard players set @s Speed.Base 100
 ## ステータスの反映
-  function #lib:stats
   function api:display/exp
+  ### ステータス
+    data modify storage lib: Stats set value ["HPMax","MPMax","ATK","DEF","Speed"]
+    function lib:stats/

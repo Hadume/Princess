@@ -12,7 +12,7 @@
   scoreboard players operation #HP.Display Temp /= @s HP.Max
   scoreboard players operation @s ScoreToHealth = #HP.Display Temp
 ## プレイヤーを回復
-  execute if entity @s[type=player] if score #HP.Copy Temp < @s HP.Max run scoreboard players operation @s HP.Rcvr.Timer = @s HP.Rcvr.Intrvl
+  execute if entity @s[type=player,scores={HP.Rcvr.Timer=..0}] if score #HP.Copy Temp < @s HP.Max run scoreboard players operation @s HP.Rcvr.Timer = @s HP.Rcvr.Intrvl
 ## MOBのステータス表示
   execute if entity @s[type=!player] run function api:display/mob.name
 ## 一時使用ScoreHolderをリセット

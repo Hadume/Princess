@@ -1,9 +1,0 @@
-{
-    "values": [
-        "lib:stats/hp.max",
-        "lib:stats/mp.max",
-        "lib:stats/atk",
-        "lib:stats/def",
-        "lib:stats/speed"
-    ]
-}

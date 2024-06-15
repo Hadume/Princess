@@ -1,5 +1,5 @@
 #> asset:item/-54004/create/main
-# 
+#
 # @within function asset:item/-54004/create/
 
 ## アイテムid; String
@@ -13,10 +13,10 @@
 ## レアリティ
   data modify storage asset:item Rarity set value 3
 ## 効果; List.Compound
-###   Name; String; [HP.Max, MP.Max, ATK, DEF, Speed]
+###   Name; String; [HPMax, MPMax, ATK, DEF, Speed]
 ###   Operation; Int ; [0: 元の値にAmountを加算, 1: 元の値にAmount＊100％を加算, 2: 元の値にAmount＊100％を乗算]
 ###   Amount; Int
-  data modify storage asset:item Stats set value [{Name:"HP.Max",Operation:1,Amount:100},{Name:"MP.Max",Operation:1,Amount:100}]
+  data modify storage asset:item Stats set value [{Name:"HPMax",Operation:1,Amount:100},{Name:"MPMax",Operation:1,Amount:100}]
 ## NBT; Compound; (任意)
   #data modify storage asset:item NBT set value {}
 ## アイテムを生成
