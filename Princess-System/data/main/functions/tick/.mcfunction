@@ -6,6 +6,8 @@
   execute as @e[type=marker,tag=Spawner] at @s run function asset.lib:spawner/tick/
 ## プレイヤーで常時実行
   execute as @a at @s run function main:tick/player
+## 魔法常時実行
+  execute as @e[type=armor_stand,tag=Spell] at @s run function asset.lib:magic/tick/
 ## MOBで常時実行
   execute as @e[tag=Enemy] at @s run function mob:tick
 ## tagを削除する
