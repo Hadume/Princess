@@ -25,5 +25,5 @@
     data modify storage asset:magic Elements set value ["Flamme"]
 ## 引数があるか確認
   function asset.lib:magic/cast/check.condition/
-## 
+##
   execute if data storage asset:magic {CanCast:1b} run function asset:magic/52101/cast/main

@@ -1,11 +1,11 @@
 #> asset.lib:magic/action/damage/
-# 
+#
 # @input
 #   as entity
 #   storage asset:magic
 #     Amount : int
 #     CasterID? : int
-#     Elements? : String
+#     Elements? : [String] @ ..6
 # @output storage asset:magic SroredDamage
 # @within function
 #   asset:magic/*/*/**
