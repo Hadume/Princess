@@ -1,5 +1,5 @@
 #> asset:mob/-53002/summon/main
-# 
+#
 # @within function asset:mob/-53002/summon/
 
 ## 元になるEntityを召喚
