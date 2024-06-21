@@ -1,10 +1,16 @@
 #> asset.lib:spawner/set/check.condition
-# 
+#
 # @input storage asset:spawner
 #   Data : [{ID : id(asset:mob)}] @ N
-#   Count : int
-#   Delay : int
+#   Count
+#     Min : int
+#     Max : int
+#   Delay
+#     Min : int
+#     Max : int
 #   Range : float
+#   MaxNearbyEntities : int
+#   RequiredPlayerRange : float
 # @within function asset:spawner/*/set/main
 
 ## 引数が足りてるか確認
@@ -12,6 +18,8 @@
   execute store success storage asset:temp Error byte 1 unless data storage asset:spawner Count run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner Count"}]
   execute store success storage asset:temp Error byte 1 unless data storage asset:spawner Delay run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner Delay"}]
   execute store success storage asset:temp Error byte 1 unless data storage asset:spawner Range run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner Range"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:spawner MaxNearbyEntities run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner MaxNearbyEntities"}]
+  execute store success storage asset:temp Error byte 1 unless data storage asset:spawner RequiredPlayerRange run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner RequiredPlayerRange"}]
   ### 足りなかったら
     execute if data storage asset:temp Error as @e[tag=Spawner.Init,limit=1] run kill @s
 ## 足りていたら

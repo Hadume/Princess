@@ -5,10 +5,14 @@
 #> Tags
 # @public
  #declare tag This
+#> ScoreHolder
+# @public
+ #declare score_holder #Rand
 #> Storage
 # @public
  #declare storage main:
  #declare storage main:temp
+
 ## 初期化完了
   #data modify storage main: Init set value 1b
 #> Scoreboard.Public
