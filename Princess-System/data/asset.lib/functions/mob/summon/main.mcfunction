@@ -1,5 +1,5 @@
 #> asset.lib:mob/summon/main
-# 
+#
 # @within function asset.lib:mob/summon/check.condition
 
 ## 個人ストレージを呼ぶ
@@ -46,7 +46,8 @@
     scoreboard players set @s HP 1073741
     scoreboard players set @s MP 1073741
   ### 装備の数値を反映
-    function #lib:stats
+    data modify storage lib: Stats set value ["Physic","Magic"]
+    function lib:stats/
   ### 仮値を戻す
     scoreboard players operation @s HP = @s HP.Max
     scoreboard players operation @s MP = @s MP.Max
