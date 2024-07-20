@@ -61,9 +61,9 @@
     scoreboard objectives add CT.OffhandS dummy
     #### Types
       ##### MP
-        #scoreboard objectives add Mgc.MP dummy
-        #scoreboard objectives add Mgc.MP.Base dummy
-      ##### CoolTime
+        scoreboard objectives add Mgc.MP dummy
+        scoreboard objectives add Mgc.MP.Base dummy
+      ##### Cooltime
         scoreboard objectives add Mgc.Cooltime dummy
         scoreboard objectives add Mgc.Cooltime.Base dummy
       ##### Multiple

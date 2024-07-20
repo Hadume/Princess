@@ -8,9 +8,7 @@
 
 ## 攻撃者のIDを保存
   execute unless data storage asset:magic CasterID store result storage asset:magic CasterID int 1 run scoreboard players get @s PlayerID
-## 攻撃力
-  execute store result score #Lib.ATK Lib run data get storage asset:magic Amount
-## 
+##
   tag @s add This
   execute as @e[tag=Lib.InRange] run function asset.lib:magic/action/damage/entity
   tag @s remove This

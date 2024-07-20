@@ -13,5 +13,7 @@
     data modify entity @s data set from storage asset:temp data
 ## 召喚までの間隔
   function asset.lib:spawner/common/set.delay
+## 初期化tagを削除
+  tag @s remove Spawner.Init
 ## 一時使用Storageを削除
   data remove storage asset:temp data

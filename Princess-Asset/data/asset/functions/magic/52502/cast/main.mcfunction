@@ -1,5 +1,5 @@
 #> asset:magic/52502/cast/main
-# 
+#
 # @within function asset:magic/52502/cast/check.condition
 
 #> ScoreHolder
@@ -7,7 +7,9 @@
 # @private
  #declare score_holder #StoredDamage
 
-## 
+## 共通処理
+  function asset.lib:magic/cast/common/
+##
   data modify storage asset:magic Damage set value 1b
   function asset.lib:magic/action/range/
 ## HP回復

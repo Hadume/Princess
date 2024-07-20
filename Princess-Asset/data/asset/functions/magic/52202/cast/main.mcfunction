@@ -1,8 +1,10 @@
 #> asset:magic/52202/cast/main
-# 
+#
 # @within function asset:magic/52202/cast/check.condition
 
-## 
+## 共通処理
+  function asset.lib:magic/cast/common/
+##
   data modify storage asset:magic Damage set value 1b
   function asset.lib:magic/action/range/
 ## 音を鳴らす

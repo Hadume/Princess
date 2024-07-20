@@ -1,4 +1,4 @@
-#> asset.lib:spawner/tick/spawn/
+#> asset.lib:spawner/spawn/
 # スポーン
 # @within function asset.lib:spawner/tick/spawn
 

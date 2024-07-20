@@ -1,5 +1,5 @@
 #> asset.lib:magic/action/range/
-# 
+#
 # @input storage asset:magic
 #   Range : float
 #   Pierce? : int
@@ -8,7 +8,7 @@
 # @within function
 #   asset:magic/*/*/**
 #   asset.lib:magic/cast/action
-#   asset.lib:magic/action/range/spell
+#   asset.lib:magic/action/range/spell/
 
 ## 引数を確認
   execute store success storage asset:temp Error byte 1 unless data storage asset:magic Range run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:temp Magic.Range"}]

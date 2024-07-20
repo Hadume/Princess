@@ -10,5 +10,4 @@
 ## 追加効果があったら
   execute if data storage lib:temp Stats[] run function lib:stats/calc/common/
 ## ステータスを反映
-  execute if score #Amount Temp matches ..0 run scoreboard players set #Amount Temp 1
   scoreboard players operation @s DEF = #Amount Temp
