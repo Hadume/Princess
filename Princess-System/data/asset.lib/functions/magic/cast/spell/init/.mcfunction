@@ -4,8 +4,6 @@
 
 ## IDを保存
   execute store result score @s ID.Asset run data get storage asset:magic ID
-## 向きを変更
-  execute positioned as @s run tp @s ~ ~ ~ ~ ~
 ## データを保存
   ### データを移行
     data modify storage asset:temp Magic.Name set from storage asset:magic Name
@@ -21,10 +19,12 @@
   execute store result score @s Duration run data get storage asset:magic Duration
 ## 速度を代入
   execute if data storage asset:magic Speed run function asset.lib:magic/cast/spell/init/speed
-## NBT
-  data modify entity @s {} merge value {FallDistance:-4096f,Invulnerable:1b,Silent:1b,Invisible:1b,NoBasePlate:1b,Pose:{Head:[180f,0f,0f]},Small:1b}
 ## プレイヤーのIDを保存
   execute store result storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Magic.CasterID int 1 run scoreboard players get @a[tag=This,limit=1] PlayerID
+## 向きを変更
+  execute positioned as @s run tp @s ~ ~ ~ ~ ~
+## NBT
+  data modify entity @s {} merge value {FallDistance:-4096f,Invulnerable:1b,Silent:1b,Invisible:1b,NoBasePlate:1b,Pose:{Head:[180f,0f,0f]},Small:1b}
 ## Display君にIDを渡す
   scoreboard players operation @e[type=block_display,tag=Spell.Init] EntityID = @s EntityID
 ## 初期化tagを削除

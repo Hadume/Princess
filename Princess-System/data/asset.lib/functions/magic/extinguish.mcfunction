@@ -3,7 +3,7 @@
 # @input as entity
 # @within function
 #   asset.lib:magic/tick/
-#   asset.lib:magic/action/range/spell
+#   asset.lib:magic/action/range/spell/
 
 #> ScoreHolder
 # @private

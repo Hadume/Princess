@@ -1,5 +1,5 @@
 #> asset.lib:magic/cast/check.condition/main
-# 
+#
 # @within function asset.lib:magic/cast/check.condition/
 
 #> ScoreHolder
@@ -8,7 +8,7 @@
  #declare score_holder #MP.Copy
 
 ## データをコピー
-  execute store result score #MP.Need Temp run data get storage asset:magic MP
+  execute store result score #MP.Need Temp run data get storage asset:magic Raw.MP
 ## MPを取得
   scoreboard players operation #MP.Copy Temp = @s MP
 ## 足りていたら

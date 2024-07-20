@@ -1,10 +1,12 @@
 #> asset:magic/52501/cast/main
-# 
+#
 # @within function asset:magic/52501/cast/check.condition
 
-## 範囲内のMObを特定
+## 共通処理
+  function asset.lib:magic/cast/common/
+## 範囲内のMobを特定
   function asset.lib:magic/action/range/
-## 
+##
   execute as @e[tag=Lib.InRange] store result score @s TimeLock run data get storage asset:magic Duration
   execute as @e[tag=Lib.InRange] run data modify entity @s NoAI set value 1b
 ## tick処理

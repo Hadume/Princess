@@ -1,5 +1,5 @@
 #> asset.lib:magic/action/damage/entity
-# 
+#
 # @within function asset.lib:magic/action/damage/main
 
 ## 個人ストレージを呼ぶ
@@ -10,6 +10,7 @@
 ## 防御力を取得
   scoreboard players operation #Lib.DEF Lib = @s DEF
 ## ダメージを与える
+  execute store result score #Lib.ATK Lib run data get storage asset:magic Amount
   execute at @s anchored eyes run function lib:damage/
 ## ダメージを保存
   scoreboard players operation #StoredDamage Temp += #Lib.Damage Lib
