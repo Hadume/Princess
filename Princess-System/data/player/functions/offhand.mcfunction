@@ -1,5 +1,5 @@
 #> player:offhand
-# 
+#
 # @within function main:advancements/inventory_changed
 
 ## 魔法を唱える

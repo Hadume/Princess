@@ -29,5 +29,7 @@
   data remove storage asset:spawner Count
   data remove storage asset:spawner Delay
   data remove storage asset:spawner Range
+  data remove storage asset:spawner MaxNearbyEntities
+  data remove storage asset:spawner RequiredPlayerRange
 ## 一時使用Storageを削除
   execute if data storage asset:temp Error run data remove storage asset:temp Error

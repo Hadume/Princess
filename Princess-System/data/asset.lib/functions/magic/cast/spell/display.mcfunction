@@ -29,7 +29,7 @@
     execute store result score #HalfRange Temp run data get storage asset:magic Range 50
     #### X
       execute store result storage asset:temp transformation.translation[0] float -0.005 run data get storage asset:magic Range 100
-    #### Y 0.9875000919 24.6875023 0.03950000368
+    #### Y
       execute store result score #Rotation.Y Temp run data get storage api: Rotation[1] 100
       scoreboard players add #Rotation.Y Temp 4500
       execute store result storage math: in int 0.01 run scoreboard players get #Rotation.Y Temp
