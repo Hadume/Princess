@@ -2,19 +2,33 @@
 # 
 # @within function inv.ui:pages/_/com/trade/_/ready.ui
 
+# タグセット
+    #tag @s add 
+
 # シュルカーボックス初期化
     data remove block 0 -64 0 Items
 
 # アイテムをシュルカーに格納
-    item replace block 0 -64 0 hotbar.0 from entity @s inventory.5
-    item replace block 0 -64 0 hotbar.1 from entity @s inventory.6
-    item replace block 0 -64 0 hotbar.2 from entity @s inventory.7
-    item replace block 0 -64 0 hotbar.3 from entity @s inventory.14
-    item replace block 0 -64 0 hotbar.4 from entity @s inventory.15
-    item replace block 0 -64 0 hotbar.5 from entity @s inventory.16
-    item replace block 0 -64 0 hotbar.6 from entity @s inventory.23
-    item replace block 0 -64 0 hotbar.7 from entity @s inventory.24
-    item replace block 0 -64 0 hotbar.8 from entity @s inventory.25
+    ## 自分のアイテム
+        item replace block 0 -64 0 hotbar.0 from entity @s inventory.1
+        item replace block 0 -64 0 hotbar.1 from entity @s inventory.2
+        item replace block 0 -64 0 hotbar.2 from entity @s inventory.3
+        item replace block 0 -64 0 hotbar.3 from entity @s inventory.10
+        item replace block 0 -64 0 hotbar.4 from entity @s inventory.11
+        item replace block 0 -64 0 hotbar.5 from entity @s inventory.12
+        item replace block 0 -64 0 hotbar.6 from entity @s inventory.19
+        item replace block 0 -64 0 hotbar.7 from entity @s inventory.20
+        item replace block 0 -64 0 hotbar.8 from entity @s inventory.21
+    ## 相手のアイテム
+        item replace block 0 -64 0 inventory.0 from entity @s inventory.5
+        item replace block 0 -64 0 inventory.1 from entity @s inventory.6
+        item replace block 0 -64 0 inventory.2 from entity @s inventory.7
+        item replace block 0 -64 0 inventory.3 from entity @s inventory.14
+        item replace block 0 -64 0 inventory.4 from entity @s inventory.15
+        item replace block 0 -64 0 inventory.5 from entity @s inventory.16
+        item replace block 0 -64 0 inventory.6 from entity @s inventory.23
+        item replace block 0 -64 0 inventory.7 from entity @s inventory.24
+        item replace block 0 -64 0 inventory.8 from entity @s inventory.25
 
 # インベントリ内のアイテムの削除
     item replace entity @s inventory.5 with air
