@@ -1,12 +1,16 @@
 #> asset.lib:magic/cast/common/
 #
-# @within asset:magic/*/cast/main
+# @within asset:magic/*/cast/check.condition
 
 #> ScoreHolder
 # @private
-# @within function asset.lib:magic/cast/common/modify_type_value/*
+# @within function asset.lib:magic/cast/common/**
  #declare score_holder #Value
  #declare score_holder #MP.Consume
+#> MP取得用
+# @private
+ #declare score_holder #MP.Need
+ #declare score_holder #MP.Copy
 
 ## データを移行
   ### タイプの各数値を調整
@@ -23,12 +27,19 @@
     data modify storage asset:magic Name set from storage asset:magic Raw.Name
     execute if data storage asset:magic Raw.Targets run data modify storage asset:magic Targets set from storage asset:magic Raw.Targets
     execute if data storage asset:magic Raw.Elements run data modify storage asset:magic Elements set from storage asset:magic Raw.Elements
-## MPを減らす
-  execute store result score #MP.Consume Temp run data get storage asset:magic MP
-  scoreboard players operation @s MP -= #MP.Consume Temp
-  function lib:status/mp/update
+## MPを消費
+  ### データをコピー
+    execute store result score #MP.Need Temp run data get storage asset:magic MP
+    scoreboard players operation #MP.Copy Temp = @s MP
+  ###
+    execute if score #MP.Copy Temp >= #MP.Need Temp run function asset.lib:magic/cast/common/consume.mp
+  ### 足りなかった通知
+    execute unless score #MP.Copy Temp >= #MP.Need Temp run tellraw @s {"text": "MPが足りないにゃん♡","color": "red"}
+    execute unless score #MP.Copy Temp >= #MP.Need Temp run playsound block.note_block.bass master @s
 ## Storageを削除
   data remove storage asset:magic Raw
 ## 一時使用ScoreHolderをリセット
   scoreboard players reset #Value
   scoreboard players reset #MP.Consume
+  scoreboard players reset #MP.Need
+  scoreboard players reset #MP.Copy
