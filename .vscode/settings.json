@@ -1,0 +1,532 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.renderControlCharacters": true,
+    "editor.suggestSelection": "first",
+    "breadcrumbs.enabled": true,
+    "files.insertFinalNewline": true,
+    "editor.fontLigatures": true,
+    "editor.fontSize": 17,
+    "editor.renderLineHighlight": "all",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "line",
+    "files.autoGuessEncoding": true,
+    "editor.bracketPairColorization.enabled": true,
+    "debug.inlineValues": "on",
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "debug.openDebug": "openOnSessionStart",
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.dragAndDrop": false,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.minimap.maxColumn": 60,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.size": "fit",
+    "editor.renderWhitespace": "all",
+    "editor.showFoldingControls": "always",
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?　、。！？「」【】『』（）",
+    "editor.wordWrap": "on",
+    "explorer.incrementalNaming": "smart",
+    "files.associations": {
+        "*.mcmeta": "json"
+    },
+    "files.eol": "\n",
+    "files.trimFinalNewlines": true,
+    "files.watcherExclude": {},
+    "search.showLineNumbers": true,
+    "terminal.integrated.confirmOnExit": "always",
+    "terminal.integrated.copyOnSelection": true,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.startupEditor": "readme",
+    "[csv]": {
+        "editor.wordWrap": "off"
+    },
+    "[log]": {
+        "editor.wordWrap": "off"
+    },
+    "[python]": {
+        "editor.tabSize": 2
+    },
+    "[tsv]": {
+        "editor.insertSpaces": false,
+        "editor.wordWrap": "off"
+    },
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.variables": {
+        "lang": "ja"
+    },
+    "window.openFoldersInNewWindow": "on",
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "explorer.confirmDelete": false,
+    "editor.snippetSuggestions": "top",
+    "editor.colorDecorators": false,
+    "editor.minimap.renderCharacters": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "search.exclude": {
+        "**/tmp": true
+    },
+    "files.exclude": {
+        "**/*.map": true,
+        "**/node_modules": true
+    },
+    "workbench.editor.labelFormat": "short",
+    "html.format.unformatted": null,
+    "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p",
+    "html.format.extraLiners": "",
+    "html.format.wrapLineLength": 0,
+    "mcdutil.createFile.fileTemplate": {
+        "function": [
+            "#> %fileResourcePath%",
+            "# %cursor%",
+            "# @within %nowOpenFileType% %nowOpenFileResourcePath%"
+        ],
+        "advancement": [
+            "{",
+            "    \"criteria\": {",
+            "        \"trigger\": {",
+            "            \"trigger\": \"%cursor%\"",
+            "        }",
+            "    }",
+            "}"
+        ],
+        "predicate": [
+            "{",
+            "    \"condition\": \"%cursor%\"",
+            "}"
+        ],
+        "tag/block": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/entity_type": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/fluid": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/function": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/item": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ]
+    },
+    "mcdutil.createDatapackTemplate.defaultFolder": false,
+    "mcdutil.createDatapackTemplate.defaultLoadAndTick": false,
+    "mcdutil.createDatapackTemplate.defaultVanillaData": false,
+    "git.branchProtection": [
+        "master"
+    ],
+    "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
+    "security.workspace.trust.untrustedFiles": "open",
+    "[mcfunction]": {
+        "editor.defaultFormatter": "SPGoding.datapack-language-server"
+    },
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.fontFamily": "'UDEV Gothic 35JPDOC', monospace",
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.mouseWheelZoom": true,
+    "editor.smoothScrolling": true,
+    "editor.wrappingIndent": "indent",
+    "explorer.confirmDragAndDrop": false,
+    "files.trimTrailingWhitespace": true,
+    "git.autofetch": "all",
+    "git.confirmSync": false,
+    "git.pruneOnFetch": true,
+    "git.suggestSmartCommit": false,
+    "scm.alwaysShowRepositories": true,
+    "scm.defaultViewMode": "tree",
+    "scm.diffDecorationsGutterWidth": 5,
+    "scm.inputFontFamily": "editor",
+    "scm.inputFontSize": 14,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.enableImages": true,
+    "terminal.integrated.enableVisualBell": false,
+    "terminal.integrated.mouseWheelZoom": true,
+    "terminal.integrated.smoothScrolling": true,
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.scrollToSwitchTabs": true,
+    "workbench.list.smoothScrolling": true,
+    "workbench.view.alwaysShowHeaderActions": true,
+    "window.menuBarVisibility": "compact",
+    "githubPullRequests.createOnPublishBranch": "never",
+    "datapack.env.cmdVersion": "1.20.3",
+    "datapack.env.dataVersion": "1.20.4",
+    "datapack.env.defaultVisibility": "public",
+    "datapack.env.dependsOnVanilla": true,
+    "datapack.env.detectionDepth": 1,
+    "datapack.env.exclude": [],
+    "datapack.env.include": [],
+    "datapack.env.permissionLevel": 2,
+    "datapack.features.semanticColoring": false,
+    "datapack.lint.blockStateBracketSpacing": {
+        "inside": 0
+    },
+    "datapack.lint.blockStateCommaSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.blockStateEqualSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.blockStateSortKeys": null,
+    "datapack.lint.blockStateTrailingComma": false,
+    "datapack.lint.eol": "LF",
+    "datapack.lint.idOmitDefaultNamespace": null,
+    "datapack.lint.nameOfNbtCompoundTagKeys": [
+        "information",
+        [
+            "PascalCase",
+            {
+                "label": "SlotType",
+                "parts": [
+                    "/auto/",
+                    "/mainhand/",
+                    "/offhand/",
+                    "/head/",
+                    "/chest/",
+                    "/legs/",
+                    "/feet/",
+                    "/hotbar/"
+                ]
+            },
+            {
+                "label": "id",
+                "parts": "/^id$/"
+            },
+            {
+                "label": "uuid",
+                "parts": "/^uuid$/"
+            },
+            {
+                "label": "_",
+                "parts": "/^_$/"
+            }
+        ]
+    ],
+    "datapack.lint.nameOfObjectives": [
+        "error",
+        {
+            "label": "ChainedPascalCase",
+            "allowLessParts": true,
+            "allowMoreParts": true,
+            "sep": ".",
+            "parts": "/^([A-Z\\d]+[a-z\\d]*(-[a-z\\d]+)*)+$/"
+        }
+    ],
+    "datapack.lint.nameOfTags": [
+        "error",
+        [
+            {
+                "label": "ChainedPascalCase",
+                "allowLessParts": true,
+                "allowMoreParts": true,
+                "sep": ".",
+                "parts": "/^([A-Z\\d]+[a-z\\d]*(-[a-z\\d]+)*)+$/"
+            },
+            {
+                "label": "this",
+                "parts": "/this/"
+            }
+        ]
+    ],
+    "datapack.lint.nameOfScoreHolders": [
+        "error",
+        {
+            "label": "HashPrefix",
+            "prefix": "#"
+        }
+    ],
+    "datapack.lint.nameOfTeams": [
+        "error",
+        {
+            "label": "ChainedPascalCase",
+            "allowLessParts": true,
+            "allowMoreParts": true,
+            "sep": ".",
+            "parts": "/^([A-Z\\d]+[a-z\\d]*(-[a-z\\d]+)*)+$/"
+        }
+    ],
+    "datapack.lint.nbtArrayBracketSpacing": {
+        "inside": 0
+    },
+    "datapack.lint.nbtArrayCommaSpacing": {
+        "before": 0,
+        "after": 1
+    },
+    "datapack.lint.nbtArrayLengthCheck": [
+        "warning",
+        true
+    ],
+    "datapack.lint.nbtArraySemicolonSpacing": {
+        "after": 1
+    },
+    "datapack.lint.nbtArrayTrailingComma": false,
+    "datapack.lint.nbtBoolean": [
+        "warning",
+        false
+    ],
+    "datapack.lint.nbtByteSuffix": "b",
+    "datapack.lint.nbtCompoundBracketSpacing": {
+        "inside": 0
+    },
+    "datapack.lint.nbtCompoundColonSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.nbtCompoundCommaSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.nbtCompoundKeyQuote": [
+        "warning",
+        false
+    ],
+    "datapack.lint.nbtCompoundKeyQuoteType": [
+        "warning",
+        "always double"
+    ],
+    "datapack.lint.nbtCompoundSortKeys": null,
+    "datapack.lint.nbtCompoundTrailingComma": false,
+    "datapack.lint.nbtDoubleOmitSuffix": false,
+    "datapack.lint.nbtDoubleSuffix": "d",
+    "datapack.lint.nbtFloatSuffix": "f",
+    "datapack.lint.nbtListBracketSpacing": {
+        "inside": 0
+    },
+    "datapack.lint.nbtListCommaSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.nbtListLengthCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.nbtListTrailingComma": false,
+    "datapack.lint.nbtLongSuffix": "l",
+    "datapack.lint.nbtPathQuote": [
+        "warning",
+        false
+    ],
+    "datapack.lint.nbtPathQuoteType": [
+        "warning",
+        "always double"
+    ],
+    "datapack.lint.nbtShortSuffix": "s",
+    "datapack.lint.nbtStringQuote": [
+        "warning",
+        true
+    ],
+    "datapack.lint.nbtStringQuoteType": [
+        "warning",
+        "prefer double"
+    ],
+    "datapack.lint.nbtTypeCheck": [
+        "warning",
+        "strictly"
+    ],
+    "datapack.lint.selectorBracketSpacing": {
+        "inside": 0
+    },
+    "datapack.lint.selectorCommaSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.selectorEqualSpacing": {
+        "before": 0,
+        "after": 0
+    },
+    "datapack.lint.selectorKeyQuote": [
+        "warning",
+        false
+    ],
+    "datapack.lint.selectorKeyQuoteType": null,
+    "datapack.lint.selectorSortKeys": [
+        "warning",
+        [
+            "type",
+            "gamemode",
+            "gamemodeNeg",
+            "team",
+            "teamNeg",
+            "typeNeg",
+            "tag",
+            "tagNeg",
+            "name",
+            "nameNeg",
+            "scores",
+            "advancements",
+            "nbt",
+            "nbtNeg",
+            "predicate",
+            "predicateNeg",
+            "level",
+            "x_rotation",
+            "y_rotation",
+            "distance",
+            "x",
+            "y",
+            "z",
+            "dx",
+            "dy",
+            "dz",
+            "sort",
+            "limit"
+        ]
+    ],
+    "datapack.lint.selectorTrailingComma": false,
+    "datapack.lint.strictAdvancementCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictAttributeCheck": [
+        "error",
+        "always"
+    ],
+    "datapack.lint.strictBlockCheck": [
+        "error",
+        "always"
+    ],
+    "datapack.lint.strictBlockTagCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictBossbarCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictDimensionTypeCheck": [
+        "error",
+        "always"
+    ],
+    "datapack.lint.strictEnchantmentCheck": [
+        "information",
+        "always"
+    ],
+    "datapack.lint.strictEntityTypeCheck": [
+        "error",
+        "always"
+    ],
+    "datapack.lint.strictEntityTypeTagCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictFluidCheck": [
+        "error",
+        "always"
+    ],
+    "datapack.lint.strictFluidTagCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictFunctionCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictFunctionTagCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictItemCheck": [
+        "error",
+        "always"
+    ],
+    "datapack.lint.strictItemTagCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictLootTableCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictMobEffectCheck": [
+        "error",
+        "always"
+    ],
+    "datapack.lint.strictMotiveCheck": [
+        "error",
+        "always"
+    ],
+    "datapack.lint.strictObjectiveCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictParticleTypeCheck": [
+        "error",
+        "always"
+    ],
+    "datapack.lint.strictPotionCheck": [
+        "error",
+        "always"
+    ],
+    "datapack.lint.strictPredicateCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictRecipeCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictScoreHolderCheck": [
+        "information",
+        true
+    ],
+    "datapack.lint.strictSoundEventCheck": [
+        "error",
+        "only-default-namespace"
+    ],
+    "datapack.lint.strictStorageCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictTagCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.strictTeamCheck": [
+        "error",
+        true
+    ],
+    "datapack.lint.stringQuote": [
+        "warning",
+        true
+    ],
+    "datapack.lint.stringQuoteType": [
+        "warning",
+        "prefer double"
+    ],
+    "datapack.lint.timeOmitTickUnit": false,
+    "datapack.snippets": {
+        "TellrawBlockNBT": "tellraw @a [{\"text\":\"${1:NBT}\"},{\"block\":\"${2:~ ~ ~}\",\"nbt\":\"${1:NBT}\"}]",
+        "TellrawEntityNBT": "tellraw @a [{\"text\":\"${1:NBT}\"},{\"entity\":\"${2:@s}\",\"nbt\":\"${1:NBT}\"}]",
+        "TellrawStorageNBT": "tellraw @a [{\"text\":\"${1:NBT}\"},{\"storage\":\"${2:Storage}\",\"nbt\":\"${1:NBT}\"}]"
+    },
+    "githubIssues.ignoreUserCompletionTrigger": [
+        "mcfunction"
+    ],
+    "diffEditor.ignoreTrimWhitespace": false
+}
