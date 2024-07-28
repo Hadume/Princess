@@ -19,5 +19,4 @@
         scoreboard players remove #InventoryUI.Slot InventoryUI.Loop 1
         execute store result storage inv.ui: Storage.SlotLoop int 1 run scoreboard players get #InventoryUI.Slot InventoryUI.Loop
     ## 再帰呼び出し
-        execute unless score #InventoryUI.Slot InventoryUI.Loop matches 0.. run say 再帰しません
         execute if score #InventoryUI.Slot InventoryUI.Loop matches 0.. run function inv.ui:pages/_/storage/item/set/slot.num with storage inv.ui: Storage.
