@@ -4,11 +4,11 @@
 #   function inv.ui:pages/_/storage/item/set/
 #   function inv.ui:pages/_/storage/item/set/init/init.page
 
-$say $(PageNumber)ページ目のデータを保存
+#$say $(PageNumber)ページ目のデータを保存
 
 # Inventoryデータ取得
     ## インベントリ読み込み
-        function api:get.nbt/inventory/
+        function api:get.nbt/inventory
     ## セット
         data modify storage inv.ui: Storage.InventoryWork set from storage api: Inventory
         data modify storage inv.ui: Storage.Test set from storage api: Inventory
