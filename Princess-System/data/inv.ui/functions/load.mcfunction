@@ -8,6 +8,7 @@
     scoreboard objectives add InventoryUI.MaterialStorage.Page dummy
     scoreboard objectives add InventoryUI.Slot dummy
     scoreboard objectives add InventoryUI.ItemStorage.PageLimit dummy
+    scoreboard objectives add InventoryUI.Loop dummy
 # init(これは後で分離)
     data modify storage inv.ui: PageLock set value 0b
     scoreboard players set @a InventoryUI.Page 0
