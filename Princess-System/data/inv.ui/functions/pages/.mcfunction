@@ -1,6 +1,6 @@
 #> inv.ui:pages/
 #   リクエストされたページへ遷移
-# @within 
+# @internal
 
 # Page Lock
     data modify storage inv.ui: PageLock set value 1b

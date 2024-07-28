@@ -4,4 +4,3 @@
 
 # data set
     data modify entity @e[type=item,limit=1] Item.tag.BlockEntityTag.Items append from storage inv.ui: Player.Work
-    

@@ -8,6 +8,14 @@
           "name": "player_head",
           "functions": [
             {
+              "function": "minecraft:set_nbt",
+              "tag": "{UICode: 14}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{UiItem: 1b}"
+            },
+            {
               "function": "fill_player_head",
               "entity": "this"
             },

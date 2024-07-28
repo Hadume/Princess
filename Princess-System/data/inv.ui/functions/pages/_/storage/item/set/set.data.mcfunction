@@ -1,5 +1,5 @@
 #> inv.ui:pages/_/storage/item/set/set.data
-# 
+#
 # @within
 #   function inv.ui:pages/_/storage/item/set/
 #   function inv.ui:pages/_/storage/item/set/init/init.page

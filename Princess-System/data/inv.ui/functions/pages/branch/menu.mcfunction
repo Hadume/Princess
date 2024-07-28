@@ -1,5 +1,5 @@
 #> inv.ui:pages/branch/menu
-# 
+#
 # @within function inv.ui:pages/
 
 ## menu

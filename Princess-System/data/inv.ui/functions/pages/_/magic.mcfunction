@@ -1,11 +1,11 @@
 #> inv.ui:pages/_/magic
-# 
+#
 # @within function inv.ui:pages/branch/*
 
 # 操作UI
     ## back
         function inv.ui:asset/any/back
-        
+
 # 魔法スロット
     ## 魔法1
     	item replace entity @s inventory.11 with yellow_stained_glass_pane{UICode:null,UiItem:1b}

@@ -1,28 +1,28 @@
 #> inv.ui:pages/_/menu
-# 
+#
 # @within function inv.ui:pages/branch/*
 
 # skill tree
     function inv.ui:asset/menu/skilltree
-    
+
 # crystal
     function inv.ui:asset/menu/crystal
-    
+
 # magic
     function inv.ui:asset/menu/magic
-    
+
 # status
-    function inv.ui:asset/menu/status
-    
+    loot replace entity @s inventory.13 loot inv.ui:phisical.status
+
 # storage
     function inv.ui:asset/menu/storage
-    
+
 # quest
     function inv.ui:asset/menu/quest
-    
+
 # communicate
     function inv.ui:asset/menu/com
-    
+
 
 # 枠
         item replace entity @s inventory.0 with black_stained_glass_pane{display:{Name:'[{"text":""}]'},UiItem:1b}

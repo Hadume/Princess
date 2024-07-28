@@ -1,5 +1,5 @@
 #> inv.ui:asset/menu/status
-# 
+#
 # @within function inv.ui:pages/_/menu
 
 # UICode
