@@ -1,0 +1,62 @@
+{
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:stone",
+			"functions": [
+			  {
+				"function": "minecraft:copy_nbt",
+				"source": {
+				  "type": "minecraft:storage",
+				  "source": "inv.ui:"
+				},
+				"ops": [
+				  {
+					"source": "Asset.Name",
+					"target": "display.Name",
+					"op": "replace"
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:copy_nbt",
+				"source": {
+				  "type": "minecraft:storage",
+				  "source": "inv.ui:"
+				},
+				"ops": [
+				  {
+					"source": "Asset.Lore",
+					"target": "display.Lore",
+					"op": "replace"
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:copy_nbt",
+				"source": {
+				  "type": "minecraft:storage",
+				  "source": "inv.ui:"
+				},
+				"ops": [
+				  {
+					"source": "Asset.UICode",
+					"target": "UICode",
+					"op": "replace"
+				  }
+				]
+			  },
+			  {
+				"function": "minecraft:set_nbt",
+				"tag": "{UiItem:1b}"
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
+  

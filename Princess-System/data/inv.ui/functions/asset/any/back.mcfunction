@@ -14,4 +14,4 @@
     data modify storage inv.ui: Asset.Lore set value ['[{"text":"ひとつ前の画面に戻ります"}]']
 
 # アイテムセット
-    function inv.ui:pages/set with storage inv.ui: Asset.
+    function inv.ui:pages/set/

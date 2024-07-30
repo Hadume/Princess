@@ -14,4 +14,4 @@
     data modify storage inv.ui: Asset.Lore set value ['[{"text":"現在のステータスをここに表示"}]']
 
 # アイテムセット
-    function inv.ui:pages/set with storage inv.ui: Asset.
+    function inv.ui:pages/set/

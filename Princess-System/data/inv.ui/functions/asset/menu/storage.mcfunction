@@ -14,4 +14,4 @@
     data modify storage inv.ui: Asset.Lore set value ['[{"text":"アイテムストレージを開きます"}]']
 
 # アイテムセット
-    function inv.ui:pages/set with storage inv.ui: Asset.
+    function inv.ui:pages/set/

@@ -14,4 +14,4 @@
     data modify storage inv.ui: Asset.Lore set value ['[{"text":"現在受けているクエスト、過去に受けたクエストを確認します"}]']
 
 # アイテムセット
-    function inv.ui:pages/set with storage inv.ui: Asset.
+    function inv.ui:pages/set/

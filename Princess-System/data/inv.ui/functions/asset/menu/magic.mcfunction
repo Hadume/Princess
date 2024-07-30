@@ -14,4 +14,4 @@
     data modify storage inv.ui: Asset.Lore set value ['[{"text":"魔法を選択、変更します"}]']
 
 # アイテムセット
-    function inv.ui:pages/set with storage inv.ui: Asset.
+    function inv.ui:pages/set/

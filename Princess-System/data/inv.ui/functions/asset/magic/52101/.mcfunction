@@ -9,7 +9,7 @@
 # Id
     data modify storage inv.ui: Asset.ItemID set value "compass"
 # Slot
-    #data modify storage inv.ui: Asset.Slot set value 11
+    #data modify storage inv.ui: Asset.Slot set value 0
 # Name
     data modify storage inv.ui: Asset.Name set value '{"text":"フレイム","color":"red"}'
 # Lore
@@ -33,4 +33,4 @@
     data remove storage asset:magic Raw.
 
 # アイテムセット
-    function inv.ui:pages/set with storage inv.ui: Asset.
+    function inv.ui:pages/set/
