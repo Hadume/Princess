@@ -1,0 +1,10 @@
+・MP、Cooltimeは必ず数値を表示
+・Amountはついてたら数値を表示
+
+・Multipleはいらない
+
+・DurationとかRangeのオプションが付いている場合、具体的な数値は書かずとも説明文に効果を記載
+
+function player:initに書いてあるものが使うプロパティ
+
+説明文が一番上、そのあとにMP、Cooltime、Amount、属性、一番下にオプションでついたタイプのざっくりした説明だけ記載。

@@ -51,3 +51,6 @@
         item replace entity @s inventory.23 with gray_stained_glass_pane{display:{Name:'[{"text":""}]'},UiItem:1b}
         item replace entity @s inventory.24 with gray_stained_glass_pane{display:{Name:'[{"text":""}]'},UiItem:1b}
         item replace entity @s inventory.25 with gray_stained_glass_pane{display:{Name:'[{"text":""}]'},UiItem:1b}
+
+# セットされている魔法のチェック
+    function inv.ui:pages/_/magic/

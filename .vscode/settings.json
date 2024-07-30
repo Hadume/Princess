@@ -1,81 +1,10 @@
 {
-	"editor.minimap.enabled": false,
-	"editor.renderControlCharacters": true,
-	"editor.suggestSelection": "first",
-	"breadcrumbs.enabled": true,
-	"files.insertFinalNewline": true,
-	"editor.fontLigatures": true,
-	"editor.fontSize": 17,
-	"editor.renderLineHighlight": "all",
-	"editor.cursorBlinking": "smooth",
-	"editor.cursorSmoothCaretAnimation": "on",
-	"editor.cursorStyle": "line",
-	"files.autoGuessEncoding": true,
-	"editor.bracketPairColorization.enabled": true,
-	"debug.inlineValues": "on",
-	"debug.internalConsoleOptions": "openOnSessionStart",
-	"debug.openDebug": "openOnSessionStart",
-	"editor.copyWithSyntaxHighlighting": false,
-	"editor.dragAndDrop": false,
-	"editor.formatOnPaste": true,
-	"editor.formatOnSave": true,
-	"editor.formatOnType": true,
-	"editor.minimap.maxColumn": 60,
-	"editor.minimap.showSlider": "always",
-	"editor.minimap.size": "fit",
-	"editor.renderWhitespace": "all",
-	"editor.showFoldingControls": "always",
-	"editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?　、。！？「」【】『』（）",
-	"editor.wordWrap": "on",
-	"explorer.incrementalNaming": "smart",
 	"files.associations": {
 		"*.mcmeta": "json"
 	},
 	"files.eol": "\n",
 	"files.trimFinalNewlines": true,
-	"files.watcherExclude": {},
-	"search.showLineNumbers": true,
-	"terminal.integrated.confirmOnExit": "always",
-	"terminal.integrated.copyOnSelection": true,
-	"workbench.editor.tabSizing": "shrink",
-	"workbench.startupEditor": "readme",
-	"[csv]": {
-		"editor.wordWrap": "off"
-	},
-	"[log]": {
-		"editor.wordWrap": "off"
-	},
-	"[python]": {
-		"editor.tabSize": 2
-	},
-	"[tsv]": {
-		"editor.insertSpaces": false,
-		"editor.wordWrap": "off"
-	},
-	"emmet.showSuggestionsAsSnippets": true,
-	"emmet.triggerExpansionOnTab": true,
-	"emmet.variables": {
-		"lang": "ja"
-	},
-	"window.openFoldersInNewWindow": "on",
-	"window.title": "${activeEditorMedium}${separator}${rootName}",
-	"explorer.confirmDelete": false,
-	"editor.snippetSuggestions": "top",
-	"editor.colorDecorators": false,
-	"editor.minimap.renderCharacters": false,
-	"editor.multiCursorModifier": "ctrlCmd",
-	"search.exclude": {
-		"**/tmp": true
-	},
-	"files.exclude": {
-		"**/*.map": true,
-		"**/node_modules": true
-	},
-	"workbench.editor.labelFormat": "short",
-	"html.format.unformatted": null,
-	"html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p",
-	"html.format.extraLiners": "",
-	"html.format.wrapLineLength": 0,
+	"files.insertFinalNewline": true,
 	"mcdutil.createFile.fileTemplate": {
 		"function": [
 			"#> %fileResourcePath%",
@@ -143,35 +72,10 @@
 	"[mcfunction]": {
 		"editor.defaultFormatter": "SPGoding.datapack-language-server"
 	},
-	"editor.acceptSuggestionOnEnter": "smart",
-	"editor.fontFamily": "'UDEV Gothic 35JPDOC', monospace",
-	"diffEditor.hideUnchangedRegions.enabled": true,
-	"editor.guides.bracketPairs": true,
-	"editor.mouseWheelZoom": true,
-	"editor.smoothScrolling": true,
-	"editor.wrappingIndent": "indent",
-	"explorer.confirmDragAndDrop": false,
-	"files.trimTrailingWhitespace": true,
 	"git.autofetch": "all",
 	"git.confirmSync": false,
 	"git.pruneOnFetch": true,
 	"git.suggestSmartCommit": false,
-	"scm.alwaysShowRepositories": true,
-	"scm.defaultViewMode": "tree",
-	"scm.diffDecorationsGutterWidth": 5,
-	"scm.inputFontFamily": "editor",
-	"scm.inputFontSize": 14,
-	"terminal.integrated.cursorBlinking": true,
-	"terminal.integrated.cursorStyle": "line",
-	"terminal.integrated.enableImages": true,
-	"terminal.integrated.enableVisualBell": false,
-	"terminal.integrated.mouseWheelZoom": true,
-	"terminal.integrated.smoothScrolling": true,
-	"workbench.editor.closeOnFileDelete": true,
-	"workbench.editor.scrollToSwitchTabs": true,
-	"workbench.list.smoothScrolling": true,
-	"workbench.view.alwaysShowHeaderActions": true,
-	"window.menuBarVisibility": "compact",
 	"githubPullRequests.createOnPublishBranch": "never",
 	"datapack.env.cmdVersion": "1.20.3",
 	"datapack.env.dataVersion": "1.20.4",

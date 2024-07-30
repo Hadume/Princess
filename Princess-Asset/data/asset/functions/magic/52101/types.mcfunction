@@ -1,10 +1,10 @@
 #> asset:magic/52101/types
 #
-# @within function asset:magic/52101/cast/check.condition
+# @within function
+#   asset:magic/52101/cast/check.condition
+#   inv.ui:asset/magic/52101/
 
 ## タイプを設定
-  ### 魔法名; JsonText
-    data modify storage asset:magic Raw.Name set value '{"text":"フレイム","color":"red"}'
   ### 消費魔力; Int
     data modify storage asset:magic Raw.MP set value 5
   ### クールタイム; Int

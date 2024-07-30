@@ -1,6 +1,6 @@
 #> inv.ui:_index
-# 
-# @within 
+#
+# @private
 
 #> Objectives
 # @internal
@@ -13,3 +13,7 @@
 #> tag.item
 # @internal
  #declare tag/item inv.ui:ui
+
+#> ScoreHolder
+# @internal
+ #declare score_holder #InventoryUI
