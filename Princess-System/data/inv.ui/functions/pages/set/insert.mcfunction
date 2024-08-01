@@ -13,7 +13,7 @@
 		data modify storage inv.ui: Asset.SlotLoop set value 27
         function inv.ui:pages/set/slot_num_convert with storage inv.ui: Asset.
 		### 格納
-			data modify block 0 0 0 Items set from storage inv.ui: Asset.SetWork
+			data modify block 0 -64 0 Items set from storage inv.ui: Asset.SetWork
 	## データ削除
 		data remove storage inv.ui: Asset.PlayerInventoryData
 

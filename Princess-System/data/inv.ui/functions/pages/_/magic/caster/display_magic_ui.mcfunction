@@ -11,6 +11,7 @@
 
 # データからUiを表示する関数実行
 	## 初期値格納(格納値は-1番地のMagicID)
-		data modify storage inv.ui: Magic.Temp set from storage inv.ui: Magic.SelectedMagic[-1]
+		data modify storage inv.ui: Magic.Temp set from storage inv.ui: Magic.SelectedMagic[0]
+		data modify storage inv.ui: Magic.Loop set value 0
 	## 実行
 		execute if data storage inv.ui: Magic.SelectedMagic run function inv.ui:pages/_/magic/caster/set_display with storage inv.ui: Magic.
