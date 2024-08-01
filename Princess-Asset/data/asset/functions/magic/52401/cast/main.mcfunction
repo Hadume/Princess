@@ -6,8 +6,6 @@
 # @private
  #declare tag AEC.Init
 
-## 共通処理
-	function asset.lib:magic/cast/common/
 ## 範囲内のMobを特定
 	function asset.lib:magic/action/range/
 ##

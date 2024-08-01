@@ -2,8 +2,6 @@
 #
 # @within function asset:magic/52102/cast/check.condition
 
-## 共通処理
-	function asset.lib:magic/cast/common/
 ## 本体を召喚
 	### 召喚位置
 		data modify storage lib: Spread.Amount set from storage asset:magic Spread
