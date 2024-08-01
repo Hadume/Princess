@@ -3,4 +3,4 @@
 # @within function main:tick/
 
 ## デスポーン
-  execute unless entity @a[distance=..64] run function mob:kill
+	execute unless entity @a[distance=..64] run function mob:kill

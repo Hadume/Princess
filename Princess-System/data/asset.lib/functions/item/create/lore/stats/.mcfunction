@@ -9,12 +9,12 @@
  #declare score_holder #Amount
 
 ## 共通説明を追加
-  data modify storage asset:temp Lore append value '{"text":""}'
-  data modify storage asset:temp Lore append value '{"text":"[効果]","color":"gray","italic":false}'
+	data modify storage asset:temp Lore append value '{"text":""}'
+	data modify storage asset:temp Lore append value '{"text":"[効果]","color":"gray","italic":false}'
 ## 効果値を追加
-  function asset.lib:item/create/lore/stats/main.loop
+	function asset.lib:item/create/lore/stats/main.loop
 ## 一時使用ScoreHolderをリセット
-  scoreboard players reset #Amount
+	scoreboard players reset #Amount
 ## 一時使用Storageを削除
-  data remove storage asset:temp Stat
-  data remove storage asset:temp Amount
+	data remove storage asset:temp Stat
+	data remove storage asset:temp Amount
