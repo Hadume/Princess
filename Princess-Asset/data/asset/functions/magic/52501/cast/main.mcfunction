@@ -2,8 +2,6 @@
 #
 # @within function asset:magic/52501/cast/check.condition
 
-## 共通処理
-	function asset.lib:magic/cast/common/
 ## 範囲内のMobを特定
 	function asset.lib:magic/action/range/
 ##

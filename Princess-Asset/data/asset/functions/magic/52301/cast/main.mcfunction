@@ -2,8 +2,6 @@
 #
 # @within function asset:magic/52301/cast/check.condition
 
-## 共通処理
-	function asset.lib:magic/cast/common/
 ##
 	function asset.lib:magic/action/range/
 ## 座標を取得
