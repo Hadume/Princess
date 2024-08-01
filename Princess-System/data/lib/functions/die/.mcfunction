@@ -3,6 +3,6 @@
 # @input as entity
 # @api
 
-## 
-  #execute if entity @s[type=player]
-  execute if entity @s[type=!player] run function lib:die/entity/
+##
+	#execute if entity @s[type=player]
+	execute if entity @s[type=!player] run function lib:die/entity/

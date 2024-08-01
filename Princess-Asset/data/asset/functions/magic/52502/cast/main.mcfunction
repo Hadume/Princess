@@ -8,14 +8,14 @@
  #declare score_holder #StoredDamage
 
 ## 共通処理
-  function asset.lib:magic/cast/common/
+	function asset.lib:magic/cast/common/
 ##
-  data modify storage asset:magic Damage set value 1b
-  function asset.lib:magic/action/range/
+	data modify storage asset:magic Damage set value 1b
+	function asset.lib:magic/action/range/
 ## HP回復
-  execute store result score #StoredDamage Temp run data get storage asset:magic StoredDamage
-  scoreboard players operation @s HP += #StoredDamage Temp
+	execute store result score #StoredDamage Temp run data get storage asset:magic StoredDamage
+	scoreboard players operation @s HP += #StoredDamage Temp
 ## 音を鳴らす
-  execute at @s run playsound entity.squid.squirt master @a ~ ~ ~ 1 2
+	execute at @s run playsound entity.squid.squirt master @a ~ ~ ~ 1 2
 ## 一時使用ScoreHolder
-  scoreboard players reset #StoredDamage
+	scoreboard players reset #StoredDamage

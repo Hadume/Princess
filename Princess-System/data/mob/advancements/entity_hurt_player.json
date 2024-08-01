@@ -1,377 +1,377 @@
 {
-    "criteria": {
-        "0-0": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.0.0\"]}"
-                    }
-                }
-            }
-        },
-        "0-1": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.0.1\"]}"
-                    }
-                }
-            }
-        },
-        "0-2": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.0.2\"]}"
-                    }
-                }
-            }
-        },
-        "0-3": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.0.3\"]}"
-                    }
-                }
-            }
-        },
-        "1-0": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.1.0\"]}"
-                    }
-                }
-            }
-        },
-        "1-1": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.1.1\"]}"
-                    }
-                }
-            }
-        },
-        "1-2": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.1.2\"]}"
-                    }
-                }
-            }
-        },
-        "1-3": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.1.3\"]}"
-                    }
-                }
-            }
-        },
-        "2-0": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.2.0\"]}"
-                    }
-                }
-            }
-        },
-        "2-1": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.2.1\"]}"
-                    }
-                }
-            }
-        },
-        "2-2": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.2.2\"]}"
-                    }
-                }
-            }
-        },
-        "2-3": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.2.3\"]}"
-                    }
-                }
-            }
-        },
-        "3-0": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.3.0\"]}"
-                    }
-                }
-            }
-        },
-        "3-1": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.3.1\"]}"
-                    }
-                }
-            }
-        },
-        "3-2": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.3.2\"]}"
-                    }
-                }
-            }
-        },
-        "3-3": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.3.3\"]}"
-                    }
-                }
-            }
-        },
-        "4-0": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.4.0\"]}"
-                    }
-                }
-            }
-        },
-        "4-1": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.4.1\"]}"
-                    }
-                }
-            }
-        },
-        "4-2": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.4.2\"]}"
-                    }
-                }
-            }
-        },
-        "4-3": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.4.3\"]}"
-                    }
-                }
-            }
-        },
-        "5-0": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.5.0\"]}"
-                    }
-                }
-            }
-        },
-        "5-1": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.5.1\"]}"
-                    }
-                }
-            }
-        },
-        "5-2": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.5.2\"]}"
-                    }
-                }
-            }
-        },
-        "5-3": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.5.3\"]}"
-                    }
-                }
-            }
-        },
-        "6-0": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.6.0\"]}"
-                    }
-                }
-            }
-        },
-        "6-1": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.6.1\"]}"
-                    }
-                }
-            }
-        },
-        "6-2": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.6.2\"]}"
-                    }
-                }
-            }
-        },
-        "6-3": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.6.3\"]}"
-                    }
-                }
-            }
-        },
-        "7-0": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.7.0\"]}"
-                    }
-                }
-            }
-        },
-        "7-1": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.7.1\"]}"
-                    }
-                }
-            }
-        },
-        "7-2": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.7.2\"]}"
-                    }
-                }
-            }
-        },
-        "7-3": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "source_entity": {
-                        "nbt": "{Tags:[\"DmgFlag.7.3\"]}"
-                    }
-                }
-            }
-        }
-    },
-    "requirements": [
-        [
-            "0-0",
-            "0-1",
-            "0-2",
-            "0-3"
-        ],
-        [
-            "1-0",
-            "1-1",
-            "1-2",
-            "1-3"
-        ],
-        [
-            "2-0",
-            "2-1",
-            "2-2",
-            "2-3"
-        ],
-        [
-            "3-0",
-            "3-1",
-            "3-2",
-            "3-3"
-        ],
-        [
-            "4-0",
-            "4-1",
-            "4-2",
-            "4-3"
-        ],
-        [
-            "5-0",
-            "5-1",
-            "5-2",
-            "5-3"
-        ],
-        [
-            "6-0",
-            "6-1",
-            "6-2",
-            "6-3"
-        ],
-        [
-            "7-0",
-            "7-1",
-            "7-2",
-            "7-3"
-        ]
-    ],
-    "rewards": {
-        "function": "mob:hurt/ehp/"
-    }
+	"criteria": {
+		"0-0": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.0.0\"]}"
+					}
+				}
+			}
+		},
+		"0-1": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.0.1\"]}"
+					}
+				}
+			}
+		},
+		"0-2": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.0.2\"]}"
+					}
+				}
+			}
+		},
+		"0-3": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.0.3\"]}"
+					}
+				}
+			}
+		},
+		"1-0": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.1.0\"]}"
+					}
+				}
+			}
+		},
+		"1-1": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.1.1\"]}"
+					}
+				}
+			}
+		},
+		"1-2": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.1.2\"]}"
+					}
+				}
+			}
+		},
+		"1-3": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.1.3\"]}"
+					}
+				}
+			}
+		},
+		"2-0": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.2.0\"]}"
+					}
+				}
+			}
+		},
+		"2-1": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.2.1\"]}"
+					}
+				}
+			}
+		},
+		"2-2": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.2.2\"]}"
+					}
+				}
+			}
+		},
+		"2-3": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.2.3\"]}"
+					}
+				}
+			}
+		},
+		"3-0": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.3.0\"]}"
+					}
+				}
+			}
+		},
+		"3-1": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.3.1\"]}"
+					}
+				}
+			}
+		},
+		"3-2": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.3.2\"]}"
+					}
+				}
+			}
+		},
+		"3-3": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.3.3\"]}"
+					}
+				}
+			}
+		},
+		"4-0": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.4.0\"]}"
+					}
+				}
+			}
+		},
+		"4-1": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.4.1\"]}"
+					}
+				}
+			}
+		},
+		"4-2": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.4.2\"]}"
+					}
+				}
+			}
+		},
+		"4-3": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.4.3\"]}"
+					}
+				}
+			}
+		},
+		"5-0": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.5.0\"]}"
+					}
+				}
+			}
+		},
+		"5-1": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.5.1\"]}"
+					}
+				}
+			}
+		},
+		"5-2": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.5.2\"]}"
+					}
+				}
+			}
+		},
+		"5-3": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.5.3\"]}"
+					}
+				}
+			}
+		},
+		"6-0": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.6.0\"]}"
+					}
+				}
+			}
+		},
+		"6-1": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.6.1\"]}"
+					}
+				}
+			}
+		},
+		"6-2": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.6.2\"]}"
+					}
+				}
+			}
+		},
+		"6-3": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.6.3\"]}"
+					}
+				}
+			}
+		},
+		"7-0": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.7.0\"]}"
+					}
+				}
+			}
+		},
+		"7-1": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.7.1\"]}"
+					}
+				}
+			}
+		},
+		"7-2": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.7.2\"]}"
+					}
+				}
+			}
+		},
+		"7-3": {
+			"trigger": "entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"source_entity": {
+						"nbt": "{Tags:[\"DmgFlag.7.3\"]}"
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"0-0",
+			"0-1",
+			"0-2",
+			"0-3"
+		],
+		[
+			"1-0",
+			"1-1",
+			"1-2",
+			"1-3"
+		],
+		[
+			"2-0",
+			"2-1",
+			"2-2",
+			"2-3"
+		],
+		[
+			"3-0",
+			"3-1",
+			"3-2",
+			"3-3"
+		],
+		[
+			"4-0",
+			"4-1",
+			"4-2",
+			"4-3"
+		],
+		[
+			"5-0",
+			"5-1",
+			"5-2",
+			"5-3"
+		],
+		[
+			"6-0",
+			"6-1",
+			"6-2",
+			"6-3"
+		],
+		[
+			"7-0",
+			"7-1",
+			"7-2",
+			"7-3"
+		]
+	],
+	"rewards": {
+		"function": "mob:hurt/ehp/"
+	}
 }

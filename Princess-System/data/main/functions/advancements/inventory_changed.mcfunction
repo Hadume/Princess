@@ -3,12 +3,12 @@
 # @within function main:tick/player
 
 ##
-  data modify storage main: InventoryChanged set value 1b
+	data modify storage main: InventoryChanged set value 1b
 ## インベントリーを取得
-  function api:get.nbt/inventory
+	function api:get.nbt/inventory
 ## オフハンドにアイテムがあったら
-  execute if data storage api: {Inventory:[{Slot:-106b}]} run function player:offhand
+	execute if data storage api: {Inventory:[{Slot:-106b}]} run function player:offhand
 ## 一時使用Storageを削除
-  data remove storage main: InventoryChanged
+	data remove storage main: InventoryChanged
 ## 進捗を剥奪
-  advancement revoke @s only main:inventory_changed
+	advancement revoke @s only main:inventory_changed

@@ -3,21 +3,21 @@
 # @within function asset:item/-54003/create/
 
 ## アイテムid; String
-  data modify storage asset:item id set value "iron_chestplate"
+	data modify storage asset:item id set value "iron_chestplate"
 ## 名前; JsonText
-  data modify storage asset:item Name set value '{"text":"鉄鎧"}'
+	data modify storage asset:item Name set value '{"text":"鉄鎧"}'
 ## 説明; List.JsonText; (任意)
-  #data modify storage asset:item Lore set value []
+	#data modify storage asset:item Lore set value []
 ## 種類; String; ["Wand","Armor","Crystal","Meal","Misc"]
-  data modify storage asset:item Category set value "Armor"
+	data modify storage asset:item Category set value "Armor"
 ## レアリティ
-  data modify storage asset:item Rarity set value 5
+	data modify storage asset:item Rarity set value 5
 ## 効果; List.Compound
 ###   Name; String; [HPMax, MPMax, ATK, DEF, Speed]
 ###   Operation; Int ; [0: 元の値にAmountを加算, 1: 元の値にAmount＊100％を加算, 2: 元の値にAmount＊100％を乗算]
 ###   Amount; Int
-  data modify storage asset:item Stats set value [{Name:"HPMax",Operation:1,Amount:10},{Name:"MPMax",Operation:1,Amount:10}]
+	data modify storage asset:item Stats set value [{Name:"HPMax",Operation:1,Amount:10},{Name:"MPMax",Operation:1,Amount:10}]
 ## NBT; Compound; (任意)
-  data modify storage asset:item NBT set value {Enchantments:[{id:"mending",lvl:1s}]}
+	data modify storage asset:item NBT set value {Enchantments:[{id:"mending",lvl:1s}]}
 ## アイテムを生成
-  function asset.lib:item/create/check.condition
+	function asset.lib:item/create/check.condition
