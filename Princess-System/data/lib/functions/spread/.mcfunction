@@ -6,7 +6,7 @@
 #   storage lib:
 #     Spread.Amount : [float] @ 2 || float
 #     Spread.At? : [double] @ 3
-#     Spread.OnGround? : boolean(default: false)
+#     Spread.OnGround? : boolean
 # @api
 
 ## 引数の確認
