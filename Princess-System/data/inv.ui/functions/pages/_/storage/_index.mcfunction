@@ -1,6 +1,6 @@
 #> inv.ui:pages/_/storage/_index
 # 
-# @within 
+# @private
 
 #> Objectives
 # @within function inv.ui:pages/_/storage/**

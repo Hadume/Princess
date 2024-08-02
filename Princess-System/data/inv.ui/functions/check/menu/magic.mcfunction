@@ -1,6 +1,6 @@
-#> inv.ui:check/magic
+#> inv.ui:check/menu/magic
 #   魔法選択から選択チェック
-# @within function inv.ui:
+# @within function inv.ui:check/menu/
 
 # check
     # 戻る

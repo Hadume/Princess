@@ -1,5 +1,5 @@
-#> inv.ui:pages/_/storage/page.next
-# 
+#> inv.ui:pages/_/storage/item/page.next
+#
 # @within function inv.ui:check/storage/item
 
 # 現在のページチェック

@@ -1,5 +1,5 @@
-#> inv.ui:asset/storage/storage
-# 
+#> inv.ui:asset/quest/cleared
+#
 # @within function inv.ui:pages/_/quest
 
 # UICode
@@ -15,4 +15,3 @@
 
 # アイテムセット
     function inv.ui:pages/set with storage inv.ui: Asset.
-

@@ -1,6 +1,6 @@
-#> inv.ui:check/quest
+#> inv.ui:check/menu/quest
 #   クエスト確認から選択チェック
-# @within function inv.ui:
+# @within function inv.ui:check/menu/
 
 # check
     # 戻る

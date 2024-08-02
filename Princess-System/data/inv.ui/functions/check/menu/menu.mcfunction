@@ -1,6 +1,6 @@
-#> inv.ui:check/menu
+#> inv.ui:check/menu/menu
 #   メニューから選択チェック
-# @within function inv.ui:
+# @within function inv.ui:check/menu/
 
 # check
     # スキルツリー

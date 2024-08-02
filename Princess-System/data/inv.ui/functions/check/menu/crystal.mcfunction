@@ -1,6 +1,6 @@
-#> inv.ui:check/crystal
+#> inv.ui:check/menu/crystal
 #   クリスタルから選択チェック
-# @within function inv.ui:
+# @within function inv.ui:check/menu/
 
 # check
     # 戻る

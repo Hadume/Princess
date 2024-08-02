@@ -1,6 +1,6 @@
 #> inv.ui:_index
 # 
-# @within 
+# @private
 
 #> Objectives
 # @internal

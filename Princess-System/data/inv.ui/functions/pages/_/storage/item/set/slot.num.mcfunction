@@ -1,8 +1,7 @@
 #> inv.ui:pages/_/storage/item/set/slot.num
 #   Slot番号をシュルカーボックスにそろえるための処理を行うfunction
-# @within
-#   function inv.ui:pages/_/storage/item/set/set.data
-#   function inv.ui:pages/_/storage/item/set/slot.num
+# @within function inv.ui:pages/_/storage/item/set/set.data
+# @private
 
 # 番号を整える
     # スコア代入

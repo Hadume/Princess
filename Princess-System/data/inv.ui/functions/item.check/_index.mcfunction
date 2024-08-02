@@ -1,6 +1,6 @@
 #> inv.ui:item.check/_index
 # 
-# @within 
+# @private
 
 #> ScoreHolder
 # @within function inv.ui:item.check/page/*
