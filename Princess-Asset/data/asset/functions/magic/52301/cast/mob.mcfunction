@@ -1,6 +1,6 @@
 #> asset:magic/52301/cast/mob
 # MOBを引き寄せる
-# @within function asset:magic/52301/cast/main
+# @within function asset:magic/52301/cast/
 
 ## データを移行
 	data modify storage lib: Spread.At set from storage asset:temp 52301.Pos

@@ -1,4 +1,4 @@
-#> asset.lib:magic/cast/spell/check.condition
+#> asset.lib:magic/cast/spell/
 #
 # @input storage asset:magic
 #   Name : JsonText
@@ -9,7 +9,7 @@
 #   Speed? : float
 #   Targets? : [String] @ ..2
 #   Elements? : [String] @ ..5
-# @within asset:magic/*/cast/main
+# @within asset:magic/*/cast/
 
 ## 引数の確認
 	execute store success storage asset:temp Error byte 1 unless data storage asset:magic Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:magic Name"}]

@@ -1,6 +1,6 @@
 #> asset.lib:magic/cast/common/
 #
-# @within asset:magic/*/cast/check.condition
+# @within asset:magic/cast
 
 #> ScoreHolder
 # @private

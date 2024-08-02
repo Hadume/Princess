@@ -1,6 +1,6 @@
 #> asset:magic/52302/cast/main
 #
-# @within function asset:magic/52302/cast/check.condition
+# @within function asset:magic/52302/cast/
 
 ## 保存
 	data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Magic[{ID:52302}].data set from storage asset:magic {}

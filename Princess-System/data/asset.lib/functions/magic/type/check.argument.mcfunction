@@ -1,11 +1,11 @@
-#> asset.lib:magic/types/check.condition/
+#> asset.lib:magic/type/check.argument
 # 魔法発動に必要な要素を確認
 # @input storage asset:magic Raw
 #   Name : JsonText
 #   MP : int
 #   Cooltime : int
 #   Multiple? : int
-# @within function asset:magic/*/types
+# @within function asset:magic/*/type
 
 ##
 	data remove storage asset:magic Argument

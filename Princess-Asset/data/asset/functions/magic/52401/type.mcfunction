@@ -1,4 +1,4 @@
-#> asset:magic/52401/types
+#> asset:magic/52401/type
 #
 # @within function asset:magic/52401/cast/check.condition
 
@@ -18,4 +18,4 @@
 	### 属性; List.String; ["Flamme", "Wasser", "Wind", "Licht", "Dunkel"]; (任意)
 		data modify storage asset:magic Raw.Elements set value ["Licht"]
 ##
-	function asset.lib:magic/types/check.condition/
+	function asset.lib:magic/type/check.argument
