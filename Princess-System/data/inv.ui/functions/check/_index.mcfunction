@@ -1,6 +1,6 @@
 #> inv.ui:check/_index
 # 
-# @within 
+# @private
 
 # Tags
 #> @within 

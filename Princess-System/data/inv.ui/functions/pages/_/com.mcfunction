@@ -1,5 +1,5 @@
-#> inv.ui:pages/_/quest
-# 
+#> inv.ui:pages/_/com
+#
 # @within function inv.ui:pages/branch/*
 
 # 操作UI

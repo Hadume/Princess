@@ -1,8 +1,7 @@
-#> inv.ui:pages/_/storage/item/remove.hotbar.loop
-# 
-# @within
-#   function iinv.ui:pages/_/storage/item/set/set.data
-#   function inv.ui:pages/_/storage/item/remove.hotbar.loop
+#> inv.ui:pages/_/storage/item/set/remove.hotbar.loop
+#
+# @within function inv.ui:pages/_/storage/item/set/set.data
+# @private
 
 # 探索準備
     ## データを探索データ格納

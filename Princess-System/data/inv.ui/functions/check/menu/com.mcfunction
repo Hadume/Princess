@@ -1,6 +1,6 @@
-#> inv.ui:check/com
+#> inv.ui:check/menu/com
 #   コミュニケートから選択チェック
-# @within function inv.ui:
+# @within function inv.ui:check/menu/
 
 # check
     # 戻る

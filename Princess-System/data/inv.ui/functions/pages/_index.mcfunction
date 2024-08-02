@@ -1,11 +1,11 @@
 #> inv.ui:pages/_index
 # 
-# @within 
+# @private
 
 #> Tags
 # @within * **
  #declare tag UI.Generate
 
 #> functions
-# @within * **
+# @within function inv.ui:**
  #declare function inv.ui:pages/

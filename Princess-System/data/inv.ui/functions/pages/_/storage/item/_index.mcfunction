@@ -1,6 +1,6 @@
 #> inv.ui:pages/_/storage/item/_index
 # 
-# @within 
+# @private
 
 #> ScoreHolder
 # @internal

@@ -3,7 +3,7 @@
 # @within function inv.ui:
 
 # インベントリ取得
-    function api:get.nbt/inventory/
+    function api:get.nbt/inventory
     data modify storage inv.ui: Player.Inventory set from storage api: Inventory
 
 # 返品処理

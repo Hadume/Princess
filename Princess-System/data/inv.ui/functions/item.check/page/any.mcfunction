@@ -1,8 +1,7 @@
 #> inv.ui:item.check/page/any
 #   メニューから返品？
-# @within
-#   function inv.ui:item.check/
-#   function inv.ui:item.check/page/any
+# @within function inv.ui:item.check/
+# @private
 
 # Workにデータ格納
     data modify storage inv.ui: Player.Work set from storage inv.ui: Player.Inventory[-1]

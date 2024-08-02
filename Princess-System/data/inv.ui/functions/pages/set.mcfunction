@@ -1,6 +1,6 @@
 #> inv.ui:pages/set
 # 
-# @within * **
+# @within function inv.ui:asset/*/*
 
 # アーマースタンド召喚
     summon armor_stand ~ ~ ~ {Tags:["UI.Generate"],Marker:1b,NoGravity:1b,Invisible:1b,HandItems:[{id:"minecraft:stone",Count:1b,tag:{UiItem:1b}},{}]}

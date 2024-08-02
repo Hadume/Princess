@@ -1,5 +1,5 @@
-#> tests:change.page/menu
-# 
+#> inv.ui:back.menu
+#
 # @private
 
 # スコア

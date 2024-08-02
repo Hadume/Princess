@@ -1,6 +1,6 @@
-#> inv.ui:check/storage
+#> inv.ui:check/menu/storage
 #   ストレージメニューから選択チェック
-# @within function inv.ui:
+# @within function inv.ui:check/menu/
 
 # check
     # 戻る
