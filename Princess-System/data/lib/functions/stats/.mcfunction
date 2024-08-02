@@ -2,7 +2,7 @@
 #
 # @input
 #   as entity
-#   storage: lib: Stats
+#   storage lib: [Stats] @ N
 # @api
 
 ## 引数を確認

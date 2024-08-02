@@ -1,11 +1,11 @@
 #> asset.lib:mob/summon/check.condition
 #
 # @input storage asset:mob
-#   Name : JsonText
-#   Type : String
-#   Status : {Lvl : int, Exp : int, Money : int, HP : int, MP : int, Speed : int} @ ..6
-#   Armor? : [{id : id(minecraft:item), Count : int , tag : Compound} || {ID : id(asset:item)}] @ 4
-#   Weapon? : [{id : id(minecraft:item), Count : int , tag : Compound} || {ID : id(asset:item)}] @ 2
+#   Name : TextComponent
+#   Type : Type
+#   Status : {Lvl : int, Exp : int, Money : int, HP : int, MP : int, ATK : int, DEF : int, Speed : int}
+#   Armor? : [{id : id(minecraft:item), Count : int @ 1..64, tag : Compound} || {ID : id(asset:item)}] @ ..4
+#   Weapon? : [{id : id(minecraft:item), Count : int @ 1..64, tag : Compound} || {ID : id(asset:item)}] @ ..2
 #   NBT? : Compound
 # @within asset:mob/*/summon/main
 

@@ -2,11 +2,11 @@
 #
 # @input
 #   as entity
-#   storage lib: Range
-#     Amount : float
-#     Pierce : int
-#     Targets? : [String] @ ..2
-#     NoHurtTime : boolean
+#   storage lib:
+#     Range.Amount : float
+#     Range.Pierce : int
+#     Range.Targets? : [Target] @ ..2
+#     Range.NoHurtTime : boolean
 # @output
 #   tag Lib.InRange
 #   storage lib: Range.Pierced : int

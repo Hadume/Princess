@@ -5,7 +5,7 @@
 #   storage asset:magic
 #     Amount : int
 #     CasterID? : int
-#     Elements? : [String] @ ..6
+#     Elements? : [Element] @ ..6
 # @output storage asset:magic SroredDamage
 # @within function
 #   asset:magic/*/*/**

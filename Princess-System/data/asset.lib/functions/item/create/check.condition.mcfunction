@@ -2,11 +2,11 @@
 # アイテムを生成できるか確認
 # @input storage asset:item
 #   id : id(minecraft:item)
-#   Name : JsonText
-#   Category : String
-#   Rarity : int
-#   Lore? : [JsonText] @ N
-#   Stats : [{Name : String, Amount : int, Operation? : int}] @ N
+#   Name : TextComponent
+#   Category : Category
+#   Rarity : int @ 1..10
+#   Lore? : [TextComponent] @ N
+#   Stats : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
 #   NBT : Compound
 # @output vector 0 -64 0 Items[0]
 # @within asset:item/*/create/main

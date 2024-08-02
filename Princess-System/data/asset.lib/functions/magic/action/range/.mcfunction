@@ -3,8 +3,8 @@
 # @input storage asset:magic
 #   Range : float
 #   Pierce? : int
-#   Targets? : [String] @ ..2
-#   Damage? : boolean(default: false)
+#   Targets? : [Target] @ ..2
+#   Damage? : boolean
 # @within function
 #   asset:magic/*/*/**
 #   asset.lib:magic/cast/action

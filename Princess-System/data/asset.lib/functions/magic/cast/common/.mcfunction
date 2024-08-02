@@ -1,6 +1,7 @@
 #> asset.lib:magic/cast/common/
 #
-# @within asset:magic/cast
+# @output storage asset:magic CanCast : boolean
+# @within function asset:magic/cast
 
 #> ScoreHolder
 # @private

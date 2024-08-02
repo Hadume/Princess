@@ -1,14 +1,20 @@
 #> asset.lib:magic/type/check.argument
 # 魔法発動に必要な要素を確認
-# @input storage asset:magic Raw
-#   Name : JsonText
-#   MP : int
-#   Cooltime : int
-#   Multiple? : int
+# @input storage asset:magic
+#   Raw.Name : TextComponent
+#   Raw.MP : int
+#   Raw.Cooltime : int
+#   Raw.Multiple? : int
+#   Raw.Amount? : int
+#   Raw.Duration? : int
+#   Raw.Range? : float
+#   Raw.Pierce? : float
+#   Raw.Speed? : float
+#   Raw.Targets? : [Target] @ ..2
+#   Raw.Elements? : [Element] @ ..5
+# @output storage asset:magic IsFull : boolean
 # @within function asset:magic/*/type
 
-##
-	data remove storage asset:magic Argument
 ## 引数を確認
 	execute store success storage asset:temp Error byte 1 unless data storage asset:magic Raw.Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:magic Name"}]
 	execute store success storage asset:temp Error byte 1 unless data storage asset:magic Raw.MP run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:magic MP"}]

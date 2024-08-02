@@ -1,7 +1,7 @@
 #> lib:hitbox/
 #
 # @input storage lib: Hitbox.id : id(minecraft:entity)
-# @output storage lib: Hitbox.Size : [float, float] @ 2
+# @output storage lib: Hitbox.Size : [float] @ 2
 # @api
 
 ## 引数の確認
