@@ -1,6 +1,6 @@
 #> asset.lib:magic/cast/spell/main
 # 魔法を初期化
-# @within function asset.lib:magic/cast/spell/check.condition
+# @within function asset.lib:magic/cast/spell/
 
 ##
 	tag @s add This

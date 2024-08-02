@@ -1,6 +1,14 @@
 #> asset:magic/52501/cast/
 #
-# @within tag/function asset:magic/cast
+# @within function asset:magic/cast
 
+## 範囲内のMobを特定
+	function asset.lib:magic/action/range/
 ##
-	execute if data storage asset:magic {ID:52501} run function asset:magic/52501/cast/check.condition
+	execute as @e[tag=Lib.InRange] store result score @s TimeLock run data get storage asset:magic Duration
+	execute as @e[tag=Lib.InRange] run data modify entity @s NoAI set value 1b
+## tick処理
+	schedule function asset:magic/52501/tick/ 1t
+## 音を鳴らす
+	execute at @s run playsound block.chain.place master @a
+	execute at @s run playsound block.chain.break master @a ~ ~ ~ 0.25 0.5

@@ -8,7 +8,7 @@
  #declare tag Spell.Display
 #> Tags
 # @within function
-#   asset:magic/*/cast/main
+#   asset:magic/*/cast/
 #   asset.lib:magic/cast/spell/**
  #declare tag Spell.Init
  #declare tag SmartMotion

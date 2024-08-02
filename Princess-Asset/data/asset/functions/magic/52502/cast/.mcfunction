@@ -1,6 +1,19 @@
 #> asset:magic/52502/cast/
 #
-# @within tag/function asset:magic/cast
+# @within function asset:magic/cast
+
+#> ScoreHolder
+# @within function asset:magic/52502/cast/entity
+# @private
+ #declare score_holder #StoredDamage
 
 ##
-	execute if data storage asset:magic {ID:52502} run function asset:magic/52502/cast/check.condition
+	data modify storage asset:magic Damage set value 1b
+	function asset.lib:magic/action/range/
+## HP回復
+	execute store result score #StoredDamage Temp run data get storage asset:magic StoredDamage
+	scoreboard players operation @s HP += #StoredDamage Temp
+## 音を鳴らす
+	execute at @s run playsound entity.squid.squirt master @a ~ ~ ~ 1 2
+## 一時使用ScoreHolder
+	scoreboard players reset #StoredDamage

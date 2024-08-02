@@ -19,7 +19,6 @@
 	execute if data storage main: {InventoryChanged:1b} unless predicate player:sneaking run function asset.lib:magic/cast/condition/offhand
 	execute if data storage main: {InventoryChanged:1b} if predicate player:sneaking run function asset.lib:magic/cast/condition/offhand_s
 ## Storageを削除
-	data remove storage asset:magic CanCast
 	data remove storage asset:magic Name
 	data remove storage asset:magic MP
 	data remove storage asset:magic Cooltime
