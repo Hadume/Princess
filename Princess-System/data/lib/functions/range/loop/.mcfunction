@@ -25,8 +25,8 @@
 		data modify storage lib: Hitbox.id set from storage data: _.id
 		function lib:hitbox/
 	### データを移行
-		execute store result score #Size.X Temp run data get storage lib: Hitbox.Size[0] 1000
-		execute store result score #Size.Y Temp run data get storage lib: Hitbox.Size[1] 1000
+		execute store result score #Size.X Temp run data get storage lib: Hitbox.Size[0] 500
+		execute store result score #Size.Y Temp run data get storage lib: Hitbox.Size[1] 500
 ## Y座標を調整
 	scoreboard players operation #Pos.Y1 Temp -= #Size.Y Temp
 ## プラスに
