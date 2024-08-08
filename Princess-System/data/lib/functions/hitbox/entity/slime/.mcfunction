@@ -17,7 +17,7 @@
 	data modify storage lib: HitBox set value [0.0f,0.0f]
 ## 計算
 	scoreboard players operation #Scale Temp *= #51 Const
-	execute store result storage lib: HitBox[0] float 0.005 store result storage lib: HitBox[1] float 0.005 run scoreboard players get #Scale Temp
+	execute store result storage lib: HitBox[0] float 0.01 store result storage lib: HitBox[1] float 0.01 run scoreboard players get #Scale Temp
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Scale
 	scoreboard players reset #Size.Copy
