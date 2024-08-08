@@ -9,7 +9,8 @@
 ##
 	function lib:exp/levelup/loop
 ## ステータスを更新
-	function #lib:stats
+	data modify storage lib: Stats set value ["HPMax","MPMax","ATK","DEF"]
+	function lib:stats/
 ## 体力、魔力を回復
 	scoreboard players operation @s HP = @s HP.Max
 	scoreboard players operation @s MP = @s MP.Max

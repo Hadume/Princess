@@ -4,15 +4,15 @@
 #   as entity
 #   position
 #   rotation
-#   score
+#   score_holder
 #     #Lib.ATK Lib
 #     #Lib.DEF Lib
-# @output score #Lib.Damage Lib
+# @output score_holder #Lib.Damage Lib
 # @api
 
 ## 引数の確認
-	execute store success storage lib:temp Error byte 1 unless score #Lib.ATK Lib matches ..2147483647 run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "#Lib.ATK"}]
-	execute store success storage lib:temp Error byte 1 unless score #Lib.DEF Lib matches ..2147483647 run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "#Lib.DEF"}]
+	execute store success storage lib:temp Error byte 1 unless score #Lib.ATK Lib matches ..2147483647 run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "#Lib.ATK Lib"}]
+	execute store success storage lib:temp Error byte 1 unless score #Lib.DEF Lib matches ..2147483647 run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "#Lib.DEF Lib"}]
 ##
 	execute unless data storage lib:temp Error run function lib:damage/main
 ## 引数を削除

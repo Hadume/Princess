@@ -6,6 +6,7 @@
 	scoreboard players add @s Lvl 1
 ## ステータス上昇
 	scoreboard players add @s HP.Max.Base 10
+	scoreboard players add @s MP.Max.Base 10
 	scoreboard players add @s ATK.Base 1
 	scoreboard players add @s DEF.Base 1
 ## 次レベルで必要な経験値量を計算

@@ -2,19 +2,19 @@
 #
 # @input
 #   as entity
-#   storage lib:
-#     Range.Amount : float
-#     Range.Pierce : int
-#     Range.Targets? : [Target] @ ..2
-#     Range.NoHurtTime : boolean
+#   storage lib: Range
+#     Amount : float
+#     Pierce : int
+#     Targets? : [Target] @ ..2
+#     NoHurtTime : boolean
 # @output
 #   tag Lib.InRange
 #   storage lib: Range.Pierced : int
 # @api
 
 ## 引数の確認
-	execute store success storage lib:temp Error byte 1 unless data storage lib: Range.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "Range.Amount"}]
-	execute store success storage lib:temp Error byte 1 unless data storage lib: Range.Pierce run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "Range.Pierce"}]
+	execute store success storage lib:temp Error byte 1 unless data storage lib: Range.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "lib: Range.Amount"}]
+	execute store success storage lib:temp Error byte 1 unless data storage lib: Range.Pierce run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "lib: Range.Pierce"}]
 ##
 	execute unless data storage lib:temp Error run function lib:range/main
 ## 引数を削除
