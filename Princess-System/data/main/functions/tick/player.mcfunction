@@ -12,8 +12,8 @@
 ## 魔法のクールタイム
 	execute if predicate asset.lib:cooltime run function player:reduce.cooltime
 ## MP,HPの回復
-	execute if entity @s[scores={MP.Rcvr.Timer=1..}] run function lib:status/mp/recover/tick
-	execute if entity @s[scores={HP.Rcvr.Timer=1..}] run function lib:status/hp/recover/tick
+	execute if entity @s[scores={MP.Rgn.Timer=1..}] run function player:regen/mp/tick
+	execute if entity @s[scores={HP.Rgn.Timer=1..}] run function player:regen/hp/tick
 ## 4tickごとに実行
 	scoreboard players add @s 4tickInterval 1
 	execute if entity @s[scores={4tickInterval=4..}] run function player:4tick_interval

@@ -9,9 +9,8 @@
 ## 範囲内のMobを特定
 	function asset.lib:magic/action/range/
 ##
-	execute store result score #HP.Rcvr Temp run data get storage asset:magic Amount
-	execute as @e[tag=Lib.InRange] run scoreboard players operation @s HP += #HP.Rcvr Temp
-	execute as @e[tag=Lib.InRange] run function lib:status/hp/update/
+	data modify storage lib: RcvrHP.Amount set from storage asset:magic Amount
+	execute as @e[tag=Lib.InRange] run function lib:status/hp/recover/
 ## 音
 	execute at @s run playsound entity.player.levelup master @a ~ ~ ~ 1 2
 ## 一時使用ScoreHolderをリセット

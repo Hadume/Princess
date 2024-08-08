@@ -34,16 +34,16 @@
 			scoreboard objectives add HP dummy
 			scoreboard objectives add HP.Max dummy
 			scoreboard objectives add HP.Max.Base dummy
-			scoreboard objectives add HP.Rcvr.Intrvl dummy
-			scoreboard objectives add HP.Rcvr.Timer dummy
-			scoreboard objectives add HP.Rcvr.Per dummy
+			scoreboard objectives add HP.Rgn.Intrvl dummy
+			scoreboard objectives add HP.Rgn.Timer dummy
+			scoreboard objectives add HP.Rgn.Per dummy
 		#### MP
 			scoreboard objectives add MP dummy
 			scoreboard objectives add MP.Max dummy
 			scoreboard objectives add MP.Max.Base dummy
-			scoreboard objectives add MP.Rcvr.Intrvl dummy
-			scoreboard objectives add MP.Rcvr.Timer dummy
-			scoreboard objectives add MP.Rcvr.Per dummy
+			scoreboard objectives add MP.Rgn.Intrvl dummy
+			scoreboard objectives add MP.Rgn.Timer dummy
+			scoreboard objectives add MP.Rgn.Per dummy
 		#### ATK
 			scoreboard objectives add ATK dummy
 			scoreboard objectives add ATK.Base dummy

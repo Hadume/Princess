@@ -1,18 +1,18 @@
 #> lib:status/mp/recover/main
 # MPを回復
-# @within function lib:status/mp/recover/tick
+# @within function lib:status/mp/recover/
 
-#> ScoreHolder
+#> 回復量
 # @private
- #declare score_holder #MP.RcvrPer.Copy
+ #declare score_holder #Recovery
 
-## 回復値
-	scoreboard players operation #MP.RcvrPer.Copy Temp = @s MP.Rcvr.Per
-	scoreboard players operation #MP.RcvrPer.Copy Temp *= @s MP.Max
-	scoreboard players operation #MP.RcvrPer.Copy Temp /= #100 Const
+## 回復量を取得
+	execute store result score #Recovery Temp run data get storage lib: RcvrMP.Amount
 ## 回復
-	scoreboard players operation @s MP += #MP.RcvrPer.Copy Temp
-## MPを更新
+	scoreboard players operation @s MP += #Recovery Temp
+## 回復しすぎたら、最大値まで戻す
+	execute if score @s MP > @s MP.Max run scoreboard players operation @s MP = @s MP.Max
+## 魔力表示を更新
 	function lib:status/mp/update
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #MP.RcvrPer.Copy
+	scoreboard players reset #Recovery
