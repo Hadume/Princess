@@ -1,4 +1,4 @@
-#> asset:magic/52501/load/
+#> asset:magic/52501/load
 #
 # @within tag/function asset:magic/load
 

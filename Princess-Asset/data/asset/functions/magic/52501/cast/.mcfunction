@@ -1,5 +1,5 @@
 #> asset:magic/52501/cast/
-#
+# 魔法を発動
 # @within function asset:magic/cast
 
 ## 範囲内のMobを特定
@@ -10,5 +10,5 @@
 ## tick処理
 	schedule function asset:magic/52501/tick/ 1t
 ## 音を鳴らす
-	execute at @s run playsound block.chain.place master @a
-	execute at @s run playsound block.chain.break master @a ~ ~ ~ 0.25 0.5
+	playsound block.chain.place master @a
+	playsound block.chain.break master @a ~ ~ ~ 0.25 0.5

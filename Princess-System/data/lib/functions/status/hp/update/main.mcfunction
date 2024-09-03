@@ -11,7 +11,6 @@
 	scoreboard players operation #HP.Display Temp *= #HP.Copy Temp
 	scoreboard players operation #HP.Display Temp /= @s HP.Max
 	scoreboard players operation @s ScoreToHealth = #HP.Display Temp
-	tellraw @a {"score":{"name": "#HP.Copy","objective": "Temp"}}
 ## プレイヤーを回復
 	execute if entity @s[type=player] unless score @s HP.Rgn.Timer matches 1.. if score #HP.Copy Temp < @s HP.Max run scoreboard players operation @s HP.Rgn.Timer = @s HP.Rgn.Intrvl
 ## MOBのステータス表示
