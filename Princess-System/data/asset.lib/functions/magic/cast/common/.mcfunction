@@ -4,7 +4,6 @@
 # @within function asset:magic/cast
 
 #> ScoreHolder
-# @private
 # @within function asset.lib:magic/cast/common/**
  #declare score_holder #Value
  #declare score_holder #MP.Consume
@@ -37,6 +36,9 @@
 	### 足りなかった通知
 		execute unless score #MP.Copy Temp >= #MP.Need Temp run tellraw @s {"text": "MPが足りないにゃん♡","color": "red"}
 		execute unless score #MP.Copy Temp >= #MP.Need Temp run playsound block.note_block.bass master @s
+## 発動数をスコアに保存
+	execute if data storage asset:magic Multiple store result score #Multiple Asset run data get storage asset:magic Multiple
+	execute unless data storage asset:magic Multiple run scoreboard players set #Multiple Asset 1
 ## Storageを削除
 	data remove storage asset:magic Raw
 ## 一時使用ScoreHolderをリセット
