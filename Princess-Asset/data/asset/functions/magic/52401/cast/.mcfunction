@@ -1,5 +1,5 @@
 #> asset:magic/52401/cast/
-#
+# 魔法を発動
 # @within function asset:magic/cast
 
 #> Tags
@@ -13,4 +13,4 @@
 	execute as @e[type=area_effect_cloud,tag=AEC.Init] run data modify entity @s effects[{id:"minecraft:night_vision"}].duration set from storage asset:magic Duration
 	execute as @e[type=area_effect_cloud,tag=AEC.Init] run tag @s remove AEC.Init
 ## 音
-	execute at @s run playsound entity.player.levelup master @a ~ ~ ~ 1 2
+	playsound entity.player.levelup master @a ~ ~ ~ 1 2

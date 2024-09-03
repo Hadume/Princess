@@ -6,7 +6,7 @@
 #     Amount : float
 #     Pierce : int
 #     Targets? : [Target] @ ..2
-#     NoHurtTime : boolean
+#     NoHurtTime? : boolean
 # @output
 #   tag Lib.InRange
 #   storage lib: Range.Pierced : int

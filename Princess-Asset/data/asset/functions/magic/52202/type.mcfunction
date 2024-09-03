@@ -1,5 +1,5 @@
 #> asset:magic/52202/type
-#
+# 魔法のデータ
 # @within function asset:magic/52202/cast/check.condition
 
 ## タイプを設定

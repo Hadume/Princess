@@ -1,5 +1,5 @@
 #> asset:magic/52302/cast/
-#
+# 魔法を発動
 # @within function asset:magic/cast
 
 ## データをコピー
