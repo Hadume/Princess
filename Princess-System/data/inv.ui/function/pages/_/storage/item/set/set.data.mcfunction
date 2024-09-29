@@ -4,7 +4,7 @@
 #   inv.ui:pages/_/storage/item/set/
 #   inv.ui:pages/_/storage/item/set/init/init.page
 
-$say $(PageNumber)ページ目のデータを保存
+#$say $(PageNumber)ページ目のデータを保存
 
 # Inventoryデータ取得
     ## インベントリ読み込み
