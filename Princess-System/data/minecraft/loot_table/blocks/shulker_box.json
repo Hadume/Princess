@@ -1,0 +1,46 @@
+{
+	"type": "block",
+	"pools": [
+		{
+			"entries": [
+				{
+					"type": "alternatives",
+					"children": [
+						{
+							"type": "dynamic",
+							"name": "contents",
+							"conditions": [
+								{
+									"condition": "match_tool",
+									"predicate": {
+										"items": [
+											"debug_stick"
+										]
+									}
+								}
+							]
+						},
+						{
+							"type": "item",
+							"functions": [
+								{
+									"function": "copy_components",
+									"include": [
+										"custom_name",
+										"container",
+										"lock",
+										"container_loot"
+									],
+									"source": "block_entity"
+								}
+							],
+							"name": "shulker_box"
+						}
+					]
+				}
+			],
+			"rolls": 1.0
+		}
+	],
+	"random_sequence": "blocks/shulker_box"
+}
