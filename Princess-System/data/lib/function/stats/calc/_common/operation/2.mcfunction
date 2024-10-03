@@ -1,6 +1,6 @@
-#> lib:stats/calc/common/operation/2
+#> lib:stats/calc/_common/operation/2
 #
-# @within function lib:stats/calc/common/
+# @within function lib:stats/calc/_common/
 
 ##
 	scoreboard players operation #Amount Temp *= #Amount.Stored.2 Temp

@@ -22,31 +22,34 @@
 		scoreboard players set @s MP.Rgn.Per 5
 	## ATK
 		scoreboard players set @s ATK.Base 1
+		scoreboard players set @s ATK.Flamme.Base 0
+		scoreboard players set @s ATK.Wasser.Base 0
+		scoreboard players set @s ATK.Wind.Base 0
+		scoreboard players set @s ATK.Licht.Base 0
+		scoreboard players set @s ATK.Dunkel.Base 0
 	## DEF
 		scoreboard players set @s DEF.Base 0
+		scoreboard players set @s DEF.Flamme.Base 0
+		scoreboard players set @s DEF.Wasser.Base 0
+		scoreboard players set @s DEF.Wind.Base 0
+		scoreboard players set @s DEF.Licht.Base 0
+		scoreboard players set @s DEF.Dunkel.Base 0
 	### Speed
 		scoreboard players set @s Speed.Base 100
 	### Magic
-		### MP
-			scoreboard players set @s Mgc.MP.Base 0
-		#### Cooltime
-			scoreboard players set @s Mgc.Cooltime.Base 0
-		#### Multiple
-			scoreboard players set @s Mgc.Multiple.Base 0
-		#### Amount
-			scoreboard players set @s Mgc.Amount.Base 0
-		#### Duration
-			scoreboard players set @s Mgc.Duration.Base 0
-		#### Pierce
-			scoreboard players set @s Mgc.Pierce.Base 0
-		#### Spread
-			scoreboard players set @s Mgc.Spread.Base 0
-		#### Range
-			scoreboard players set @s Mgc.Range.Base 0
-		#### Speed
-			scoreboard players set @s Mgc.Speed.Base 0
+		scoreboard players set @s Mgc.MP.Base 0
+		scoreboard players set @s Mgc.Cooltime.Base 0
+		scoreboard players set @s Mgc.Multiple.Base 0
+		scoreboard players set @s Mgc.Amount.Base 0
+		scoreboard players set @s Mgc.Duration.Base 0
+		scoreboard players set @s Mgc.Pierce.Base 0
+		scoreboard players set @s Mgc.Spread.Base 0
+		scoreboard players set @s Mgc.Range.Base 0
+		scoreboard players set @s Mgc.Speed.Base 0
+## インベントリUI
+	function menu:pages/menu/open
 ## ステータスの反映
 	function api:display/exp
 	### ステータス
-		data modify storage lib: Stats set value ["Physic","Magic"]
+		data modify storage lib: Stats set value ["Physic","Magic","Element"]
 		function lib:stats/
