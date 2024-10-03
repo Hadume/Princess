@@ -1,6 +1,6 @@
-#> lib:stats/calc/common/get.amount.loop
+#> lib:stats/calc/_common/get.amount.loop
 #
-# @within function lib:stats/calc/common/
+# @within function lib:stats/calc/_common/
 # @private
 
 ## データをコピー
@@ -14,4 +14,4 @@
 ## データを削除
 	data remove storage lib:temp Stats[-1]
 ## ループ
-	execute if data storage lib:temp Stats[] run function lib:stats/calc/common/get.amount.loop
+	execute if data storage lib:temp Stats[] run function lib:stats/calc/_common/get.amount.loop

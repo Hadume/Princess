@@ -1,19 +1,19 @@
-#> lib:stats/calc/common/
+#> lib:stats/calc/_common/
 #
 # @within function lib:stats/calc/*
 
 #> ScoreHolder
-# @within function lib:stats/calc/common/**
+# @within function lib:stats/calc/_common/**
  #declare score_holder #Amount.Stored
  #declare score_holder #Amount.Stored.1
  #declare score_holder #Amount.Stored.2
 
 ## 装備ごとに数値を取得
-	function lib:stats/calc/common/get.amount.loop
+	function lib:stats/calc/_common/get.amount.loop
 ## 元の値に*100%を加算
-	execute if score #Amount.Stored.1 Temp matches ..2147483647 run function lib:stats/calc/common/operation/1
+	execute if score #Amount.Stored.1 Temp matches ..2147483647 run function lib:stats/calc/_common/operation/1
 ## 元の値に*100%を乗算
-	execute if score #Amount.Stored.2 Temp matches ..2147483647 run function lib:stats/calc/common/operation/2
+	execute if score #Amount.Stored.2 Temp matches ..2147483647 run function lib:stats/calc/_common/operation/2
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Amount.Stored
 	scoreboard players reset #Amount.Stored.1

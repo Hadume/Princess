@@ -47,9 +47,29 @@
 		#### ATK
 			scoreboard objectives add ATK dummy
 			scoreboard objectives add ATK.Base dummy
+			scoreboard objectives add ATK.Flamme dummy
+			scoreboard objectives add ATK.Flamme.Base dummy
+			scoreboard objectives add ATK.Wasser dummy
+			scoreboard objectives add ATK.Wasser.Base dummy
+			scoreboard objectives add ATK.Wind dummy
+			scoreboard objectives add ATK.Wind.Base dummy
+			scoreboard objectives add ATK.Licht dummy
+			scoreboard objectives add ATK.Licht.Base dummy
+			scoreboard objectives add ATK.Dunkel dummy
+			scoreboard objectives add ATK.Dunkel.Base dummy
 		#### DEF
 			scoreboard objectives add DEF dummy
 			scoreboard objectives add DEF.Base dummy
+			scoreboard objectives add DEF.Flamme dummy
+			scoreboard objectives add DEF.Flamme.Base dummy
+			scoreboard objectives add DEF.Wasser dummy
+			scoreboard objectives add DEF.Wasser.Base dummy
+			scoreboard objectives add DEF.Wind dummy
+			scoreboard objectives add DEF.Wind.Base dummy
+			scoreboard objectives add DEF.Licht dummy
+			scoreboard objectives add DEF.Licht.Base dummy
+			scoreboard objectives add DEF.Dunkel dummy
+			scoreboard objectives add DEF.Dunkel.Base dummy
 		#### Speed
 			scoreboard objectives add Speed dummy
 			scoreboard objectives add Speed.Base dummy
@@ -87,6 +107,8 @@
 			##### Speed
 				scoreboard objectives add Mgc.Speed dummy
 				scoreboard objectives add Mgc.Speed.Base dummy
+	### Menu
+		scoreboard objectives add InvUI.Page dummy
 	###
 		scoreboard objectives add 4tickInterval dummy
 		scoreboard objectives add Spawner.Delay dummy
@@ -137,5 +159,7 @@
 ## エラーログ
 	data modify storage main: Tell.Error set value "§c[Error] §o§n"
 	data modify storage main: Tell.ArgumentError set value "§c[Error] 引数が足りません: §o§n"
+## ライブラリ
+	function lib:stats/load
 ## Assetの初期化
 	function #asset:magic/load
