@@ -6,8 +6,7 @@
 	"files.trimFinalNewlines": true,
 	"files.insertFinalNewline": true,
 	"[mcfunction]": {
-		"editor.defaultFormatter": "SPGoding.datapack-language-server",
-		"editor.suggest.insertMode": "insert"
+		"editor.defaultFormatter": "ChenCMD.mc-datapack-utility"
 	},
 	"mcdutil.createFile.fileTemplate": {
 		"function": [
@@ -81,5 +80,6 @@
 		"mcfunction"
 	],
 	"diffEditor.ignoreTrimWhitespace": false,
-	"editor.insertSpaces": false
+	"editor.insertSpaces": false,
+	"workbench.iconTheme": "mc-dp-icons"
 }

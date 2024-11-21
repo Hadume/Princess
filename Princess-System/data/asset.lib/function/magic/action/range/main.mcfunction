@@ -8,9 +8,13 @@
 	### 対象数
 		execute if data storage asset:magic Pierce run data modify storage lib: Range.Pierce set from storage asset:magic Pierce
 		execute unless data storage asset:magic Pierce run data modify storage lib: Range.Pierce set value 2147483647
+
+
 ## ダメージを受けているMOBを除外
 	execute if data storage asset:magic {Damage:1b} run data modify storage lib: Range.NoHurtTime set value 1b
+
 ## 範囲内のMOBを特定
 	function lib:range/
+
 ## ついでに攻撃する
 	execute if data storage asset:magic {Damage:1b} run function asset.lib:magic/action/damage/

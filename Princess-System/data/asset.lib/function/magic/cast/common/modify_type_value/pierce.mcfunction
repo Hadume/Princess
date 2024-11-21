@@ -4,7 +4,9 @@
 
 ## 数値を取得
 	execute store result score #Value Temp run data get storage asset:magic Raw.Pierce
+
 ## 調整
 	scoreboard players operation #Value Temp += @s Mgc.Pierce
+
 ## 保存
 	execute store result storage asset:magic Pierce int 1 run scoreboard players get #Value Temp

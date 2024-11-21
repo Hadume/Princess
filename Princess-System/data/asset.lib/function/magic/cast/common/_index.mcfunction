@@ -7,4 +7,4 @@
 #   asset:magic/cast
 #   asset:magic/*/cast/*
 #   asset.lib:magic/cast/common/
- #declare score_holder #Multiple
+	#declare score_holder #Multiple

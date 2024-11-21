@@ -5,7 +5,9 @@
 ## スコア
 	scoreboard players operation @s Exp -= #Exp.Copy Temp
 	scoreboard players operation @s Money += #Money.Copy Temp
+
 ## レベルアップの確認
 	function lib:exp/
+
 ## tagを付ける
 	tag @s add Looted

@@ -4,3 +4,4 @@
 
 ## 初期化
 	execute unless data storage main: {Init:1b} run function main:init/
+	give @s acacia_boat

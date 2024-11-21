@@ -1,0 +1,54 @@
+{
+	"pools": [
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "item",
+					"name": "arrow",
+					"functions": [
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"text": "前のページへ",
+								"italic": false,
+								"bold": true
+							}
+						},
+						{
+							"function": "set_lore",
+							"entity": "this",
+							"mode": "append",
+							"lore": [
+								[
+									{
+										"score": {
+											"name": "#InvPage.Prev",
+											"objective": "Temp"
+										},
+										"color": "gray",
+										"italic": false
+									},
+									{
+										"text": "ページ"
+									}
+								]
+							]
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"max_stack_size": 1
+							}
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{Menu:{PagePrev:1b}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

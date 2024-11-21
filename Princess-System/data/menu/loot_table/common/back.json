@@ -1,0 +1,34 @@
+{
+	"pools": [
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "item",
+					"name": "arrow",
+					"functions": [
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"text": "戻る",
+								"italic": false,
+								"bold": true
+							}
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"max_stack_size": 1
+							}
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{Menu:{Back:1b}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

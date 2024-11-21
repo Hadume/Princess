@@ -5,48 +5,63 @@
 #> ScoreHolder
 # @private
 # @within loot_table asset.lib:item/lore/rarity
- #declare score_holder #Rarity.Copy
+	#declare score_holder #Rarity.Copy
 
 ## Storageを初期化
-	data remove storage asset:temp Item
+	data remove storage temp: Item
+
 ## Countを設定
-	data modify storage asset:temp Item.Count set value 1b
+	data modify storage temp: Item.Count set value 1b
+
 ## データを移行
-	data modify storage asset:temp Item.id set from storage asset:item id
-	data modify storage asset:temp Item.tag.Category set from storage asset:item Category
-	data modify storage asset:temp Item.tag.rawText.Name set from storage asset:item Name
-	execute if data storage asset:item Lore run data modify storage asset:temp Item.tag.rawText.Lore set from storage asset:item Lore
-	execute if data storage asset:item Stats run data modify storage asset:temp Item.tag.Stats set from storage asset:item Stats
+	data modify storage temp: Item.id set from storage asset:item id
+	data modify storage temp: Item.tag.Category set from storage asset:item Category
+	data modify storage temp: Item.tag.rawText.Name set from storage asset:item Name
+	execute if data storage asset:item Lore run data modify storage temp: Item.tag.rawText.Lore set from storage asset:item Lore
+	execute if data storage asset:item Stats run data modify storage temp: Item.tag.Stats set from storage asset:item Stats
+
 ## 魔法のデータを持たせる
-	execute if data storage asset:item {Category:"Magic"} run data modify storage asset:temp Item.tag.Magic set value [0,0,0,0]
+	execute if data storage asset:item {Category:"Wand"} run data modify storage temp: Item.tag.Magic set value [0,0,0,0]
+
 ## NBT
 	### 設定
-		data modify storage asset:temp Item.tag.Unbreakable set value 1b
-		data modify storage asset:temp Item.tag.RepairCost set value -2147483648
-		data modify storage asset:temp Item.tag.AttributeModifiers set value []
-		data modify storage asset:temp Item.tag.HideFlags set value 127
+		data modify storage temp: Item.tag.Unbreakable set value 1b
+		data modify storage temp: Item.tag.RepairCost set value -2147483648
+		data modify storage temp: Item.tag.AttributeModifiers set value []
+		data modify storage temp: Item.tag.HideFlags set value 127
+
 	### 上書き
-		execute if data storage asset:item NBT run data modify storage asset:temp Item.tag merge from storage asset:item NBT
+		execute if data storage asset:item NBT run data modify storage temp: Item.tag merge from storage asset:item NBT
+
+
 ## 名前を設定
 	loot replace block 0 -64 0 container.0 loot asset.lib:item/name/basic
-	data modify storage asset:temp Item.tag.display.Name set from block 0 -64 0 Items[0].tag.display.Name
+	data modify storage temp: Item.tag.display.Name set from block 0 -64 0 Items[0].components."minecraft:custom_name"
+
 ## 説明を設定
 	### 通常
 		execute if data storage asset:item Lore run function asset.lib:item/create/lore/basic.loop
+
 	### 効果
 		execute if data storage asset:item Stats run function asset.lib:item/create/lore/stats/
+
 	### レアリティ
 		execute store result score #Rarity.Copy Temp run data get storage asset:item Rarity
-		data modify storage asset:temp Lore append value '{"text":""}'
+		data modify storage temp: Lore append value '{"text":""}'
 		loot replace block 0 -64 0 container.0 loot asset.lib:item/lore/rarity
-		data modify storage asset:temp Lore append from block 0 -64 0 Items[0].tag.display.Name
+		data modify storage temp: Lore append from block 0 -64 0 Items[0].tag.display.Name
+
 	### 代入
-		data modify storage asset:temp Item.tag.display.Lore set from storage asset:temp Lore
+		data modify storage temp: Item.tag.display.Lore set from storage temp: Lore
+
+
 ## アイテムを用意
 	item replace block 0 -64 0 container.0 with cod
-	data modify block 0 -64 0 Items[0] set from storage asset:temp Item
+	data modify block 0 -64 0 Items[0] set from storage temp: Item
+
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Rarity.Copy
+
 ## 一時使用Storageを削除
-	data remove storage asset:temp Item
-	data remove storage asset:temp Lore
+	data remove storage temp: Item
+	data remove storage temp: Lore

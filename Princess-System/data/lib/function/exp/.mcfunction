@@ -5,5 +5,6 @@
 
 ## expが0以下だったら
 	execute if entity @s[scores={Exp=..0}] run function lib:exp/levelup/
+
 ## 表示
 	function api:display/exp

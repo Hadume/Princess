@@ -1,7 +1,7 @@
 #> lib:spread/_index
-# 
+#
 # @private
 
 #> Tags
 # @public
- #declare tag Spread
+	#declare tag Spread

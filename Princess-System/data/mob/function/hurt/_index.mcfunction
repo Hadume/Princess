@@ -1,7 +1,7 @@
 #> mob:hurt/_index
-# 
-# @within 
+#
+# @within
 
 #> 実行者tag
 # @within function mob:hurt/*/**
- #declare tag This
+	#declare tag This

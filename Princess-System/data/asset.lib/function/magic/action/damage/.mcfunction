@@ -12,12 +12,15 @@
 #   asset.lib:magic/action/range/main
 
 ## 引数の確認
-	execute store success storage asset:temp Error byte 1 unless data storage asset:magic Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:magic Amount"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:magic Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:magic Amount"}]
+
 ## 実行
-	execute unless data storage asset:temp Error run function asset.lib:magic/action/damage/main
+	execute unless data storage temp: Error run function asset.lib:magic/action/damage/main
+
 ## 引数を削除
 	data remove storage asset:magic Amount
 	data remove storage asset:magic CasterID
 	execute if data storage asset:magic Elements run data remove storage asset:magic Elements
+
 ## 一時使用Storageを削除
-	execute if data storage asset:temp Error run data remove storage asset:temp Error
+	execute if data storage temp: Error run data remove storage temp: Error

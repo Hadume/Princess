@@ -10,19 +10,22 @@
 # @within asset:mob/*/summon/main
 
 ## 足りていなかったら
-	execute store success storage asset:temp Error byte 1 unless data storage asset:mob Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Name"}]
-	execute store success storage asset:temp Error byte 1 unless data storage asset:mob Type run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Type"}]
-	execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Lvl run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Lvl"}]
-	execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Exp run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Exp"}]
-	execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Money run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Money"}]
-	execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.HP run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.HP"}]
-	execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.MP run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.MP"}]
-	execute store success storage asset:temp Error byte 1 unless data storage asset:mob Status.Speed run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Speed"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:mob Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Name"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:mob Type run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Type"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:mob Status.Lvl run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Lvl"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:mob Status.Exp run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Exp"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:mob Status.Money run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Money"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:mob Status.HP run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.HP"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:mob Status.MP run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.MP"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:mob Status.Speed run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:mob Status.Speed"}]
 	###
-		execute if data storage asset:temp Error as @e[tag=MOB.Init,limit=1] at @s run tp @s ~ -3000 ~
-		execute if data storage asset:temp Error as @e[tag=MOB.Init,limit=1] run kill @s
+		execute if data storage temp: Error as @e[tag=MOB.Init,limit=1] at @s run tp @s ~ -3000 ~
+		execute if data storage temp: Error as @e[tag=MOB.Init,limit=1] run kill @s
+
+
 ## 足りていたら
-	execute unless data storage asset:temp Error as @e[tag=MOB.Init,limit=1] run function asset.lib:mob/summon/main
+	execute unless data storage temp: Error as @e[tag=MOB.Init,limit=1] run function asset.lib:mob/summon/main
+
 ## Storageを削除
 	data remove storage asset:mob Name
 	data remove storage asset:mob Type
@@ -30,5 +33,6 @@
 	execute if data storage asset:mob Armor run data remove storage asset:mob Armor
 	execute if data storage asset:mob Weapon run data remove storage asset:mob Weapon
 	execute if data storage asset:mob NBT run data remove storage asset:mob NBT
+
 ## 一時使用Storageを削除
-	execute if data storage asset:temp Error run data remove storage asset:temp Error
+	execute if data storage temp: Error run data remove storage temp: Error

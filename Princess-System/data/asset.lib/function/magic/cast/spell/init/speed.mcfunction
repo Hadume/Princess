@@ -4,8 +4,10 @@
 
 ## 速度を代入
 	execute store result score @s sm.Speed run data get storage asset:magic Speed 100
+
 ## 動くように
 	tag @s add SmartMotion
 	tag @s add Stick
+
 ## 初期化
 	execute at @s run function smart_motion:core/tp
