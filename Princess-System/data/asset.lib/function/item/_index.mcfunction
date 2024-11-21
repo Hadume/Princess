@@ -1,5 +1,5 @@
 #> asset.lib:item/_index
-# 
+#
 # @private
 
 #> Storage
@@ -7,4 +7,4 @@
 #   asset:item/*/**
 #   asset.lib:item/**
 #   asset.lib:mob/summon/equipments/*
- #declare storage asset:item
+	#declare storage asset:item

@@ -33,7 +33,7 @@
 									"italic": false
 								},
 								{
-									"storage": "asset:temp",
+									"storage": "temp:",
 									"nbt": "Amount.Name",
 									"color": "white"
 								},
@@ -45,11 +45,11 @@
 									"text": "+"
 								},
 								{
-									"storage": "asset:temp",
+									"storage": "temp:",
 									"nbt": "Stat.Amount"
 								},
 								{
-									"storage": "asset:temp",
+									"storage": "temp:",
 									"nbt": "Amount.Suffix"
 								}
 							]
@@ -84,18 +84,18 @@
 									"italic": false
 								},
 								{
-									"storage": "asset:temp",
+									"storage": "temp:",
 									"nbt": "Amount.Name"
 								},
 								{
 									"text": ": "
 								},
 								{
-									"storage": "asset:temp",
+									"storage": "temp:",
 									"nbt": "Stat.Amount"
 								},
 								{
-									"storage": "asset:temp",
+									"storage": "temp:",
 									"nbt": "Amount.Suffix"
 								}
 							]
@@ -132,7 +132,7 @@
 									"italic": false
 								},
 								{
-									"storage": "asset:temp",
+									"storage": "temp:",
 									"nbt": "Amount.Name",
 									"color": "white"
 								},
@@ -141,11 +141,11 @@
 									"color": "white"
 								},
 								{
-									"storage": "asset:temp",
+									"storage": "temp:",
 									"nbt": "Stat.Amount"
 								},
 								{
-									"storage": "asset:temp",
+									"storage": "temp:",
 									"nbt": "Amount.Suffix"
 								}
 							]

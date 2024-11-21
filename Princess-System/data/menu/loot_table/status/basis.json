@@ -1,0 +1,162 @@
+{
+	"pools": [
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "item",
+					"name": "paper",
+					"functions": [
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"text": "基本",
+								"color": "gray",
+								"italic": false,
+								"bold": true
+							}
+						},
+						{
+							"function": "set_lore",
+							"mode": "append",
+							"entity": "this",
+							"lore": [
+								[
+									{
+										"text": "",
+										"color": "white",
+										"italic": false
+									},
+									{
+										"text": "レベル",
+										"color": "green"
+									},
+									{
+										"text": " "
+									},
+									{
+										"score": {
+											"name": "@s",
+											"objective": "Lvl"
+										}
+									}
+								],
+								[
+									{
+										"text": "",
+										"color": "white",
+										"italic": false
+									},
+									{
+										"text": "最大体力",
+										"color": "red"
+									},
+									{
+										"text": " "
+									},
+									{
+										"score": {
+											"name": "@s",
+											"objective": "HP.Max"
+										}
+									}
+								],
+								[
+									{
+										"text": "",
+										"color": "white",
+										"italic": false
+									},
+									{
+										"text": "最大魔力",
+										"color": "aqua"
+									},
+									{
+										"text": " "
+									},
+									{
+										"score": {
+											"name": "@s",
+											"objective": "MP.Max"
+										}
+									}
+								],
+								[
+									{
+										"text": "",
+										"color": "white",
+										"italic": false
+									},
+									{
+										"text": "攻撃力",
+										"color": "red"
+									},
+									{
+										"text": " "
+									},
+									{
+										"score": {
+											"name": "@s",
+											"objective": "ATK"
+										}
+									}
+								],
+								[
+									{
+										"text": "",
+										"color": "white",
+										"italic": false
+									},
+									{
+										"text": "防御力",
+										"color": "green"
+									},
+									{
+										"text": " "
+									},
+									{
+										"score": {
+											"name": "@s",
+											"objective": "DEF"
+										}
+									}
+								],
+								[
+									{
+										"text": "",
+										"color": "white",
+										"italic": false
+									},
+									{
+										"text": "スピード",
+										"color": "white"
+									},
+									{
+										"text": " "
+									},
+									{
+										"score": {
+											"name": "@s",
+											"objective": "Speed"
+										}
+									}
+								]
+							]
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"max_stack_size": 1
+							}
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{Menu:{}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

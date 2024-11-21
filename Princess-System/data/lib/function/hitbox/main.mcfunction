@@ -22,6 +22,7 @@
 		execute if data storage lib: {Hitbox:{id:"warden"}} run data modify storage lib: Hitbox.Size set value [0.8f,2.9f]
 		execute if data storage lib: {Hitbox:{id:"wither"}} run data modify storage lib: Hitbox.Size set value [0.9f,3.5f]
 		execute if data storage lib: {Hitbox:{id:"wither_skeleton"}} run data modify storage lib: Hitbox.Size set value [0.7f,2.4f]
+
 	### Neutral
 		execute if data storage lib: {Hitbox:{id:"allay"}} run data modify storage lib: Hitbox.Size set value [0.6f,0.6f]
 		execute if data storage lib: {Hitbox:{id:"axolotl"}} run data modify storage lib: Hitbox.Size set value [0.75f,0.42f]
@@ -44,6 +45,7 @@
 		execute if data storage lib: {Hitbox:{id:"tropical_fish"}} run data modify storage lib: Hitbox.Size set value [0.5f,0.4f]
 		execute if data storage lib: {Hitbox:{id:"turtle"}} run function lib:hitbox/entity/turtle
 		execute if data storage lib: {Hitbox:{id:"wolf"}} run data modify storage lib: Hitbox.Size set value [0.6f,0.85f]
+
 	### Tags
 		execute if data storage lib: {Hitbox:{id:"#babies"}} run data modify storage lib: Hitbox.Size set value [0.7f,0.6f]
 		execute if data storage lib: {Hitbox:{id:"#cats"}} run data modify storage lib: Hitbox.Size set value [0.6f,0.7f]
@@ -58,8 +60,11 @@
 		execute if data storage lib: {Hitbox:{id:"#skeletons"}} run data modify storage lib: Hitbox.Size set value [0.6f,1.99f]
 		execute if data storage lib: {Hitbox:{id:"#slimes"}} run function lib:hitbox/entity/slime/
 		execute if data storage lib: {Hitbox:{id:"#squids"}} run data modify storage lib: Hitbox.Size set value [0.8f,0.8f]
+
+
 ## 子供だったら、サイズを半分に
 	execute if entity @s[type=!turtle,predicate=lib:hitbox/is_baby] store result storage lib: HitBox[0] float 0.5 run data get storage lib: HitBox[0]
 	execute if entity @s[type=!turtle,predicate=lib:hitbox/is_baby] store result storage lib: HitBox[1] float 0.5 run data get storage lib: HitBox[1]
+
 ## MOBが登録されていなかったら
 	execute unless data storage lib: Hitbox.Size run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "HitBoxが登録されていないMOBがいます。"}]

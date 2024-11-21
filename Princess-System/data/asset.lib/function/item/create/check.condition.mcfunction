@@ -12,12 +12,14 @@
 # @within asset:item/*/create/
 
 ## 足りていなかったら
-	execute store success storage asset:temp Error byte 1 unless data storage asset:item id run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item id"}]
-	execute store success storage asset:temp Error byte 1 unless data storage asset:item Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item Name"}]
-	execute store success storage asset:temp Error byte 1 unless data storage asset:item Category run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item Category"}]
-	execute store success storage asset:temp Error byte 1 unless data storage asset:item Rarity run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item Rarity"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:item id run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item id"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:item Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item Name"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:item Category run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item Category"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:item Rarity run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item Rarity"}]
+
 ## 足りていたら
-	execute unless data storage asset:temp Error run function asset.lib:item/create/main
+	execute unless data storage temp: Error run function asset.lib:item/create/main
+
 ## Storageを削除
 	data remove storage asset:item id
 	data remove storage asset:item Category
@@ -28,5 +30,6 @@
 	execute if data storage asset:item Series run data remove storage asset:item Series
 	execute if data storage asset:item Stats run data remove storage asset:item Stats
 	execute if data storage asset:item NBT run data remove storage asset:item NBT
+
 ## 一時使用Storageを削除
-	execute if data storage asset:temp Error run data remove storage asset:temp Error
+	execute if data storage temp: Error run data remove storage temp: Error

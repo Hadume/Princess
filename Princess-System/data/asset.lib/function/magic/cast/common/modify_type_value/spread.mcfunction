@@ -4,7 +4,9 @@
 
 ## 数値を取得
 	execute store result score #Value Temp run data get storage asset:magic Raw.Spread 100
+
 ## 調整
 	scoreboard players operation #Value Temp += @s Mgc.Spread
+
 ## 保存
 	execute store result storage asset:magic Spread float 0.01 run scoreboard players get #Value Temp

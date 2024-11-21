@@ -6,8 +6,10 @@
 
 ## 個人ストレージを呼ぶ
 	function data.player:please
+
 ## データを削除
 	execute if data storage asset:magic ID run data remove storage asset:magic ID
+
 ## IDをコピー
 	execute if data storage main: {ShotCrossbow:1b} unless predicate player:sneaking run function asset.lib:magic/cast/condition/click
 	execute if data storage main: {ShotCrossbow:1b} if predicate player:sneaking run function asset.lib:magic/cast/condition/click_s

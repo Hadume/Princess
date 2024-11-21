@@ -4,7 +4,9 @@
 
 ## IDをコピー
 	data modify storage asset:item ID set from storage asset:mob Armor.Legs.ID
+
 ## アイテムを生成
 	function #asset:item/create
+
 ## アイテムを移行
 	data modify storage asset:mob Armor.Legs set from block 0 -64 0 Items[0]

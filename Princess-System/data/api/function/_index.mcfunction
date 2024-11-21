@@ -1,10 +1,10 @@
 #> api:_index
-# 
+#
 # @private
 
 #> Storage
 # @public
- #declare storage api:
+	#declare storage api:
 #> Storage.Temp
 # @within * api:**
- #declare storage api:temp
+	#declare storage api:temp

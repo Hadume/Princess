@@ -12,7 +12,7 @@
 							"entity": "this",
 							"name": [
 								{
-									"storage": "api:temp",
+									"storage": "temp:",
 									"nbt": "NameColor",
 									"interpret": true,
 									"italic": false
