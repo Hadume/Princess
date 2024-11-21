@@ -1,0 +1,15 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+    "slots": {
+        "player.cursor": {
+        "items": "minecraft:apple",
+            "components": {
+            "minecraft:custom_model_data": 3,
+            "custom_data": "{ok_buy:0}"
+        }
+    }
+    }
+}
+}

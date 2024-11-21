@@ -1,0 +1,16 @@
+{
+    "criteria": {
+    "shop": {
+        "trigger": "minecraft:player_interacted_with_entity",
+        "conditions": {
+        "entity": {
+            "type": "minecraft:chest_minecart",
+            "nbt": "{Tags:[\"shopchest\",\"sellshop\"]}"
+        }
+        }
+    }
+    },
+    "rewards": {
+    "function": "okican:shop/sellmenu/"
+    }
+}
