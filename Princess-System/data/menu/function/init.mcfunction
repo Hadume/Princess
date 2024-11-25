@@ -1,4 +1,4 @@
-#> menu:load
+#> menu:init
 # メニューシステムの初期化
 # @within function main:init/
 

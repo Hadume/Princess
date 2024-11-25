@@ -1,4 +1,4 @@
-#> lib:stats/load
+#> lib:stats/init
 #
 # @within function main:init/
 
