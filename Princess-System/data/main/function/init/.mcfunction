@@ -194,8 +194,9 @@
 	data modify storage main: Tell.ArgumentError set value "§c[Error] 引数が足りません: §o§n"
 
 ## 各システムの初期化
-	function lib:stats/load
-	function menu:load
+	function api:init
+	function lib:init
+	function menu:init
 
 ## Assetの初期化
 	function #asset:magic/load
