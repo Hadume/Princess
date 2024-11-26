@@ -2,18 +2,14 @@
 # Posを保存
 # @input as player
 # @output storage api: Pos
-# @api
+# @within tag/function api:get.nbt/pos
 
 ## 個人ストレージを呼ぶ
-	function data:please
+	function #api:e_dat/please
 
 ##
-	execute store success score #LeastTime Temp store result storage data: _.NBT.Pos.Time int 1 run time query gametime
-	execute if score #LeastTime Temp matches 1 run data modify storage data: _.NBT.Pos.Data set from entity @s Pos
-
-## データを保存
-	execute if data storage data: {Selector:"Player"} run data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].NBT.Pos set from storage data: _.NBT.Pos
-	execute if data storage data: {Selector:"Entity"} run data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].NBT.Pos set from storage data: _.NBT.Pos
+	execute store success score #LeastTime Temp store result storage dat: _.NBT.Pos.Time int 1 run time query gametime
+	execute if score #LeastTime Temp matches 1 run data modify storage dat: _.NBT.Pos.Data set from entity @s Pos
 
 ## Posをコピー
-	data modify storage api: Pos set from storage data: _.NBT.Pos.Data
+	data modify storage api: Pos set from storage dat: _.NBT.Pos.Data

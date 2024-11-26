@@ -21,10 +21,10 @@
 	scoreboard players operation #Money.Copy Temp = @s Money
 
 ## 個人ストレージを呼ぶ
-	function data.entity:please
+	function #api:e_dat/please
 
 ## データをコピー
-	data modify storage temp: AttackBy set from storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].AttackBy
+	data modify storage temp: AttackBy set from storage dat: _.AttackBy
 
 ##
 	execute if data storage temp: AttackBy[] run function lib:die/entity/loot/loop

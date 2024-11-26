@@ -14,7 +14,7 @@
 	execute if data storage asset:magic {Damage:1b} run data modify storage lib: Range.NoHurtTime set value 1b
 
 ## 範囲内のMOBを特定
-	function lib:range/
+	function #lib:range
 
 ## ついでに攻撃する
 	execute if data storage asset:magic {Damage:1b} run function asset.lib:magic/action/damage/

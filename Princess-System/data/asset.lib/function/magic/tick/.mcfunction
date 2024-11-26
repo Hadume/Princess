@@ -15,4 +15,4 @@
 
 ##
 	execute if entity @s[scores={Duration=1..}] store result storage asset:magic ID int 1 run scoreboard players get @s ID.Asset
-	execute if entity @s[scores={Duration=1..}] run function #asset:magic/tick/spell
+	execute if entity @s[scores={Duration=1..}] run function asset:magic/tick with storage asset:magic

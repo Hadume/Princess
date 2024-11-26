@@ -7,11 +7,11 @@
 	#declare score_holder #HP.Rcvr
 
 ## 範囲内のMobを特定
-	function asset.lib:magic/action/range/
+	function #asset.lib:magic/action/range/
 
 ##
 	data modify storage lib: RcvrHP.Amount set from storage asset:magic Amount
-	execute as @e[tag=Lib.InRange] run function lib:status/hp/recover/
+	execute as @e[tag=Lib.InRange] run function #lib:status/hp/recover
 
 ## 音
 	playsound entity.player.levelup master @a ~ ~ ~ 1 2

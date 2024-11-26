@@ -7,7 +7,7 @@
 #     Amount : [float] @ 2 || float
 #     At? : [double] @ 3
 #     OnGround? : boolean
-# @api
+# @within tag/function lib:spread
 
 ## 引数の確認
 	execute store success storage temp: Error byte 1 unless data storage lib: Spread.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "lib: Spread.Amount"}]

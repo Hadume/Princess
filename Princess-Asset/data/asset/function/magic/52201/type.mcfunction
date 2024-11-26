@@ -1,6 +1,6 @@
 #> asset:magic/52201/type
 # 魔法のデータ
-# @within function asset:magic/52201/cast/check.condition
+# @within function asset:magic/cast
 
 ## タイプを設定
 	### 魔法名 : TextComponent
@@ -35,4 +35,4 @@
 
 
 ## 引数の確認
-	function asset.lib:magic/type/check.argument
+	function #asset.lib:magic/type

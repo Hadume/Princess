@@ -6,7 +6,7 @@
 	data modify storage main: ShotCrossbow set value 1b
 
 ## 手に持っているアイテムを取得
-	function api:get.nbt/selected_item/
+	function #api:get.nbt/selected_item
 
 ## 魔法を唱える
 	execute if data storage api: {SelectedItem:{tag:{Category:"Wand"}}} run function asset.lib:magic/cast/

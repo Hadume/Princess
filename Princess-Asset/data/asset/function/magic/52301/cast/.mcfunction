@@ -3,10 +3,10 @@
 # @within function asset:magic/cast
 
 ##
-	function asset.lib:magic/action/range/
+	function #asset.lib:magic/action/range/
 
 ## 座標を取得
-	function api:get.nbt/pos
+	function #api:get.nbt/pos
 	data modify storage temp: 52301.Pos set from storage api: Pos
 
 ## 引き寄せる

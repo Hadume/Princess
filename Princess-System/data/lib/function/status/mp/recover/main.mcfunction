@@ -16,7 +16,7 @@
 	execute if score @s MP > @s MP.Max run scoreboard players operation @s MP = @s MP.Max
 
 ## 魔力表示を更新
-	function lib:status/mp/update
+	function #lib:status/mp/update
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Recovery

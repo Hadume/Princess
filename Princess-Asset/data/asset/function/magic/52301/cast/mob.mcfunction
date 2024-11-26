@@ -8,4 +8,4 @@
 	data modify storage lib: Spread.OnGround set value 1b
 
 ##
-	function lib:spread/
+	function #lib:spread

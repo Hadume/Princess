@@ -3,13 +3,13 @@
 # @within advancement player:init
 
 ## 個人ストレージを呼ぶ
-	function data.player:please
+	function #api:e_dat/please
 
 ## id
-	data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].id set value "player"
+	data modify storage dat: _.id set value "player"
 
 ## 魔法
-	data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Magic set value [{},{},{},{}]
+	data modify storage dat: _.Magic set value [{},{},{},{}]
 
 ## Status
 	scoreboard players set @s Lvl 1
@@ -61,7 +61,7 @@
 	function menu:pages/menu/open
 
 ## ステータスの反映
-	function api:display/exp
+	function #api:display/exp
 	### ステータス
 		data modify storage lib: Stats set value ["Physic","Magic","Element"]
-		function lib:stats/
+		function #lib:stats

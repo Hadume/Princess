@@ -1,6 +1,6 @@
 #> lib:status/mp/update
 # MPを更新
-# @public
+# @within tag/function lib:status/mp/update
 
 #> ScoreHolder
 # @private

@@ -7,7 +7,7 @@
 	#declare score_holder #Size.Copy
 
 ## サイズを取得
-	function api:get.nbt/size
+	function #api:get.nbt/size
 
 ## データを用意
 	data modify storage lib: HitBox set value [0.0f,0.0f]

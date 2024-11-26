@@ -3,7 +3,7 @@
 # @input
 #   as entity
 #   storage lib: [Stats] @ N
-# @api
+# @within tag/function lib:stats
 
 ## 引数を確認
 	execute store success storage temp: Error byte 1 unless data storage lib: Stats run tellraw @a [{"storage":"main:","nbt":"ArgumentError"},{"text": "lib: Stats"}]

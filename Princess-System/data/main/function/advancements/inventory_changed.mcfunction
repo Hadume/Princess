@@ -6,7 +6,7 @@
 	data modify storage main: InventoryChanged set value 1b
 
 ## インベントリーを取得
-	function api:get.nbt/inventory
+	function #api:get.nbt/inventory
 
 ## オフハンドにアイテムがあったら
 	execute if data storage api: {Inventory:[{Slot:-106b}]} run function player:offhand

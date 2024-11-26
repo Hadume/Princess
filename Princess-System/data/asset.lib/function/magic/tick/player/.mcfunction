@@ -3,10 +3,10 @@
 # @within function main:tick/player
 
 ## 個人ストレージを呼ぶ
-	function data.player:please
+	function #api:e_dat/please
 
 ## IDをコピー
-	data modify storage temp: MagicCopy set from storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Magic
+	data modify storage temp: MagicCopy set from storage dat: _.Magic
 
 ## あったら実行
 	function asset.lib:magic/tick/player/action.loop

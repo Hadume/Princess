@@ -16,7 +16,7 @@
 	#declare tag/function #math:cos
 
 ## データを取得
-	execute as @a[tag=This,limit=1] run function api:get.nbt/rotation
+	execute as @a[tag=This,limit=1] run function #api:get.nbt/rotation
 
 ## 向きを変更
 	data modify entity @s Rotation[0] set from storage api: Rotation[0]

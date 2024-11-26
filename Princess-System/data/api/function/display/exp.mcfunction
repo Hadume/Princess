@@ -1,6 +1,6 @@
 #> api:display/exp
 # 経験値を表示
-# @api
+# @within tag/function api:display/exp
 
 #> ScoreHolder
 # @private
@@ -43,7 +43,7 @@
 
 
 ## レベルを表示
-	function api:display/level
+	function #api:display/level
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Exp.Per

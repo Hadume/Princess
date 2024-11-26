@@ -2,15 +2,14 @@
 # HandItemsを保存
 # @input as player
 # @output storage api: HandItems
-# @api
+# @within tag/function api:get.nbt/hand_items
 
 ## 個人ストレージを呼ぶ
-	function data.entity:please
+	function #api:e_dat/please
 
 ##
-	execute store success score #LeastTime Temp store result storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].NBT.HandItems.Time int 1 run time query gametime
-	execute if score #LeastTime Temp matches 1 run data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].NBT.HandItems.Data set from entity @s HandItems
-
+	execute store success score #LeastTime Temp store result storage dat: _.NBT.HandItems.Time int 1 run time query gametime
+	execute if score #LeastTime Temp matches 1 run data modify storage dat: _.NBT.HandItems.Data set from entity @s HandItems
 
 ## HandItemsをコピー
-	data modify storage api: HandItems set from storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].NBT.HandItems.Data
+	data modify storage api: HandItems set from storage dat: _.NBT.HandItems.Data

@@ -4,7 +4,7 @@
 
 ## 数値をコピー
 	scoreboard players operation #CT.Copy Temp = @s CT.Offhand
-	data modify storage asset:magic ID set from storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Magic[2].ID
+	data modify storage asset:magic ID set from storage dat: _.Magic[2].ID
 
 ## 魔法を発動
 	function asset.lib:magic/cast/condition/_common

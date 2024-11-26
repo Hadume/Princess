@@ -9,11 +9,11 @@
 
 ##
 	data modify storage asset:magic Damage set value 1b
-	function asset.lib:magic/action/range/
+	function #asset.lib:magic/action/range/
 
 ## HP回復
 	data modify storage lib: RcvrHP.Amount set from storage asset:magic StoredDamage
-	function lib:status/hp/recover/
+	function #lib:status/hp/recover
 
 ## 音を鳴らす
 	execute at @s run playsound entity.squid.squirt master @a ~ ~ ~ 1 2

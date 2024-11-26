@@ -5,7 +5,7 @@
 #   lib:range/loop/1
 
 ## 座標を取得
-	function api:get.nbt/pos
+	function #api:get.nbt/pos
 
 ## 座標を取得
 	### 魔法
@@ -26,9 +26,9 @@
 
 ## MOBのサイズを取得
 	###
-		function data:please
-		data modify storage lib: Hitbox.id set from storage data: _.id
-		function lib:hitbox/
+		function #api:e_dat/please
+		data modify storage lib: Hitbox.id set from storage dat: _.id
+		function #lib:hitbox
 
 	### データを移行
 		execute store result score #Size.X Temp run data get storage lib: Hitbox.Size[0] 500

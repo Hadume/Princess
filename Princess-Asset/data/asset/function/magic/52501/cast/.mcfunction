@@ -3,7 +3,7 @@
 # @within function asset:magic/cast
 
 ## 範囲内のMobを特定
-	function asset.lib:magic/action/range/
+	function #asset.lib:magic/action/range/
 
 ##
 	execute as @e[tag=Lib.InRange] store result score @s TimeLock run data get storage asset:magic Duration

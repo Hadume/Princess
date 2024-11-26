@@ -1,5 +1,5 @@
 #> api:e_dat/release
-#
+# 個人ストレージを削除する
 # @within tag/function api:e_dat/release
 
 # データを消す

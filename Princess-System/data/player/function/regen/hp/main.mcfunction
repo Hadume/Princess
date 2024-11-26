@@ -13,7 +13,7 @@
 	execute store result storage lib: RcvrHP.Amount int 1 run scoreboard players get #HP.RgnPer.Copy Temp
 
 ## 回復
-	function lib:status/hp/recover/
+	function #lib:status/hp/recover
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #HP.RgnPer.Copy

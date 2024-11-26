@@ -3,10 +3,10 @@
 # @within function menu:storage/root/items/
 
 ## ページが無かったら、ページを作成
-	$execute unless data storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Menu.Storage[$(Page)] run data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Menu.Storage append value []
+	$execute unless data storage dat: _.Menu.Storage[$(Page)] run data modify storage dat: _.Menu.Storage append value []
 
 ## ページデータをコピー
-	$data modify storage temp: PageItems set from storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Menu.Storage[$(Page)]
+	$data modify storage temp: PageItems set from storage dat: _.Menu.Storage[$(Page)]
 
 ## Slotの調整
 	data modify storage temp: PageItems append from storage menu: Blanks21[]

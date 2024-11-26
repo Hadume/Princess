@@ -3,10 +3,10 @@
 # @within function asset:magic/cast
 
 ## データをコピー
-	data modify storage temp: Activating set from storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Magic[{ID:52302}].Activating
+	data modify storage temp: Activating set from storage dat: _.Magic[{ID:52302}].Activating
 
 ## 発動を解除
-	execute if data storage temp: {Activating:1b} run data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Magic[{ID:52302}] set value {ID:52302}
+	execute if data storage temp: {Activating:1b} run data modify storage dat: _.Magic[{ID:52302}] set value {ID:52302}
 	execute if data storage temp: {Activating:1b} at @s run playsound block.beacon.deactivate master @a ~ ~ ~ 1 2
 
 ##

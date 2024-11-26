@@ -7,7 +7,7 @@
 	data remove storage temp: PageItems[{components:{"minecraft:custom_data":{Menu:{}}}}]
 
 ##
-	$data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].Menu.Storage[$(Page)] set from storage temp: PageItems
+	$data modify storage dat: _.Menu.Storage[$(Page)] set from storage temp: PageItems
 
 ## 一時使用Storageを削除
 	data remove storage temp: PageItems

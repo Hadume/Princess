@@ -35,7 +35,7 @@
 
 
 ## 座標取得
-	function api:get.nbt/pos
+	function #api:get.nbt/pos
 	data modify storage temp: Pos set from storage api: Pos
 
 ## ダメージを受けているMOBを除外

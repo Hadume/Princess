@@ -1,7 +1,7 @@
 #> lib:status/hp/update/
 #
 # @input as entity
-# @api
+# @within tag/function lib:status/hp/update
 
 #> ScoreHolder
 # @within function lib:status/hp/update/*
@@ -11,7 +11,7 @@
 	scoreboard players operation #HP.Copy Temp = @s HP
 
 ## 体力が0以下だったら
-	execute if score #HP.Copy Temp matches ..0 run function lib:die/
+	execute if score #HP.Copy Temp matches ..0 run function #lib:die
 
 ## 体力が1以上だったら
 	execute if score #HP.Copy Temp matches 1.. run function lib:status/hp/update/main

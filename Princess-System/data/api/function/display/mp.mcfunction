@@ -1,7 +1,7 @@
 #> api:display/mp
 # 魔力を表示
 # @input as entity
-# @api
+# @within tag/function api:display/mp
 
 #> ScoreHolder
 # @private
@@ -9,7 +9,7 @@
 
 ## 最大魔力を更新
 	data modify storage lib: Stats set value ["MPMax"]
-	function lib:stats/
+	function #lib:stats
 
 ## 計算
 	scoreboard players set #MP.Per Temp 10

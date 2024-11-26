@@ -17,4 +17,4 @@
 	scoreboard players operation @s Speed = #Amount Temp
 
 ## 更新
-	function lib:status/speed/update
+	function #lib:status/speed/update

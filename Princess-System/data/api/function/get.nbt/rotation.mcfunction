@@ -2,18 +2,14 @@
 # Rotationを保存
 # @input as player
 # @output storage api: Rotation
-# @api
+# @within tag/function api:get.nbt/rotation
 
 ## 個人ストレージを呼ぶ
-	function data:please
+	function #api:e_dat/please
 
 ##
-	execute store success score #LeastTime Temp store result storage data: _.NBT.Rotation.Time int 1 run time query gametime
-	execute if score #LeastTime Temp matches 1 run data modify storage data: _.NBT.Rotation.Data set from entity @s Rotation
-
-## データを保存
-	execute if data storage data: {Selector:"Player"} run data modify storage data:player _[-4][-4][-4][-4][-4][-4][-4][-4].NBT.Rotation set from storage data: _.NBT.Rotation
-	execute if data storage data: {Selector:"Entity"} run data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].NBT.Rotation set from storage data: _.NBT.Rotation
+	execute store success score #LeastTime Temp store result storage dat: _.NBT.Rotation.Time int 1 run time query gametime
+	execute if score #LeastTime Temp matches 1 run data modify storage dat: _.NBT.Rotation.Data set from entity @s Rotation
 
 ## Rotationをコピー
-	data modify storage api: Rotation set from storage data: _.NBT.Rotation.Data
+	data modify storage api: Rotation set from storage dat: _.NBT.Rotation.Data

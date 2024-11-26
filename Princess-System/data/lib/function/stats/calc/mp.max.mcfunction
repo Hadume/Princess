@@ -17,4 +17,4 @@
 	scoreboard players operation @s MP.Max = #Amount Temp
 
 ## 更新
-	function lib:status/mp/update
+	function #lib:status/mp/update

@@ -6,9 +6,9 @@
 #   Targets? : [Target] @ ..2
 #   Damage? : boolean
 # @within function
-#   asset:magic/*/*/**
 #   asset.lib:magic/cast/action
 #   asset.lib:magic/action/range/spell/
+# @within tag/function asset.lib:magic/action/range/
 
 ## 引数を確認
 	execute store success storage temp: Error byte 1 unless data storage asset:magic Range run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "temp: Magic.Range"}]

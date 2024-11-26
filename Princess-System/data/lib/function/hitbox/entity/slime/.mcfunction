@@ -8,7 +8,7 @@
 	#declare score_holder #Scale
 
 ## サイズを取得
-	function api:get.nbt/size
+	function #api:get.nbt/size
 	execute store result score #Size.Copy Temp run data get storage api: Size
 
 ## 倍率

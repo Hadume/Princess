@@ -30,4 +30,4 @@
 #data modify storage asset:item NBT set value {}
 
 ## アイテムを生成
-	function asset.lib:item/create/check.condition
+	function #asset.lib:item/create
