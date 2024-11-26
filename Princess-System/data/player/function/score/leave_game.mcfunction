@@ -3,7 +3,7 @@
 # @within function main:tick/player
 
 ## スピードを更新
-	function lib:status/speed/update
+	function #lib:status/speed/update
 
 ## スコアをリセット
 	scoreboard players reset @s LeaveGame

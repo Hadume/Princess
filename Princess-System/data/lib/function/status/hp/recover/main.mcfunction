@@ -16,7 +16,7 @@
 	execute if score @s HP > @s HP.Max run scoreboard players operation @s HP = @s HP.Max
 
 ## 体力表示を更新
-	function lib:status/hp/update/
+	function #lib:status/hp/update
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Recovery

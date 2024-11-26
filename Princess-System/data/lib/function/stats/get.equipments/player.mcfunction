@@ -3,8 +3,8 @@
 # @within function lib:stats/main
 
 ## データを取得
-	function api:get.nbt/inventory
-	function api:get.nbt/selected_item/
+	function #api:get.nbt/inventory
+	function #api:get.nbt/selected_item
 
 ## 各装備を変更
 	### 装備

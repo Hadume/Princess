@@ -9,7 +9,7 @@
 #   Speed? : float
 #   Targets? : [String] @ ..2
 #   Elements? : [String] @ ..5
-# @within asset:magic/*/cast/spell
+# @within tag/function asset.lib:magic/cast/spell
 
 ## 引数の確認
 	execute store success storage temp: Error byte 1 unless data storage asset:magic Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:magic Name"}]

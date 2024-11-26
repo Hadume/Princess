@@ -24,4 +24,4 @@
 	data modify storage asset:item NBT set value {ChargedProjectiles:[{id:"air",Count:1b}],Charged:1b}
 
 ## アイテムを生成
-	function asset.lib:item/create/check.condition
+	function #asset.lib:item/create

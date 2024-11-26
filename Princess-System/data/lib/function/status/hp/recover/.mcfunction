@@ -3,7 +3,7 @@
 # @input
 #   as entity
 #   storage lib: RcvrHP.Amount : int
-# @api
+# @within tag/function lib:status/hp/recover
 
 ## 引数の確認
 	execute store success storage temp: Error byte 1 unless data storage lib: RcvrHP.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "lib: RcvrHP.Amount"}]

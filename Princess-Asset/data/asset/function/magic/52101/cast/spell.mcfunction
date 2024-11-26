@@ -7,7 +7,7 @@
 	execute anchored eyes run summon armor_stand ^ ^ ^ {Passengers:[{id:"block_display",block_state:{Name:"magma_block"},Tags:["Spell.Init","Spell.Display"]}],Tags:["Spell","Spell.Init"]}
 
 ## 初期化
-	function asset.lib:magic/cast/spell/
+	function #asset.lib:magic/cast/spell
 
 ## 発動数を減らす
 	scoreboard players remove #Multiple Asset 1

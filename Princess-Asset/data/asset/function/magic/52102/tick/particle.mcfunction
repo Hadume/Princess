@@ -1,6 +1,6 @@
 #> asset:magic/52102/tick/particle
 #
-# @within function asset:magic/52102/tick/main
+# @within function asset:magic/52102/tick/
 
 ##
 	particle dripping_lava ^0 ^ ^-2 0 0 0 0 1

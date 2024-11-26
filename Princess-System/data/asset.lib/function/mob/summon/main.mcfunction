@@ -1,12 +1,12 @@
 #> asset.lib:mob/summon/main
 #
-# @within function asset.lib:mob/summon/check.condition
+# @within function asset.lib:mob/summon/
 
 ## 個人ストレージを呼ぶ
-	function data.entity:please
+	function #api:e_dat/please
 
 ## 名前
-	data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].rawName set from storage asset:mob Name
+	data modify storage dat: _.rawName set from storage asset:mob Name
 
 ## タイプ
 	execute if data storage asset:mob {Type:"Enemy"} run tag @s add Enemy
@@ -37,8 +37,8 @@
 		data modify entity @s HandItems set from storage temp: HandItems
 
 	### 保存
-		data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Armor set from storage temp: ArmorItems
-		data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Weapon set from storage temp: HandItems
+		data modify storage dat: _.Armor set from storage temp: ArmorItems
+		data modify storage dat: _.Weapon set from storage temp: HandItems
 
 
 ## ステータス
@@ -58,7 +58,7 @@
 
 	### 装備の数値を反映
 		data modify storage lib: Stats set value ["Physic","Magic"]
-		function lib:stats/
+		function #lib:stats
 
 	### 仮値を戻す
 		scoreboard players operation @s HP = @s HP.Max
@@ -76,6 +76,7 @@
 
 ## 初期化Tagを外す
 	tag @s remove MOB.Init
-	## 一時使用Storageを削除
-		data remove storage temp: ArmorItems
-		data remove storage temp: HandItems
+
+## 一時使用Storageを削除
+	data remove storage temp: ArmorItems
+	data remove storage temp: HandItems

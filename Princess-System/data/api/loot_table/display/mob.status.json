@@ -37,8 +37,8 @@
 									"color": "dark_gray"
 								},
 								{
-									"storage": "data:entity",
-									"nbt": "_[-4][-4][-4][-4][-4][-4][-4][-4].rawName",
+									"storage": "dat:",
+									"nbt": "_.rawName",
 									"interpret": true,
 									"bold": true
 								}

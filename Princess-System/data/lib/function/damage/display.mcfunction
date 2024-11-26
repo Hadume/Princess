@@ -11,7 +11,7 @@
 ## 表示を拡散
 	data remove storage lib: Spread.At
 	data modify storage lib: Spread.Amount set value [0.1d,0.2d]
-	function lib:spread/
+	function #lib:spread
 
 ## NBTを変更
 	data modify entity @s CustomName set from entity @s Item.components.minecraft:item_name

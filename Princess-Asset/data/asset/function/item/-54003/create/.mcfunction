@@ -24,4 +24,4 @@
 	data modify storage asset:item NBT set value {Enchantments:[{id:"mending",lvl:1s}]}
 
 ## アイテムを生成
-	function asset.lib:item/create/check.condition
+	function #asset.lib:item/create

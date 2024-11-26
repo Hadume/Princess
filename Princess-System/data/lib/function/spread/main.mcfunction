@@ -15,7 +15,7 @@
 
 ## Posを取得
 	execute if data storage lib: Spread.At run data modify storage temp: Pos set from storage lib: Spread.At
-	execute unless data storage lib: Spread.At run function api:get.nbt/pos
+	execute unless data storage lib: Spread.At run function #api:get.nbt/pos
 	execute unless data storage lib: Spread.At run data modify storage temp: Pos set from storage api: Pos
 
 ## 拡散値を取得

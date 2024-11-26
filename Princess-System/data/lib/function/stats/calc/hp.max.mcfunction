@@ -17,4 +17,4 @@
 	scoreboard players operation @s HP.Max = #Amount Temp
 
 ## 更新
-	function lib:status/hp/update/
+	function #lib:status/hp/update

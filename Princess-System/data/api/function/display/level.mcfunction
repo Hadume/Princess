@@ -1,6 +1,6 @@
 #> api:display/level
 # レベルを表示
-# @api
+# @within tag/function api:display/level
 
 #> ScoreHolder
 # @private

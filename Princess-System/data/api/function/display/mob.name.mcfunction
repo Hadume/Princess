@@ -1,9 +1,9 @@
 #> api:display/mob.name
 # MOBのステータス表示
-# @api
+# @within tag/function api:display/mob.name
 
 ## 個人ストレージを呼ぶ
-	function data.entity:please
+	function #api:e_dat/please
 
 ## 体力によって色を変更
 	execute if entity @s[scores={ScoreToHealth=1001..}] run data modify storage temp: NameColor set value '{"text":"","color":"green"}'

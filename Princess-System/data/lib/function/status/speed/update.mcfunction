@@ -1,6 +1,6 @@
 #> lib:status/speed/update
 # スピードを更新
-# @api
+# @within tag/function lib:status/speed/update
 
 #> ScoreHolder
 # @private

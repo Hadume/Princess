@@ -1,6 +1,6 @@
 #> asset.lib:item/create/main
 # アイテムを生成
-# @within function asset.lib:item/create/check.condition
+# @within function asset.lib:item/create/
 
 #> ScoreHolder
 # @private

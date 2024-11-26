@@ -1,6 +1,6 @@
 #> asset:magic/52501/tick/
 #
-# @within function asset:magic/52501/cast/
+# @within function asset:magic/tick
 # @private
 
 ## スコア

@@ -4,7 +4,7 @@
 
 ##
 	data modify storage asset:magic Damage set value 1b
-	function asset.lib:magic/action/range/
+	function #asset.lib:magic/action/range/
 
 ## 音を鳴らす
 	playsound entity.generic.splash master @a ~ ~ ~ 0.5 1

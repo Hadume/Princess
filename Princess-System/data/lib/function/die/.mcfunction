@@ -1,7 +1,7 @@
 #> lib:die/
 # 死
 # @input as entity
-# @api
+# @within tag/function lib:die
 
 ##
 #execute if entity @s[type=player]

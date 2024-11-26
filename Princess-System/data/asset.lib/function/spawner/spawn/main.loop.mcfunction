@@ -16,7 +16,7 @@
 ## 座標を算出
 	data modify storage lib: Spread.Amount set from storage temp: dataCopy.Range
 	summon marker ~ ~ ~ {Tags:["Pos"]}
-	execute as @e[type=marker,tag=Pos] at @s run function lib:spread/
+	execute as @e[type=marker,tag=Pos] at @s run function #lib:spread
 
 ## MOBを召喚
 	data modify storage asset:mob ID set from storage temp: dataCopy.Data[-1].ID

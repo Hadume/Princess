@@ -2,7 +2,7 @@
 #
 # @input storage lib: Hitbox.id : id(minecraft:entity)
 # @output storage lib: Hitbox.Size : [float] @ 2
-# @api
+# @within tag/function lib:hitbox
 
 ## 引数の確認
 	execute store success storage temp: Error byte 1 unless data storage lib: Hitbox.id run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "lib: Hitbox.id"}]

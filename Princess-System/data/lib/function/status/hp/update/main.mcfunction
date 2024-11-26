@@ -16,7 +16,7 @@
 	execute if entity @s[type=player] unless score @s HP.Rgn.Timer matches 1.. if score #HP.Copy Temp < @s HP.Max run scoreboard players operation @s HP.Rgn.Timer = @s HP.Rgn.Intrvl
 
 ## MOBのステータス表示
-	execute if entity @s[type=!player] run function api:display/mob.name
+	execute if entity @s[type=!player] run function #api:display/mob.name
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #HP.Display

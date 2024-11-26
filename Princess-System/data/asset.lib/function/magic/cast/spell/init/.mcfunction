@@ -15,8 +15,8 @@
 		execute if data storage asset:magic Elements run data modify storage temp: Magic.Elements set from storage asset:magic Elements
 
 	###
-		function data.entity:please
-		data modify storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Magic set from storage temp: Magic
+		function #api:e_dat/please
+		data modify storage dat: _.Magic set from storage temp: Magic
 
 
 ## スコアを代入
@@ -26,7 +26,7 @@
 	execute if data storage asset:magic Speed run function asset.lib:magic/cast/spell/init/speed
 
 ## プレイヤーのIDを保存
-	execute store result storage data:entity _[-4][-4][-4][-4][-4][-4][-4][-4].Magic.CasterID int 1 run scoreboard players get @a[tag=This,limit=1] PlayerID
+	execute store result storage dat: _.Magic.CasterID int 1 run scoreboard players get @a[tag=This,limit=1] PlayerID
 
 ## 向きを変更
 	execute positioned as @s run tp @s ~ ~ ~ ~ ~

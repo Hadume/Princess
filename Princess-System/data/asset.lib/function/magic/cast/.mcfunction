@@ -5,7 +5,7 @@
 #   main:advancements/shot_crossbow
 
 ## 個人ストレージを呼ぶ
-	function data.player:please
+	function #api:e_dat/please
 
 ## データを削除
 	execute if data storage asset:magic ID run data remove storage asset:magic ID

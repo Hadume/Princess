@@ -8,7 +8,7 @@
 #     #Lib.ATK Lib
 #     #Lib.DEF Lib
 # @output score_holder #Lib.Damage Lib
-# @api
+# @within tag/function lib:damage
 
 ## 引数の確認
 	execute store success storage temp: Error byte 1 unless score #Lib.ATK Lib matches ..2147483647 run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "#Lib.ATK Lib"}]

@@ -10,7 +10,7 @@
 
 ## HPを減らす
 	scoreboard players operation @s HP -= #Lib.Damage Lib
-	function lib:status/hp/update/
+	function #lib:status/hp/update
 
 ## ダメージ表示
 	execute anchored eyes run loot spawn ^ ^ ^ loot lib:damage/display

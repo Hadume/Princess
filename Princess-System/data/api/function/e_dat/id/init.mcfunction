@@ -3,4 +3,4 @@
 # @within function api:e_dat/id/allocate
 
 ##
-	$data modify storage dat:$(id) Data set value {}
+	$data modify storage dat:$(id) _ set value {}
