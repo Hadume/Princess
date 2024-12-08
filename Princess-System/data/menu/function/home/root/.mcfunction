@@ -9,7 +9,7 @@
 	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Status:1b}}] run return run function menu:status/root/open
 	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Storage:1b}}] run return run function menu:storage/root/open
 	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Quest:1b}}] run tellraw @s {"text":"[UI] このページは作成されていません","color":"gray"}
-	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Communicate:1b}}] run return run tellraw @s {"text":"[UI] このページは作成されていません","color":"gray"}
+	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Communicate:1b}}] run return run function menu:communicate/root/open/
 
 ## 欠けていたら修復
 	execute unless score #InvCount Temp matches 27 run data modify storage menu: Function set value {Parent:"home",Child:"root"}

@@ -1,7 +1,21 @@
 {
 	"criteria": {
 		"trigger": {
-			"trigger": "inventory_changed"
+			"trigger": "inventory_changed",
+			"conditions": {
+				"player": [
+					{
+						"condition": "inverted",
+						"term": {
+							"condition": "entity_properties",
+							"entity": "this",
+							"predicate": {
+								"nbt": "{Tags:[\"LockedInventory\"]}"
+							}
+						}
+					}
+				]
+			}
 		}
 	}
 }
