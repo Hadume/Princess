@@ -2,14 +2,21 @@
 # 魔法を初期化
 # @within function asset.lib:magic/cast/spell/
 
-##
-	tag @s add This
-
 ## 魔法を初期化
-	execute as @e[type=armor_stand,tag=Spell.Init] run function asset.lib:magic/cast/spell/init/
+	### IDをコピー
+		scoreboard players operation #ID.Copy Temp = @s ID
+
+	###
+		execute as @e[type=armor_stand,tag=Spell.Init] run function asset.lib:magic/cast/spell/init/
+
 
 ## 表示用Entityを初期化
-	execute as @e[type=block_display,tag=Spell.Init] run function asset.lib:magic/cast/spell/display
+	### Rotation を取得
+		function #api:get.nbt/rotation
 
-##
-	tag @s remove This
+	###
+		execute as @e[type=block_display,tag=Spell.Init] run function asset.lib:magic/cast/spell/display
+
+
+## 一時使用ScoreHolderをリセット
+	scoreboard players reset #ID.Copy

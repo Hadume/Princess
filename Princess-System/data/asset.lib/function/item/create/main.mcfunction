@@ -49,7 +49,7 @@
 		execute store result score #Rarity.Copy Temp run data get storage asset:item Rarity
 		data modify storage temp: Lore append value '{"text":""}'
 		loot replace block 0 -64 0 container.0 loot asset.lib:item/lore/rarity
-		data modify storage temp: Lore append from block 0 -64 0 Items[0].tag.display.Name
+		data modify storage temp: Lore append from block 0 -64 0 Items[0].components."minecraft:custom_name"
 
 	### 代入
 		data modify storage temp: Item.tag.display.Lore set from storage temp: Lore

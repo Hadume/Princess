@@ -10,10 +10,10 @@
 	#declare score_holder #ID.Copy
 
 ## IDをコピー
-	scoreboard players operation #ID.Copy Temp = @s EntityID
+	scoreboard players operation #ID.Copy Temp = @s ID
 
 ## 自分と同じIDのblock_displayを消す
-	execute as @e[type=block_display,tag=Spell.Display] if score @s EntityID = #ID.Copy Temp run kill @s
+	execute as @e[type=block_display,tag=Spell.Display] if score @s ID = #ID.Copy Temp run kill @s
 
 ##
 	kill @s

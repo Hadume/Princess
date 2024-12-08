@@ -1,0 +1,57 @@
+{
+	"pools": [
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "item",
+					"name": "player_head",
+					"functions": [
+						{
+							"function": "fill_player_head",
+							"entity": "this"
+						},
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": [
+								{
+									"text": "",
+									"color": "white",
+									"italic": false
+								},
+								{
+									"selector": "@s",
+									"color": "yellow",
+									"bold": true
+								},
+								{
+									"text": " ‹"
+								},
+								{
+									"score": {
+										"name": "@s",
+										"objective": "Lvl"
+									}
+								},
+								{
+									"text": "›"
+								}
+							]
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"max_stack_size": 1
+							}
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{Menu:{CommunicatePlayer:1b}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,113 @@
+{
+	"pools": [
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "menu:communicate/trade/decide",
+					"conditions": [
+						{
+							"condition": "entity_scores",
+							"entity": "this",
+							"scores": {
+								"Trade.DecideTimer": -1
+							}
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"value": "menu:communicate/trade/deciding",
+					"conditions": [
+						{
+							"condition": "entity_scores",
+							"entity": "this",
+							"scores": {
+								"Trade.DecideTimer": {
+									"min": 41,
+									"max": 60
+								}
+							}
+						}
+					],
+					"functions": [
+						{
+							"function": "set_components",
+							"components": {
+								"max_stack_size": 3
+							}
+						},
+						{
+							"function": "set_count",
+							"count": 3
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"value": "menu:communicate/trade/deciding",
+					"conditions": [
+						{
+							"condition": "entity_scores",
+							"entity": "this",
+							"scores": {
+								"Trade.DecideTimer": {
+									"min": 21,
+									"max": 40
+								}
+							}
+						}
+					],
+					"functions": [
+						{
+							"function": "set_components",
+							"components": {
+								"max_stack_size": 2
+							}
+						},
+						{
+							"function": "set_count",
+							"count": 2
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"value": "menu:communicate/trade/deciding",
+					"conditions": [
+						{
+							"condition": "entity_scores",
+							"entity": "this",
+							"scores": {
+								"Trade.DecideTimer": {
+									"min": 1,
+									"max": 20
+								}
+							}
+						}
+					],
+					"functions": [
+						{
+							"function": "set_count",
+							"count": 1
+						}
+					]
+				},
+				{
+					"type": "loot_table",
+					"value": "menu:communicate/trade/decided",
+					"conditions": [
+						{
+							"condition": "entity_scores",
+							"entity": "this",
+							"scores": {
+								"Trade.DecideTimer": 0
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
