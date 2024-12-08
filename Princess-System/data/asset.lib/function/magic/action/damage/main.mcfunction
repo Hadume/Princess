@@ -7,7 +7,7 @@
 	#declare score_holder #StoredDamage
 
 ## 攻撃者のIDを保存
-	execute unless data storage asset:magic CasterID store result storage asset:magic CasterID int 1 run scoreboard players get @s PlayerID
+	execute unless data storage asset:magic CasterID store result storage asset:magic CasterID int 1 run scoreboard players get @s ID
 
 ##
 	tag @s add This
