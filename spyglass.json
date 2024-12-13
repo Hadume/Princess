@@ -197,43 +197,6 @@
 		"strictSoundEventCheck": "only-default-namespace",
 		"strictStorageCheck": true,
 		"strictTagCheck": true,
-		"strictTeamCheck": true,
-		"undeclaredSymbol": [
-			{
-				"if": [
-					{
-						"category": [
-							"block",
-							"entity_type",
-							"item"
-						],
-						"namespace": "minecraft"
-					},
-					{
-						"category": [
-							"advancement",
-							"bossbar",
-							"objective",
-							"team"
-						]
-					}
-				],
-				"then": {
-					"report": "warning"
-				}
-			},
-			{
-				"then": {
-					"declare": "block"
-				}
-			}
-		]
-	},
-	"snippet": {
-		"executeIfScoreSet": "execute if score ${1:score_holder} ${2:objective} = ${1:score_holder} ${2:objective} $0",
-		"summonAec": "summon minecraft:area_effect_cloud ~ ~ ~ {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: [\"${1:tag}\"]}",
-		"TellrawBlockNBT": "tellraw @a [{\"text\":\"${1:NBT}\"},{\"block\":\"${2:~ ~ ~}\",\"nbt\":\"${1:NBT}\"}]",
-		"TellrawEntityNBT": "tellraw @a [{\"text\":\"${1:NBT}\"},{\"entity\":\"${2:@s}\",\"nbt\":\"${1:NBT}\"}]",
-		"TellrawStorageNBT": "tellraw @a [{\"text\":\"${1:NBT}\"},{\"storage\":\"${2:Storage}\",\"nbt\":\"${1:NBT}\"}]"
+		"strictTeamCheck": true
 	}
 }

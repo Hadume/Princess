@@ -17,7 +17,7 @@
 		"advancement": [
 			"{",
 			"    \"criteria\": {",
-			"        \"trigger\": {",
+			"        \"\": {",
 			"            \"trigger\": \"%cursor%\"",
 			"        }",
 			"    }",
