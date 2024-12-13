@@ -1,8 +1,0 @@
-{
-    "condition": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "nbt": "{Inventory:[{Slot:9b, tag:{UICode:0}},{Slot:27b, tag:{UICode:1}},{Slot:35b, tag:{UICode:2}}]}"
-    }
-  }
-  

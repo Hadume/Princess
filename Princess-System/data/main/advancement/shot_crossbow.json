@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"trigger": {
+		"": {
 			"trigger": "shot_crossbow"
 		}
 	}

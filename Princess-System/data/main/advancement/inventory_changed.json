@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"trigger": {
+		"": {
 			"trigger": "inventory_changed",
 			"conditions": {
 				"player": [
