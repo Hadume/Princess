@@ -48,5 +48,4 @@
 	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{StorageMaterial:1b}}] run tellraw @s {"text":"[UI] このページは作成されていません","color":"gray"}
 
 ## 欠けていたら修復
-	execute unless score #InvCount Temp matches 6 run data modify storage menu: Function set value {Parent:"storage",Child:"root"}
-	execute unless score #InvCount Temp matches 6 run function menu:_common/repair with storage menu: Function
+	execute unless score #InvCount Temp matches 6 run function menu:_common/repair {Parent:"storage",Child:"root"}

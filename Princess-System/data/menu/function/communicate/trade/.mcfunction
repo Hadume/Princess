@@ -39,8 +39,7 @@
 	data remove storage api: Inventory[{Slot:30b}]
 
 ## 欠けていたら修復
-	execute unless score #InvCount Temp matches 18 run data modify storage menu: Function set value {Parent:"communicate",Child:"trade"}
-	execute unless score #InvCount Temp matches 18 run function menu:_common/repair with storage menu: Function
+	execute unless score #InvCount Temp matches 18 run function menu:_common/repair {Parent:"communicate",Child:"trade"}
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Trade.With.Copy

@@ -8,5 +8,4 @@
 	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{CommunicateTrade:1b}}] run function menu:communicate/select_action/trade/
 
 ## 欠けていたら修復
-	execute unless score #InvCount Temp matches 27 run data modify storage menu: Function set value {Parent:"communicate",Child:"select_action"}
-	execute unless score #InvCount Temp matches 27 run function menu:_common/repair with storage menu: Function
+	execute unless score #InvCount Temp matches 27 run function menu:_common/repair {Parent:"communicate",Child:"select_action"}

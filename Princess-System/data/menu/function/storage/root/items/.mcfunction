@@ -10,5 +10,4 @@
 	function menu:storage/root/items/main with storage temp:
 
 ## UI
-	data modify storage menu: Function set value {Parent:"storage",Child:"root"}
-	function menu:_common/repair with storage menu: Function
+	function menu:_common/repair {Parent:"storage",Child:"root"}

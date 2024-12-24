@@ -50,8 +50,7 @@
 
 
 ## UI
-	data modify storage menu: Function set value {Parent:"communicate",Child:"root"}
-	function menu:_common/repair with storage menu: Function
+	function menu:_common/repair {Parent:"communicate",Child:"root"}
 
 ## 音
 	playsound ui.button.click master @s ~ ~ ~ 0.25 1 0

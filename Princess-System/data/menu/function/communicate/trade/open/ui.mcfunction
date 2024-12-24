@@ -28,8 +28,7 @@
 	execute if data storage api: Inventory[{Slot:-106b}] run data remove storage api: Inventory[{Slot:-106b}]
 
 ##
-	data modify storage menu: Function set value {Parent:"communicate",Child:"trade"}
-	function menu:_common/repair with storage menu: Function
+	function menu:_common/repair {Parent:"communicate",Child:"trade"}
 
 ## 空白Slotを作る
 	loot replace entity @s inventory.5 loot menu:common/frame.light_gray
