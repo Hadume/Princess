@@ -1,6 +1,6 @@
 #> menu:equipment/root/open
 # 装備メニューを開く
-# @within function menu:menu/root/
+# @within function menu:home/root/
 
 ## スコアを変更
 	scoreboard players set @s Menu 2000
@@ -20,8 +20,7 @@
 
 
 ## UI
-	data modify storage menu: Function set value {Parent:"equipment",Child:"root"}
-	function menu:_common/repair with storage menu: Function
+	function menu:_common/repair {Parent:"equipment",Child:"root"}
 
 ## 音
 	playsound ui.button.click master @s ~ ~ ~ 0.25 1 0

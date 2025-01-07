@@ -13,8 +13,8 @@
 # @within tag/function lib:range
 
 ## 引数の確認
-	execute store success storage temp: Error byte 1 unless data storage lib: Range.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "lib: Range.Amount"}]
-	execute store success storage temp: Error byte 1 unless data storage lib: Range.Pierce run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "lib: Range.Pierce"}]
+	execute store success storage temp: Error byte 1 unless data storage lib: Range.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"lib: Range.Amount"]
+	execute store success storage temp: Error byte 1 unless data storage lib: Range.Pierce run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"lib: Range.Pierce"]
 
 ##
 	execute unless data storage temp: Error run function lib:range/main

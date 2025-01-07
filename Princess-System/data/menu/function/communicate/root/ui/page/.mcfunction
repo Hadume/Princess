@@ -13,10 +13,10 @@
 		data modify storage temp: PageData set value []
 
 	### Slotを初期化
-		data modify storage temp: Slot set value [1b, 2b, 3b, 4b, 5b, 6b, 7b, 10b, 11b, 12b, 13b, 14b, 15b, 16b, 19b, 20b, 21b, 22b, 23b, 24b, 25b]
+		data modify storage temp: Slots set value [1b, 2b, 3b, 4b, 5b, 6b, 7b, 10b, 11b, 12b, 13b, 14b, 15b, 16b, 19b, 20b, 21b, 22b, 23b, 24b, 25b]
 
 	### 作成
-		function menu:communicate/root/ui/page/make.loop
+		execute if data storage temp: PlayerData[] run function menu:communicate/root/ui/page/make.loop
 
 	### データを保存
 		data modify storage dat: _.Menu.Communicate.Page append from storage temp: PageData
@@ -24,4 +24,4 @@
 
 	### 一時使用Storageを削除
 		data remove storage temp: PlayerData
-		data remove storage temp: Slot
+		data remove storage temp: Slots

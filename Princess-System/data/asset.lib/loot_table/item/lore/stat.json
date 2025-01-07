@@ -6,26 +6,23 @@
 				{
 					"type": "item",
 					"name": "cod",
-					"conditions": [
-						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Amount"
-								},
-								"score": "Temp"
-							},
-							"range": {
-								"min": 1
-							}
-						}
-					],
 					"functions": [
 						{
 							"function": "set_name",
 							"entity": "this",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "temp:",
+										"path": "Stat.Amount"
+									},
+									"range": {
+										"min": 1
+									}
+								}
+							],
 							"name": [
 								{
 									"text": " ",
@@ -53,30 +50,21 @@
 									"nbt": "Amount.Suffix"
 								}
 							]
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "cod",
-					"conditions": [
-						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Amount"
-								},
-								"score": "Temp"
-							},
-							"range": 0
-						}
-					],
-					"functions": [
+						},
 						{
 							"function": "set_name",
 							"entity": "this",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "temp:",
+										"path": "Stat.Amount"
+									},
+									"range": 0
+								}
+							],
 							"name": [
 								{
 									"text": " ",
@@ -99,32 +87,23 @@
 									"nbt": "Amount.Suffix"
 								}
 							]
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "cod",
-					"conditions": [
-						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Amount"
-								},
-								"score": "Temp"
-							},
-							"range": {
-								"max": -1
-							}
-						}
-					],
-					"functions": [
+						},
 						{
 							"function": "set_name",
 							"entity": "this",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "temp:",
+										"path": "Stat.Amount"
+									},
+									"range": {
+										"max": -1
+									}
+								}
+							],
 							"name": [
 								{
 									"text": " ",

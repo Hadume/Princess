@@ -25,4 +25,4 @@
 	execute if data storage asset:magic {Elements:["Dunkel"]} as @e[tag=Lib.InRange] at @s run particle dust{color:[0.25,0.25,0.25], scale:1.0} ~ ~1 ~ 0.25 0.5 0.25 0 25 force
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #StoredDamage
+	scoreboard players reset #StoredDamage Temp

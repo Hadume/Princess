@@ -4,7 +4,7 @@
 
 #> ScoreHolder.Temp
 # @within function lib:exp/levelup/*
-	#declare score_holder #Exp.Need.Copy
+	#declare score_holder #Exp.Need
 
 ##
 	function lib:exp/levelup/loop
@@ -22,7 +22,7 @@
 
 
 ## レベルアップを知らせる
-	tellraw @s [{"text": "\nレベルが"},{"score":{"name": "@s","objective": "Lvl"},"color": "yellow","bold": true},{"text": "になりました！"}]
+	tellraw @s ["\nレベルが",{"score":{"name": "@s","objective": "Lvl"},"color": "yellow","bold": true},"になりました！"]
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Exp.Need.Copy
+	scoreboard players reset #Exp.Need Temp

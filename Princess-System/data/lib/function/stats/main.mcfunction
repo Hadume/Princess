@@ -48,7 +48,7 @@
 
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Amount
+	scoreboard players reset #Amount Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: Armor

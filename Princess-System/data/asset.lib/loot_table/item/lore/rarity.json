@@ -6,25 +6,31 @@
 				{
 					"type": "item",
 					"name": "cod",
-					"conditions": [
-						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Rarity.Copy"
-								},
-								"score": "Temp"
-							},
-							"range": 1
-						}
-					],
 					"functions": [
 						{
-							"function": "set_name",
-							"entity": "this",
-							"name": [
+							"function": "set_lore",
+							"mode": "append",
+							"lore": [
+								{
+									"text": ""
+								}
+							]
+						},
+						{
+							"function": "set_lore",
+							"mode": "append",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "asset:item",
+										"path": "Rarity"
+									},
+									"range": 1
+								}
+							],
+							"lore": [
 								{
 									"text": "★",
 									"italic": false,
@@ -35,31 +41,22 @@
 									"color": "white"
 								}
 							]
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "cod",
-					"conditions": [
+						},
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Rarity.Copy"
-								},
-								"score": "Temp"
-							},
-							"range": 2
-						}
-					],
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": [
+							"function": "set_lore",
+							"mode": "append",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "asset:item",
+										"path": "Rarity"
+									},
+									"range": 2
+								}
+							],
+							"lore": [
 								{
 									"text": "★★",
 									"italic": false,
@@ -70,31 +67,22 @@
 									"color": "white"
 								}
 							]
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "cod",
-					"conditions": [
+						},
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Rarity.Copy"
-								},
-								"score": "Temp"
-							},
-							"range": 3
-						}
-					],
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": [
+							"function": "set_lore",
+							"mode": "append",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "asset:item",
+										"path": "Rarity"
+									},
+									"range": 3
+								}
+							],
+							"lore": [
 								{
 									"text": "★★★",
 									"italic": false,
@@ -105,31 +93,22 @@
 									"color": "white"
 								}
 							]
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "cod",
-					"conditions": [
+						},
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Rarity.Copy"
-								},
-								"score": "Temp"
-							},
-							"range": 4
-						}
-					],
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": [
+							"function": "set_lore",
+							"mode": "append",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "asset:item",
+										"path": "Rarity"
+									},
+									"range": 4
+								}
+							],
+							"lore": [
 								{
 									"text": "★★★★",
 									"italic": false,
@@ -140,31 +119,22 @@
 									"color": "white"
 								}
 							]
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "cod",
-					"conditions": [
+						},
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Rarity.Copy"
-								},
-								"score": "Temp"
-							},
-							"range": 5
-						}
-					],
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": [
+							"function": "set_lore",
+							"mode": "append",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "asset:item",
+										"path": "Rarity"
+									},
+									"range": 5
+								}
+							],
+							"lore": [
 								{
 									"text": "★★★★★",
 									"italic": false,
@@ -175,31 +145,22 @@
 									"color": "white"
 								}
 							]
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "cod",
-					"conditions": [
+						},
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Rarity.Copy"
-								},
-								"score": "Temp"
-							},
-							"range": 6
-						}
-					],
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": [
+							"function": "set_lore",
+							"mode": "append",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "asset:item",
+										"path": "Rarity"
+									},
+									"range": 6
+								}
+							],
+							"lore": [
 								{
 									"text": "★★★★★★",
 									"italic": false,
@@ -210,31 +171,22 @@
 									"color": "white"
 								}
 							]
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "cod",
-					"conditions": [
+						},
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Rarity.Copy"
-								},
-								"score": "Temp"
-							},
-							"range": 7
-						}
-					],
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": [
+							"function": "set_lore",
+							"mode": "append",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "asset:item",
+										"path": "Rarity"
+									},
+									"range": 7
+								}
+							],
+							"lore": [
 								{
 									"text": "★★★★★★★",
 									"italic": false,
@@ -245,31 +197,22 @@
 									"color": "white"
 								}
 							]
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "cod",
-					"conditions": [
+						},
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Rarity.Copy"
-								},
-								"score": "Temp"
-							},
-							"range": 8
-						}
-					],
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": [
+							"function": "set_lore",
+							"mode": "append",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "asset:item",
+										"path": "Rarity"
+									},
+									"range": 8
+								}
+							],
+							"lore": [
 								{
 									"text": "★★★★★★★★",
 									"italic": false,
@@ -280,31 +223,22 @@
 									"color": "white"
 								}
 							]
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "cod",
-					"conditions": [
+						},
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Rarity.Copy"
-								},
-								"score": "Temp"
-							},
-							"range": 9
-						}
-					],
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": [
+							"function": "set_lore",
+							"mode": "append",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "asset:item",
+										"path": "Rarity"
+									},
+									"range": 9
+								}
+							],
+							"lore": [
 								{
 									"text": "★★★★★★★★★",
 									"italic": false,
@@ -315,31 +249,22 @@
 									"color": "white"
 								}
 							]
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "cod",
-					"conditions": [
+						},
 						{
-							"condition": "value_check",
-							"value": {
-								"type": "score",
-								"target": {
-									"type": "fixed",
-									"name": "#Rarity.Copy"
-								},
-								"score": "Temp"
-							},
-							"range": 10
-						}
-					],
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": [
+							"function": "set_lore",
+							"mode": "append",
+							"conditions": [
+								{
+									"condition": "value_check",
+									"value": {
+										"type": "storage",
+										"storage": "asset:item",
+										"path": "Rarity"
+									},
+									"range": 10
+								}
+							],
+							"lore": [
 								{
 									"text": "★★★★★★★★★★",
 									"italic": false,

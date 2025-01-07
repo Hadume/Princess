@@ -4,11 +4,11 @@
 
 #> ページ番号
 # @private
-	#declare score_holder #InvPage.Copy
+	#declare score_holder #Page
 
 ## アイテムをセーブ
-	scoreboard players operation #InvPage.Copy Temp = @s Menu
-	execute store result storage temp: Page int 1 run scoreboard players operation #InvPage.Copy Temp %= #1000 Const
+	scoreboard players operation #Page Temp = @s Menu
+	execute store result storage temp: Page int 1 run scoreboard players operation #Page Temp %= #1000 Const
 	function menu:storage/root/items/save with storage temp:
 
 ## いらないアイテムを消す
@@ -40,6 +40,12 @@
 		data remove storage api: Inventory[{Slot:34b}]
 
 
+## 一時使用ScoreHolderをリセット
+	scoreboard players reset #Page Temp
+
+## 一時使用Storageを削除
+	data remove storage temp: Page
+
 ## どこかをクリックしていたら
 	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Back:1b}}] run return run function menu:home/root/open
 	execute if entity @s[scores={Menu=5001..}] if items entity @s player.cursor *[minecraft:custom_data~{Menu:{PagePrev:1b}}] run return run function menu:storage/root/page/prev
@@ -48,5 +54,4 @@
 	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{StorageMaterial:1b}}] run tellraw @s {"text":"[UI] このページは作成されていません","color":"gray"}
 
 ## 欠けていたら修復
-	execute unless score #InvCount Temp matches 6 run data modify storage menu: Function set value {Parent:"storage",Child:"root"}
-	execute unless score #InvCount Temp matches 6 run function menu:_common/repair with storage menu: Function
+	execute unless score #InvCount Temp matches 6 run function menu:_common/repair {Parent:"storage",Child:"root"}

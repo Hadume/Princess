@@ -29,4 +29,4 @@
 	execute if score #MP.Per Temp matches 1 run title @s actionbar [{"text":"\uE010"},{"text": "\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020"},{"text": "\uE020"}]
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #MP.Per
+	scoreboard players reset #MP.Per Temp

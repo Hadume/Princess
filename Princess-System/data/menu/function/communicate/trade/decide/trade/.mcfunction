@@ -9,13 +9,13 @@
 	function menu:communicate/trade/decide/trade/common
 
 ## 相手でも
-	scoreboard players operation #Trade.With.Copy Temp = @s Trade.With
-	execute as @a if score @s ID = #Trade.With.Copy Temp run function #api:get.nbt/inventory
-	execute as @a if score @s ID = #Trade.With.Copy Temp run function menu:communicate/trade/decide/trade/common
+	scoreboard players operation #Trade.With Temp = @s Trade.With
+	execute as @a if score @s ID = #Trade.With Temp run function #api:get.nbt/inventory
+	execute as @a if score @s ID = #Trade.With Temp run function menu:communicate/trade/decide/trade/common
 
 ## ホームに戻る
 	function #api:get.nbt/inventory
 	function menu:communicate/trade/back/
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Trade.With.Copy
+	scoreboard players reset #Trade.With Temp

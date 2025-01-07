@@ -10,7 +10,7 @@
 
 ## データを削除
 	data modify storage temp: ID set from storage dat: id[0]
-	function api:e_dat/id/remove.data with storage temp:
+	function api:e_dat/remove.data with storage temp:
 
 ## 割り当て済みIDを削除
 	data remove storage dat: id[0]

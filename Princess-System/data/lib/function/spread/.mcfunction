@@ -10,7 +10,7 @@
 # @within tag/function lib:spread
 
 ## 引数の確認
-	execute store success storage temp: Error byte 1 unless data storage lib: Spread.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "lib: Spread.Amount"}]
+	execute store success storage temp: Error byte 1 unless data storage lib: Spread.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"lib: Spread.Amount"]
 
 ##
 	execute unless data storage temp: Error run function lib:spread/main

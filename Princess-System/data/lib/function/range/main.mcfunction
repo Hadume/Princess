@@ -58,19 +58,19 @@
 	execute if score #Pierce Temp matches ..0 run data modify storage lib: Range.Pierced set value 0
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Range
-	scoreboard players reset #Pierce
-	scoreboard players reset #Pos.X1
-	scoreboard players reset #Pos.Y1
-	scoreboard players reset #Pos.Z1
-	scoreboard players reset #Pos.X2
-	scoreboard players reset #Pos.Y2
-	scoreboard players reset #Pos.Z2
-	scoreboard players reset #Pos.X3
-	scoreboard players reset #Pos.Y3
-	scoreboard players reset #Pos.Z3
-	scoreboard players reset #Size.X
-	scoreboard players reset #Size.Y
+	scoreboard players reset #Range Temp
+	scoreboard players reset #Pierce Temp
+	scoreboard players reset #Pos.X1 Temp
+	scoreboard players reset #Pos.Y1 Temp
+	scoreboard players reset #Pos.Z1 Temp
+	scoreboard players reset #Pos.X2 Temp
+	scoreboard players reset #Pos.Y2 Temp
+	scoreboard players reset #Pos.Z2 Temp
+	scoreboard players reset #Pos.X3 Temp
+	scoreboard players reset #Pos.Y3 Temp
+	scoreboard players reset #Pos.Z3 Temp
+	scoreboard players reset #Size.X Temp
+	scoreboard players reset #Size.Y Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: Pos

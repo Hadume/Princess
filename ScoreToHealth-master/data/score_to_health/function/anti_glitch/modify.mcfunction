@@ -12,4 +12,4 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-attribute @s generic.max_health modifier add bab7cdc2-fb6a-47f6-0001-1f -100000 add_value
+attribute @s max_health modifier add bab7cdc2-fb6a-47f6-0001-1f -100000 add_value

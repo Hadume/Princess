@@ -12,5 +12,5 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-attribute @s generic.max_health modifier remove bab7cdc2-fb6a-47f6-0001-ff
+attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-ff
 tag @s remove ScoreToHealth.AntiGlitch.Protected

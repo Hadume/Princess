@@ -22,4 +22,4 @@ say communicate:trade
 	scoreboard players reset @s Trade.Action
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Trader.ID
+	scoreboard players reset #Trader.ID Temp

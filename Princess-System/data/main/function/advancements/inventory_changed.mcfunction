@@ -15,7 +15,7 @@
 	execute if entity @s[gamemode=adventure] run function menu:
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #InvCount
+	scoreboard players reset #InvCount Temp
 
 ## 一時使用Storageを削除
 	data remove storage main: InventoryChanged

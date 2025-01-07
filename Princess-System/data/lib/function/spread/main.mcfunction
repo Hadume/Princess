@@ -67,14 +67,14 @@
 	execute if data storage lib: {Spread:{OnGround:1b}} run function lib:spread/on_ground/
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Spread.XZ-1
-	scoreboard players reset #Spread.XZ-2
-	scoreboard players reset #Spread.Y-1
-	scoreboard players reset #Spread.Y-2
-	scoreboard players reset #Spread
-	scoreboard players reset #Pos.X
-	scoreboard players reset #Pos.Y
-	scoreboard players reset #Pos.Z
+	scoreboard players reset #Spread.XZ-1 Temp
+	scoreboard players reset #Spread.XZ-2 Temp
+	scoreboard players reset #Spread.Y-1 Temp
+	scoreboard players reset #Spread.Y-2 Temp
+	scoreboard players reset #Spread Temp
+	scoreboard players reset #Pos.X Temp
+	scoreboard players reset #Pos.Y Temp
+	scoreboard players reset #Pos.Z Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: Pos

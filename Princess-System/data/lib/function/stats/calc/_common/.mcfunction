@@ -18,9 +18,9 @@
 	execute if score #Amount.Stored.2 Temp matches ..2147483647 run function lib:stats/calc/_common/operation/2
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Amount.Stored
-	scoreboard players reset #Amount.Stored.1
-	scoreboard players reset #Amount.Stored.2
+	scoreboard players reset #Amount.Stored Temp
+	scoreboard players reset #Amount.Stored.1 Temp
+	scoreboard players reset #Amount.Stored.2 Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: Stats

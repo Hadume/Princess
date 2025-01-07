@@ -6,13 +6,13 @@
 #     Amount : int
 #     CasterID? : int
 #     Elements? : [Element] @ ..6
-# @output storage asset:magic SroredDamage
+# @output storage asset:magic ScoredDamage
 # @within function
 #   asset:magic/*/*/**
 #   asset.lib:magic/action/range/main
 
 ## 引数の確認
-	execute store success storage temp: Error byte 1 unless data storage asset:magic Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:magic Amount"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:magic Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:magic Amount"]
 
 ## 実行
 	execute unless data storage temp: Error run function asset.lib:magic/action/damage/main

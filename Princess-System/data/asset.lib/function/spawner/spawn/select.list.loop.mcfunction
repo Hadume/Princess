@@ -4,7 +4,7 @@
 # @private
 
 ## データを削除
-	data remove storage temp: dataCopy.Data[-1]
+	data remove storage temp: data.Data[-1]
 
 ## スコアを減らす
 	scoreboard players remove #Rand Temp 1

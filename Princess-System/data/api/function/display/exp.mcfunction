@@ -46,4 +46,4 @@
 	function #api:display/level
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Exp.Per
+	scoreboard players reset #Exp.Per Temp

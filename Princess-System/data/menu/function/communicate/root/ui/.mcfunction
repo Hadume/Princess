@@ -1,40 +1,41 @@
 #> menu:communicate/root/ui/
 #
-# @within function menu:common/repair
+# @within function menu:repair
 
 say communicate:root.ui
 
-## ページ番号
-	scoreboard players operation #InvPage.Copy Temp = @s Menu
-	scoreboard players operation #InvPage.Copy Temp %= #1000 Const
+## ページ番号を取得
+	scoreboard players operation #Page Temp = @s Menu
+	scoreboard players operation #Page Temp %= #1000 Const
 
-## UIのプレイヤー表示
-	execute store result storage temp: PageNum int 1 run scoreboard players get #InvPage.Copy Temp
+## 大枠を用意
+	data remove block 0 -64 0 Items
+	### 前、次のページ番号
+		scoreboard players operation #Page.Next Temp = @s Menu
+		scoreboard players operation #Page.Next Temp %= #1000 Const
+		scoreboard players operation #Page.Prev Temp = #Page.Next Temp
+		scoreboard players add #Page.Next Temp 2
+
+	loot replace block 0 -64 0 container.0 loot menu:communicate/root/
+
+## 次ページ
+	execute if data storage dat: _.Menu.Communicate.PlayerData[] if entity @s[scores={Menu=..7099}] run loot replace entity @s inventory.26 loot menu:page.next
+	execute if entity @s[scores={Menu=7099}] run loot replace entity @s inventory.26 loot menu:frame.black
+	execute unless data storage dat: _.Menu.Communicate.PlayerData[] run loot replace entity @s inventory.26 loot menu:frame.black
+
+## プレイヤー表示
+	execute store result storage temp: PageNum int 1 run scoreboard players get #Page Temp
 	function menu:communicate/root/ui/page/ with storage temp:
+	data modify block 0 -64 0 Items append from storage temp: PageData[]
 
-##
-	### プレイヤーヘッド
-		data remove block 0 -64 0 Items
-		data modify block 0 -64 0 Items append from storage temp: PageData[]
-		loot replace entity @s inventory.0 27 mine 0 -64 0 debug_stick
-
-	### 戻る
-		loot replace entity @s inventory.0 loot menu:common/back
-
-	### 前のページに戻る
-		execute if entity @s[scores={Menu=7001..}] run loot replace entity @s inventory.8 loot menu:common/page.prev
-		execute if entity @s[scores={Menu=7000}] run loot replace entity @s inventory.8 loot menu:common/frame.black
-
-	### 枠
-		loot replace entity @s inventory.9 loot menu:common/frame.black
-		loot replace entity @s inventory.17 loot menu:common/frame.black
-		loot replace entity @s inventory.18 loot menu:common/frame.black
-
-	### 次のページへいく
-		execute if data storage dat: _.Menu.Communicate.PlayerData[] if entity @s[scores={Menu=..7099}] run loot replace entity @s inventory.26 loot menu:common/page.next
-		execute if entity @s[scores={Menu=7099}] run loot replace entity @s inventory.26 loot menu:common/frame.black
-		execute unless data storage dat: _.Menu.Communicate.PlayerData[] run loot replace entity @s inventory.26 loot menu:common/frame.black
-
+## プレイヤーに表示
+	loot replace entity @s inventory.0 27 mine 0 -64 0 debug_stick
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #InvPage.Copy
+	scoreboard players reset #Page.Prev Temp
+	scoreboard players reset #Page.Next Temp
+	scoreboard players reset #Page Temp
+
+## 一時使用Storageを削除
+	data remove storage temp: PageNum
+	data remove storage temp: PageData

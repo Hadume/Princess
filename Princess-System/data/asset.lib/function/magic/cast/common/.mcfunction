@@ -10,7 +10,7 @@
 #> MP取得用
 # @private
 	#declare score_holder #MP.Need
-	#declare score_holder #MP.Copy
+	#declare score_holder #MP
 
 ## データを移行
 	### タイプの各数値を調整
@@ -33,14 +33,14 @@
 ## MPを消費
 	### データをコピー
 		execute store result score #MP.Need Temp run data get storage asset:magic MP
-		scoreboard players operation #MP.Copy Temp = @s MP
+		scoreboard players operation #MP Temp = @s MP
 
 	###
-		execute if score #MP.Copy Temp >= #MP.Need Temp run function asset.lib:magic/cast/common/consume.mp
+		execute if score #MP Temp >= #MP.Need Temp run function asset.lib:magic/cast/common/consume.mp
 
 	### 足りなかった通知
-		execute unless score #MP.Copy Temp >= #MP.Need Temp run tellraw @s {"text": "MPが足りないにゃん♡","color": "red"}
-		execute unless score #MP.Copy Temp >= #MP.Need Temp run playsound block.note_block.bass master @s
+		execute if score #MP Temp < #MP.Need Temp run tellraw @s {"text": "MPが足りないにゃん♡","color": "red"}
+		execute if score #MP Temp < #MP.Need Temp run playsound block.note_block.bass master @s
 
 
 ## 発動数をスコアに保存
@@ -51,7 +51,7 @@
 	data remove storage asset:magic Raw
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Value
-	scoreboard players reset #MP.Consume
-	scoreboard players reset #MP.Need
-	scoreboard players reset #MP.Copy
+	scoreboard players reset #Value Temp
+	scoreboard players reset #MP.Consume Temp
+	scoreboard players reset #MP.Need Temp
+	scoreboard players reset #MP Temp

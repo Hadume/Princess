@@ -3,7 +3,7 @@
 # @within function asset.lib:magic/cast/
 
 ## 数値をコピー
-	scoreboard players operation #CT.Copy Temp = @s CT.Click
+	scoreboard players operation #CT Temp = @s CT.Click
 	data modify storage asset:magic ID set from storage dat: _.Magic[0].ID
 
 ## 魔法を発動

@@ -54,11 +54,11 @@
 	data modify block 0 -64 0 Items append from storage temp: TradeItems[]
 
 ## アイテムを渡す
-	scoreboard players operation #Trade.With.Copy Temp = @s Trade.With
-	execute as @a if score @s ID = #Trade.With.Copy Temp run loot give @s mine 0 -64 0 debug_stick
+	scoreboard players operation #Trade.With Temp = @s Trade.With
+	execute as @a if score @s ID = #Trade.With Temp run loot give @s mine 0 -64 0 debug_stick
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Trade.With.Copy
+	scoreboard players reset #Trade.With Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: TradeItems

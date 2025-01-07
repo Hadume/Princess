@@ -58,7 +58,7 @@
 
 
 ## インベントリUI
-	function menu:pages/menu/open
+	function menu:home/root/open
 
 ## ステータスの反映
 	function #api:display/exp
