@@ -52,17 +52,9 @@
 		execute store result score @s DEF.Base run data get storage asset:mob Status.DEF
 		execute store result score @s Speed.Base run data get storage asset:mob Status.Speed
 
-	### 仮値
-		scoreboard players set @s HP 1073741
-		scoreboard players set @s MP 1073741
-
 	### 装備の数値を反映
 		data modify storage lib: Stats set value ["Physic","Magic"]
 		function #lib:stats
-
-	### 仮値を戻す
-		scoreboard players operation @s HP = @s HP.Max
-		scoreboard players operation @s MP = @s MP.Max
 
 
 ## NBT反映

@@ -11,7 +11,7 @@
 							"function": "set_name",
 							"entity": "this",
 							"name": {
-								"text": "前のページへ",
+								"text": "次のページへ",
 								"italic": false,
 								"bold": true
 							}
@@ -24,7 +24,7 @@
 								[
 									{
 										"score": {
-											"name": "#InvPage.Prev",
+											"name": "#Page.Next",
 											"objective": "Temp"
 										},
 										"color": "gray",
@@ -44,7 +44,7 @@
 						},
 						{
 							"function": "set_custom_data",
-							"tag": "{Menu:{PagePrev:1b}}"
+							"tag": "{Menu:{PageNext:1b}}"
 						}
 					]
 				}

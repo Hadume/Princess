@@ -1,6 +1,6 @@
 #> menu:status/root/open
 #
-# @within function menu:menu/root/
+# @within function menu:home/root/
 
 ## スコアを変更
 	scoreboard players set @s Menu 4000

@@ -67,4 +67,4 @@
 	execute if entity @s[type=!turtle,predicate=lib:hitbox/is_baby] store result storage lib: HitBox[1] float 0.5 run data get storage lib: HitBox[1]
 
 ## MOBが登録されていなかったら
-	execute unless data storage lib: Hitbox.Size run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},{"text": "HitBoxが登録されていないMOBがいます。"}]
+	execute unless data storage lib: Hitbox.Size run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},"HitBoxが登録されていないMOBがいます。"]

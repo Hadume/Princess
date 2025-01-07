@@ -3,7 +3,7 @@
 # @within function menu:
 
 ## どこかをクリックしていたら
-	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{SkillTree:1b}}] run tellraw @s {"text":"[UI] このページは作成されていません","color":"gray"}
+	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{SkillTree:1b}}] run return run function menu:skilltree/root/open
 	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Equipment:1b}}] run return run function menu:equipment/root/open
 	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Magic:1b}}] run tellraw @s {"text":"[UI] このページは作成されていません","color":"gray"}
 	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Status:1b}}] run return run function menu:status/root/open

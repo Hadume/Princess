@@ -3,8 +3,8 @@
 # @within function lib:die/entity/loot/loop
 
 ## スコア
-	scoreboard players operation @s Exp -= #Exp.Copy Temp
-	scoreboard players operation @s Money += #Money.Copy Temp
+	scoreboard players operation @s Exp -= #Exp Temp
+	scoreboard players operation @s Money += #Money Temp
 
 ## レベルアップの確認
 	function #lib:exp

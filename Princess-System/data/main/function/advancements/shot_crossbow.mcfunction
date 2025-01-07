@@ -11,9 +11,6 @@
 ## 魔法を唱える
 	execute if data storage api: {SelectedItem:{tag:{Category:"Wand"}}} run function asset.lib:magic/cast/
 
-## クロスボウをリロードする
-#item modify entity @s weapon.mainhand main:charge_crossbow
-
 ## 一時使用Storageを削除
 	data remove storage main: ShotCrossbow
 

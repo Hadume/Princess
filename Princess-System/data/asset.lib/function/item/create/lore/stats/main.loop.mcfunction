@@ -16,14 +16,11 @@
 	execute if data storage temp: {Stat:{Operation:1}} run data modify storage temp: Amount.Suffix set value "%"
 	execute if data storage temp: {Stat:{Operation:2}} run data modify storage temp: Amount.Suffix set value "%"
 
-## 値を取得
-	execute store result score #Amount Temp run data get storage temp: Stat.Amount
-
 ## 説明を生成
-	loot replace block 0 -64 0 container.0 loot asset.lib:item/lore/stats
+	loot replace block 0 -64 0 container.0 loot asset.lib:item/lore/stat
 
 ## 取得したデータを移行
-	data modify storage temp: Lore append from block 0 -64 0 Items[0].components."minecraft:custom_name"
+	data modify storage temp: Item.components."minecraft:lore" append from block 0 -64 0 Items[0].components."minecraft:custom_name"
 
 ## 元のデータを削除
 	data remove storage asset:item Stats[0]

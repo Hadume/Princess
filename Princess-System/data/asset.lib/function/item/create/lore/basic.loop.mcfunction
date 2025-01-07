@@ -7,7 +7,7 @@
 	loot replace block 0 -64 0 container.0 loot asset.lib:item/lore/basic
 
 ## 取得したデータを移行
-	data modify storage temp: Lore append from block 0 -64 0 Items[0].components."minecraft:custom_name"
+	data modify storage temp: Item.components."minecraft:lore" append from block 0 -64 0 Items[0].components."minecraft:custom_name"
 
 ## 元のデータを削除
 	data remove storage asset:item Lore[0]

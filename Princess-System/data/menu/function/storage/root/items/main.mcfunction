@@ -18,4 +18,7 @@
 	loot replace entity @s inventory.0 27 mine 0 -64 0 debug_stick
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Slot.Copy
+	scoreboard players reset #Slot Temp
+
+## 一時使用Storageを削除
+	data remove storage temp: PageItems

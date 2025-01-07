@@ -11,7 +11,7 @@
 # @within tag/function asset.lib:magic/action/range/
 
 ## 引数を確認
-	execute store success storage temp: Error byte 1 unless data storage asset:magic Range run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "temp: Magic.Range"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:magic Range run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"temp: Magic.Range"]
 
 ## 実行
 	execute unless data storage temp: Error run function asset.lib:magic/action/range/main

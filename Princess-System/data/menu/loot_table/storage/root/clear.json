@@ -1,0 +1,14 @@
+{
+	"pools": [
+		{
+			"rolls": 7.0,
+			"entries": [
+				{
+					"type": "tag",
+					"name": "menu:air",
+					"expand": false
+				}
+			]
+		}
+	]
+}

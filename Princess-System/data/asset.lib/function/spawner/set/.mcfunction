@@ -14,12 +14,12 @@
 # @within tag/function asset:spawner/set
 
 ## 引数が足りてるか確認
-	execute store success storage temp: Error byte 1 unless data storage asset:spawner Data run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner Data"}]
-	execute store success storage temp: Error byte 1 unless data storage asset:spawner Count run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner Count"}]
-	execute store success storage temp: Error byte 1 unless data storage asset:spawner Delay run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner Delay"}]
-	execute store success storage temp: Error byte 1 unless data storage asset:spawner Range run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner Range"}]
-	execute store success storage temp: Error byte 1 unless data storage asset:spawner MaxNearbyEntities run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner MaxNearbyEntities"}]
-	execute store success storage temp: Error byte 1 unless data storage asset:spawner RequiredPlayerRange run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:spawner RequiredPlayerRange"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:spawner Data run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:spawner Data"]
+	execute store success storage temp: Error byte 1 unless data storage asset:spawner Count run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:spawner Count"]
+	execute store success storage temp: Error byte 1 unless data storage asset:spawner Delay run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:spawner Delay"]
+	execute store success storage temp: Error byte 1 unless data storage asset:spawner Range run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:spawner Range"]
+	execute store success storage temp: Error byte 1 unless data storage asset:spawner MaxNearbyEntities run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:spawner MaxNearbyEntities"]
+	execute store success storage temp: Error byte 1 unless data storage asset:spawner RequiredPlayerRange run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:spawner RequiredPlayerRange"]
 	### 足りなかったら
 		execute if data storage temp: Error as @e[tag=Spawner.Init,limit=1] run kill @s
 

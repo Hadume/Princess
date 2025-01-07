@@ -6,9 +6,9 @@
 	scoreboard players remove @s MP 1
 
 ## データを移行
-	data modify storage asset:magic Range set from storage temp: MagicCopy[-1].data.Range
-	execute if data storage temp: MagicCopy[-1].data.Pierce run data modify storage asset:magic Pierce set from storage temp: MagicCopy[-1].data.Pierce
-	execute if data storage temp: MagicCopy[-1].data.Targets run data modify storage asset:magic Targets set from storage temp: MagicCopy[-1].data.Targets
+	data modify storage asset:magic Range set from storage temp: Magic[-1].data.Range
+	execute if data storage temp: Magic[-1].data.Pierce run data modify storage asset:magic Pierce set from storage temp: Magic[-1].data.Pierce
+	execute if data storage temp: Magic[-1].data.Targets run data modify storage asset:magic Targets set from storage temp: Magic[-1].data.Targets
 
 ##
 	function #asset.lib:magic/action/range/

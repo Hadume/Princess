@@ -23,8 +23,8 @@
 		data modify storage temp: DisplayItems[{Slot:30b}] set from storage api: Inventory[{Slot:30b}]
 
 	## アイテムを表示
-		scoreboard players operation #Trade.With.Copy Temp = @s Trade.With
-		execute as @a if score @s ID = #Trade.With.Copy Temp run function menu:communicate/trade/ui/save
+		scoreboard players operation #Trade.With Temp = @s Trade.With
+		execute as @a if score @s ID = #Trade.With Temp run function menu:communicate/trade/ui/save
 
 
 ## いらないアイテムを消す
@@ -42,7 +42,7 @@
 	execute unless score #InvCount Temp matches 18 run function menu:_common/repair {Parent:"communicate",Child:"trade"}
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Trade.With.Copy
+	scoreboard players reset #Trade.With Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: DisplayItems

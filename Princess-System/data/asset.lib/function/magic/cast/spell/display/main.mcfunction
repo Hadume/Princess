@@ -1,6 +1,6 @@
-#> asset.lib:magic/cast/spell/display
+#> asset.lib:magic/cast/spell/display/main
 # 表示用Entityを初期化
-# @within function asset.lib:magic/cast/spell/main
+# @within function asset.lib:magic/cast/spell/display/
 
 #> ScoreHolder
 # @private
@@ -14,9 +14,6 @@
 # @private
 	#declare storage math:
 	#declare tag/function #math:cos
-
-## データを取得
-	execute as @a[tag=This,limit=1] run function #api:get.nbt/rotation
 
 ## 向きを変更
 	data modify entity @s Rotation[0] set from storage api: Rotation[0]
@@ -75,16 +72,19 @@
 ## 代入
 	data modify entity @s transformation merge from storage temp: transformation
 
+## 元の魔法とIDで結びつける
+	scoreboard players operation @s ID = #ID Temp
+
 ## 初期化tagを削除
 	tag @s remove Spell.Init
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #HalfRange
-	scoreboard players reset #Translation
-	scoreboard players reset #Translation.Y
-	scoreboard players reset #Rotation.Y
-	scoreboard players reset #Root2
-	scoreboard players reset #Pi
+	scoreboard players reset #HalfRange Temp
+	scoreboard players reset #Translation Temp
+	scoreboard players reset #Translation.Y Temp
+	scoreboard players reset #Rotation.Y Temp
+	scoreboard players reset #Root2 Temp
+	scoreboard players reset #Pi Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: transformation

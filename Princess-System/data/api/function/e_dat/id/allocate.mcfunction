@@ -30,7 +30,7 @@
 	function api:e_dat/id/init with storage temp:
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #ID
+	scoreboard players reset #ID Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: id

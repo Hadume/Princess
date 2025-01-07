@@ -4,9 +4,9 @@
 
 #> ScoreHolder.Temp
 # @within function lib:die/entity/**
-	#declare score_holder #Exp.Copy
-	#declare score_holder #Money.Copy
-	#declare score_holder #ID.Copy
+	#declare score_holder #Exp
+	#declare score_holder #Money
+	#declare score_holder #ID
 #> Tags.Temp
 # @within function lib:die/entity/**
 	#declare tag Looted
@@ -17,8 +17,8 @@
 	data modify entity @s PersistenceRequired set value 0b
 
 ## スコアをコピー
-	scoreboard players operation #Exp.Copy Temp = @s Exp
-	scoreboard players operation #Money.Copy Temp = @s Money
+	scoreboard players operation #Exp Temp = @s Exp
+	scoreboard players operation #Money Temp = @s Money
 
 ## 個人ストレージを呼ぶ
 	function #api:e_dat/please
@@ -35,13 +35,10 @@
 ## kill
 	kill @s
 
-## 一時使用Storageを削除
-	data remove storage temp: AttackBy
-
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Exp.Copy Temp
-	scoreboard players reset #Money.Copy Temp
-	scoreboard players reset #ID.Copy
+	scoreboard players reset #Exp Temp
+	scoreboard players reset #Money Temp
+	scoreboard players reset #ID Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: AttackBy

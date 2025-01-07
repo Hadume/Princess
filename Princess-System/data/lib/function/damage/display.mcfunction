@@ -14,7 +14,7 @@
 	function #lib:spread
 
 ## NBTを変更
-	data modify entity @s CustomName set from entity @s Item.components.minecraft:item_name
+	data modify entity @s CustomName set from entity @s Item.components."minecraft:item_name"
 	data modify entity @s CustomNameVisible set value 1b
 	data modify entity @s PickupDelay set value 32767s
 
@@ -25,4 +25,4 @@
 	schedule function lib:damage/schedule.loop 1t
 
 ## 初期化tagを削除
-	data remove entity @s Item.components.minecraft:custom_data.Lib.Init
+	data remove entity @s Item.components."minecraft:custom_data".Lib.Init

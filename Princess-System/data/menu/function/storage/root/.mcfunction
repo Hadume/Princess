@@ -4,11 +4,11 @@
 
 #> ページ番号
 # @private
-	#declare score_holder #InvPage.Copy
+	#declare score_holder #Page
 
 ## アイテムをセーブ
-	scoreboard players operation #InvPage.Copy Temp = @s Menu
-	execute store result storage temp: Page int 1 run scoreboard players operation #InvPage.Copy Temp %= #1000 Const
+	scoreboard players operation #Page Temp = @s Menu
+	execute store result storage temp: Page int 1 run scoreboard players operation #Page Temp %= #1000 Const
 	function menu:storage/root/items/save with storage temp:
 
 ## いらないアイテムを消す
@@ -39,6 +39,12 @@
 		data remove storage api: Inventory[{Slot:33b}]
 		data remove storage api: Inventory[{Slot:34b}]
 
+
+## 一時使用ScoreHolderをリセット
+	scoreboard players reset #Page Temp
+
+## 一時使用Storageを削除
+	data remove storage temp: Page
 
 ## どこかをクリックしていたら
 	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Back:1b}}] run return run function menu:home/root/open

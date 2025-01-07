@@ -12,10 +12,10 @@
 # @within tag/function asset.lib:item/create
 
 ## 足りていなかったら
-	execute store success storage temp: Error byte 1 unless data storage asset:item id run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item id"}]
-	execute store success storage temp: Error byte 1 unless data storage asset:item Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item Name"}]
-	execute store success storage temp: Error byte 1 unless data storage asset:item Category run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item Category"}]
-	execute store success storage temp: Error byte 1 unless data storage asset:item Rarity run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "asset:item Rarity"}]
+	execute store success storage temp: Error byte 1 unless data storage asset:item id run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item id"]
+	execute store success storage temp: Error byte 1 unless data storage asset:item Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item Name"]
+	execute store success storage temp: Error byte 1 unless data storage asset:item Category run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item Category"]
+	execute store success storage temp: Error byte 1 unless data storage asset:item Rarity run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item Rarity"]
 
 ## 足りていたら
 	execute unless data storage temp: Error run function asset.lib:item/create/main

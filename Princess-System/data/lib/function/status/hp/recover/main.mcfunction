@@ -19,4 +19,4 @@
 	function #lib:status/hp/update
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Recovery
+	scoreboard players reset #Recovery Temp

@@ -4,10 +4,10 @@
 # @private
 
 ## IDをコピー
-	execute store result score #ID.Copy Temp run data get storage temp: AttackBy[-1]
+	execute store result score #ID Temp run data get storage temp: AttackBy[-1]
 
 ## IDが同じプレイヤーにドロップ品を
-	execute as @a[tag=!Looted] if score @s ID = #ID.Copy Temp run function lib:die/entity/loot/main
+	execute as @a[tag=!Looted] if score @s ID = #ID Temp run function lib:die/entity/loot/main
 
 ## データを消す
 	data remove storage temp: AttackBy[-1]

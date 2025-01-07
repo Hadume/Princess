@@ -11,8 +11,8 @@
 # @within tag/function lib:damage
 
 ## 引数の確認
-	execute store success storage temp: Error byte 1 unless score #Lib.ATK Lib matches ..2147483647 run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "#Lib.ATK Lib"}]
-	execute store success storage temp: Error byte 1 unless score #Lib.DEF Lib matches ..2147483647 run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "#Lib.DEF Lib"}]
+	execute store success storage temp: Error byte 1 unless score #Lib.ATK Lib matches ..2147483647 run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"#Lib.ATK Lib"]
+	execute store success storage temp: Error byte 1 unless score #Lib.DEF Lib matches ..2147483647 run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"#Lib.DEF Lib"]
 
 ##
 	execute unless data storage temp: Error run function lib:damage/main

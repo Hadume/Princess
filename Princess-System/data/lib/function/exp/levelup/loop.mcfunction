@@ -12,9 +12,9 @@
 	scoreboard players add @s DEF.Base 1
 
 ## 次レベルで必要な経験値量を計算
-	scoreboard players operation #Exp.Need.Copy Temp = @s Exp.Need
-	scoreboard players operation #Exp.Need.Copy Temp /= #10 Const
-	scoreboard players operation @s Exp.Need += #Exp.Need.Copy Temp
+	scoreboard players operation #Exp.Need Temp = @s Exp.Need
+	scoreboard players operation #Exp.Need Temp /= #10 Const
+	scoreboard players operation @s Exp.Need += #Exp.Need Temp
 
 ## 経験値を反映
 	scoreboard players operation @s Exp += @s Exp.Need

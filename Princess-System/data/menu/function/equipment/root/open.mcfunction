@@ -1,6 +1,6 @@
 #> menu:equipment/root/open
 # 装備メニューを開く
-# @within function menu:menu/root/
+# @within function menu:home/root/
 
 ## スコアを変更
 	scoreboard players set @s Menu 2000

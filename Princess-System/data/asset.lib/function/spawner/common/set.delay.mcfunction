@@ -27,9 +27,9 @@
 	scoreboard players operation @s Spawner.Delay = #Delay.Min Temp
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Delay.Min
-	scoreboard players reset #Delay.Max
-	scoreboard players reset #Rand
+	scoreboard players reset #Delay.Min Temp
+	scoreboard players reset #Delay.Max Temp
+	scoreboard players reset #Rand Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: Delay

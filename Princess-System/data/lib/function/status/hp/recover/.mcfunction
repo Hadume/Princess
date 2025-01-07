@@ -6,7 +6,7 @@
 # @within tag/function lib:status/hp/recover
 
 ## 引数の確認
-	execute store success storage temp: Error byte 1 unless data storage lib: RcvrHP.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},{"text": "lib: RcvrHP.Amount"}]
+	execute store success storage temp: Error byte 1 unless data storage lib: RcvrHP.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"lib: RcvrHP.Amount"]
 
 ## 処理
 	execute unless data storage temp: Error run function lib:status/hp/recover/main

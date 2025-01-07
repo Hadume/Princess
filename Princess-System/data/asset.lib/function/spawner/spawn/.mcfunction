@@ -12,12 +12,12 @@
 	#declare score_holder #Count.Max
 
 ## データをコピー
-	data modify storage temp: dataCopy set from entity @s data
+	data modify storage temp: data set from entity @s data
 
 ## 何体スポーンさせるか
 	### 数値を取得
-		execute store result score #Count.Min Temp run data get storage temp: dataCopy.Count.Min
-		execute store result score #Count.Max Temp run data get storage temp: dataCopy.Count.Max
+		execute store result score #Count.Min Temp run data get storage temp: data.Count.Min
+		execute store result score #Count.Max Temp run data get storage temp: data.Count.Max
 
 	### ランダム
 		scoreboard players operation #Count.Max Temp -= #Count.Min Temp
@@ -37,11 +37,11 @@
 	function asset.lib:spawner/common/set.delay
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Count.Min
-	scoreboard players reset #Count.Max
-	scoreboard players reset #Spawn.Count
-	scoreboard players reset #List.Length
-	scoreboard players reset #Rand
+	scoreboard players reset #Count.Min Temp
+	scoreboard players reset #Count.Max Temp
+	scoreboard players reset #Spawn.Count Temp
+	scoreboard players reset #List.Length Temp
+	scoreboard players reset #Rand Temp
 
 ## 一時使用Storageを削除
-	data remove storage temp: dataCopy
+	data remove storage temp: data
