@@ -31,12 +31,12 @@
 	function menu:_common/repair {Parent:"communicate",Child:"trade"}
 
 ## 空白Slotを作る
-	loot replace entity @s inventory.5 loot menu:common/frame.light_gray
-	loot replace entity @s inventory.6 loot menu:common/frame.light_gray
-	loot replace entity @s inventory.7 loot menu:common/frame.light_gray
-	loot replace entity @s inventory.14 loot menu:common/frame.light_gray
-	loot replace entity @s inventory.15 loot menu:common/frame.light_gray
-	loot replace entity @s inventory.16 loot menu:common/frame.light_gray
-	loot replace entity @s inventory.23 loot menu:common/frame.light_gray
-	loot replace entity @s inventory.24 loot menu:common/frame.light_gray
-	loot replace entity @s inventory.25 loot menu:common/frame.light_gray
+	loot replace entity @s inventory.5 loot menu:frame.light_gray
+	loot replace entity @s inventory.6 loot menu:frame.light_gray
+	loot replace entity @s inventory.7 loot menu:frame.light_gray
+	loot replace entity @s inventory.14 loot menu:frame.light_gray
+	loot replace entity @s inventory.15 loot menu:frame.light_gray
+	loot replace entity @s inventory.16 loot menu:frame.light_gray
+	loot replace entity @s inventory.23 loot menu:frame.light_gray
+	loot replace entity @s inventory.24 loot menu:frame.light_gray
+	loot replace entity @s inventory.25 loot menu:frame.light_gray
