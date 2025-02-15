@@ -3,4 +3,4 @@
 # @within function asset:item/create/
 
 ##
-	$function asset:item/$(ID)/create/
+	$execute as 0-0-1-0-0 run function asset:item/$(ID)/create/
