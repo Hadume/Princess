@@ -10,6 +10,7 @@
 	execute if entity @s[scores={LeaveGame=1..}] run function player:score/leave_game
 	execute if entity @s[scores={Trade.Action=..2147483647}] unless score @s Trade.Action matches 0 run function menu:communicate/trade/open/
 	execute if entity @s[scores={Trade.DecideTimer=1..}] run function menu:communicate/trade/decide/timer/tick/
+	execute if entity @s[scores={SkillTree=1..}] run function skilltree:tick
 
 ## 魔法
 	function asset.lib:magic/tick/player/

@@ -1,0 +1,31 @@
+{
+	"pools": [
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "item",
+					"name": "yellow_dye",
+					"functions": [
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"text": "光の魔法使い",
+								"color": "yellow",
+								"italic": false,
+								"bold": true
+							}
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"max_stack_size": 1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

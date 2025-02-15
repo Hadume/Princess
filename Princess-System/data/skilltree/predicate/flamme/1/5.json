@@ -1,0 +1,52 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "advancements": {
+                        "skilltree:map/flamme": {
+                            "15": false
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "player",
+                            "advancements": {
+                                "skilltree:map/flamme": {
+                                    "05": true
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "player",
+                            "advancements": {
+                                "skilltree:map/flamme": {
+                                    "25": true
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

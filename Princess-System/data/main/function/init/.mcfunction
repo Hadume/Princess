@@ -2,17 +2,6 @@
 # 初期化
 # @within function main:load
 
-#> Tags
-# @public
-	#declare tag This
-#> ScoreHolder
-# @public
-	#declare score_holder #Rand
-#> Storage
-# @public
-	#declare storage main:
-	#declare storage main:temp
-
 ## 初期化完了
 #data modify storage main: Init set value 1b
 
@@ -127,12 +116,6 @@
 
 
 
-	### Menu
-		scoreboard objectives add Menu dummy
-		scoreboard objectives add Trade.Action trigger
-		scoreboard objectives add Trade.With dummy
-		scoreboard objectives add Trade.DecideTimer dummy
-
 	###
 		scoreboard objectives add 4tickInterval dummy
 		scoreboard objectives add Spawner.Delay dummy
@@ -142,22 +125,7 @@
 
 #> ScoreHolder
 # @public
-	#declare score_holder #-1
-	#declare score_holder #2
-	#declare score_holder #4
-	#declare score_holder #10
-	#declare score_holder #51
-	#declare score_holder #100
-	#declare score_holder #200
-	#declare score_holder #1000
-	#declare score_holder #10000
-	#declare score_holder #18000
-	#declare score_holder #2^2
-	#declare score_holder #2^15
-	#declare score_holder #2^16
-	#declare score_holder #2^18
-	#declare score_holder #2^24
-		scoreboard players set #-1 Const -1
+	scoreboard players set #-1 Const -1
 	scoreboard players set #2 Const 2
 	scoreboard players set #4 Const 4
 	scoreboard players set #10 Const 10
@@ -166,6 +134,7 @@
 	scoreboard players set #100 Const 100
 	scoreboard players set #200 Const 200
 	scoreboard players set #1000 Const 1000
+	scoreboard players set #1600 Const 1600
 	scoreboard players set #10000 Const 10000
 	scoreboard players set #18000 Const 18000
 	scoreboard players set #2^2 Const 4
@@ -187,7 +156,7 @@
 #> 汎用ShulkerBox
 # @public
 #alias vector ShulkerBox 0 -64 0
-	setblock 0 -64 0 shulker_box{Lock:"§§§"}
+	setblock 0 -64 0 shulker_box
 
 ## エラーログ
 	data modify storage main: Tell.Error set value "§c[Error] §o§n"
@@ -197,6 +166,7 @@
 	function api:init
 	function lib:init
 	function menu:init
+	function skilltree:init
 
 ## Assetの初期化
 	function #asset:magic/load

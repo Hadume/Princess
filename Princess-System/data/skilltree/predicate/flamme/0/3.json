@@ -1,0 +1,66 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "advancements": {
+                        "skilltree:map/flamme": {
+                            "03": false
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "player",
+                            "advancements": {
+                                "skilltree:map/flamme": {
+                                    "02": true
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "player",
+                            "advancements": {
+                                "skilltree:map/flamme": {
+                                    "-1-3": true
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "player",
+                            "advancements": {
+                                "skilltree:map/flamme": {
+                                    "-13": true
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

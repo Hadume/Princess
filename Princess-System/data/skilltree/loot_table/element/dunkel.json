@@ -1,0 +1,31 @@
+{
+	"pools": [
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "item",
+					"name": "purple_dye",
+					"functions": [
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"text": "闇の魔法使い",
+								"color": "dark_purple",
+								"italic": false,
+								"bold": true
+							}
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"max_stack_size": 1
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

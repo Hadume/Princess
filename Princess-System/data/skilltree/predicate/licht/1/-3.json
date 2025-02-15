@@ -1,0 +1,52 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "advancements": {
+                        "skilltree:map/licht": {
+                            "1-3": false
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "player",
+                            "advancements": {
+                                "skilltree:map/licht": {
+                                    "0-3": true
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "player",
+                            "advancements": {
+                                "skilltree:map/licht": {
+                                    "2-3": true
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

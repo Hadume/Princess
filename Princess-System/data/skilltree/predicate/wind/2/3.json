@@ -1,0 +1,52 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "advancements": {
+                        "skilltree:map/wind": {
+                            "23": false
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "player",
+                            "advancements": {
+                                "skilltree:map/wind": {
+                                    "13": true
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "type_specific": {
+                            "type": "player",
+                            "advancements": {
+                                "skilltree:map/wind": {
+                                    "33": true
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
