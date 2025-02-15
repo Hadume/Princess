@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"Skill.Interaction\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "skilltree:click/left"
+    }
+}

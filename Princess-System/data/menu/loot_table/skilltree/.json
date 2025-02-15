@@ -1,0 +1,191 @@
+{
+	"pools": [
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "menu:back"
+				}
+			]
+		},
+		{
+			"rolls": 3.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "menu:frame.gray"
+				}
+			]
+		},
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "item",
+					"name": "nether_star",
+					"functions": [
+						{
+							"function": "set_name",
+							"entity": "this",
+							"name": {
+								"text": "",
+								"color": "blue",
+								"italic": false,
+								"bold": true
+							}
+						},
+						{
+							"function": "set_components",
+							"components": {
+								"max_stack_size": 1
+							}
+						},
+						{
+							"function": "set_custom_data",
+							"tag": "{Menu:{SkillTree:{SkillPoint:1b}}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 3.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "menu:frame.gray"
+				}
+			]
+		},
+		{
+			"rolls": 2.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "menu:frame.black"
+				}
+			]
+		},
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "menu:frame.gray"
+				}
+			]
+		},
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "skilltree:element/flamme",
+					"functions": [
+						{
+							"function": "set_custom_data",
+							"tag": "{Menu:{SkillTree:{Flamme:1b}}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "skilltree:element/wind",
+					"functions": [
+						{
+							"function": "set_custom_data",
+							"tag": "{Menu:{SkillTree:{Wind:1b}}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "skilltree:element/wasser",
+					"functions": [
+						{
+							"function": "set_custom_data",
+							"tag": "{Menu:{SkillTree:{Wasser:1b}}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "skilltree:element/licht",
+					"functions": [
+						{
+							"function": "set_custom_data",
+							"tag": "{Menu:{SkillTree:{Licht:1b}}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "skilltree:element/dunkel",
+					"functions": [
+						{
+							"function": "set_custom_data",
+							"tag": "{Menu:{SkillTree:{Dunkel:1b}}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "menu:frame.gray"
+				}
+			]
+		},
+		{
+			"rolls": 2.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "menu:frame.black"
+				}
+			]
+		},
+		{
+			"rolls": 7.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "menu:frame.gray"
+				}
+			]
+		},
+		{
+			"rolls": 1.0,
+			"entries": [
+				{
+					"type": "loot_table",
+					"value": "menu:frame.black"
+				}
+			]
+		}
+	]
+}
