@@ -41,7 +41,7 @@
 
 	### レアリティ
 		loot replace block 0 -64 0 container.0 loot asset.lib:item/lore/rarity
-		data modify storage temp: Lore append from block 0 -64 0 Items[0].components."minecraft:lore"[]
+		data modify storage temp: Item.components."minecraft:lore" append from block 0 -64 0 Items[0].components."minecraft:lore"[]
 
 
 ## アイテムを用意

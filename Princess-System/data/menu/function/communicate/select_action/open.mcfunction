@@ -14,7 +14,7 @@
 	data remove storage dat: _.Menu.Communicate.PlayerData
 
 ## UI
-	function menu:_common/repair {Parent:"communicate",Child:"select_action"}
+	function menu:-common/repair {Parent:"communicate",Child:"select_action"}
 
 ## 音
 	playsound ui.button.click master @s ~ ~ ~ 0.25 1 0

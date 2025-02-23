@@ -47,11 +47,11 @@
 	data remove storage temp: Page
 
 ## どこかをクリックしていたら
-	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Back:1b}}] run return run function menu:home/root/open
-	execute if entity @s[scores={Menu=5001..}] if items entity @s player.cursor *[minecraft:custom_data~{Menu:{PagePrev:1b}}] run return run function menu:storage/root/page/prev
-	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{PageNext:1b}}] run return run function menu:storage/root/page/next
-	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{StorageImportant:1b}}] run tellraw @s {"text":"[UI] このページは作成されていません","color":"gray"}
-	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{StorageMaterial:1b}}] run tellraw @s {"text":"[UI] このページは作成されていません","color":"gray"}
+	execute if items entity @s player.cursor *[custom_data~{Menu:{Back:1b}}] run return run function menu:home/root/open
+	execute if entity @s[scores={Menu=5001..}] if items entity @s player.cursor *[custom_data~{Menu:{PagePrev:1b}}] run return run function menu:storage/root/page/prev
+	execute if items entity @s player.cursor *[custom_data~{Menu:{PageNext:1b}}] run return run function menu:storage/root/page/next
+	execute if items entity @s player.cursor *[custom_data~{Menu:{StorageImportant:1b}}] run tellraw @s {"text":"[UI] このページは作成されていません","color":"gray"}
+	execute if items entity @s player.cursor *[custom_data~{Menu:{StorageMaterial:1b}}] run tellraw @s {"text":"[UI] このページは作成されていません","color":"gray"}
 
 ## 欠けていたら修復
-	execute unless score #InvCount Temp matches 6 run function menu:_common/repair {Parent:"storage",Child:"root"}
+	execute unless score #InvCount Temp matches 6 run function menu:-common/repair {Parent:"storage",Child:"root"}

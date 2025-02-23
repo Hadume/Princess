@@ -1,6 +1,6 @@
 #> asset:magic/cast
 # 魔法を使う時の共通部分
-# @within function asset.lib:magic/cast/condition/_common
+# @within function asset.lib:magic/cast/condition/-common
 
 ## タイプを取得
 	$function asset:magic/$(ID)/type

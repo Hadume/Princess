@@ -3,4 +3,4 @@
 # @within tag/function asset:item/create
 
 ## IDを移して実行
-	function asset:item/create/main with storage asset:item
+	execute if data storage asset:item ID run function asset:item/create/main with storage asset:item

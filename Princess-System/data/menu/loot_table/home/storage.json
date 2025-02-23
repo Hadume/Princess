@@ -1,0 +1,35 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "chest",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {
+                                "text": "ストレージ",
+                                "color": "white",
+                                "italic": false,
+                                "bold": true
+                            }
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "max_stack_size": 1
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{Menu:{Storage:1b}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 #> menu:storage/root/ui/
 #
-# @within function menu:_common/repair
+# @within function menu:-common/repair
 
 say storage:root.ui
 
@@ -11,16 +11,16 @@ say storage:root.ui
 	scoreboard players add #Page.Next Temp 2
 
 ##
-	###
+	### 1行目
 		loot replace entity @s inventory.0 loot menu:back
 		execute if entity @s[scores={Menu=5001..}] run loot replace entity @s inventory.8 loot menu:page.prev
 		execute if entity @s[scores={Menu=5000}] run loot replace entity @s inventory.8 loot menu:frame.black
 
-	###
+	### 2行目
 		loot replace entity @s inventory.9 loot menu:storage/material
 		loot replace entity @s inventory.17 loot menu:frame.black
 
-	###
+	### 3行目
 		loot replace entity @s inventory.18 loot menu:storage/important
 		execute if entity @s[scores={Menu=..5098}] run loot replace entity @s inventory.26 loot menu:page.next
 		execute if entity @s[scores={Menu=5099}] run loot replace entity @s inventory.26 loot menu:frame.black

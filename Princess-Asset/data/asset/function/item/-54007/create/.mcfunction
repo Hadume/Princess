@@ -3,7 +3,7 @@
 # @within function asset:item/create/main
 
 ## アイテムid : id(minecraft:item)
-	data modify storage asset:item id set value "crossbow"
+	data modify storage asset:item id set value "warped_fungus_on_a_stick"
 
 ## 名前 : TextComponent
 	data modify storage asset:item Name set value '{"text":"テストワンド"}'
@@ -21,7 +21,7 @@
 	data modify storage asset:item Stats set value [{Name:"MPMax",Operation:0,Amount:99999999}]
 
 ## NBT? : NBTCompound
-	data modify storage asset:item NBT set value {ChargedProjectiles:[{id:"air",Count:1b}],Charged:1b}
+#data modify storage asset:item NBT set value {}
 
 ## アイテムを生成
 	function #asset.lib:item/create

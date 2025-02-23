@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "cod",
+					"name": "debug_stick",
 					"functions": [
 						{
 							"function": "set_lore",
@@ -27,19 +27,23 @@
 										"storage": "asset:item",
 										"path": "Rarity"
 									},
-									"range": 1
+									"range": {
+										"max": 1
+									}
 								}
 							],
 							"lore": [
-								{
-									"text": "★",
-									"italic": false,
-									"color": "white"
-								},
-								{
-									"text": "☆☆☆☆☆☆☆☆☆",
-									"color": "white"
-								}
+								[
+									{
+										"text": "★",
+										"italic": false,
+										"color": "white"
+									},
+									{
+										"text": "☆☆☆☆☆☆☆☆☆",
+										"color": "white"
+									}
+								]
 							]
 						},
 						{
@@ -57,15 +61,17 @@
 								}
 							],
 							"lore": [
-								{
-									"text": "★★",
-									"italic": false,
-									"color": "white"
-								},
-								{
-									"text": "☆☆☆☆☆☆☆☆",
-									"color": "white"
-								}
+								[
+									{
+										"text": "★★",
+										"italic": false,
+										"color": "white"
+									},
+									{
+										"text": "☆☆☆☆☆☆☆☆",
+										"color": "white"
+									}
+								]
 							]
 						},
 						{
@@ -83,15 +89,17 @@
 								}
 							],
 							"lore": [
-								{
-									"text": "★★★",
-									"italic": false,
-									"color": "white"
-								},
-								{
-									"text": "☆☆☆☆☆☆☆",
-									"color": "white"
-								}
+								[
+									{
+										"text": "★★★",
+										"italic": false,
+										"color": "white"
+									},
+									{
+										"text": "☆☆☆☆☆☆☆",
+										"color": "white"
+									}
+								]
 							]
 						},
 						{
@@ -109,15 +117,17 @@
 								}
 							],
 							"lore": [
-								{
-									"text": "★★★★",
-									"italic": false,
-									"color": "yellow"
-								},
-								{
-									"text": "☆☆☆☆☆☆",
-									"color": "white"
-								}
+								[
+									{
+										"text": "★★★★",
+										"italic": false,
+										"color": "yellow"
+									},
+									{
+										"text": "☆☆☆☆☆☆",
+										"color": "white"
+									}
+								]
 							]
 						},
 						{
@@ -135,15 +145,17 @@
 								}
 							],
 							"lore": [
-								{
-									"text": "★★★★★",
-									"italic": false,
-									"color": "yellow"
-								},
-								{
-									"text": "☆☆☆☆☆",
-									"color": "white"
-								}
+								[
+									{
+										"text": "★★★★★",
+										"italic": false,
+										"color": "yellow"
+									},
+									{
+										"text": "☆☆☆☆☆",
+										"color": "white"
+									}
+								]
 							]
 						},
 						{
@@ -161,15 +173,17 @@
 								}
 							],
 							"lore": [
-								{
-									"text": "★★★★★★",
-									"italic": false,
-									"color": "yellow"
-								},
-								{
-									"text": "☆☆☆☆",
-									"color": "white"
-								}
+								[
+									{
+										"text": "★★★★★★",
+										"italic": false,
+										"color": "yellow"
+									},
+									{
+										"text": "☆☆☆☆",
+										"color": "white"
+									}
+								]
 							]
 						},
 						{
@@ -187,15 +201,17 @@
 								}
 							],
 							"lore": [
-								{
-									"text": "★★★★★★★",
-									"italic": false,
-									"color": "green"
-								},
-								{
-									"text": "☆☆☆",
-									"color": "white"
-								}
+								[
+									{
+										"text": "★★★★★★★",
+										"italic": false,
+										"color": "green"
+									},
+									{
+										"text": "☆☆☆",
+										"color": "white"
+									}
+								]
 							]
 						},
 						{
@@ -213,15 +229,17 @@
 								}
 							],
 							"lore": [
-								{
-									"text": "★★★★★★★★",
-									"italic": false,
-									"color": "blue"
-								},
-								{
-									"text": "☆☆",
-									"color": "white"
-								}
+								[
+									{
+										"text": "★★★★★★★★",
+										"italic": false,
+										"color": "blue"
+									},
+									{
+										"text": "☆☆",
+										"color": "white"
+									}
+								]
 							]
 						},
 						{
@@ -239,15 +257,17 @@
 								}
 							],
 							"lore": [
-								{
-									"text": "★★★★★★★★★",
-									"italic": false,
-									"color": "dark_purple"
-								},
-								{
-									"text": "☆",
-									"color": "white"
-								}
+								[
+									{
+										"text": "★★★★★★★★★",
+										"italic": false,
+										"color": "dark_purple"
+									},
+									{
+										"text": "☆",
+										"color": "white"
+									}
+								]
 							]
 						},
 						{
@@ -261,19 +281,23 @@
 										"storage": "asset:item",
 										"path": "Rarity"
 									},
-									"range": 10
+									"range": {
+										"min": 10
+									}
 								}
 							],
 							"lore": [
-								{
-									"text": "★★★★★★★★★★",
-									"italic": false,
-									"color": "red"
-								},
-								{
-									"text": "",
-									"color": "white"
-								}
+								[
+									{
+										"text": "★★★★★★★★★★",
+										"italic": false,
+										"color": "red"
+									},
+									{
+										"text": "",
+										"color": "white"
+									}
+								]
 							]
 						}
 					]

@@ -10,7 +10,7 @@
 	data modify storage temp: Stats append from storage temp: Weapon[{tag:{Category:"Wand"}}].tag.Stats[{Name:"Speed"}]
 
 ##
-	execute if data storage temp: Stats[] run function lib:stats/calc/_common/
+	execute if data storage temp: Stats[] run function lib:stats/calc/-common/
 
 ## ステータスを反映
 	execute if score #Amount Temp matches ..0 run scoreboard players set #Amount Temp 1
