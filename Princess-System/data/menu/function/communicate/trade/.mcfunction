@@ -3,9 +3,9 @@
 # @within function menu:communicate/
 
 ## どこかをクリックしていたら
-	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{Back:1b}}] run return run function menu:communicate/trade/back/
-	execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{TradeDecide:1b}},!minecraft:custom_data~{Menu:{Display:1b}}] run function menu:communicate/trade/decide/timer/
-	#execute if items entity @s player.cursor *[minecraft:custom_data~{Menu:{CommunicateTrade:1b}}] run function menu:communicate/select_action/trade/
+	execute if items entity @s player.cursor *[custom_data~{Menu:{Back:1b}}] run return run function menu:communicate/trade/back/
+	execute if items entity @s player.cursor *[custom_data~{Menu:{TradeDecide:1b}},!custom_data~{Menu:{Display:1b}}] run function menu:communicate/trade/decide/timer/
+	#execute if items entity @s player.cursor *[custom_data~{Menu:{CommunicateTrade:1b}}] run function menu:communicate/select_action/trade/
 
 ## アイテムを相手の画面に移す
 	### Slotのデータ
@@ -39,7 +39,7 @@
 	data remove storage api: Inventory[{Slot:30b}]
 
 ## 欠けていたら修復
-	execute unless score #InvCount Temp matches 18 run function menu:_common/repair {Parent:"communicate",Child:"trade"}
+	execute unless score #InvCount Temp matches 18 run function menu:-common/repair {Parent:"communicate",Child:"trade"}
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Trade.With Temp

@@ -1,6 +1,6 @@
 #> menu:equipment/root/ui/
 # 装備のUI
-# @within function menu:_common/repair
+# @within function menu:-common/repair
 
 say equipment:root.ui
 

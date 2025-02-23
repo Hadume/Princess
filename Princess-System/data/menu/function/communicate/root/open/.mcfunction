@@ -21,7 +21,7 @@
 
 
 ## UI
-	function menu:_common/repair {Parent:"communicate",Child:"root"}
+	function menu:-common/repair {Parent:"communicate",Child:"root"}
 
 ## 音
 	playsound ui.button.click master @s ~ ~ ~ 0.25 1 0

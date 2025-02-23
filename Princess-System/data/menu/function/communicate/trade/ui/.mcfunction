@@ -1,7 +1,7 @@
 #> menu:communicate/trade/ui/
 # UI
 # @within function
-#   menu:_common/repair
+#   menu:-common/repair
 #   menu:communicate/trade/decide/timer/tick/
 
 say Communicate:Trade.UI

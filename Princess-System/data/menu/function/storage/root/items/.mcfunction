@@ -10,7 +10,7 @@
 	function menu:storage/root/items/main with storage temp:
 
 ## UI
-	function menu:_common/repair {Parent:"storage",Child:"root"}
+	function menu:-common/repair {Parent:"storage",Child:"root"}
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Page Temp
