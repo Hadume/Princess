@@ -18,25 +18,25 @@
 
 ##
 	### 4^3
-		scoreboard players operation #Exp.Per Temp *= #2^24 Const
+		execute unless score #Exp.Per Temp matches 0 run scoreboard players operation #Exp.Per Temp *= #2^24 Const
 		execute if score #Exp.Per Temp matches -1073741824..-1 run experience add @s 192 points
 		execute if score #Exp.Per Temp matches ..-1073741825 run experience add @s 128 points
 		execute if score #Exp.Per Temp matches 1073741824.. run experience add @s 64 points
 
 	### 4^2
-		scoreboard players operation #Exp.Per Temp *= #2^2 Const
+		execute unless score #Exp.Per Temp matches 0 run scoreboard players operation #Exp.Per Temp *= #2^2 Const
 		execute if score #Exp.Per Temp matches -1073741824..-1 run experience add @s 48 points
 		execute if score #Exp.Per Temp matches ..-1073741825 run experience add @s 32 points
 		execute if score #Exp.Per Temp matches 1073741824.. run experience add @s 16 points
 
 	### 4^1
-		scoreboard players operation #Exp.Per Temp *= #2^2 Const
+		execute unless score #Exp.Per Temp matches 0 run scoreboard players operation #Exp.Per Temp *= #2^2 Const
 		execute if score #Exp.Per Temp matches -1073741824..-1 run experience add @s 12 points
 		execute if score #Exp.Per Temp matches ..-1073741825 run experience add @s 8 points
 		execute if score #Exp.Per Temp matches 1073741824.. run experience add @s 4 points
 
 	### 4^0
-		scoreboard players operation #Exp.Per Temp *= #2^2 Const
+		execute unless score #Exp.Per Temp matches 0 run scoreboard players operation #Exp.Per Temp *= #2^2 Const
 		execute if score #Exp.Per Temp matches -1073741824..-1 run experience add @s 3 points
 		execute if score #Exp.Per Temp matches ..-1073741825 run experience add @s 2 points
 		execute if score #Exp.Per Temp matches 1073741824.. run experience add @s 1 points
