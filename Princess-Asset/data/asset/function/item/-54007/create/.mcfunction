@@ -1,6 +1,6 @@
 #> asset:item/-54007/create/
 #
-# @within function asset:item/create/main
+# @within function asset:item/create/
 
 ## アイテムid : id(minecraft:item)
 	data modify storage asset:item id set value "warped_fungus_on_a_stick"
@@ -22,6 +22,3 @@
 
 ## NBT? : NBTCompound
 #data modify storage asset:item NBT set value {}
-
-## アイテムを生成
-	function #asset.lib:item/create

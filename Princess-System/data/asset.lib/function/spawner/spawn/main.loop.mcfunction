@@ -19,9 +19,8 @@
 	execute as @e[type=marker,tag=Pos] at @s run function #lib:spread
 
 ## MOBを召喚
-	data modify storage asset:mob ID set from storage temp: data.Data[-1].ID
 	execute at @e[type=marker,tag=Pos] align xz positioned ~0.5 ~-1 ~0.5 if block ~ ~ ~ #main:no_collision if block ~ ~0.9 ~ #main:no_collision if block ~ ~1.8 ~ #main:no_collision run particle poof ~ ~ ~ 0.3 0.3 0.3 0 10 normal
-	execute at @e[type=marker,tag=Pos] align xz positioned ~0.5 ~-1 ~0.5 if block ~ ~ ~ #main:no_collision if block ~ ~0.9 ~ #main:no_collision if block ~ ~1.8 ~ #main:no_collision run function #asset:mob/summon
+	execute at @e[type=marker,tag=Pos] align xz positioned ~0.5 ~-1 ~0.5 if block ~ ~ ~ #main:no_collision if block ~ ~0.9 ~ #main:no_collision if block ~ ~1.8 ~ #main:no_collision run function #asset:mob/summon with storage temp: data.Data[-1]
 
 ##
 	kill @e[type=marker,tag=Pos]
