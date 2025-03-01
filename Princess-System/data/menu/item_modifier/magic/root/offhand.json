@@ -1,0 +1,51 @@
+[
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"mode": "insert",
+		"offset": 0,
+		"lore": [
+			[
+				{
+					"text": "",
+					"italic": false,
+					"color": "white"
+				},
+				{
+					"entity": "0-0-1-0-0",
+					"nbt": "ArmorItems[-1].components.\"minecraft:custom_name\"",
+					"interpret": true
+				}
+			]
+		]
+	},
+	{
+		"function": "set_name",
+		"entity": "this",
+		"name": [
+			{
+				"text": "",
+				"italic": false,
+				"color": "yellow",
+				"bold": true
+			},
+			{
+				"text": "オフハンド"
+			}
+		]
+	},
+	{
+		"function": "set_components",
+		"components": {
+			"max_stack_size": 1
+		}
+	},
+	{
+		"function": "set_count",
+		"count": 1
+	},
+	{
+		"function": "set_custom_data",
+		"tag": "{Menu:{Magic:{Offhand:1b}}}"
+	}
+]

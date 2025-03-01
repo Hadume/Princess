@@ -4,7 +4,7 @@
 
 ## 数値をコピー
 	scoreboard players operation #CT Temp = @s CT.OffhandS
-	data modify storage asset:magic ID set from storage dat: _.Magic[3].ID
+	data modify storage asset:magic ID set from storage main: Offhand.components."minecraft:custom_data".Magic[-1]
 
 ## 魔法を発動
 	function asset.lib:magic/cast/condition/-common

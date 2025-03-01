@@ -13,5 +13,5 @@
 ## IDをコピー
 	execute if data storage main: {ShotCrossbow:1b} unless predicate player:sneaking run function asset.lib:magic/cast/condition/click
 	execute if data storage main: {ShotCrossbow:1b} if predicate player:sneaking run function asset.lib:magic/cast/condition/click_s
-	execute if data storage main: {InventoryChanged:1b} unless predicate player:sneaking run function asset.lib:magic/cast/condition/offhand
-	execute if data storage main: {InventoryChanged:1b} if predicate player:sneaking run function asset.lib:magic/cast/condition/offhand_s
+	execute if data storage main: Offhand unless predicate player:sneaking run function asset.lib:magic/cast/condition/offhand
+	execute if data storage main: Offhand if predicate player:sneaking run function asset.lib:magic/cast/condition/offhand_s

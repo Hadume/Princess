@@ -1,0 +1,12 @@
+#> menu:magic/root/ui/icon
+# 魔法ごとのアイコンを取得
+# @within function menu:magic/root/ui/
+
+## ID
+	$data modify storage asset:magic ID set from storage temp: Magics[$(Index)]
+
+## アイコン生成
+	execute unless data storage asset:magic {ID:0} run return run function #asset:magic/icon with storage asset:magic
+
+## からのアイコンを設定
+	execute if data storage asset:magic {ID:0} run loot replace entity 0-0-1-0-0 armor.head loot menu:magic/root/no_wand

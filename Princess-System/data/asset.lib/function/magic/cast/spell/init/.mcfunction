@@ -34,6 +34,9 @@
 ## NBT
 	data modify entity @s {} merge value {FallDistance:-4096f,Invulnerable:1b,Silent:1b,Invisible:1b,NoBasePlate:1b,Pose:{Head:[180f,0f,0f]},Small:1b}
 
+## IDを控えておく
+	scoreboard players operation #SpellID Temp = @s ID
+
 ## 初期化tagを削除
 	tag @s remove Spell.Init
 

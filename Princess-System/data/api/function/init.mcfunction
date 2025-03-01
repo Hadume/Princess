@@ -3,4 +3,4 @@
 # @within function main:init/
 
 ##
-	function api:e_dat/init
+#function api:e_dat/init

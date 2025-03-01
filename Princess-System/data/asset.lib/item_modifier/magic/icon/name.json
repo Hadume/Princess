@@ -1,0 +1,15 @@
+{
+	"function": "set_name",
+	"entity": "this",
+	"name": [
+		{
+			"text": "",
+			"italic": false
+		},
+		{
+			"storage": "asset:magic",
+			"nbt": "Raw.Name",
+			"interpret": true
+		}
+	]
+}

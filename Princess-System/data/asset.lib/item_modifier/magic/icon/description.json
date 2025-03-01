@@ -1,0 +1,22 @@
+{
+	"function": "set_lore",
+	"entity": "this",
+	"mode": "append",
+	"lore": [
+		{
+			"text": ""
+		},
+		[
+			{
+				"text": "CT: ",
+				"italic": false,
+				"color": "white"
+			},
+			{
+				"storage": "asset:magic",
+				"nbt": "Raw.Cooltime",
+				"bold": true
+			}
+		]
+	]
+}

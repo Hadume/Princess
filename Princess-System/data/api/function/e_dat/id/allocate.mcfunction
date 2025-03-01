@@ -13,9 +13,9 @@
 
 ## id[0] + id[-1] / 2 を割り当てIDに取る
 	execute store result score #ID ID run data get storage dat: id[-1]
-	execute store result score #ID Temp run data get storage dat: id[0]
+	execute store result score #DatID Temp run data get storage dat: id[0]
 	execute if score #ID ID matches 0 run scoreboard players set #ID ID 268435456
-	scoreboard players operation #ID ID += #ID Temp
+	scoreboard players operation #ID ID += #DatID Temp
 	scoreboard players operation #ID ID /= #2 Const
 
 ## 割り当てIDに追加
@@ -30,7 +30,7 @@
 	function api:e_dat/id/init with storage temp:
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #ID Temp
+	scoreboard players reset #DatID Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: id
