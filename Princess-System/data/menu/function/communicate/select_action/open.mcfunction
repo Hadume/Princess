@@ -2,9 +2,6 @@
 # コミュニケートの動き
 # @within function menu:communicate/root/
 
-## スコアを変更
-	scoreboard players set @s Menu 7100
-
 ## 選択したプレイヤーを保存
 	item replace block 0 -64 0 container.0 from entity @s player.cursor
 	data modify storage dat: _.Menu.Communicate.SelectedPlayer set from block 0 -64 0 Items[0]
@@ -16,5 +13,5 @@
 ## UI
 	function menu:-common/repair {Parent:"communicate",Child:"select_action"}
 
-## 音
-	playsound ui.button.click master @s ~ ~ ~ 0.25 1 0
+## ページ変更しました
+	return 7100

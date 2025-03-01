@@ -2,9 +2,6 @@
 # 装備メニューを開く
 # @within function menu:home/root/
 
-## スコアを変更
-	scoreboard players set @s Menu 2000
-
 ## アイテムを消す
 	###
 		item replace entity @s inventory.1 with air
@@ -22,5 +19,5 @@
 ## UI
 	function menu:-common/repair {Parent:"equipment",Child:"root"}
 
-## 音
-	playsound ui.button.click master @s ~ ~ ~ 0.25 1 0
+## ページ変更しました
+	return 2000

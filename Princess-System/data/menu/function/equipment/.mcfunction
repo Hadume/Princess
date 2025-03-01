@@ -3,4 +3,4 @@
 # @within function menu:
 
 ##
-	execute if entity @s[scores={Menu=2000}] run function menu:equipment/root/
+	execute if entity @s[scores={Menu=2000}] run return run function menu:equipment/root/

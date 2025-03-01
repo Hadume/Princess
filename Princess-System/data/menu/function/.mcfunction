@@ -8,10 +8,13 @@ say menu:
 	execute store result score #InvCount Temp if data storage api: Inventory[{components:{"minecraft:custom_data":{Menu:{}}}}]
 
 ## ページごとの動作
-	execute if entity @s[scores={Menu=0..999}] run return run function menu:home/
-	#execute if entity @s[scores={Menu=1000..1999}] run return run function menu:skilltree/root/
-	#execute if entity @s[scores={Menu=2000..2999}] run return run function menu:equipment/
-	execute if entity @s[scores={Menu=3000..3999}] run return run function menu:magic/
-	execute if entity @s[scores={Menu=4000..4999}] run return run function menu:status/
-	execute if entity @s[scores={Menu=5000..5999}] run return run function menu:storage/
-	#execute if entity @s[scores={Menu=7000..7999}] run return run function menu:communicate/
+	execute store result score #Menu Temp run function menu:main
+
+## ページが変更されたら
+	execute unless score #Menu Temp matches 0 run function menu:change_page
+
+## 一時使用ScoreHolderをリセット
+	scoreboard players reset #Menu Temp
+
+## 一時使用Storageを削除
+	execute if data storage temp: Menu run data remove storage temp: Menu

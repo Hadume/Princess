@@ -16,11 +16,11 @@
 	execute if score #Menu Temp matches 3400..3499 run data modify storage dat: _.Menu.Magic.Wand.components."minecraft:custom_data".Magic[3] set from storage temp: MagicID
 
 
-## 杖セット画面に移動
-	function menu:magic/root/open
-
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Menu Temp
 
 ## 一時使用Storageを削除
 	data remove storage temp: MagicID
+
+## 杖セット画面に移動
+	return run function menu:magic/root/open
