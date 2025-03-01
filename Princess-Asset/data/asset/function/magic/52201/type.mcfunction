@@ -32,7 +32,3 @@
 
 	### 属性? : [Element] @ ..5
 		data modify storage asset:magic Raw.Elements set value ["Wasser"]
-
-
-## 引数の確認
-	function #asset.lib:magic/type

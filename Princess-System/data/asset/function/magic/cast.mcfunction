@@ -6,7 +6,7 @@
 	$function asset:magic/$(ID)/type
 
 ## 引数
-	execute if data storage asset:magic {IsFull:1b} run function asset.lib:magic/cast/common/
+	execute if function #asset.lib:magic/type run function asset.lib:magic/cast/common/
 
 ##
 	$execute if data storage asset:magic {CanCast:1b} if score #Multiple Asset matches 1.. run function asset:magic/$(ID)/cast/
@@ -18,7 +18,6 @@
 	scoreboard players reset #Multiple
 
 ## Storageを削除
-	data remove storage asset:magic IsFull
 	data remove storage asset:magic CanCast
 	data remove storage asset:magic Name
 	data remove storage asset:magic MP
