@@ -1,0 +1,27 @@
+{
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "red_stained_glass_pane",
+                    "functions": [
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "append",
+                            "lore": [
+                                {
+                                    "text": "最初に杖をセットしてください",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

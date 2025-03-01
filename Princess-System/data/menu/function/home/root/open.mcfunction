@@ -1,6 +1,8 @@
 #> menu:home/root/open
 #
-# @within function menu:*/root/
+# @within function
+#   menu:magic/back
+#   menu:*/root/
 
 ## スコアを変更
 	scoreboard players set @s Menu 0
