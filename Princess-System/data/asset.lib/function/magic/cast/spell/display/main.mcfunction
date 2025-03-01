@@ -73,7 +73,7 @@
 	data modify entity @s transformation merge from storage temp: transformation
 
 ## 元の魔法とIDで結びつける
-	scoreboard players operation @s ID = #ID Temp
+	scoreboard players operation @s ID = #SpellID Temp
 
 ## 初期化tagを削除
 	tag @s remove Spell.Init
