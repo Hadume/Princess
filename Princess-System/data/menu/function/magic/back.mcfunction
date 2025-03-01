@@ -6,4 +6,4 @@
 	execute if data storage dat: _.Menu.Magic run data remove storage dat: _.Menu.Magic
 
 ## ホームを開く
-	function menu:home/root/open
+	return run function menu:home/root/open

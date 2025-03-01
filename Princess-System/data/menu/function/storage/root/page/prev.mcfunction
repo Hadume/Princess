@@ -8,5 +8,5 @@
 ## アイテムを出す
 	function menu:storage/root/items/
 
-## 音
-	playsound ui.button.click master @s ~ ~ ~ 0.25 1 0
+## ページ変更しました
+	return run scoreboard players get @s Menu

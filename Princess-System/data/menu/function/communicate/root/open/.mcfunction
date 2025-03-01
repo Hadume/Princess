@@ -4,9 +4,6 @@
 #   menu:pages/menu/
 #   menu:communicate/select_action/
 
-## スコアを変更
-	scoreboard players set @s Menu 7000
-
 ## プレイヤーのデータを取得
 	### シュルカーボックスのデータを消す
 		data remove block 0 -64 0 Items
@@ -23,8 +20,8 @@
 ## UI
 	function menu:-common/repair {Parent:"communicate",Child:"root"}
 
-## 音
-	playsound ui.button.click master @s ~ ~ ~ 0.25 1 0
-
 ## 一時使用Storageを削除
 	data remove storage temp: Players
+
+## ページ変更しました
+	return 7000

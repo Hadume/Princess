@@ -14,7 +14,7 @@ say storage:root.ui
 	### 1行目
 		loot replace entity @s inventory.0 loot menu:back
 		execute if entity @s[scores={Menu=5001..}] run loot replace entity @s inventory.8 loot menu:page.prev
-		execute if entity @s[scores={Menu=5000}] run loot replace entity @s inventory.8 loot menu:frame.black
+		execute unless entity @s[scores={Menu=5001..}] run loot replace entity @s inventory.8 loot menu:frame.black
 
 	### 2行目
 		loot replace entity @s inventory.9 loot menu:storage/material
