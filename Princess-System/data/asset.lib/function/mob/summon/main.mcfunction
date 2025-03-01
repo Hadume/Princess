@@ -13,12 +13,12 @@
 
 ## 装備
 	### Assetから
-		execute if data storage asset:mob Armor.Head.ID run function asset.lib:mob/summon/equipments/head
-		execute if data storage asset:mob Armor.Chest.ID run function asset.lib:mob/summon/equipments/chest
-		execute if data storage asset:mob Armor.Legs.ID run function asset.lib:mob/summon/equipments/legs
-		execute if data storage asset:mob Armor.Feet.ID run function asset.lib:mob/summon/equipments/feet
-		execute if data storage asset:mob Weapon.Mainhand.ID run function asset.lib:mob/summon/equipments/mainhand
-		execute if data storage asset:mob Weapon.Offhand.ID run function asset.lib:mob/summon/equipments/offhand
+		execute if data storage asset:mob Armor.Head.ID run function asset.lib:mob/summon/equipments {Parts:"Head"}
+		execute if data storage asset:mob Armor.Chest.ID run function asset.lib:mob/summon/equipments {Parts:"Chest"}
+		execute if data storage asset:mob Armor.Legs.ID run function asset.lib:mob/summon/equipments {Parts:"Legs"}
+		execute if data storage asset:mob Armor.Feet.ID run function asset.lib:mob/summon/equipments {Parts:"Feet"}
+		execute if data storage asset:mob Weapon.Mainhand.ID run function asset.lib:mob/summon/equipments {Parts:"Mainhand"}
+		execute if data storage asset:mob Weapon.Offhand.ID run function asset.lib:mob/summon/equipments {Parts:"Offhand"}
 
 	### データを用意
 		data modify storage temp: ArmorItems set value [{},{},{},{}]

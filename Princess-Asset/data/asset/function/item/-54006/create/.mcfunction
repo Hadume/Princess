@@ -1,6 +1,6 @@
 #> asset:item/-54006/create/
 #
-# @within function asset:item/create/main
+# @within function asset:item/create/
 
 ## アイテムid : id(minecraft:item)
 	data modify storage asset:item id set value "iron_sword"
@@ -22,6 +22,3 @@
 
 ## NBT? : NBTCompound
 #data modify storage asset:item NBT set value {}
-
-## アイテムを生成
-	function #asset.lib:item/create

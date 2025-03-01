@@ -2,5 +2,8 @@
 # アイテム生成
 # @within tag/function asset:item/create
 
-## IDを移して実行
-	execute if data storage asset:item ID run function asset:item/create/main with storage asset:item
+##
+	$execute as 0-0-1-0-0 run function asset:item/$(ID)/create/
+
+## アイテムを生成
+	function #asset.lib:item/create

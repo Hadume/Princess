@@ -3,7 +3,7 @@
 # @within function asset.lib:magic/cast/condition/-common
 
 ## タイプを取得
-	$function asset:magic/$(ID)/type
+	$function asset:magic/$(ID)/types
 
 ## 引数
 	execute if function #asset.lib:magic/type run function asset.lib:magic/cast/common/
