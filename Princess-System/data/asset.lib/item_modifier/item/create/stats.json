@@ -1,0 +1,31 @@
+[
+	{
+		"function": "copy_custom_data",
+		"source": {
+			"type": "storage",
+			"source": "asset:item"
+		},
+		"ops": [
+			{
+				"op": "replace",
+				"source": "Stats",
+				"target": "Stats"
+			}
+		]
+	},
+	{
+		"function": "set_lore",
+		"entity": "this",
+		"mode": "append",
+		"lore": [
+			{
+				"text": ""
+			},
+			{
+				"text": "[効果]",
+				"color": "gray",
+				"italic": false
+			}
+		]
+	}
+]

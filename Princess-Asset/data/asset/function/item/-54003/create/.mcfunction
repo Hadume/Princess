@@ -21,4 +21,4 @@
 	data modify storage asset:item Stats set value [{Name:"HPMax",Operation:1,Amount:10},{Name:"MPMax",Operation:1,Amount:10}]
 
 ## NBT? : NBTCompound
-	data modify storage asset:item NBT set value {Enchantments:[{id:"mending",lvl:1s}]}
+	data modify storage asset:item NBT set value {"minecraft:enchantment_glint_override":true}

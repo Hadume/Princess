@@ -9,7 +9,7 @@
 #   Stats : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
 #   NBT : Compound
 # @output vector 0 -64 0 Items[0]
-# @within tag/function asset.lib:item/create
+# @within function asset:item/create/
 
 ## 足りていなかったら
 	execute store success storage temp: Error byte 1 unless data storage asset:item id run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item id"]
@@ -18,7 +18,7 @@
 	execute store success storage temp: Error byte 1 unless data storage asset:item Rarity run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item Rarity"]
 
 ## 足りていたら
-	execute unless data storage temp: Error run function asset.lib:item/create/main
+	execute unless data storage temp: Error as 0-0-1-0-0 run function asset.lib:item/create/main
 
 ## Storageを削除
 	data remove storage asset:item id
