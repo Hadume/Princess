@@ -3,4 +3,4 @@
 # @within asset:magic/icon
 
 ## アイコンのアイテムを設定
-	data modify storage asset:magic Item set value {id:"minecraft:blaze_powder",Count:1b}
+	data modify storage asset:magic Icon set value "minecraft:blaze_powder"
