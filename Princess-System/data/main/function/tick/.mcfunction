@@ -9,7 +9,7 @@
 	execute as @a at @s run function main:tick/player
 
 ## 魔法常時実行
-	execute as @e[type=armor_stand,tag=Spell] at @s run function asset.lib:magic/tick/
+	execute as @e[type=armor_stand,tag=Spell] at @s run function asset.lib:magic/tick/spell
 
 ## MOBで常時実行
 	execute as @e[tag=Enemy] at @s run function mob:tick

@@ -4,10 +4,10 @@
 
 ## 進捗
 	execute if entity @s[advancements={main:inventory_changed=true}] run function main:advancements/inventory_changed
-	execute if entity @s[advancements={main:shot_crossbow=true}] run function main:advancements/shot_crossbow
 
 ## スコア
 	execute if entity @s[scores={LeaveGame=1..}] run function player:score/leave_game
+	execute if entity @s[scores={Used.WFOAS=1..}] run function player:score/used_wfoas
 	execute if entity @s[scores={Trade.Action=..2147483647}] unless score @s Trade.Action matches 0 run function menu:communicate/trade/open/
 	execute if entity @s[scores={Trade.DecideTimer=1..}] run function menu:communicate/trade/decide/timer/tick/
 	execute if entity @s[scores={SkillTree=1..}] run function skilltree:tick
@@ -16,7 +16,7 @@
 	function asset.lib:magic/tick/player/
 
 ## 魔法のクールタイム
-	execute if predicate asset.lib:cooltime run function player:reduce.cooltime
+	execute if predicate asset.lib:magic/cooltime run function player:reduce.cooltime
 
 ## MP,HPの回復
 	execute if entity @s[scores={MP.Rgn.Timer=1..}] run function player:regen/mp/tick

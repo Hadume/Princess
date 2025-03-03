@@ -12,6 +12,9 @@
 	scoreboard objectives add Const dummy
 	scoreboard objectives add Temp dummy
 	scoreboard objectives add Lib dummy
+	### Used
+		scoreboard objectives add Used.WFOAS used:warped_fungus_on_a_stick
+
 	### Custom
 		scoreboard objectives add LeaveGame custom:leave_game
 
