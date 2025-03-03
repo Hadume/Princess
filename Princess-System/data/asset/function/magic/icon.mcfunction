@@ -5,8 +5,5 @@
 ##
 	$function asset:magic/$(ID)/icon/
 
-## typeを取得
-	$function asset:magic/$(ID)/types
-
 ## アイテムを生成
-	execute if function #asset.lib:magic/type run function asset.lib:magic/icon/
+	execute if function #asset:magic/type run function asset.lib:magic/icon/

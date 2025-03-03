@@ -2,6 +2,29 @@
 #
 # @within function menu:magic/select/open
 
+## 何ページ目か
+	scoreboard players operation #Index Temp = @s Menu
+	scoreboard players operation #Index Temp %= #100 Const
+
+## 前ページへ
+	execute if score #Index Temp matches 1.. run loot replace block 0 -64 0 container.8 loot menu:page.prev
+
+## 魔法のアイコンを設定
+	### Slotリスト
+		data modify storage temp: Slots set value [25b,24b,23b,22b,21b,20b,19b,16b,15b,14b,13b,12b,11b,10b,7b,6b,5b,4b,3b,2b,1b]
+
+	### 取得済み魔法リスト
+		data modify storage temp: Magics set from storage dat: _.Magic.Known
+		execute if score #Index Temp matches 0 run function menu:magic/select/ui/first.page
+
+	### 魔法の数
+		scoreboard players operation #Index Temp *= #21 Const
+		execute store result storage temp: Index int 1 run scoreboard players get #Index Temp
+
+	###
+		execute store result score #UntilList Temp run function menu:magic/select/ui/main/loop with storage temp:
+
+
 ## 外枠
 	### 1行目
 		loot replace block 0 -64 0 container.0 loot menu:back
@@ -37,31 +60,11 @@
 		loot replace block 0 -64 0 container.26 loot menu:frame.black
 
 
-## 何ページ目か
-	scoreboard players operation #Index Temp = @s Menu
-	scoreboard players operation #Index Temp %= #100 Const
+## 魔法アイコンを反映
+	data modify block 0 -64 0 Items append from storage temp: Items[]
 
-## 前ページへ
-	execute if score #Index Temp matches 1.. run loot replace block 0 -64 0 container.8 loot menu:page.prev
-
-## 魔法のアイコンを設定
-	### Slotリスト
-		data modify storage temp: Slots set value [25b,24b,23b,22b,21b,20b,19b,16b,15b,14b,13b,12b,11b,10b,7b,6b,5b,4b,3b,2b,1b]
-
-	### 取得済み魔法リスト
-		data modify storage temp: Magics set from storage dat: _.Magic.Known
-		execute if score #Index Temp matches 0 run function menu:magic/select/ui/first.page
-
-	### 魔法の数
-		scoreboard players operation #Index Temp *= #21 Const
-		execute store result storage temp: Index int 1 run scoreboard players get #Index Temp
-
-	###
-		execute store result score #UntilList Temp run function menu:magic/select/ui/main.loop with storage temp:
-
-	### インベントリーに反映
-		loot replace entity @s inventory.0 27 mine 0 -64 0 debug_stick
-
+## インベントリーに反映
+	loot replace entity @s inventory.0 27 mine 0 -64 0 debug_stick
 
 ## 次ページにいく
 	execute if score #UntilList Temp matches 10 run loot replace entity @s inventory.26 loot menu:page.next
@@ -73,4 +76,5 @@
 	data remove storage temp: Magics
 	data remove storage temp: Slots
 	data remove storage temp: Index
-	data remove storage temp: Magic
+	data remove storage temp: Icon
+	data remove storage temp: Items

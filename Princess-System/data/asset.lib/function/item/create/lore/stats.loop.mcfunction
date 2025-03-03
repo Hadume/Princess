@@ -1,6 +1,13 @@
-#> asset.lib:item/create/lore/stats/main.loop
+#> asset.lib:item/create/lore/stats.loop
 #
-# @within function asset.lib:item/create/lore/stats/*
+# @within function asset.lib:item/create/stats
+# @private
+
+## ループを終了
+	execute unless data storage asset:item Stats[] run return 1
+
+## データを初期化
+	data remove storage temp: Amount
 
 ## 効果をコピー
 	data modify storage temp: Stat set from storage asset:item Stats[0]
@@ -17,13 +24,10 @@
 	execute if data storage temp: {Stat:{Operation:2}} run data modify storage temp: Amount.Suffix set value "%"
 
 ## 説明を生成
-	loot replace block 0 -64 0 container.0 loot asset.lib:item/lore/stat
+	item modify block 0 -64 0 container.0 asset.lib:item/create/lore/stat
 
-## 取得したデータを移行
-	data modify storage temp: Item.components."minecraft:lore" append from block 0 -64 0 Items[0].components."minecraft:custom_name"
-
-## 元のデータを削除
+## データを削除
 	data remove storage asset:item Stats[0]
 
 ## ループ
-	execute if data storage asset:item Stats[] run function asset.lib:item/create/lore/stats/main.loop
+	function asset.lib:item/create/lore/stats.loop

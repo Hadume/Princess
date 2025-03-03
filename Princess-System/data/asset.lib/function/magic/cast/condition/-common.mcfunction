@@ -11,7 +11,7 @@
 	execute if score #CT Temp matches 1.. run playsound block.note_block.bass master @s
 
 ## 魔法を発動
-	execute unless score #CT Temp matches 1.. run function asset:magic/cast with storage asset:magic
+	execute unless score #CT Temp matches 1.. run function #asset:magic/cast with storage asset:magic
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #CT Temp

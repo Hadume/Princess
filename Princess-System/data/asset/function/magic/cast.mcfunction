@@ -1,12 +1,9 @@
 #> asset:magic/cast
 # 魔法を使う時の共通部分
-# @within function asset.lib:magic/cast/condition/-common
-
-## タイプを取得
-	$function asset:magic/$(ID)/types
+# @within tag/function asset:magic/cast
 
 ## 引数
-	execute if function #asset.lib:magic/type run function asset.lib:magic/cast/common/
+	execute if function #asset:magic/type run function asset.lib:magic/cast/common/
 
 ##
 	$execute if data storage asset:magic {CanCast:1b} if score #Multiple Asset matches 1.. run function asset:magic/$(ID)/cast/

@@ -4,7 +4,7 @@
 
 ## 杖を戻す
 	execute if data storage dat: _.Menu.Magic.Wand run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage dat: _.Menu.Magic.Wand
-	item replace entity @s inventory.13 from entity 0-0-1-0-0 armor.head
+	execute if data storage dat: _.Menu.Magic.Wand run item replace entity @s inventory.13 from entity 0-0-1-0-0 armor.head
 
 ## UI
 	function menu:-common/repair {Parent:"magic",Child:"root"}

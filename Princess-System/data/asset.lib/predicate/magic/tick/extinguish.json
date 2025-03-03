@@ -1,0 +1,33 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "Duration": {
+                    "max": 0
+                }
+            }
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Tags:[\"Stick\"]}"
+                    }
+                },
+                {
+                    "condition": "entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "sm.Speed": 0
+                    }
+                }
+            ]
+        }
+    ]
+}

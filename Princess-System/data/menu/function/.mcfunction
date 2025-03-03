@@ -15,6 +15,7 @@ say menu:
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Menu Temp
+	scoreboard players reset #InvCount Temp
 
 ## 一時使用Storageを削除
 	execute if data storage temp: Menu run data remove storage temp: Menu
