@@ -5,7 +5,7 @@
 #   asset:magic/icon
 
 ## 魔法名 : TextComponent
-	data modify storage asset:magic Raw.Name set value '{"text":"アトラクト","color":"red"}'
+	data modify storage asset:magic Raw.Name set value '{"text":"アトラクト","color":"green"}'
 
 ## 消費魔力 : int
 	data modify storage asset:magic Raw.MP set value 3
