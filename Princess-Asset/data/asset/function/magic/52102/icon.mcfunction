@@ -1,4 +1,4 @@
-#> asset:magic/52101/icon/
+#> asset:magic/52102/icon
 #
 # @within asset:magic/icon
 

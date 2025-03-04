@@ -5,7 +5,7 @@
 #   asset:magic/icon
 
 ## 魔法名 : TextComponent
-	data modify storage asset:magic Raw.Name set value '{"text":"タイムロック","color":"red"}'
+	data modify storage asset:magic Raw.Name set value '{"text":"タイムロック","color":"dark_purple"}'
 
 ## 消費魔力 : int
 	data modify storage asset:magic Raw.MP set value 15
