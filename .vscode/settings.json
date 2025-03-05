@@ -67,7 +67,7 @@
 	"mcdutil.createDatapackTemplate.customTemplate": [
 		{
 			"label": "アイテム/テンプレート",
-			"picked": true,
+			"picked": false,
 			"generates": [
 				{
 					"type": "file",
@@ -78,34 +78,34 @@
 						"# @within function asset:item/create/",
 						"",
 						"## アイテムid : id(minecraft:item)",
-						"    data modify storage asset:item id set value \"\"",
+						"data modify storage asset:item id set value \"\"",
 						"",
 						"## 名前 : TextComponent",
-						"    data modify storage asset:item Name set value '{\"text\": \"\"}'",
+						"data modify storage asset:item Name set value '{\"text\": \"\"}'",
 						"",
 						"## 説明? : [TextComponent] @ N",
-						"    #data modify storage asset:item Lore set value []",
+						"#data modify storage asset:item Lore set value []",
 						"",
 						"## レアリティ : int @ 1..10",
-						"    data modify storage asset:item Rarity set value %Rarity%",
+						"data modify storage asset:item Rarity set value %Rarity%",
 						"",
 						"## 種類 : Category",
-						"    data modify storage asset:item Category set value \"%Category%\"",
-						"",
-						"## CMD? : String",
-						"    #data modify storage asset:item CMD set value \"\"",
+						"data modify storage asset:item Category set value \"%Category%\"",
 						"",
 						"## 効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N",
-						"    #data modify storage asset:item Stats set value []",
+						"#data modify storage asset:item Stats append value {}",
 						"",
-						"## どこに装備できるか? : String",
-						"    #data modify storage asset:item CanEquip set value \"\"",
+						"## CMD? : String",
+						"#data modify storage asset:item CMD set value \"\"",
 						"",
 						"## シリーズ? : String",
-						"    #data modify storage asset:item Series set value \"\"",
+						"#data modify storage asset:item Series set value \"\"",
+						"",
+						"## どこに装備できるか? : String",
+						"#data modify storage asset:item CanEquip set value \"\"",
 						"",
 						"## NBT? : NBTCompound",
-						"    #data modify storage asset:item NBT set value {}",
+						"#data modify storage asset:item NBT set value {}",
 						""
 					]
 				}
@@ -122,6 +122,78 @@
 					"question": "アイテムのカテゴリ",
 					"pattern": "(Armor|Wand|Crystal|Misc)",
 					"patternErrorMessage": "カテゴリのみが許されるよ"
+				}
+			]
+		},
+		{
+			"label": "MOB/テンプレート",
+			"picked": false,
+			"generates": [
+				{
+					"type": "file",
+					"rel": "data/asset/function/mob/%namespace%/summon/.mcfunction",
+					"content": [
+						"#> asset:mob/%namespace%/summon/",
+						"#",
+						"# @within function asset:mob/summon/",
+						"",
+						"## 元になるEntityを召喚 : id(minecraft:entity)",
+						"execute summon %mob% at @s run function asset:mob/summon/init with storage asset:mob"
+					]
+				},
+				{
+					"type": "file",
+					"rel": "data/asset/function/mob/%namespace%/summon/init.mcfunction",
+					"content": [
+						"#> asset:mob/%namespace%/summon/init",
+						"#",
+						"# @within function asset:mob/summon/init",
+						"",
+						"## 名前 : TextComponent",
+						"data modify storage asset:mob Name set value '{\"text\": \"\"}'",
+						"",
+						"## タイプ : Type",
+						"data modify storage asset:mob Type set value \"%Type%\"",
+						"",
+						"## 装備? : {{id: id(minecraft:item), Count: boolean @ 1..64, tag: Compound} || int(asset:item)} @ ..6",
+						"### 防具",
+						"#data modify storage asset:mob Armor.Head set value {}",
+						"#data modify storage asset:mob Armor.Chest set value {}",
+						"#data modify storage asset:mob Armor.Legs set value {}",
+						"#data modify storage asset:mob Armor.Feet set value {}",
+						"",
+						"### 武器",
+						"#data modify storage asset:mob Weapon.Mainhand set value {}",
+						"#data modify storage asset:mob Weapon.Offhand set value {}",
+						"",
+						"",
+						"## ステータス : int",
+						"data modify storage asset:mob Status.Lvl set value ",
+						"data modify storage asset:mob Status.Exp set value ",
+						"data modify storage asset:mob Status.Money set value ",
+						"data modify storage asset:mob Status.HP set value ",
+						"data modify storage asset:mob Status.MP set value ",
+						"data modify storage asset:mob Status.ATK set value ",
+						"data modify storage asset:mob Status.DEF set value ",
+						"data modify storage asset:mob Status.Speed set value ",
+						"",
+						"## NBT? : Compound",
+						"#data modify storage asset:mob NBT set value {}"
+					]
+				}
+			],
+			"customQuestion": [
+				{
+					"name": "mob",
+					"question": "MOBのID",
+					"pattern": "[a-z_]+:[a-z_]+",
+					"patternErrorMessage": "MOBのidのみが許されるよ"
+				},
+				{
+					"name": "Type",
+					"question": "MOBのタイプ",
+					"pattern": "(Enemy",
+					"patternErrorMessage": "タイプのみが許されるよ"
 				}
 			]
 		}

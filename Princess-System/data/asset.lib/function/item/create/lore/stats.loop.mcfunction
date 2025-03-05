@@ -18,6 +18,8 @@
 	execute if data storage temp: {Stat:{Name:"ATK"}} run data modify storage temp: Amount.Name set value "攻撃力"
 	execute if data storage temp: {Stat:{Name:"DEF"}} run data modify storage temp: Amount.Name set value "防御力"
 	execute if data storage temp: {Stat:{Name:"Speed"}} run data modify storage temp: Amount.Name set value "スピード"
+	execute if data storage temp: {Stat:{Name:"HP.Rgn.Per"}} run data modify storage temp: Amount.Name set value "体力回復力"
+	execute if data storage temp: {Stat:{Name:"MP.Rgn.Per"}} run data modify storage temp: Amount.Name set value "魔力回復力"
 
 ## 接尾
 	execute if data storage temp: {Stat:{Operation:1}} run data modify storage temp: Amount.Suffix set value "%"
