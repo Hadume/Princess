@@ -1,20 +1,9 @@
 #> lib:stats/calc/hp.max
-# 最大体力
+# 最大体力の例外処理
 # @within function lib:stats/main
 
-## ステータスをコピー
-	scoreboard players operation #Amount Temp = @s HP.Max.Base
-
-## データをコピー
-	data modify storage temp: Stats append from storage temp: Armor[{tag:{Category:"Armor"}}].tag.Stats[{Name:"HPMax"}]
-	data modify storage temp: Stats append from storage temp: Weapon[{tag:{Category:"Wand"}}].tag.Stats[{Name:"HPMax"}]
-
-## 追加効果があったら
-	execute if data storage temp: Stats[] run function lib:stats/calc/-common/
-
-## ステータスを反映
-	execute if score #Amount Temp matches ..0 run scoreboard players set #Amount Temp 1
-	scoreboard players operation @s HP.Max = #Amount Temp
+## 体力が0を下回らないように
+	execute if score @s HP.Max matches ..0 run scoreboard players set @s HP.Max 1
 
 ## 更新
 	function #lib:status/hp/update

@@ -8,7 +8,7 @@
 	#declare score_holder #MP.Per
 
 ## 最大魔力を更新
-	data modify storage lib: Stats set value ["MPMax"]
+	data modify storage lib: Stats set value ["MP.Max"]
 	function #lib:stats
 
 ## 計算

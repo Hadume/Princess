@@ -13,8 +13,8 @@
 	data modify storage temp: Stat set from storage asset:item Stats[0]
 
 ## 効果名
-	execute if data storage temp: {Stat:{Name:"HPMax"}} run data modify storage temp: Amount.Name set value "最大体力"
-	execute if data storage temp: {Stat:{Name:"MPMax"}} run data modify storage temp: Amount.Name set value "最大魔力"
+	execute if data storage temp: {Stat:{Name:"HP.Max"}} run data modify storage temp: Amount.Name set value "最大体力"
+	execute if data storage temp: {Stat:{Name:"MP.Max"}} run data modify storage temp: Amount.Name set value "最大魔力"
 	execute if data storage temp: {Stat:{Name:"ATK"}} run data modify storage temp: Amount.Name set value "攻撃力"
 	execute if data storage temp: {Stat:{Name:"DEF"}} run data modify storage temp: Amount.Name set value "防御力"
 	execute if data storage temp: {Stat:{Name:"Speed"}} run data modify storage temp: Amount.Name set value "スピード"
