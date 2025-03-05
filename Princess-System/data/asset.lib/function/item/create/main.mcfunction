@@ -8,6 +8,9 @@
 
 ## データを保存
 	item modify block 0 -64 0 container.0 asset.lib:item/create/common
+	### CMD
+	#execute if data storage asset:item NBT run data modify block 0 -64 0 Items[0].components."minecraft:custom_model_data".strings set from storage asset:item CMD
+
 	### NBT
 		execute if data storage asset:item NBT run data modify block 0 -64 0 Items[0].components merge from storage asset:item NBT
 
