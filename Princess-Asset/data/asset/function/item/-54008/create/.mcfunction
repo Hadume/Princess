@@ -24,7 +24,7 @@
 	data modify storage asset:item Series set value "Test"
 
 ## 効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
-	data modify storage asset:item Stats set value [{Name:"HPMax",Operation:0,Amount:10}]
+	data modify storage asset:item Stats set value [{Name:"HP.Max",Operation:0,Amount:10}]
 
 ## NBT? : NBTCompound
 #data modify storage asset:item NBT set value {}

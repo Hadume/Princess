@@ -10,7 +10,7 @@
 	function lib:exp/levelup/loop
 
 ## ステータスを更新
-	data modify storage lib: Stats set value ["HPMax","MPMax","ATK","DEF"]
+	data modify storage lib: Stats set value ["HP.Max","MP.Max","ATK","DEF"]
 	function #lib:stats
 
 ## 体力、魔力を回復

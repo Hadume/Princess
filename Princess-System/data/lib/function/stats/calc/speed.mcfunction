@@ -1,20 +1,9 @@
 #> lib:stats/calc/speed
-# スピード
+# スピードの例外処理
 # @within function lib:stats/main
 
-## ステータスをコピー
-	scoreboard players operation #Amount Temp = @s Speed.Base
-
-## データをコピー
-	data modify storage temp: Stats append from storage temp: Armor[{tag:{Category:"Armor"}}].tag.Stats[{Name:"Speed"}]
-	data modify storage temp: Stats append from storage temp: Weapon[{tag:{Category:"Wand"}}].tag.Stats[{Name:"Speed"}]
-
-##
-	execute if data storage temp: Stats[] run function lib:stats/calc/-common/
-
-## ステータスを反映
-	execute if score #Amount Temp matches ..0 run scoreboard players set #Amount Temp 1
-	scoreboard players operation @s Speed = #Amount Temp
+## スピードがマイナスにならないように
+	execute if score @s Speed matches ..-1 run scoreboard players set @s Speed 0
 
 ## 更新
 	function #lib:status/speed/update

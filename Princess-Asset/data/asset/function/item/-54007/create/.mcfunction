@@ -18,7 +18,7 @@
 	data modify storage asset:item Rarity set value 10
 
 ## 効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
-	data modify storage asset:item Stats set value [{Name:"MPMax",Operation:0,Amount:99999999}]
+	data modify storage asset:item Stats set value [{Name:"MP.Max",Operation:0,Amount:99999999}]
 
 ## NBT? : NBTCompound
 #data modify storage asset:item NBT set value {}
