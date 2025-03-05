@@ -18,13 +18,13 @@
 
 	### HP
 		execute store result score @s HP run scoreboard players set @s HP.Max.Base 100
-		scoreboard players set @s HP.Rgn.Intrvl 40
-		scoreboard players set @s HP.Rgn.Per 5
+		scoreboard players set @s HP.Rgn.Intrvl.Base 40
+		scoreboard players set @s HP.Rgn.Per.Base 5
 
 	### MP
 		execute store result score @s MP run scoreboard players set @s MP.Max.Base 100
-		scoreboard players set @s MP.Rgn.Intrvl 40
-		scoreboard players set @s MP.Rgn.Per 5
+		scoreboard players set @s MP.Rgn.Intrvl.Base 40
+		scoreboard players set @s MP.Rgn.Per.Base 5
 
 	## ATK
 		scoreboard players set @s ATK.Base 1

@@ -1,30 +1,30 @@
-#> asset:item/54001/create/
+#> asset:item/54021/create/
 #
 # @within function asset:item/create/
 
 ## アイテムid : id(minecraft:item)
-    data modify storage asset:item id set value "warped_fungus_on_a_stick"
+	data modify storage asset:item id set value "leather_chestplate"
 
 ## 名前 : TextComponent
-    data modify storage asset:item Name set value '{"text": "オークの杖"}'
+	data modify storage asset:item Name set value '{"text": "毛皮のコート (上)"}'
 
 ## 説明? : [TextComponent] @ N
 #data modify storage asset:item Lore set value []
 
 ## レアリティ : int @ 1..10
-    data modify storage asset:item Rarity set value 1
+	data modify storage asset:item Rarity set value 2
 
 ## 種類 : Category
-    data modify storage asset:item Category set value "Wand"
+	data modify storage asset:item Category set value "Armor"
 
 ## 効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
-#data modify storage asset:item Stats append value {}
+	data modify storage asset:item Stats append value {Name:"DEF",Amount:5}
 
 ## CMD? : String
-    data modify storage asset:item CMD set value "staff1"
+#data modify storage asset:item CMD set value ""
 
 ## シリーズ? : String
-#data modify storage asset:item Series set value ""
+	data modify storage asset:item Series set value "Fur"
 
 ## どこに装備できるか? : String
 #data modify storage asset:item CanEquip set value ""

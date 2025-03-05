@@ -17,17 +17,17 @@
 ## 種類 : Category
     data modify storage asset:item Category set value "Wand"
 
+## 効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
+    data modify storage asset:item Stats append value {Name:"MP.Max",Amount:10}
+
 ## CMD? : String
     data modify storage asset:item CMD set value "staff4"
 
-## 効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
-    data modify storage asset:item Stats set value [{Name:"MP.Max",Amount:10}]
+## シリーズ? : String
+#data modify storage asset:item Series set value ""
 
 ## どこに装備できるか? : String
 #data modify storage asset:item CanEquip set value ""
-
-## シリーズ? : String
-#data modify storage asset:item Series set value ""
 
 ## NBT? : NBTCompound
 #data modify storage asset:item NBT set value {}
