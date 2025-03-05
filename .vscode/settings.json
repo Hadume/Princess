@@ -64,6 +64,68 @@
 			"}"
 		]
 	},
+	"mcdutil.createDatapackTemplate.customTemplate": [
+		{
+			"label": "アイテム/テンプレート",
+			"picked": true,
+			"generates": [
+				{
+					"type": "file",
+					"rel": "data/asset/function/item/%namespace%/create/.mcfunction",
+					"content": [
+						"#> asset:item/%namespace%/create/",
+						"#",
+						"# @within function asset:item/create/",
+						"",
+						"## アイテムid : id(minecraft:item)",
+						"    data modify storage asset:item id set value \"\"",
+						"",
+						"## 名前 : TextComponent",
+						"    data modify storage asset:item Name set value '{\"text\": \"\"}'",
+						"",
+						"## 説明? : [TextComponent] @ N",
+						"    #data modify storage asset:item Lore set value []",
+						"",
+						"## レアリティ : int @ 1..10",
+						"    data modify storage asset:item Rarity set value %Rarity%",
+						"",
+						"## 種類 : Category",
+						"    data modify storage asset:item Category set value \"%Category%\"",
+						"",
+						"## CMD? : String",
+						"    #data modify storage asset:item CMD set value \"\"",
+						"",
+						"## 効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N",
+						"    #data modify storage asset:item Stats set value []",
+						"",
+						"## どこに装備できるか? : String",
+						"    #data modify storage asset:item CanEquip set value \"\"",
+						"",
+						"## シリーズ? : String",
+						"    #data modify storage asset:item Series set value \"\"",
+						"",
+						"## NBT? : NBTCompound",
+						"    #data modify storage asset:item NBT set value {}",
+						""
+					]
+				}
+			],
+			"customQuestion": [
+				{
+					"name": "Rarity",
+					"question": "レアリティ",
+					"pattern": "[1-9]|10",
+					"patternErrorMessage": "1-10のみが許されるよ"
+				},
+				{
+					"name": "Category",
+					"question": "アイテムのカテゴリ",
+					"pattern": "(Armor|Wand|Crystal|Misc)",
+					"patternErrorMessage": "カテゴリのみが許されるよ"
+				}
+			]
+		}
+	],
 	"mcdutil.createDatapackTemplate.defaultFolder": false,
 	"mcdutil.createDatapackTemplate.defaultLoadAndTick": false,
 	"mcdutil.createDatapackTemplate.defaultVanillaData": false,
