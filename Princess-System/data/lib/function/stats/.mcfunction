@@ -6,7 +6,7 @@
 # @within tag/function lib:stats
 
 ## 引数を確認
-	execute store success storage temp: Error byte 1 unless data storage lib: Stats run tellraw @a [{"storage":"main:","nbt":"ArgumentError"},"lib: Stats"]
+	execute store success storage temp: Error byte 1 unless data storage lib: Stats run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"lib: Stats"]
 
 ##
 	execute unless data storage temp: Error run function lib:stats/main
