@@ -15,13 +15,10 @@
 	tag @s remove This
 
 ## ステータスを取得
-#scoreboard players operation #Lib.DEF Lib = @s DEF
+	scoreboard players operation #Lib.DEF Lib = @s DEF
 
 ## ダメージを与える
-#function lib:damage/
-
-## 回復
-	effect give @s instant_health 1 200 true
+	function #lib:damage
 
 ## 進捗を剥奪
 	advancement revoke @s only mob:entity_hurt_player

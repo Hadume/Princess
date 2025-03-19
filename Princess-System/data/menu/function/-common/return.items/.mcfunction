@@ -14,10 +14,10 @@
 		execute if data storage api: Inventory[{Slot:6b}] run data remove storage api: Inventory[{Slot:6b}]
 		execute if data storage api: Inventory[{Slot:7b}] run data remove storage api: Inventory[{Slot:7b}]
 		execute if data storage api: Inventory[{Slot:8b}] run data remove storage api: Inventory[{Slot:8b}]
+		execute if data storage api: Inventory[{Slot:100b}] run data remove storage api: Inventory[{Slot:100b}]
 		execute if data storage api: Inventory[{Slot:101b}] run data remove storage api: Inventory[{Slot:101b}]
 		execute if data storage api: Inventory[{Slot:102b}] run data remove storage api: Inventory[{Slot:102b}]
 		execute if data storage api: Inventory[{Slot:103b}] run data remove storage api: Inventory[{Slot:103b}]
-		execute if data storage api: Inventory[{Slot:104b}] run data remove storage api: Inventory[{Slot:104b}]
 		execute if data storage api: Inventory[{Slot:-106b}] run data remove storage api: Inventory[{Slot:-106b}]
 
 

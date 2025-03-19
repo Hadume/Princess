@@ -17,7 +17,7 @@
 ## 種類 : Category
 	data modify storage asset:item Category set value "Armor"
 
-## 効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
+## 装備効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
 	data modify storage asset:item Stats append value {Name:"DEF",Amount:5}
 
 ## CMD? : String

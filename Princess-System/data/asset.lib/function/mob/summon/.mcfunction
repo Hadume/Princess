@@ -19,12 +19,12 @@
 	execute store success storage temp: Error byte 1 unless data storage asset:mob Status.MP run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:mob Status.MP"]
 	execute store success storage temp: Error byte 1 unless data storage asset:mob Status.Speed run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:mob Status.Speed"]
 	###
-		execute if data storage temp: Error as @e[tag=MOB.Init,limit=1] at @s run tp @s ~ -3000 ~
-		execute if data storage temp: Error as @e[tag=MOB.Init,limit=1] run kill @s
+		execute if data storage temp: Error run tp @s ~ -3000 ~
+		execute if data storage temp: Error run kill @s
 
 
 ## 足りていたら
-	execute unless data storage temp: Error as @e[tag=MOB.Init,limit=1] run function asset.lib:mob/summon/main
+	execute unless data storage temp: Error run function asset.lib:mob/summon/main
 
 ## Storageを削除
 	data remove storage asset:mob Name

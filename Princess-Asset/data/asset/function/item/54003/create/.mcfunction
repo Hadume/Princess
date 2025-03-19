@@ -17,7 +17,7 @@
 ## 種類 : Category
     data modify storage asset:item Category set value "Wand"
 
-## 効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
+## 装備効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
     data modify storage asset:item Stats append value {Name:"MP.Max",Amount:5}
 
 ## CMD? : String

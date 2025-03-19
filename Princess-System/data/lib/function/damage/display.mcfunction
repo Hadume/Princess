@@ -14,9 +14,10 @@
 	function #lib:spread
 
 ## NBTを変更
-	data modify entity @s CustomName set from entity @s Item.components."minecraft:item_name"
+	data modify entity @s CustomName set from entity @s Item.components."minecraft:custom_name"
 	data modify entity @s CustomNameVisible set value 1b
 	data modify entity @s PickupDelay set value 32767s
+	data modify entity @s Item.components."minecraft:item_model" set value "air"
 
 ## tagを追加
 	tag @s add Lib.Damage

@@ -92,7 +92,7 @@
 						"## 種類 : Category",
 						"data modify storage asset:item Category set value \"%Category%\"",
 						"",
-						"## 効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N",
+						"## 装備効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N",
 						"#data modify storage asset:item Stats append value {}",
 						"",
 						"## CMD? : String",
@@ -103,6 +103,9 @@
 						"",
 						"## どこに装備できるか? : String",
 						"#data modify storage asset:item CanEquip set value \"\"",
+						"",
+						"## 追加効果? : [{Name: Food, Amount: int, Duration: int}] @ N",
+						"#data modify storage asset:item Effects append value {}",
 						"",
 						"## NBT? : NBTCompound",
 						"#data modify storage asset:item NBT set value {}",
@@ -120,7 +123,7 @@
 				{
 					"name": "Category",
 					"question": "アイテムのカテゴリ",
-					"pattern": "(Armor|Wand|Crystal|Misc)",
+					"pattern": "(Armor|Wand|Crystal|Food|Misc)",
 					"patternErrorMessage": "カテゴリのみが許されるよ"
 				}
 			]
@@ -186,13 +189,13 @@
 				{
 					"name": "mob",
 					"question": "MOBのID",
-					"pattern": "[a-z_]+:[a-z_]+",
+					"pattern": "[a-z_]+",
 					"patternErrorMessage": "MOBのidのみが許されるよ"
 				},
 				{
 					"name": "Type",
 					"question": "MOBのタイプ",
-					"pattern": "(Enemy",
+					"pattern": "(Enemy)",
 					"patternErrorMessage": "タイプのみが許されるよ"
 				}
 			]
