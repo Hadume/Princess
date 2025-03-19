@@ -9,8 +9,8 @@
 #scoreboard players operation #StoredDamage Lib += #Damage Temp
 
 ## HPを減らす
-	scoreboard players operation @s HP -= #Lib.Damage Lib
-	function #lib:status/hp/update
+	execute store result storage lib: RcvrHP.Amount int -1 run scoreboard players get #Lib.Damage Lib
+	function #lib:status/hp/recover
 
 ## ダメージ表示
 	execute anchored eyes run loot spawn ^ ^ ^ loot lib:damage/display

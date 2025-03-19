@@ -18,8 +18,8 @@
 	execute unless data storage temp: Error run function lib:damage/main
 
 ## 引数を削除
-	scoreboard players reset #Lib.ATK
-	scoreboard players reset #Lib.DEF
+	scoreboard players reset #Lib.ATK Lib
+	scoreboard players reset #Lib.DEF Lib
 
 ## 一時使用Storageを削除
 	execute if data storage temp: Error run data remove storage temp: Error
