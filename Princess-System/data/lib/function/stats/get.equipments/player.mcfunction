@@ -16,3 +16,7 @@
 	### 武器
 		execute if data storage api: SelectedItem run data modify storage temp: Weapon append from storage api: SelectedItem
 		execute if data storage api: Inventory[{Slot:-106b}] run data modify storage temp: Weapon append from storage api: Inventory[{Slot:-106b}]
+
+
+## Statsデータから取得
+	data modify storage temp: Stats set from storage dat: _.Stats

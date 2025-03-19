@@ -23,5 +23,5 @@
 	scoreboard players reset #Amount.Stored.2 Temp
 
 ## 一時使用Storageを削除
-	data remove storage temp: Stats
+	data remove storage temp: CalcStats
 	data remove storage temp: Stat
