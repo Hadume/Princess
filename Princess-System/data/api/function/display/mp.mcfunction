@@ -9,7 +9,7 @@
 
 ## 最大魔力を更新
 	data modify storage lib: Stats append value "MP.Max"
-	function #lib:stats
+	function #lib:stats/update
 
 ## 計算
 	scoreboard players set #MP.Per Temp 10

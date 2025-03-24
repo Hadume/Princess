@@ -1,9 +1,9 @@
-#> lib:stats/main
+#> lib:stats/update/main
 # ステータスを計算
-# @within function lib:stats/
+# @within function lib:stats/update/
 
 #> ScoreHolder
-# @within function lib:stats/**
+# @within function lib:stats/update/**
 	#declare score_holder #Amount
 
 ## 複合tagより、どのステータスを取得するか
@@ -11,12 +11,11 @@
 	execute if data storage lib: {Stats:["Magic"]} run data modify storage lib: Stats append from storage lib: Magic[]
 	execute if data storage lib: {Stats:["Element"]} run data modify storage lib: Stats append from storage lib: Element[]
 
-## データを取得
-	execute if entity @s[type=player] run function lib:stats/get.equipments/player
-	execute if entity @s[type=!player] run function lib:stats/get.equipments/entity
+## Statsデータから取得
+	data modify storage temp: Stats set from storage dat: _.Stats
 
 ## 更新
-	function lib:stats/calc/loop
+	function lib:stats/update/calc/loop
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Amount Temp

@@ -5,9 +5,8 @@
 ## インベントリーを取得
 	function #api:get.nbt/inventory
 
-## ステータスを更新
-	data modify storage lib: Stats set value ["Physic", "Magic", "Element"]
-	function #lib:stats
+## 装備
+	function player:equipments/update/armor/
 
 ## オフハンドにアイテムがあったら
 	execute if data storage api: Inventory[{Slot:-106b}] run function player:offhand
