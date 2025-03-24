@@ -11,7 +11,7 @@
 
 ## ステータスを更新
 	data modify storage lib: Stats set value ["HP.Max","MP.Max","ATK","DEF"]
-	function #lib:stats
+	function #lib:stats/update
 
 ## 体力、魔力を回復
 	scoreboard players operation @s HP = @s HP.Max

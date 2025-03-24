@@ -54,7 +54,7 @@
 
 	### 装備の数値を反映
 		data modify storage lib: Stats set value ["Physic","Magic"]
-		function #lib:stats
+		function #lib:stats/update
 
 
 ## NBT反映

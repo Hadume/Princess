@@ -8,6 +8,10 @@
 ## id
 	data modify storage dat: _.id set value "player"
 
+## 装備
+	data modify storage dat: _.Armor set value [{},{},{},{}]
+	data modify storage dat: _.Weapon set value [{},{}]
+
 ## 魔法
 	data modify storage dat: _.Magic set value [{},{},{},{}]
 
@@ -64,4 +68,4 @@
 	function #api:display/exp
 	### ステータス
 		data modify storage lib: Stats set value ["Physic","Magic","Element"]
-		function #lib:stats
+		function #lib:stats/update

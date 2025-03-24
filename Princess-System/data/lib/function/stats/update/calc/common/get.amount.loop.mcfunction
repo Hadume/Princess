@@ -1,6 +1,6 @@
-#> lib:stats/calc/-common/get.amount.loop
+#> lib:stats/update/calc/common/get.amount.loop
 #
-# @within function lib:stats/calc/-common/
+# @within function lib:stats/update/calc/common/
 # @private
 
 ## ループ終了
@@ -21,4 +21,4 @@
 	data remove storage temp: CalcStats[-1]
 
 ## ループ
-	function lib:stats/calc/-common/get.amount.loop
+	function lib:stats/update/calc/common/get.amount.loop
