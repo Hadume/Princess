@@ -21,11 +21,11 @@
 	execute store success storage temp: Error byte 1 unless data storage asset:spawner MaxNearbyEntities run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:spawner MaxNearbyEntities"]
 	execute store success storage temp: Error byte 1 unless data storage asset:spawner RequiredPlayerRange run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:spawner RequiredPlayerRange"]
 	### 足りなかったら
-		execute if data storage temp: Error as @e[tag=Spawner.Init,limit=1] run kill @s
+		execute if data storage temp: Error run kill @s
 
 
 ## 足りていたら
-	execute unless data storage temp: Error as @e[tag=Spawner.Init,limit=1] run function asset.lib:spawner/set/main
+	execute unless data storage temp: Error run function asset.lib:spawner/set/main
 
 ## Storageを削除
 	data remove storage asset:spawner Data
