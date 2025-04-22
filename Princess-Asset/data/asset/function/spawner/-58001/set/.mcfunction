@@ -2,9 +2,6 @@
 #
 # @within function asset:spawner/set/main
 
-## 本体
-	execute align xyz run summon marker ~0.5 ~ ~0.5 {Tags:["Spawner","Spawner.Init"]}
-
 ## 何がスポーンするか : [{ID: int(asset:mob)}] @ N
 	data modify storage asset:spawner Data set value [{ID:-53001}]
 
@@ -22,6 +19,3 @@
 
 ## 稼働範囲 : float
 	data modify storage asset:spawner RequiredPlayerRange set value 8.0f
-
-## 初期化
-	function #asset.lib:spawner/set

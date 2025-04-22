@@ -2,6 +2,9 @@
 #
 # @within function asset.lib:spawner/set/check.condition
 
+## 位置を調整
+	execute align xyz run tp @s ~0.5 ~ ~0.5
+
 ## データを移行
 	data modify storage temp: data.Data set from storage asset:spawner Data
 	data modify storage temp: data.Count set from storage asset:spawner Count
@@ -16,8 +19,8 @@
 ## 召喚までの間隔
 	function asset.lib:spawner/common/set.delay
 
-## 初期化tagを削除
-	tag @s remove Spawner.Init
+## スポナーtagを追加
+	tag @s add Spawner
 
 ## 一時使用Storageを削除
 	data remove storage temp: data
