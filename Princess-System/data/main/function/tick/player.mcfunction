@@ -29,6 +29,9 @@
 	execute if entity @s[scores={MP.Rgn.Timer=1..}] run function player:regen/mp/tick
 	execute if entity @s[scores={HP.Rgn.Timer=1..}] run function player:regen/hp/tick
 
+## ダンジョン処理
+	execute if entity @s[scores={Dungeon=1..}] run function asset.lib:dungeon/tick/player/
+
 ## 手に持っているアイテムを保存
 	function #api:get.nbt/selected_item
 

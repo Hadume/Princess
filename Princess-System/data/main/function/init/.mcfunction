@@ -123,11 +123,13 @@
 
 
 
-	###
+	### Misc
 		scoreboard objectives add 4tickInterval dummy
 		scoreboard objectives add Spawner.Delay dummy
 		scoreboard objectives add ID.Asset dummy
 		scoreboard objectives add ID.DmgFlag dummy
+		scoreboard objectives add Dungeon dummy
+		scoreboard objectives add Boss dummy
 
 
 #> ScoreHolder
@@ -163,6 +165,7 @@
 #> 汎用ShulkerBox
 # @public
 #alias vector ShulkerBox 0 -64 0
+	forceload add 0 0 0 0
 	setblock 0 -64 0 shulker_box
 
 ## エラーログ
