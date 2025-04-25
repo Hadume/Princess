@@ -129,7 +129,7 @@
 		scoreboard objectives add ID.Asset dummy
 		scoreboard objectives add ID.DmgFlag dummy
 		scoreboard objectives add Dungeon dummy
-		scoreboard objectives add Boss dummy
+		scoreboard objectives add DungeonBoss dummy
 
 
 #> ScoreHolder

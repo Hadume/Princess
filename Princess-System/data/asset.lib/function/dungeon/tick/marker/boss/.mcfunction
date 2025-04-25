@@ -1,0 +1,23 @@
+#> asset.lib:dungeon/tick/marker/boss/
+# ボス戦を開始する
+# @within function asset.lib:dungeon/tick/marker/
+
+## 資格石をコピー
+	data modify storage temp: Stone append from entity @s Inventory[{components:{"minecraft:custom_data":{QualificationStone:1b}}}]
+
+## 資格石があったら、入る
+	execute if data storage temp: Stone run function asset.lib:dungeon/tick/marker/boss/tell/1
+
+##
+	execute unless data storage temp: Stone run function asset.lib:dungeon/tick/marker/boss/cant_enter
+
+## 一時使用Storageを削除
+	data remove storage temp: Stone
+
+
+## okican:catboss/start : ボスを召喚する
+## okican:catboss/control/kill : ボスを倒したら、
+## okican:catboss/control/kill2 : 全滅したら
+
+## catboss : interactionのtag
+## catboss_servant : ハスクのtag。
