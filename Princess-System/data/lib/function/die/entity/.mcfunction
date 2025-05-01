@@ -32,8 +32,11 @@
 ## tagを削除
 	execute as @a[tag=Looted] run tag @s remove Looted
 
+## Assetごとの処理
+	function #asset:mob/death
+
 ## kill
-	kill @s
+	execute if entity @s[tag=!Boss] run kill @s
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Exp Temp

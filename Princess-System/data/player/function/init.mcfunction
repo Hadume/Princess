@@ -13,7 +13,7 @@
 	data modify storage dat: _.Weapon set value [{},{}]
 
 ## 魔法
-	data modify storage dat: _.Magic set value [{},{},{},{}]
+	data modify storage dat: _.Magic set value {Known:[]}
 
 ## Status
 	scoreboard players set @s Lvl 1
