@@ -6,7 +6,7 @@
 	clear @s *[custom_data={QualificationStone:1b}]
 
 ## ボス戦中です、スコア
-	scoreboard players operation @s DungeonBoss = #DungeonMisc Temp
+	scoreboard players operation @s Dungeon += #DungeonMisc Temp
 
 ## 目の前を暗くする
 	effect give @s darkness 6 0 true

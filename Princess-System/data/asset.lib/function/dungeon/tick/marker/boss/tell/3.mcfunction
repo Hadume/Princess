@@ -4,3 +4,4 @@
 
 ## 移動
 	function #asset:dungeon/boss/enter
+	function #asset:dungeon/boss/summon

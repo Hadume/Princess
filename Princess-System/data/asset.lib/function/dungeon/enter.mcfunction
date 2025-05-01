@@ -1,9 +1,12 @@
-#> asset.lib:dungeon/tick/marker/enter
+#> asset.lib:dungeon/enter
 # ダンジョンに入場する
-# @within function asset.lib:dungeon/tick/marker/
+# @within tag/function asset.lib:dungeon/enter
 
 ## ダンジョン内に移動
 	function #asset:dungeon/enter with storage asset:dungeon
+
+## ダンジョンIDを記録
+	scoreboard players operation @s Dungeon = #DungeonID Temp
 
 ## 少し暗くする
 	effect give @s blindness 2 0 true

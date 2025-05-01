@@ -125,11 +125,6 @@
 
 	### Misc
 		scoreboard objectives add 4tickInterval dummy
-		scoreboard objectives add Spawner.Delay dummy
-		scoreboard objectives add ID.Asset dummy
-		scoreboard objectives add ID.DmgFlag dummy
-		scoreboard objectives add Dungeon dummy
-		scoreboard objectives add DungeonBoss dummy
 
 
 #> ScoreHolder
@@ -174,6 +169,7 @@
 
 ## 各システムの初期化
 	function api:init
+	function asset.lib:init
 	function lib:init
 	function menu:init
 	function skilltree:init

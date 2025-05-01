@@ -15,6 +15,7 @@
 	execute if entity @s[scores={Trade.Action=..2147483647}] unless score @s Trade.Action matches 0 run function menu:communicate/trade/open/
 	execute if entity @s[scores={Trade.DecideTimer=1..}] run function menu:communicate/trade/decide/timer/tick/
 	execute if entity @s[scores={SkillTree=1..}] run function skilltree:tick
+	execute if entity @s[scores={DeathTime=1..}] run function lib:die/player/tick/
 
 ## 食事効果
 	execute if data storage dat: _.Effects[] run function player:effects/tick/

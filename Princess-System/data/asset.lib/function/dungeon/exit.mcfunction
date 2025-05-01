@@ -1,9 +1,12 @@
-#> asset.lib:dungeon/tick/marker/exit
+#> asset.lib:dungeon/exit
 # ダンジョンから退出する
-# @within function asset.lib:dungeon/tick/marker/
+# @within tag/function asset.lib:dungeon/exit
 
 ## ダンジョン外に移動
 	function #asset:dungeon/exit with storage asset:dungeon
+
+## ダンジョンIDを消す
+	scoreboard players reset @s Dungeon
 
 ## 少し暗くする
 	effect give @s blindness 2 0 true
