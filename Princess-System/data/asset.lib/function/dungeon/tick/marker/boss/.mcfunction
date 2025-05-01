@@ -13,11 +13,3 @@
 
 ## 一時使用Storageを削除
 	data remove storage temp: Stone
-
-
-## okican:catboss/start : ボスを召喚する
-## okican:catboss/control/kill : ボスを倒したら、
-## okican:catboss/control/kill2 : 全滅したら
-
-## catboss : interactionのtag
-## catboss_servant : ハスクのtag。
