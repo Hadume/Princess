@@ -19,4 +19,4 @@
 	scoreboard players operation #StoredDamage Temp += #Lib.Damage Lib
 
 ## ダメージ表示
-	damage @s 0.00000000000000001 out_of_world by @e[tag=This,limit=1]
+	damage @s 0.00000000000000001 out_of_world by @e[tag=This,distance=0,limit=1]

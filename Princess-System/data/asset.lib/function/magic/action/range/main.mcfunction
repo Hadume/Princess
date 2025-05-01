@@ -16,5 +16,8 @@
 ## 範囲内のMOBを特定
 	function #lib:range
 
+## ボスが特定されたら
+	execute as @e[tag=Lib.InRange,tag=Boss] at @s run function asset.lib:magic/action/range/boss
+
 ## ついでに攻撃する
 	execute if data storage asset:magic {Damage:1b} run function asset.lib:magic/action/damage/

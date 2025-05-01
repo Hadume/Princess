@@ -18,7 +18,7 @@
 	scoreboard players operation #Lib.DEF Lib = @s DEF
 
 ## ダメージを与える
-	function #lib:damage
+	execute if score #Lib.ATK Lib = #Lib.ATK Lib run function #lib:damage
 
 ## 進捗を剥奪
 	advancement revoke @s only mob:entity_hurt_player

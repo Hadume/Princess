@@ -11,7 +11,7 @@
 
 ##
 	tag @s add This
-	execute as @e[tag=Lib.InRange] run function asset.lib:magic/action/damage/entity
+	execute at @s as @e[tag=Lib.InRange] run function asset.lib:magic/action/damage/entity
 	tag @s remove This
 
 ## 保存されたダメージ

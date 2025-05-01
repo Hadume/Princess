@@ -8,9 +8,6 @@
 ## 名前
 	data modify storage dat: _.rawName set from storage asset:mob Name
 
-## タイプ
-	execute if data storage asset:mob {Type:"Enemy"} run tag @s add Enemy
-
 ## 装備
 	### Assetから
 		execute if data storage asset:mob Armor.Head.ID run function asset.lib:mob/summon/equipments {Parts:"Head"}
@@ -57,17 +54,23 @@
 		function #lib:stats/update
 
 
-## NBT反映
-	data modify entity @s {} merge value {ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f],DeathLootTable:"asset.lib:entities/empty",CanPickUpLoot:0b,PersistenceRequired:1b,LeftHanded:0b,CustomNameVisible:1b,Attributes:[{Name:"generic.attack_damage",Base:0.000001d}]}
+## NBT
+	### 共通設定
+		data merge entity @s {ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f],DeathLootTable:"asset.lib:mob/empty",CanPickUpLoot:0b,PersistenceRequired:1b,LeftHanded:0b,CustomNameVisible:1b}
+		attribute @s attack_damage base set 0.0000001
+
+	execute if data storage asset:mob NBT run data modify entity @s {} merge from storage asset:mob NBT
+
+## タイプ
+	execute if data storage asset:mob {Type:"Enemy"} run tag @s add Enemy
+	execute if data storage asset:mob {Type:"Boss"} run tag @s add Boss
+	execute if data storage asset:mob {Type:"Boss"} run tag @s add Enemy
 
 ## ダメージ識別用tag
-	function asset.lib:mob/summon/damage.flags
+	execute if data storage asset:mob {Type:"Enemy"} run function mob:damage_flags/
 
-## HitBoxを保存
+## Hitboxを保存
 	function asset.lib:mob/summon/id/
-
-## 初期化Tagを外す
-	tag @s remove MOB.Init
 
 ## 一時使用Storageを削除
 	data remove storage temp: ArmorItems
