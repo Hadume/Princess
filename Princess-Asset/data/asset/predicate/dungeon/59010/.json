@@ -1,0 +1,20 @@
+{
+    "condition": "location_check",
+    "predicate": {
+        "dimension": "dungeon",
+        "position": {
+            "x": {
+                "min": 5,
+                "max": 314
+            },
+            "y": {
+                "min": -29,
+                "max": 48
+            },
+            "z": {
+                "min": -279,
+                "max": -5
+            }
+        }
+    }
+}
