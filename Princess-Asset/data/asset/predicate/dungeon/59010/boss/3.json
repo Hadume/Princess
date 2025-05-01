@@ -1,7 +1,6 @@
 {
     "condition": "location_check",
     "predicate": {
-        "dimension": "dungeon",
         "position": {
             "x": {
                 "min": 181,
