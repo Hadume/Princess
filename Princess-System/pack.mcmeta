@@ -16,6 +16,10 @@
 			{
 				"namespace": "minecraft",
 				"path": "tags/block/anvil"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "tags/block/mineable/pickaxe"
 			}
 		]
 	}
