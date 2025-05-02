@@ -44,23 +44,23 @@ say magic:root/ui
 	execute unless items entity @s inventory.13 *[custom_data~{Category:"Wand"}] run data modify storage temp: Magics set value [0,0,0,0]
 	### Click
 		function menu:magic/root/ui/icon {Index:-4}
-		item replace entity @s inventory.2 from block 0 -64 0 container.0
-		item modify entity @s inventory.2 menu:magic/root/click
+		execute in overworld run item replace entity @s inventory.2 from block 0 -64 0 container.0
+		execute in overworld run item modify entity @s inventory.2 menu:magic/root/click
 
 	### ClickS
 		function menu:magic/root/ui/icon {Index:-3}
-		item replace entity @s inventory.6 from block 0 -64 0 container.0
-		item modify entity @s inventory.6 menu:magic/root/click_s
+		execute in overworld run item replace entity @s inventory.6 from block 0 -64 0 container.0
+		execute in overworld run item modify entity @s inventory.6 menu:magic/root/click_s
 
 	### Offhand
 		function menu:magic/root/ui/icon {Index:-2}
-		item replace entity @s inventory.20 from block 0 -64 0 container.0
-		item modify entity @s inventory.20 menu:magic/root/offhand
+		execute in overworld run item replace entity @s inventory.20 from block 0 -64 0 container.0
+		execute in overworld run item modify entity @s inventory.20 menu:magic/root/offhand
 
 	### OffhandS
 		function menu:magic/root/ui/icon {Index:-1}
-		item replace entity @s inventory.24 from block 0 -64 0 container.0
-		item modify entity @s inventory.24 menu:magic/root/offhand_s
+		execute in overworld run item replace entity @s inventory.24 from block 0 -64 0 container.0
+		execute in overworld run item modify entity @s inventory.24 menu:magic/root/offhand_s
 
 
 ## 一時使用Storageを削除

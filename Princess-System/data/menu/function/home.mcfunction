@@ -6,4 +6,4 @@
 	execute if entity @s[scores={Menu=7200}] run return run function menu:communicate/trade/back/
 
 ## 元に
-	function menu:home/root/open
+	return run function menu:home/root/open

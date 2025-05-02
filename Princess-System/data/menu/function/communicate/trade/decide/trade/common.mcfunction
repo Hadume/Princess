@@ -50,12 +50,12 @@
 
 
 ## アイテムを設定
-	data remove block 0 -64 0 Items
-	data modify block 0 -64 0 Items append from storage temp: TradeItems[]
+	execute in overworld run data remove block 0 -64 0 Items
+	execute in overworld run data modify block 0 -64 0 Items append from storage temp: TradeItems[]
 
 ## アイテムを渡す
 	scoreboard players operation #Trade.With Temp = @s Trade.With
-	execute as @a if score @s ID = #Trade.With Temp run loot give @s mine 0 -64 0 debug_stick
+	execute as @a if score @s ID = #Trade.With Temp in overworld run loot give @s mine 0 -64 0 debug_stick
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Trade.With Temp

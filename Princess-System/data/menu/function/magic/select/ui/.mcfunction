@@ -27,44 +27,44 @@
 
 ## 外枠
 	### 1行目
-		loot replace block 0 -64 0 container.0 loot menu:back
-		loot replace block 0 -64 0 container.1 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.2 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.3 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.4 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.5 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.6 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.7 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.8 loot menu:frame.black
+		execute in overworld run loot replace block 0 -64 0 container.0 loot menu:back
+		execute in overworld run loot replace block 0 -64 0 container.1 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.2 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.3 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.4 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.5 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.6 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.7 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.8 loot menu:frame.black
 
 	### 2行目
-		loot replace block 0 -64 0 container.9 loot menu:frame.black
-		loot replace block 0 -64 0 container.10 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.11 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.12 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.13 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.14 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.15 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.16 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.17 loot menu:frame.black
+		execute in overworld run loot replace block 0 -64 0 container.9 loot menu:frame.black
+		execute in overworld run loot replace block 0 -64 0 container.10 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.11 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.12 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.13 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.14 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.15 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.16 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.17 loot menu:frame.black
 
 	### 3行目
-		loot replace block 0 -64 0 container.18 loot menu:frame.black
-		loot replace block 0 -64 0 container.19 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.20 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.21 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.22 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.23 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.24 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.25 loot menu:frame.light_gray
-		loot replace block 0 -64 0 container.26 loot menu:frame.black
+		execute in overworld run loot replace block 0 -64 0 container.18 loot menu:frame.black
+		execute in overworld run loot replace block 0 -64 0 container.19 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.20 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.21 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.22 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.23 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.24 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.25 loot menu:frame.light_gray
+		execute in overworld run loot replace block 0 -64 0 container.26 loot menu:frame.black
 
 
 ## 魔法アイコンを反映
-	data modify block 0 -64 0 Items append from storage temp: Items[]
+	execute in overworld run data modify block 0 -64 0 Items append from storage temp: Items[]
 
 ## インベントリーに反映
-	loot replace entity @s inventory.0 27 mine 0 -64 0 debug_stick
+	execute in overworld run loot replace entity @s inventory.0 27 mine 0 -64 0 debug_stick
 
 ## 次ページにいく
 	execute if score #UntilList Temp matches 10 run loot replace entity @s inventory.26 loot menu:page.next

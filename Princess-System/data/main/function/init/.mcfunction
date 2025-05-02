@@ -160,8 +160,8 @@
 #> 汎用ShulkerBox
 # @public
 #alias vector ShulkerBox 0 -64 0
-	forceload add 0 0 0 0
-	setblock 0 -64 0 shulker_box
+	execute in overworld run forceload add 0 0 0 0
+	execute in overworld run setblock 0 -64 0 shulker_box
 
 ## エラーログ
 	data modify storage main: Tell.Error set value "§c[Error] §o§n"

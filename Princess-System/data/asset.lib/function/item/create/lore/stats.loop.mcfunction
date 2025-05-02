@@ -26,7 +26,7 @@
 	execute if data storage temp: {Stat:{Operation:2}} run data modify storage temp: Amount.Suffix set value "%"
 
 ## 説明を生成
-	item modify block 0 -64 0 container.0 asset.lib:item/create/lore/stat
+	execute in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/lore/stat
 
 ## データを削除
 	data remove storage asset:item Stats[0]
