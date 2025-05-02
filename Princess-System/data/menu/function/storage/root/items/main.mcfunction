@@ -13,9 +13,9 @@
 	execute if data storage temp: PageItems[-22] run function menu:storage/root/items/slot
 
 ## データを渡す
-	data remove block 0 -64 0 Items
-	data modify block 0 -64 0 Items append from storage temp: PageItems[]
-	loot replace entity @s inventory.0 27 mine 0 -64 0 debug_stick
+	execute in overworld run data remove block 0 -64 0 Items
+	execute in overworld run data modify block 0 -64 0 Items append from storage temp: PageItems[]
+	execute in overworld run loot replace entity @s inventory.0 27 mine 0 -64 0 debug_stick
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #Slot Temp

@@ -14,8 +14,8 @@
 	execute if score #ScoreToHealth Temp matches ..200 run data modify storage temp: NameColor set value '{"text":"","color":"red"}'
 
 ## 名前を表示
-	loot replace block 0 -64 0 container.0 loot api:display/mob.status
-	data modify entity @s CustomName set from block 0 -64 0 Items[0].components."minecraft:custom_name"
+	execute in overworld run loot replace block 0 -64 0 container.0 loot api:display/mob.status
+	execute in overworld run data modify entity @s CustomName set from block 0 -64 0 Items[0].components."minecraft:custom_name"
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #ScoreToHealth Temp

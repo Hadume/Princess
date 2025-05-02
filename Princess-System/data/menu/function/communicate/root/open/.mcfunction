@@ -6,7 +6,7 @@
 
 ## プレイヤーのデータを取得
 	### シュルカーボックスのデータを消す
-		data remove block 0 -64 0 Items
+		execute in overworld run data remove block 0 -64 0 Items
 
 	### 各プレイヤーで
 		tag @s add This

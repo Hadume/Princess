@@ -10,9 +10,9 @@
 
 ## ホットバーを元に戻す
 	function #api:e_dat/please
-	data remove block 0 -64 0 Items
-	data modify block 0 -64 0 Items set from storage dat: _.SkillTree.HotBar
-	loot replace entity @s hotbar.0 9 mine 0 -64 0 debug_stick
+	execute in overworld run data remove block 0 -64 0 Items
+	execute in overworld run data modify block 0 -64 0 Items set from storage dat: _.SkillTree.HotBar
+	execute in overworld run loot replace entity @s hotbar.0 9 mine 0 -64 0 debug_stick
 	### いらないデータを消す
 		data remove storage dat: _.SkillTree.HotBar
 

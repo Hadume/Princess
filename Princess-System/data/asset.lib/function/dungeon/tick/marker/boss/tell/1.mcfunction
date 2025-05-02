@@ -17,5 +17,5 @@
 ## 音
 	playsound block.portal.travel block @s ~ ~ ~ 0.75 1.0 0.0
 
-## 次
-	schedule function asset.lib:dungeon/tick/marker/boss/tell/2 2s append
+## ボス戦入るまでの演出
+	scoreboard players set @s DungeonAnimation 41

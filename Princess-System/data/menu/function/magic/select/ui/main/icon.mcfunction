@@ -3,7 +3,7 @@
 # @within function menu:magic/select/ui/main/loop
 
 ## アイテムを移動
-	data modify storage temp: Items append from block 0 -64 0 Items[0]
+	execute in overworld run data modify storage temp: Items append from block 0 -64 0 Items[0]
 
 ## Slotを設定
 	data modify storage temp: Items[-1].Slot set from storage temp: Slots[-1]

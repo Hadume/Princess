@@ -9,4 +9,4 @@
 	$function #asset:item/create with storage asset:mob Armor.$(Parts)
 
 ## アイテムを移行
-	$data modify storage asset:mob Armor.$(Parts) set from block 0 -64 0 Items[0]
+	$execute in overworld run data modify storage asset:mob Armor.$(Parts) set from block 0 -64 0 Items[0]

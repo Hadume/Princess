@@ -6,4 +6,4 @@
 	data remove storage dat: _.Menu.Communicate
 
 ## ホームに戻る
-	function menu:home/root/open
+	return run function menu:home/root/open
