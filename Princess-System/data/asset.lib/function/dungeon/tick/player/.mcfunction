@@ -10,4 +10,4 @@
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #DungeonID Temp
-	scoreboard players reset #DungeonBossID Temp
+	scoreboard players reset #DungeonMisc Temp

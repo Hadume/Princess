@@ -14,7 +14,3 @@
 ## ボス部屋番号
 	scoreboard players operation #DungeonMisc Temp %= #10 Const
 	execute store result storage asset:dungeon Boss int 1 run scoreboard players get #DungeonMisc Temp
-
-## 一時使用ScoreHolderをリセット
-	scoreboard players reset #DungeonID Temp
-	scoreboard players reset #DungeonMisc Temp
