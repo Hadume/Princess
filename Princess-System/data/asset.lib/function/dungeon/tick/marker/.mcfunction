@@ -13,3 +13,7 @@
 
 ## ボス戦を開始する
 	execute if score #DungeonMisc Temp matches 1..3 as @a[distance=..2.5] at @s run function asset.lib:dungeon/tick/marker/boss/
+
+## 一時使用ScoreHolderをリセット
+	scoreboard players reset #DungeonID Temp
+	scoreboard players reset #DungeonMisc Temp
