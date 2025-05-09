@@ -1,6 +1,6 @@
-#> asset.lib:dungeon/tick/marker/boss/tell/3
+#> asset.lib:dungeon/player/boss/enter/-ing/3
 # ボス戦に入る前の演出、3
-# @within function asset.lib:dungeon/tick/marker/boss/tell/2
+# @within function asset.lib:dungeon/player/tick/boss/enter
 
 ## ダンジョンIDを取得
 	function asset.lib:dungeon/get.id

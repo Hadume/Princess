@@ -1,4 +1,4 @@
-#> asset.lib:dungeon/tick/marker/
+#> asset.lib:dungeon/marker/tick
 # ダンジョン内でのマーカーの処理
 # @within function main:tick/
 
@@ -12,7 +12,7 @@
 	execute if score #DungeonMisc Temp matches 7 as @a[distance=..2] at @s run function #asset.lib:dungeon/exit
 
 ## ボス戦を開始する
-	execute if score #DungeonMisc Temp matches 1..3 as @a[distance=..2.5] at @s run function asset.lib:dungeon/tick/marker/boss/
+	execute if score #DungeonMisc Temp matches 1..3 as @a[distance=..2.5] at @s run function asset.lib:dungeon/player/boss/enter/
 
 ## 一時使用ScoreHolderをリセット
 	scoreboard players reset #DungeonID Temp
