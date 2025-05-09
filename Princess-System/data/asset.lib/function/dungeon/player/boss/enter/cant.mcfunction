@@ -1,6 +1,6 @@
-#> asset.lib:dungeon/tick/marker/boss/cant_enter
+#> asset.lib:dungeon/player/boss/enter/cant
 #
-# @within function asset.lib:dungeon/tick/marker/boss/
+# @within function asset.lib:dungeon/player/boss/enter/
 
 ## 伝える
 	tellraw @s [{"text": "資格石","color":"red","bold": true},{"text":"が足りないようだ。\nダンジョン内の魔物を倒して","bold": false},"資格石",{"text":"を手に入れよう！","bold": false}]

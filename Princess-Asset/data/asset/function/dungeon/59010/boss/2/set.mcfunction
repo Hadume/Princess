@@ -6,4 +6,4 @@
 	kill @e[type=marker,tag=Dungeon,scores={Dungeon=59012}]
 
 ##
-	execute in dungeon positioned 138.5 0.0 -270.5 if loaded ~ ~ ~ summon marker run function #asset.lib:dungeon/set/marker {ID:59012}
+	execute in dungeon positioned 138.5 0.0 -270.5 if loaded ~ ~ ~ summon marker run function #asset.lib:dungeon/marker/set {ID:59012}

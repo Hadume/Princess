@@ -4,4 +4,5 @@
 
 ## Scoreboard
 	scoreboard objectives add Dungeon dummy
-	scoreboard objectives add DungeonAnimation dummy
+	scoreboard objectives add DungeonBossEnter dummy
+	scoreboard objectives add DungeonBossExit dummy

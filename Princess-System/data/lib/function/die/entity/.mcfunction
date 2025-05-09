@@ -16,32 +16,17 @@
 	data modify entity @s CustomNameVisible set value 0b
 	data modify entity @s PersistenceRequired set value 0b
 
-## スコアをコピー
-	scoreboard players operation #Exp Temp = @s Exp
-	scoreboard players operation #Money Temp = @s Money
-
 ## 個人ストレージを呼ぶ
 	function #api:e_dat/please
 
-## データをコピー
-	data modify storage temp: AttackBy set from storage dat: _.AttackBy
+## アイテムをドロップ
+	execute if data storage dat: _.Drop run function lib:die/entity/drop/
 
-##
-	execute if data storage temp: AttackBy[] run function lib:die/entity/loot/loop
-
-## tagを削除
-	execute as @a[tag=Looted] run tag @s remove Looted
+## 攻撃を与えたプレイヤーにドロップ品を渡す
+	execute if data storage dat: _.AttackBy run function lib:die/entity/loot/
 
 ## Assetごとの処理
 	function #asset:mob/death
 
 ## kill
 	execute if entity @s[tag=!Boss] run kill @s
-
-## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Exp Temp
-	scoreboard players reset #Money Temp
-	scoreboard players reset #ID Temp
-
-## 一時使用Storageを削除
-	data remove storage temp: AttackBy

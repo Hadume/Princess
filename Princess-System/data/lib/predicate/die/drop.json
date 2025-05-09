@@ -1,0 +1,8 @@
+{
+    "condition": "random_chance",
+    "chance": {
+        "type": "storage",
+        "storage": "temp:",
+        "path": "Item.Weight"
+    }
+}

@@ -4,6 +4,7 @@
 
 ## ダメージを計算
 	function lib:damage/calc
+	tellraw @a {"score": {"name": "#Lib.Damage", "objective": "Lib"}}
 
 ## ダメージを蓄積しておく
 #scoreboard players operation #StoredDamage Lib += #Damage Temp

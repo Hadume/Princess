@@ -7,7 +7,7 @@
 
 ## メニューをホームへ
 	execute unless entity @s[scores={Menu=1}] store result score #Menu Temp run function menu:home
-	execute unless score #Menu Temp matches 0 run function menu:change_page
+	execute if score #Menu Temp = #Menu Temp run function menu:change_page
 
 ## スコアをリセット
 	scoreboard players reset @s LeaveGame
