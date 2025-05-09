@@ -1,6 +1,6 @@
 #> lib:die/entity/loot/loop
 # 報酬を渡すプレイヤーの特定
-# @within function lib:die/entity/
+# @within function lib:die/entity/loot/
 # @private
 
 ## IDをコピー

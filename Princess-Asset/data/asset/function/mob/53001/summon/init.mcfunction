@@ -8,7 +8,7 @@
 ## タイプ : Type
 	data modify storage asset:mob Type set value "Enemy"
 
-## 装備? : {{id: id(minecraft:item), Count: boolean @ 1..64, tag: Compound} || int(asset:item)} @ ..6
+## 装備? : {{id: id(minecraft:item), Count: boolean @ 1..64, tag: Compound} || ID: id(asset:item)} @ ..6
 	### 防具
 		data modify storage asset:mob Armor.Head set value {ID:54016}
 		#data modify storage asset:mob Armor.Chest set value {}
@@ -29,6 +29,34 @@
 	data modify storage asset:mob Status.ATK set value 6
 	data modify storage asset:mob Status.DEF set value 1
 	data modify storage asset:mob Status.Speed set value 230
+
+## ドロップ品? : {Item: {{id: id(minecraft:item), Count: boolean @ 1..64, tag: Compound} || ID: id(asset:item)}, Weight: float} @ N
+	data modify storage asset:mob Drop set value [\
+	{Item:{ID:54002},Weight:0.01},\
+	{Item:{ID:54003},Weight:0.005},\
+	{Item:{ID:54004},Weight:0.001},\
+	{Item:{ID:54016},Weight:0.005},\
+	{Item:{ID:54017},Weight:0.005},\
+	{Item:{ID:54018},Weight:0.005},\
+	{Item:{ID:54019},Weight:0.005},\
+	{Item:{ID:54020},Weight:0.001},\
+	{Item:{ID:54021},Weight:0.001},\
+	{Item:{ID:54022},Weight:0.001},\
+	{Item:{ID:54023},Weight:0.001},\
+	{Item:{ID:54501},Weight:0.1},\
+	{Item:{ID:54502},Weight:0.05},\
+	{Item:{ID:54503},Weight:0.01},\
+	{Item:{ID:54504},Weight:0.05},\
+	{Item:{ID:54505},Weight:0.01},\
+	{Item:{ID:54506},Weight:0.05},\
+	{Item:{ID:54507},Weight:0.01},\
+	{Item:{ID:54508},Weight:0.1},\
+	{Item:{ID:54509},Weight:0.05},\
+	{Item:{ID:54510},Weight:0.01},\
+	{Item:{ID:54511},Weight:0.05},\
+	{Item:{ID:54512},Weight:0.01},\
+	{Item:{ID:54901},Weight:0.05},\
+	]
 
 ## NBT? : Compound
 #data modify storage asset:mob NBT set value {}

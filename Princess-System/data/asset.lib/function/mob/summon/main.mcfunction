@@ -5,6 +5,9 @@
 ## 個人ストレージを呼ぶ
 	function #api:e_dat/please
 
+## IDを保存
+	execute store result score @s ID.Asset run data get storage asset:mob ID
+
 ## 名前
 	data modify storage dat: _.rawName set from storage asset:mob Name
 
@@ -53,6 +56,9 @@
 		data modify storage lib: Stats set value ["Physic","Magic"]
 		function #lib:stats/update
 
+
+## ドロップ品
+	data modify storage dat: _.Drop set from storage asset:mob Drop
 
 ## NBT
 	### 共通設定
