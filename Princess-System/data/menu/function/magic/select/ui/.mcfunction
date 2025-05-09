@@ -22,7 +22,7 @@
 		execute store result storage temp: Index int 1 run scoreboard players get #Index Temp
 
 	###
-		execute store result score #UntilList Temp run function menu:magic/select/ui/main/loop with storage temp:
+		execute store result score #UntilList Temp in overworld run function menu:magic/select/ui/main/loop with storage temp:
 
 
 ## 外枠
