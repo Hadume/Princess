@@ -1,52 +1,52 @@
 {
-	"pools": [
-		{
-			"rolls": 1.0,
-			"entries": [
-				{
-					"type": "item",
-					"name": "cod",
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": [
-								{
-									"storage": "temp:",
-									"nbt": "NameColor",
-									"interpret": true,
-									"italic": false
-								},
-								{
-									"text": "[",
-									"color": "dark_gray"
-								},
-								{
-									"text": "Lv.",
-									"color": "white"
-								},
-								{
-									"score": {
-										"name": "@s",
-										"objective": "Lvl"
-									},
-									"color": "white"
-								},
-								{
-									"text": "] ",
-									"color": "dark_gray"
-								},
-								{
-									"storage": "dat:",
-									"nbt": "_.rawName",
-									"interpret": true,
-									"bold": true
-								}
-							]
-						}
-					]
-				}
-			]
-		}
-	]
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "cod",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "storage": "temp:",
+                                    "nbt": "NameColor",
+                                    "interpret": true,
+                                    "italic": false
+                                },
+                                {
+                                    "text": "[",
+                                    "color": "dark_gray"
+                                },
+                                {
+                                    "text": "Lv.",
+                                    "color": "white"
+                                },
+                                {
+                                    "score": {
+                                        "name": "@s",
+                                        "objective": "Lvl"
+                                    },
+                                    "color": "white"
+                                },
+                                {
+                                    "text": "] ",
+                                    "color": "dark_gray"
+                                },
+                                {
+                                    "storage": "dat:",
+                                    "nbt": "_.rawName",
+                                    "interpret": true,
+                                    "bold": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
