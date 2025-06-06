@@ -14,6 +14,10 @@
 ##
 	function lib:die/player/spawn/tp with storage temp: SpawnPoint
 
+## 体力を回復
+	data modify storage lib: RcvrHP.Amount set value 2147483647
+	function #lib:status/hp/recover
+
 ## ゲームモードを戻す
 	scoreboard players operation #Gamemode Temp = @s Gamemode
 	execute if score #Gamemode Temp matches 0 run gamemode survival @s
