@@ -21,8 +21,8 @@
 	data modify storage asset:item Stats append value {Name:"HP.Rgn.Per",Amount:2}
 	data modify storage asset:item Stats append value {Name:"HP.Max",Amount:20}
 
-## CMD? : String
-#data modify storage asset:item CMD set value ""
+## ItemModel? : String
+#data modify storage asset:item ItemModel set value ""
 
 ## シリーズ? : String
 	data modify storage asset:item Series set value "Fur"

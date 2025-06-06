@@ -15,7 +15,7 @@
 	execute as @e[tag=Enemy] at @s run function mob:tick
 
 ## ダンジョンに入る
-	execute as @e[type=marker,tag=Dungeon] at @s run function asset.lib:dungeon/tick/marker/
+	execute as @e[type=marker,tag=Dungeon] at @s run function asset.lib:dungeon/marker/tick
 
 ## tagを削除する
 	execute as @e[tag=Lib.InRange] run tag @s remove Lib.InRange

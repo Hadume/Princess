@@ -4,3 +4,4 @@
 
 ##
 	function lib:stats/init
+	function lib:die/init

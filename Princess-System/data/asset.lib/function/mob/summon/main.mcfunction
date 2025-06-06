@@ -11,6 +11,11 @@
 ## 名前
 	data modify storage dat: _.rawName set from storage asset:mob Name
 
+## タイプ
+	execute if data storage asset:mob {Type:"Enemy"} run tag @s add Enemy
+	execute if data storage asset:mob {Type:"Boss"} run tag @s add Boss
+	execute if data storage asset:mob {Type:"Boss"} run tag @s add Enemy
+
 ## 装備
 	### Assetから
 		execute if data storage asset:mob Armor.Head.ID run function asset.lib:mob/summon/equipments {Parts:"Head"}
@@ -66,11 +71,6 @@
 		attribute @s attack_damage base set 0.0000001
 
 	execute if data storage asset:mob NBT run data modify entity @s {} merge from storage asset:mob NBT
-
-## タイプ
-	execute if data storage asset:mob {Type:"Enemy"} run tag @s add Enemy
-	execute if data storage asset:mob {Type:"Boss"} run tag @s add Boss
-	execute if data storage asset:mob {Type:"Boss"} run tag @s add Enemy
 
 ## ダメージ識別用tag
 	execute if data storage asset:mob {Type:"Enemy"} run function mob:damage_flags/

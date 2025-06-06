@@ -6,10 +6,10 @@
 	data modify storage asset:item id set value ""
 
 ## 名前 : TextComponent
-	data modify storage asset:item Name set value '{"text": ""}'
+	data modify storage asset:item Name set value '{"text": "ロリポップ","color":"yellow"}'
 
 ## 説明? : [TextComponent] @ N
-#data modify storage asset:item Lore set value []
+	data modify storage asset:item Lore set value [{"text": "魔法攻撃力が60秒間20up!","color": "blue"}]
 
 ## レアリティ : int @ 1..10
 	data modify storage asset:item Rarity set value 4
@@ -20,8 +20,8 @@
 ## 装備効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
 #data modify storage asset:item Stats append value {}
 
-## CMD? : String
-#data modify storage asset:item CMD set value ""
+## ItemModel? : String
+	data modify storage asset:item ItemModel set value "food/lolipop"
 
 ## シリーズ? : String
 #data modify storage asset:item Series set value ""
@@ -33,4 +33,4 @@
 	data modify storage asset:item Effects append value {Name:"Mgc.Amount",Amount:20,Duration:1200}
 
 ## NBT? : NBTCompound
-#data modify storage asset:item NBT set value {}
+	data modify storage asset:item NBT set value {"minecraft:custom_data":{ok_buy:1}}

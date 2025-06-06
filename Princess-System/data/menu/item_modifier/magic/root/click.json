@@ -17,6 +17,23 @@
 					"interpret": true
 				}
 			]
+		],
+		"conditions": [
+			{
+				"condition": "inverted",
+				"term": {
+					"condition": "value_check",
+					"value": {
+						"type": "storage",
+						"storage": "asset:magic",
+						"path": "ID"
+					},
+					"range": {
+						"min": 0,
+						"max": 0
+					}
+				}
+			}
 		]
 	},
 	{
@@ -30,7 +47,7 @@
 				"bold": true
 			},
 			{
-				"text": "右クリック"
+				"translate": "key.mouse.right"
 			}
 		]
 	},

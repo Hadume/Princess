@@ -20,8 +20,8 @@
 ## 装備効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
 	data modify storage asset:item Stats append value {Name:"DEF",Amount:5}
 
-## CMD? : String
-#data modify storage asset:item CMD set value ""
+## ItemModel? : String
+#data modify storage asset:item ItemModel set value ""
 
 ## シリーズ? : String
 	data modify storage asset:item Series set value "Fur"

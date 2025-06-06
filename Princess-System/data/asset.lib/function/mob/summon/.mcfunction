@@ -32,6 +32,7 @@
 	data remove storage asset:mob Status
 	execute if data storage asset:mob Armor run data remove storage asset:mob Armor
 	execute if data storage asset:mob Weapon run data remove storage asset:mob Weapon
+	execute if data storage asset:mob Drop run data remove storage asset:mob Drop
 	execute if data storage asset:mob NBT run data remove storage asset:mob NBT
 
 ## 一時使用Storageを削除

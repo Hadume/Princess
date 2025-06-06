@@ -9,6 +9,7 @@
 	scoreboard players remove #DungeonBossEnter Temp 1
 
 ## 演出
+	execute if score #DungeonBossEnter Temp matches 40 run function asset.lib:dungeon/player/boss/enter/-ing/1
 	execute if score #DungeonBossEnter Temp matches 20 run function asset.lib:dungeon/player/boss/enter/-ing/2
 	execute if score #DungeonBossEnter Temp matches ..0 run function asset.lib:dungeon/player/boss/enter/-ing/3
 

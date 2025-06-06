@@ -14,7 +14,7 @@
 	data modify storage asset:magic Raw.Cooltime set value 40
 
 ## 持続時間? : int
-	data modify storage asset:magic Raw.Duration set value 40
+	data modify storage asset:magic Raw.Duration set value 60
 
 ## 範囲? : float
 	data modify storage asset:magic Raw.Range set value 5.0f

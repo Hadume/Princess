@@ -23,7 +23,7 @@
 	### HP
 		execute store result score @s HP run scoreboard players set @s HP.Max.Base 100
 		scoreboard players set @s HP.Rgn.Intrvl.Base 40
-		scoreboard players set @s HP.Rgn.Per.Base 5
+		scoreboard players set @s HP.Rgn.Per.Base 0
 
 	### MP
 		execute store result score @s MP run scoreboard players set @s MP.Max.Base 100
