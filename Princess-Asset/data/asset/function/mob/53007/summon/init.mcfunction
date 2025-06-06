@@ -24,9 +24,9 @@
 	data modify storage asset:mob Status.Lvl set value 1
 	data modify storage asset:mob Status.Exp set value 0
 	data modify storage asset:mob Status.Money set value 0
-	data modify storage asset:mob Status.HP set value 50
+	data modify storage asset:mob Status.HP set value 20
 	data modify storage asset:mob Status.MP set value 0
-	data modify storage asset:mob Status.ATK set value 2
+	data modify storage asset:mob Status.ATK set value 4
 	data modify storage asset:mob Status.DEF set value 1
 	data modify storage asset:mob Status.Speed set value 230
 

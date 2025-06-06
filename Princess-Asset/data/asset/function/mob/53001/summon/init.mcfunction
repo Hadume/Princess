@@ -26,7 +26,7 @@
 	data modify storage asset:mob Status.Money set value 10
 	data modify storage asset:mob Status.HP set value 100
 	data modify storage asset:mob Status.MP set value 0
-	data modify storage asset:mob Status.ATK set value 6
+	data modify storage asset:mob Status.ATK set value 20
 	data modify storage asset:mob Status.DEF set value 1
 	data modify storage asset:mob Status.Speed set value 230
 
@@ -44,18 +44,8 @@
 	{Item:{ID:54022},Weight:0.001},\
 	{Item:{ID:54023},Weight:0.001},\
 	{Item:{ID:54501},Weight:0.1},\
-	{Item:{ID:54502},Weight:0.05},\
-	{Item:{ID:54503},Weight:0.01},\
-	{Item:{ID:54504},Weight:0.05},\
-	{Item:{ID:54505},Weight:0.01},\
-	{Item:{ID:54506},Weight:0.05},\
-	{Item:{ID:54507},Weight:0.01},\
 	{Item:{ID:54508},Weight:0.1},\
-	{Item:{ID:54509},Weight:0.05},\
-	{Item:{ID:54510},Weight:0.01},\
-	{Item:{ID:54511},Weight:0.05},\
-	{Item:{ID:54512},Weight:0.01},\
-	{Item:{ID:54901},Weight:0.05},\
+	{Item:{ID:54511},Weight:0.05}\
 	]
 
 ## NBT? : Compound
