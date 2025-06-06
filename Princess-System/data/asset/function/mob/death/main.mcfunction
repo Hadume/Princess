@@ -3,4 +3,4 @@
 # @within function asset:mob/death/
 
 ##
-	$function asset:mob/$(ID)/death/
+    $function asset:mob/$(ID)/death/

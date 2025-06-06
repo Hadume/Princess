@@ -3,7 +3,7 @@
 # @within tag/function asset:spawner/set
 
 ## IDを移す
-	$data modify storage asset:spawner ID set value $(ID)
+    $data modify storage asset:spawner ID set value $(ID)
 
 ##
-	execute summon marker at @s run function asset:spawner/set/init with storage asset:spawner
+    execute summon marker at @s run function asset:spawner/set/init with storage asset:spawner

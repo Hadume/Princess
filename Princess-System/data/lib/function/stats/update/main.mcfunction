@@ -23,4 +23,5 @@
 ## 一時使用Storageを削除
 	data remove storage temp: Armor
 	data remove storage temp: Weapon
+	data remove storage temp: Stats
 	data remove storage lib: Stat

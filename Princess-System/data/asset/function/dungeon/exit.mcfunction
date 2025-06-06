@@ -3,4 +3,4 @@
 # @within tag/function asset:dungeon/exit
 
 ##
-	$function asset:dungeon/$(ID)/exit/move
+    $function asset:dungeon/$(ID)/exit/move

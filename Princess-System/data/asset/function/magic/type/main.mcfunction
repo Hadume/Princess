@@ -3,4 +3,4 @@
 # @within function asset:magic/type/
 
 ##
-	$function asset:magic/$(ID)/types
+    $function asset:magic/$(ID)/types

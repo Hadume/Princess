@@ -5,22 +5,22 @@
 #   asset:magic/icon
 
 ## 魔法名 : TextComponent
-	data modify storage asset:magic Raw.Name set value '{"text":"レクイエム","color":"yellow"}'
+    data modify storage asset:magic Raw.Name set value '{"text":"レクイエム","color":"yellow"}'
 
 ## 消費魔力 : int
-	data modify storage asset:magic Raw.MP set value 15
+    data modify storage asset:magic Raw.MP set value 15
 
 ## クールタイム : int
-	data modify storage asset:magic Raw.Cooltime set value 40
+    data modify storage asset:magic Raw.Cooltime set value 40
 
 ## 効果値? : int
-	data modify storage asset:magic Raw.Amount set value 10
+    data modify storage asset:magic Raw.Amount set value 10
 
 ## 範囲? : float
-	data modify storage asset:magic Raw.Range set value 5.0f
+    data modify storage asset:magic Raw.Range set value 5.0f
 
 ## 対象? : [Target] @ ..2
-	data modify storage asset:magic Raw.Targets set value ["Player"]
+    data modify storage asset:magic Raw.Targets set value ["Player"]
 
 ## 属性? : [Element] @ ..5
-	data modify storage asset:magic Raw.Elements set value ["Licht"]
+    data modify storage asset:magic Raw.Elements set value ["Licht"]

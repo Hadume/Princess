@@ -5,4 +5,4 @@
 #   api:e_dat/id/gc_loop
 
 ##
-	$data remove storage dat:$(ID) _
+    $data remove storage dat:$(ID) _

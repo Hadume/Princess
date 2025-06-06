@@ -3,4 +3,4 @@
 # @within asset:magic/icon
 
 ## アイコンのアイテムを設定
-	data modify storage asset:magic Icon set value "minecraft:ender_eye"
+    data modify storage asset:magic Icon set value "minecraft:ender_eye"
