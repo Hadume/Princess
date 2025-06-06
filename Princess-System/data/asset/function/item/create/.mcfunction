@@ -3,7 +3,7 @@
 # @within tag/function asset:item/create
 
 ##
-	$function asset:item/$(ID)/create/
+    $function asset:item/$(ID)/create/
 
 ## アイテムを生成
-	function asset.lib:item/create/
+    function asset.lib:item/create/

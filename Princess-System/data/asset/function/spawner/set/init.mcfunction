@@ -3,7 +3,7 @@
 # @within function asset:spawner/set/
 
 ## 設置
-	$function asset:spawner/$(ID)/set/
+    $function asset:spawner/$(ID)/set/
 
 ##
-	function #asset.lib:spawner/set
+    function #asset.lib:spawner/set

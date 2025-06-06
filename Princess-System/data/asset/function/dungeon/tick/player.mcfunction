@@ -3,4 +3,4 @@
 # @within tag/function asset:dungeon/tick/player
 
 ##
-	$function asset:dungeon/$(ID)/tick/player/
+    $function asset:dungeon/$(ID)/tick/player/

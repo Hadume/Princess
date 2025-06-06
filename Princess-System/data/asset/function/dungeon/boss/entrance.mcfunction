@@ -3,4 +3,4 @@
 # @within tag/function asset:dungeon/boss/entrance
 
 ##
-	$function asset:dungeon/$(ID)/boss/entrance
+    $function asset:dungeon/$(ID)/boss/entrance
