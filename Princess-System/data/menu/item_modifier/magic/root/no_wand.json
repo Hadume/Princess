@@ -1,0 +1,12 @@
+{
+	"function": "set_lore",
+	"entity": "this",
+	"mode": "append",
+	"lore": [
+		{
+			"text": "最初に杖をセットしてください",
+			"color": "dark_gray",
+			"italic": false
+		}
+	]
+}

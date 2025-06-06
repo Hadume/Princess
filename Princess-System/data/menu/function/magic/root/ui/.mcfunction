@@ -40,8 +40,8 @@ say magic:root/ui
 
 
 ## 魔法設定ボタン
-	execute if items entity @s inventory.13 *[custom_data~{Category:"Wand"}] run data modify storage temp: Magics set from entity @s Inventory[{Slot:22b}].components."minecraft:custom_data".Magic
-	execute unless items entity @s inventory.13 *[custom_data~{Category:"Wand"}] run data modify storage temp: Magics set value [0,0,0,0]
+	execute if items entity @s inventory.13 *[custom_data~{Category:"Wand"}] run data modify storage temp: Data set from entity @s Inventory[{Slot:22b}].components."minecraft:custom_data"
+	execute unless items entity @s inventory.13 *[custom_data~{Category:"Wand"}] run data modify storage temp: Data set value {Magic:[0,0,0,0]}
 	### Click
 		function menu:magic/root/ui/icon {Index:-4}
 		execute in overworld run item replace entity @s inventory.2 from block 0 -64 0 container.0
@@ -64,4 +64,4 @@ say magic:root/ui
 
 
 ## 一時使用Storageを削除
-	data remove storage temp: Magics
+	data remove storage temp: Data
