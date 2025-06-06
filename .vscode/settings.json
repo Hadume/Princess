@@ -283,6 +283,6 @@
         "mcfunction"
     ],
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.insertSpaces": false,
+    "editor.insertSpaces": true,
     "workbench.iconTheme": "mc-dp-icons"
 }
