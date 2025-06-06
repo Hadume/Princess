@@ -6,5 +6,4 @@
 	function asset.lib:dungeon/get.id
 
 ## 移動
-	function #asset:dungeon/boss/enter with storage asset:dungeon
 	function #asset:dungeon/boss/summon with storage asset:dungeon

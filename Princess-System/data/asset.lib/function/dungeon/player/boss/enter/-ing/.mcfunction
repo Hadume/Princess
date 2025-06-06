@@ -3,7 +3,7 @@
 # @within function asset.lib:dungeon/player/boss/enter/
 
 ## 資格石を消す
-	clear @s *[custom_data={QualificationStone:1b}]
+	clear @s *[custom_data~{QualificationStone:true}]
 
 ## ボス戦中です、スコア
 	scoreboard players operation @s Dungeon += #DungeonMisc Temp
@@ -12,7 +12,7 @@
 	effect give @s darkness 6 0 true
 
 ## ボス戦入るまでの演出
-	scoreboard players set @s DungeonBossEnter 41
+	scoreboard players set @s DungeonBossEnter 61
 
-## 演出
-	function asset.lib:dungeon/player/boss/enter/-ing/1
+## ボス部屋に移動
+	function #asset:dungeon/boss/enter with storage asset:dungeon
