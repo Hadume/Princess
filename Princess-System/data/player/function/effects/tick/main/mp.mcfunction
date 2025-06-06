@@ -3,7 +3,7 @@
 # @within function player:effects/tick/loop
 
 ## 値を取得
-	data modify storage lib: RcvrMP.Amount set from storage temp: Effect.Amount
+    data modify storage lib: RcvrMP.Amount set from storage temp: Effect.Amount
 
 ##
-	function #lib:status/mp/recover
+    function #lib:status/mp/recover
