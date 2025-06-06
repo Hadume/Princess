@@ -3,7 +3,7 @@
 # @within tag/function asset.lib:dungeon/marker/set
 
 ## tagを追加
-	tag @s add Dungeon
+    tag @s add Dungeon
 
 ## IDを設定
-	$scoreboard players set @s Dungeon $(ID)
+    $scoreboard players set @s Dungeon $(ID)

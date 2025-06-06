@@ -3,5 +3,5 @@
 # @within function main:init/
 
 ##
-	function lib:stats/init
-	function lib:die/init
+    function lib:stats/init
+    function lib:die/init

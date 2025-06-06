@@ -3,4 +3,4 @@
 # @within function asset.lib:init
 
 ## Scoreboard
-	scoreboard objectives add Spawner.Delay dummy
+    scoreboard objectives add Spawner.Delay dummy

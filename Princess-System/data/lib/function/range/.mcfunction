@@ -13,17 +13,17 @@
 # @within tag/function lib:range
 
 ## 引数の確認
-	execute store success storage temp: Error byte 1 unless data storage lib: Range.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"lib: Range.Amount"]
-	execute store success storage temp: Error byte 1 unless data storage lib: Range.Pierce run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"lib: Range.Pierce"]
+    execute store success storage temp: Error byte 1 unless data storage lib: Range.Amount run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"lib: Range.Amount"]
+    execute store success storage temp: Error byte 1 unless data storage lib: Range.Pierce run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"lib: Range.Pierce"]
 
 ##
-	execute unless data storage temp: Error run function lib:range/main
+    execute unless data storage temp: Error run function lib:range/main
 
 ## 引数を削除
-	data remove storage lib: Range.Amount
-	data remove storage lib: Range.Pierce
-	execute if data storage lib: Range.Targets run data remove storage lib: Range.Targets
-	execute if data storage lib: Range.NoHurtTime run data remove storage lib: Range.NoHurtTime
+    data remove storage lib: Range.Amount
+    data remove storage lib: Range.Pierce
+    execute if data storage lib: Range.Targets run data remove storage lib: Range.Targets
+    execute if data storage lib: Range.NoHurtTime run data remove storage lib: Range.NoHurtTime
 
 ## 一時使用Storageを削除
-	data remove storage temp: Error
+    data remove storage temp: Error

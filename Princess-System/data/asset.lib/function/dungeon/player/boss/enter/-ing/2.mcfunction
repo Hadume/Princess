@@ -3,7 +3,7 @@
 # @within function asset.lib:dungeon/player/tick/boss/enter
 
 ## 伝える
-	tellraw @s {"text": "\nボスは相当怒っているようだ...","bold": true}
+    tellraw @s {"text": "\nボスは相当怒っているようだ...","bold": true}
 
 ## 音
-	playsound block.note_block.bell block @s ~ ~ ~ 0.75 1.0 0.0
+    playsound block.note_block.bell block @s ~ ~ ~ 0.75 1.0 0.0

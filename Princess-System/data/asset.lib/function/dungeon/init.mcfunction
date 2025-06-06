@@ -3,6 +3,6 @@
 # @within function asset.lib:init
 
 ## Scoreboard
-	scoreboard objectives add Dungeon dummy
-	scoreboard objectives add DungeonBossEnter dummy
-	scoreboard objectives add DungeonBossExit dummy
+    scoreboard objectives add Dungeon dummy
+    scoreboard objectives add DungeonBossEnter dummy
+    scoreboard objectives add DungeonBossExit dummy

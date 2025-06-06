@@ -3,10 +3,10 @@
 # @within function lib:hitbox/entity/slime/*
 
 ##
-	scoreboard players operation #Scale Temp *= #2 Const
+    scoreboard players operation #Scale Temp *= #2 Const
 
 ## スコアを減らす
-	scoreboard players remove #Size Temp 1
+    scoreboard players remove #Size Temp 1
 
 ## ループ
-	execute if score #Size Temp matches 1.. run function lib:hitbox/entity/slime/scale.loop
+    execute if score #Size Temp matches 1.. run function lib:hitbox/entity/slime/scale.loop

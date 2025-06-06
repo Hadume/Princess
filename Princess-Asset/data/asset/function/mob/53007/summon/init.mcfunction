@@ -30,5 +30,5 @@
     data modify storage asset:mob Status.DEF set value 1
     data modify storage asset:mob Status.Speed set value 230
 
-## NBT? : Compound
-    data modify storage asset:mob NBT set value {Tags:["catboss_helper"]}
+## tagを付与
+    tag @s add catboss_helper

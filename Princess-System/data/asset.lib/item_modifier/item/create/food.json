@@ -1,12 +1,12 @@
 [
-	{
-		"function": "set_components",
-		"components": {
-			"food": {
-				"nutrition": 0,
-				"saturation": 0,
-				"can_always_eat": true
-			}
-		}
-	}
+    {
+        "function": "set_components",
+        "components": {
+            "food": {
+                "nutrition": 0,
+                "saturation": 0,
+                "can_always_eat": true
+            }
+        }
+    }
 ]

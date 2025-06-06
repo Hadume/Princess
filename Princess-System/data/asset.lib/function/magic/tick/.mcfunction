@@ -5,4 +5,4 @@
 #   asset.lib:magic/tick/
 
 ##
-	$function asset:magic/$(ID)/tick/
+    $function asset:magic/$(ID)/tick/

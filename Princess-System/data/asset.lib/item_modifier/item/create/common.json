@@ -1,42 +1,42 @@
 [
-	{
-		"function": "copy_custom_data",
-		"source": {
-			"type": "storage",
-			"source": "asset:item"
-		},
-		"ops": [
-			{
-				"op": "replace",
-				"source": "Category",
-				"target": "Category"
-			}
-		]
-	},
-	{
-		"function": "copy_custom_data",
-		"source": {
-			"type": "storage",
-			"source": "asset:item"
-		},
-		"ops": [
-			{
-				"op": "replace",
-				"source": "Name",
-				"target": "rawText.Name"
-			}
-		]
-	},
-	{
-		"function": "set_components",
-		"components": {
-			"unbreakable": {
-				"show_in_tooltip": false
-			},
-			"attribute_modifiers": {
-				"modifiers": [],
-				"show_in_tooltip": false
-			}
-		}
-	}
+    {
+        "function": "copy_custom_data",
+        "source": {
+            "type": "storage",
+            "source": "asset:item"
+        },
+        "ops": [
+            {
+                "op": "replace",
+                "source": "Category",
+                "target": "Category"
+            }
+        ]
+    },
+    {
+        "function": "copy_custom_data",
+        "source": {
+            "type": "storage",
+            "source": "asset:item"
+        },
+        "ops": [
+            {
+                "op": "replace",
+                "source": "Name",
+                "target": "rawText.Name"
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "unbreakable": {
+                "show_in_tooltip": false
+            },
+            "attribute_modifiers": {
+                "modifiers": [],
+                "show_in_tooltip": false
+            }
+        }
+    }
 ]

@@ -3,7 +3,7 @@
 # @within function asset.lib:dungeon/player/tick/main
 
 ## スコアを減らす
-	scoreboard players remove @s DungeonBossExit 1
+    scoreboard players remove @s DungeonBossExit 1
 
 ## ダンジョンから出る
-	execute if entity @s[scores={DungeonBossExit=..0}] run function #asset.lib:dungeon/exit
+    execute if entity @s[scores={DungeonBossExit=..0}] run function #asset.lib:dungeon/exit

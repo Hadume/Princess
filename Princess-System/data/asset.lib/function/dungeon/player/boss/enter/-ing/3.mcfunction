@@ -3,7 +3,7 @@
 # @within function asset.lib:dungeon/player/tick/boss/enter
 
 ## ダンジョンIDを取得
-	function asset.lib:dungeon/get.id
+    function asset.lib:dungeon/get.id
 
 ## 移動
-	function #asset:dungeon/boss/summon with storage asset:dungeon
+    function #asset:dungeon/boss/summon with storage asset:dungeon

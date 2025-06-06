@@ -7,16 +7,16 @@
 
 #> ScoreHolder
 # @private
-	#declare score_holder #ID
+    #declare score_holder #ID
 
 ## IDをコピー
-	scoreboard players operation #ID Temp = @s ID
+    scoreboard players operation #ID Temp = @s ID
 
 ## 自分と同じIDのblock_displayを消す
-	execute as @e[type=block_display,tag=Spell.Display] if score @s ID = #ID Temp run kill @s
+    execute as @e[type=block_display,tag=Spell.Display] if score @s ID = #ID Temp run kill @s
 
 ##
-	kill @s
+    kill @s
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #ID Temp
+    scoreboard players reset #ID Temp

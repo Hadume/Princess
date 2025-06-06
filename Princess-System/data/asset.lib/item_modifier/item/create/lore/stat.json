@@ -1,133 +1,133 @@
 [
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "temp:",
-					"path": "Stat.Amount"
-				},
-				"range": {
-					"min": 1
-				}
-			}
-		],
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "blue",
-					"italic": false
-				},
-				{
-					"storage": "temp:",
-					"nbt": "Amount.Name",
-					"color": "white"
-				},
-				{
-					"text": ": ",
-					"color": "white"
-				},
-				{
-					"text": "+"
-				},
-				{
-					"storage": "temp:",
-					"nbt": "Stat.Amount"
-				},
-				{
-					"storage": "temp:",
-					"nbt": "Amount.Suffix"
-				}
-			]
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "temp:",
-					"path": "Stat.Amount"
-				},
-				"range": 0
-			}
-		],
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "white",
-					"italic": false
-				},
-				{
-					"storage": "temp:",
-					"nbt": "Amount.Name"
-				},
-				{
-					"text": ": "
-				},
-				{
-					"storage": "temp:",
-					"nbt": "Stat.Amount"
-				},
-				{
-					"storage": "temp:",
-					"nbt": "Amount.Suffix"
-				}
-			]
-		]
-	},
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"mode": "append",
-		"conditions": [
-			{
-				"condition": "value_check",
-				"value": {
-					"type": "storage",
-					"storage": "temp:",
-					"path": "Stat.Amount"
-				},
-				"range": {
-					"max": -1
-				}
-			}
-		],
-		"lore": [
-			[
-				{
-					"text": " ",
-					"color": "red",
-					"italic": false
-				},
-				{
-					"storage": "temp:",
-					"nbt": "Amount.Name",
-					"color": "white"
-				},
-				{
-					"text": ": ",
-					"color": "white"
-				},
-				{
-					"storage": "temp:",
-					"nbt": "Stat.Amount"
-				},
-				{
-					"storage": "temp:",
-					"nbt": "Amount.Suffix"
-				}
-			]
-		]
-	}
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "mode": "append",
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "storage",
+                    "storage": "temp:",
+                    "path": "Stat.Amount"
+                },
+                "range": {
+                    "min": 1
+                }
+            }
+        ],
+        "lore": [
+            [
+                {
+                    "text": " ",
+                    "color": "blue",
+                    "italic": false
+                },
+                {
+                    "storage": "temp:",
+                    "nbt": "Amount.Name",
+                    "color": "white"
+                },
+                {
+                    "text": ": ",
+                    "color": "white"
+                },
+                {
+                    "text": "+"
+                },
+                {
+                    "storage": "temp:",
+                    "nbt": "Stat.Amount"
+                },
+                {
+                    "storage": "temp:",
+                    "nbt": "Amount.Suffix"
+                }
+            ]
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "mode": "append",
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "storage",
+                    "storage": "temp:",
+                    "path": "Stat.Amount"
+                },
+                "range": 0
+            }
+        ],
+        "lore": [
+            [
+                {
+                    "text": " ",
+                    "color": "white",
+                    "italic": false
+                },
+                {
+                    "storage": "temp:",
+                    "nbt": "Amount.Name"
+                },
+                {
+                    "text": ": "
+                },
+                {
+                    "storage": "temp:",
+                    "nbt": "Stat.Amount"
+                },
+                {
+                    "storage": "temp:",
+                    "nbt": "Amount.Suffix"
+                }
+            ]
+        ]
+    },
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "mode": "append",
+        "conditions": [
+            {
+                "condition": "value_check",
+                "value": {
+                    "type": "storage",
+                    "storage": "temp:",
+                    "path": "Stat.Amount"
+                },
+                "range": {
+                    "max": -1
+                }
+            }
+        ],
+        "lore": [
+            [
+                {
+                    "text": " ",
+                    "color": "red",
+                    "italic": false
+                },
+                {
+                    "storage": "temp:",
+                    "nbt": "Amount.Name",
+                    "color": "white"
+                },
+                {
+                    "text": ": ",
+                    "color": "white"
+                },
+                {
+                    "storage": "temp:",
+                    "nbt": "Stat.Amount"
+                },
+                {
+                    "storage": "temp:",
+                    "nbt": "Amount.Suffix"
+                }
+            ]
+        ]
+    }
 ]

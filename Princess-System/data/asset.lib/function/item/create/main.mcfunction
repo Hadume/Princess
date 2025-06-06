@@ -3,30 +3,30 @@
 # @within function asset.lib:item/create/
 
 ## アイテムを設定
-	execute positioned 0 -64 0 in overworld run item replace block 0 -64 0 container.0 with cod
-	execute positioned 0 -64 0 in overworld run data modify block 0 -64 0 Items[0].id set from storage asset:item id
+    execute positioned 0 -64 0 in overworld run item replace block 0 -64 0 container.0 with cod
+    execute positioned 0 -64 0 in overworld run data modify block 0 -64 0 Items[0].id set from storage asset:item id
 
 ## データを保存
-	execute positioned 0 -64 0 in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/common
-	### カテゴリーごと
-		execute if data storage asset:item {Category:"Wand"} positioned 0 -64 0 in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/wand
-		execute if data storage asset:item {Category:"Food"} positioned 0 -64 0 in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/food
+    execute positioned 0 -64 0 in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/common
+    ### カテゴリーごと
+        execute if data storage asset:item {Category:"Wand"} positioned 0 -64 0 in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/wand
+        execute if data storage asset:item {Category:"Food"} positioned 0 -64 0 in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/food
 
-	### その他
-		execute if data storage asset:item ItemModel in overworld run data modify block 0 -64 0 Items[0].components."minecraft:item_model" set from storage asset:item ItemModel
-		execute if data storage asset:item NBT positioned 0 -64 0 in overworld run data modify block 0 -64 0 Items[0].components merge from storage asset:item NBT
-		execute if data storage asset:item Effects positioned 0 -64 0 in overworld run data modify block 0 -64 0 Items[0].components."minecraft:custom_data".Effects set from storage asset:item Effects
+    ### その他
+        execute if data storage asset:item ItemModel in overworld run data modify block 0 -64 0 Items[0].components."minecraft:item_model" set from storage asset:item ItemModel
+        execute if data storage asset:item NBT positioned 0 -64 0 in overworld run data modify block 0 -64 0 Items[0].components merge from storage asset:item NBT
+        execute if data storage asset:item Effects positioned 0 -64 0 in overworld run data modify block 0 -64 0 Items[0].components."minecraft:custom_data".Effects set from storage asset:item Effects
 
 
 ## 名前を設定
-	execute positioned 0 -64 0 in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/name/basic
+    execute positioned 0 -64 0 in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/name/basic
 
 ## 説明を設定
-	### 通常
-		execute if data storage asset:item Lore run function asset.lib:item/create/lore/basic/
+    ### 通常
+        execute if data storage asset:item Lore run function asset.lib:item/create/lore/basic/
 
-	### 効果
-		execute if data storage asset:item Stats run function asset.lib:item/create/stats
+    ### 効果
+        execute if data storage asset:item Stats run function asset.lib:item/create/stats
 
-	### レアリティ
-		execute positioned 0 -64 0 in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/lore/rarity
+    ### レアリティ
+        execute positioned 0 -64 0 in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/lore/rarity
