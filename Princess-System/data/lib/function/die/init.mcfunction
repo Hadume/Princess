@@ -3,5 +3,5 @@
 # @within function lib:init
 
 ## Scoreboard
-	scoreboard objectives add DeathTime dummy
-	scoreboard objectives add Gamemode dummy
+    scoreboard objectives add DeathTime dummy
+    scoreboard objectives add Gamemode dummy

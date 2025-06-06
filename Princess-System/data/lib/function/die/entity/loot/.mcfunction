@@ -3,22 +3,22 @@
 # @within function lib:die/entity/
 
 ## スコアをコピー
-	scoreboard players operation #Exp Temp = @s Exp
-	scoreboard players operation #Money Temp = @s Money
+    scoreboard players operation #Exp Temp = @s Exp
+    scoreboard players operation #Money Temp = @s Money
 
 ## データをコピー
-	data modify storage temp: AttackBy set from storage dat: _.AttackBy
+    data modify storage temp: AttackBy set from storage dat: _.AttackBy
 
 ##
-	function lib:die/entity/loot/loop
+    function lib:die/entity/loot/loop
 
 ## tagを削除
-	execute as @a[tag=Looted] run tag @s remove Looted
+    execute as @a[tag=Looted] run tag @s remove Looted
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Exp Temp
-	scoreboard players reset #Money Temp
-	scoreboard players reset #ID Temp
+    scoreboard players reset #Exp Temp
+    scoreboard players reset #Money Temp
+    scoreboard players reset #ID Temp
 
 ## 一時使用Storageを削除
-	data remove storage temp: AttackBy
+    data remove storage temp: AttackBy

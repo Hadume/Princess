@@ -3,4 +3,4 @@
 # @within function lib:die/player/spawn/
 
 ##
-	$execute in $(Dimension) run tp @s $(posx) $(posy) $(posz) $(rotx) $(roty)
+    $execute in $(Dimension) run tp @s $(posx) $(posy) $(posz) $(rotx) $(roty)

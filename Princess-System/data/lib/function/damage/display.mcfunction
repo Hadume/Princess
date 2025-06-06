@@ -6,24 +6,24 @@
 # @within function
 #   lib:damage/display
 #   lib:damage/schedule.loop
-	#declare tag Lib.Damage
+    #declare tag Lib.Damage
 
 ## 表示を拡散
-	data remove storage lib: Spread.At
-	data modify storage lib: Spread.Amount set value [0.1d,0.2d]
-	function #lib:spread
+    data remove storage lib: Spread.At
+    data modify storage lib: Spread.Amount set value [0.1d,0.2d]
+    function #lib:spread
 
 ## NBTを変更
-	data modify entity @s CustomName set from entity @s Item.components."minecraft:custom_name"
-	data modify entity @s CustomNameVisible set value 1b
-	data modify entity @s PickupDelay set value 32767s
-	data modify entity @s Item.components."minecraft:item_model" set value "air"
+    data modify entity @s CustomName set from entity @s Item.components."minecraft:custom_name"
+    data modify entity @s CustomNameVisible set value 1b
+    data modify entity @s PickupDelay set value 32767s
+    data modify entity @s Item.components."minecraft:item_model" set value "air"
 
 ## tagを追加
-	tag @s add Lib.Damage
+    tag @s add Lib.Damage
 
 ## 消えるまでのカウント
-	schedule function lib:damage/schedule.loop 1t
+    schedule function lib:damage/schedule.loop 1t
 
 ## 初期化tagを削除
-	data remove entity @s Item.components."minecraft:custom_data".Lib.Init
+    data remove entity @s Item.components."minecraft:custom_data".Lib.Init
