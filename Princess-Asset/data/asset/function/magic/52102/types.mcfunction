@@ -17,10 +17,10 @@
 	data modify storage asset:magic Raw.Multiple set value 3
 
 ## 効果値? : int
-	data modify storage asset:magic Raw.Amount set value 10
+	data modify storage asset:magic Raw.Amount set value 5
 
 ## 持続時間? : int
-	data modify storage asset:magic Raw.Duration set value 100
+	data modify storage asset:magic Raw.Duration set value 60
 
 ## 拡散範囲? : float
 	data modify storage asset:magic Raw.Spread set value 4.0f
