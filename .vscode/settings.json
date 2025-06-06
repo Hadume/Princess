@@ -1,288 +1,288 @@
 {
-	"files.associations": {
-		"*.mcmeta": "json"
-	},
-	"files.eol": "\n",
-	"files.trimFinalNewlines": true,
-	"files.insertFinalNewline": true,
-	"[mcfunction]": {
-		"editor.defaultFormatter": "ChenCMD.mc-datapack-utility"
-	},
-	"mcdutil.createFile.fileTemplate": {
-		"function": [
-			"#> %fileResourcePath%",
-			"# %cursor%",
-			"# @within %nowOpenFileType% %nowOpenFileResourcePath%"
-		],
-		"advancement": [
-			"{",
-			"    \"criteria\": {",
-			"        \"\": {",
-			"            \"trigger\": \"%cursor%\"",
-			"        }",
-			"    }",
-			"}"
-		],
-		"predicate": [
-			"{",
-			"    \"condition\": \"%cursor%\"",
-			"}"
-		],
-		"tag/block": [
-			"{",
-			"    \"values\": [",
-			"        %cursor%",
-			"    ]",
-			"}"
-		],
-		"tag/entity_type": [
-			"{",
-			"    \"values\": [",
-			"        %cursor%",
-			"    ]",
-			"}"
-		],
-		"tag/fluid": [
-			"{",
-			"    \"values\": [",
-			"        %cursor%",
-			"    ]",
-			"}"
-		],
-		"tag/function": [
-			"{",
-			"    \"values\": [",
-			"        %cursor%",
-			"    ]",
-			"}"
-		],
-		"tag/item": [
-			"{",
-			"    \"values\": [",
-			"        %cursor%",
-			"    ]",
-			"}"
-		]
-	},
-	"mcdutil.createDatapackTemplate.customTemplate": [
-		{
-			"label": "アイテム/テンプレート",
-			"picked": false,
-			"generates": [
-				{
-					"type": "file",
-					"rel": "data/asset/function/item/%namespace%/create/.mcfunction",
-					"content": [
-						"#> asset:item/%namespace%/create/",
-						"#",
-						"# @within function asset:item/create/",
-						"",
-						"## アイテムid : id(minecraft:item)",
-						"data modify storage asset:item id set value \"\"",
-						"",
-						"## 名前 : TextComponent",
-						"data modify storage asset:item Name set value '{\"text\": \"\"}'",
-						"",
-						"## 説明? : [TextComponent] @ N",
-						"#data modify storage asset:item Lore set value []",
-						"",
-						"## レアリティ : int @ 1..10",
-						"data modify storage asset:item Rarity set value %Rarity%",
-						"",
-						"## 種類 : Category",
-						"data modify storage asset:item Category set value \"%Category%\"",
-						"",
-						"## 装備効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N",
-						"#data modify storage asset:item Stats append value {}",
-						"",
-						"## CMD? : String",
-						"#data modify storage asset:item CMD set value \"\"",
-						"",
-						"## シリーズ? : String",
-						"#data modify storage asset:item Series set value \"\"",
-						"",
-						"## どこに装備できるか? : String",
-						"#data modify storage asset:item CanEquip set value \"\"",
-						"",
-						"## 追加効果? : [{Name: Food, Amount: int, Duration: int}] @ N",
-						"#data modify storage asset:item Effects append value {}",
-						"",
-						"## NBT? : NBTCompound",
-						"#data modify storage asset:item NBT set value {}",
-						""
-					]
-				}
-			],
-			"customQuestion": [
-				{
-					"name": "Rarity",
-					"question": "レアリティ",
-					"pattern": "[1-9]|10",
-					"patternErrorMessage": "1-10のみが許されるよ"
-				},
-				{
-					"name": "Category",
-					"question": "アイテムのカテゴリ",
-					"pattern": "(Armor|Wand|Crystal|Food|Misc)",
-					"patternErrorMessage": "カテゴリのみが許されるよ"
-				}
-			]
-		},
-		{
-			"label": "MOB/テンプレート",
-			"picked": false,
-			"generates": [
-				{
-					"type": "file",
-					"rel": "data/asset/function/mob/%namespace%/summon/.mcfunction",
-					"content": [
-						"#> asset:mob/%namespace%/summon/",
-						"#",
-						"# @within function asset:mob/summon/",
-						"",
-						"## 元になるEntityを召喚 : id(minecraft:entity)",
-						"execute summon %mob% at @s run function asset:mob/summon/init with storage asset:mob"
-					]
-				},
-				{
-					"type": "file",
-					"rel": "data/asset/function/mob/%namespace%/summon/init.mcfunction",
-					"content": [
-						"#> asset:mob/%namespace%/summon/init",
-						"#",
-						"# @within function asset:mob/summon/init",
-						"",
-						"## 名前 : TextComponent",
-						"data modify storage asset:mob Name set value '{\"text\": \"\"}'",
-						"",
-						"## タイプ : Type",
-						"data modify storage asset:mob Type set value \"%Type%\"",
-						"",
-						"## 装備? : {{id: id(minecraft:item), Count: boolean @ 1..64, tag: Compound} || int(asset:item)} @ ..6",
-						"### 防具",
-						"#data modify storage asset:mob Armor.Head set value {}",
-						"#data modify storage asset:mob Armor.Chest set value {}",
-						"#data modify storage asset:mob Armor.Legs set value {}",
-						"#data modify storage asset:mob Armor.Feet set value {}",
-						"",
-						"### 武器",
-						"#data modify storage asset:mob Weapon.Mainhand set value {}",
-						"#data modify storage asset:mob Weapon.Offhand set value {}",
-						"",
-						"",
-						"## ステータス : int",
-						"data modify storage asset:mob Status.Lvl set value ",
-						"data modify storage asset:mob Status.Exp set value ",
-						"data modify storage asset:mob Status.Money set value ",
-						"data modify storage asset:mob Status.HP set value ",
-						"data modify storage asset:mob Status.MP set value ",
-						"data modify storage asset:mob Status.ATK set value ",
-						"data modify storage asset:mob Status.DEF set value ",
-						"data modify storage asset:mob Status.Speed set value ",
-						"",
-						"## NBT? : Compound",
-						"#data modify storage asset:mob NBT set value {}"
-					]
-				}
-			],
-			"customQuestion": [
-				{
-					"name": "mob",
-					"question": "MOBのID",
-					"pattern": "[a-z_]+",
-					"patternErrorMessage": "MOBのidのみが許されるよ"
-				},
-				{
-					"name": "Type",
-					"question": "MOBのタイプ",
-					"pattern": "(Enemy)",
-					"patternErrorMessage": "タイプのみが許されるよ"
-				}
-			]
-		},
-		{
-			"label": "Spawner/テンプレート",
-			"picked": false,
-			"generates": [
-				{
-					"type": "file",
-					"rel": "data/asset/function/spawner/%namespace%/set/.mcfunction",
-					"content": [
-						"#> asset:spawner/%namespace%/set/",
-						"#",
-						"# @within function asset:spawner/set/main",
-						"",
-						"## 何がスポーンするか : [{ID: int(asset:mob)}] @ N",
-						"    data modify storage asset:spawner Data set value [{ID: 53000}]",
-						"",
-						"## 何体スポーンするか : int",
-						"    data modify storage asset:spawner Count set value {Min: 1,Max: 5}",
-						"",
-						"## スポーンまでの時間 : int",
-						"    data modify storage asset:spawner Delay set value {Min: 300,Max: 400}",
-						"",
-						"## 範囲 : float",
-						"    data modify storage asset:spawner Range set value 4.0f",
-						"",
-						"## 周囲のMOBの最大数 : int",
-						"    data modify storage asset:spawner MaxNearbyEntities set value 6",
-						"",
-						"## 稼働範囲 : float",
-						"    data modify storage asset:spawner RequiredPlayerRange set value 8.0f"
-					]
-				}
-			]
-		},
-		{
-			"label": "Dungeon/テンプレート",
-			"picked": false,
-			"generates": [
-				{
-					"type": "file",
-					"rel": "data/asset/function/dungeon/%namespace%/tick/.mcfunction",
-					"content": [
-						"#> asset:dungeon/%namespace%/tick/",
-						"#",
-						"# @within tag/function asset:dungeon/tick",
-						"",
-						"## 何がスポーンするか : [{ID: int(asset:mob)}] @ N",
-						"    data modify storage asset:spawner Data set value [{ID: 53000}]",
-						"",
-						"## 何体スポーンするか : int",
-						"    data modify storage asset:spawner Count set value {Min: 1,Max: 5}",
-						"",
-						"## スポーンまでの時間 : int",
-						"    data modify storage asset:spawner Delay set value {Min: 300,Max: 400}",
-						"",
-						"## 範囲 : float",
-						"    data modify storage asset:spawner Range set value 4.0f",
-						"",
-						"## 周囲のMOBの最大数 : int",
-						"    data modify storage asset:spawner MaxNearbyEntities set value 6",
-						"",
-						"## 稼働範囲 : float",
-						"    data modify storage asset:spawner RequiredPlayerRange set value 8.0f"
-					]
-				}
-			]
-		}
-	],
-	"mcdutil.createDatapackTemplate.defaultFolder": false,
-	"mcdutil.createDatapackTemplate.defaultLoadAndTick": false,
-	"mcdutil.createDatapackTemplate.defaultVanillaData": false,
-	"git.branchProtection": [
-		"master"
-	],
-	"git.branchProtectionPrompt": "alwaysCommitToNewBranch",
-	"git.autofetch": "all",
-	"git.confirmSync": false,
-	"git.pruneOnFetch": true,
-	"git.suggestSmartCommit": false,
-	"githubPullRequests.createOnPublishBranch": "never",
-	"githubIssues.ignoreUserCompletionTrigger": [
-		"mcfunction"
-	],
-	"diffEditor.ignoreTrimWhitespace": false,
-	"editor.insertSpaces": false,
-	"workbench.iconTheme": "mc-dp-icons"
+    "files.associations": {
+        "*.mcmeta": "json"
+    },
+    "files.eol": "\n",
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "[mcfunction]": {
+        "editor.defaultFormatter": "ChenCMD.mc-datapack-utility"
+    },
+    "mcdutil.createFile.fileTemplate": {
+        "function": [
+            "#> %fileResourcePath%",
+            "# %cursor%",
+            "# @within %nowOpenFileType% %nowOpenFileResourcePath%"
+        ],
+        "advancement": [
+            "{",
+            "    \"criteria\": {",
+            "        \"\": {",
+            "            \"trigger\": \"%cursor%\"",
+            "        }",
+            "    }",
+            "}"
+        ],
+        "predicate": [
+            "{",
+            "    \"condition\": \"%cursor%\"",
+            "}"
+        ],
+        "tag/block": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/entity_type": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/fluid": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/function": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ],
+        "tag/item": [
+            "{",
+            "    \"values\": [",
+            "        %cursor%",
+            "    ]",
+            "}"
+        ]
+    },
+    "mcdutil.createDatapackTemplate.customTemplate": [
+        {
+            "label": "アイテム/テンプレート",
+            "picked": false,
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/function/item/%namespace%/create/.mcfunction",
+                    "content": [
+                        "#> asset:item/%namespace%/create/",
+                        "#",
+                        "# @within function asset:item/create/",
+                        "",
+                        "## アイテムid : id(minecraft:item)",
+                        "data modify storage asset:item id set value \"\"",
+                        "",
+                        "## 名前 : TextComponent",
+                        "data modify storage asset:item Name set value '{\"text\": \"\"}'",
+                        "",
+                        "## 説明? : [TextComponent] @ N",
+                        "#data modify storage asset:item Lore set value []",
+                        "",
+                        "## レアリティ : int @ 1..10",
+                        "data modify storage asset:item Rarity set value %Rarity%",
+                        "",
+                        "## 種類 : Category",
+                        "data modify storage asset:item Category set value \"%Category%\"",
+                        "",
+                        "## 装備効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N",
+                        "#data modify storage asset:item Stats append value {}",
+                        "",
+                        "## CMD? : String",
+                        "#data modify storage asset:item CMD set value \"\"",
+                        "",
+                        "## シリーズ? : String",
+                        "#data modify storage asset:item Series set value \"\"",
+                        "",
+                        "## どこに装備できるか? : String",
+                        "#data modify storage asset:item CanEquip set value \"\"",
+                        "",
+                        "## 追加効果? : [{Name: Food, Amount: int, Duration: int}] @ N",
+                        "#data modify storage asset:item Effects append value {}",
+                        "",
+                        "## NBT? : NBTCompound",
+                        "#data modify storage asset:item NBT set value {}",
+                        ""
+                    ]
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "Rarity",
+                    "question": "レアリティ",
+                    "pattern": "[1-9]|10",
+                    "patternErrorMessage": "1-10のみが許されるよ"
+                },
+                {
+                    "name": "Category",
+                    "question": "アイテムのカテゴリ",
+                    "pattern": "(Armor|Wand|Crystal|Food|Misc)",
+                    "patternErrorMessage": "カテゴリのみが許されるよ"
+                }
+            ]
+        },
+        {
+            "label": "MOB/テンプレート",
+            "picked": false,
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/function/mob/%namespace%/summon/.mcfunction",
+                    "content": [
+                        "#> asset:mob/%namespace%/summon/",
+                        "#",
+                        "# @within function asset:mob/summon/",
+                        "",
+                        "## 元になるEntityを召喚 : id(minecraft:entity)",
+                        "execute summon %mob% at @s run function asset:mob/summon/init with storage asset:mob"
+                    ]
+                },
+                {
+                    "type": "file",
+                    "rel": "data/asset/function/mob/%namespace%/summon/init.mcfunction",
+                    "content": [
+                        "#> asset:mob/%namespace%/summon/init",
+                        "#",
+                        "# @within function asset:mob/summon/init",
+                        "",
+                        "## 名前 : TextComponent",
+                        "data modify storage asset:mob Name set value '{\"text\": \"\"}'",
+                        "",
+                        "## タイプ : Type",
+                        "data modify storage asset:mob Type set value \"%Type%\"",
+                        "",
+                        "## 装備? : {{id: id(minecraft:item), Count: boolean @ 1..64, tag: Compound} || int(asset:item)} @ ..6",
+                        "### 防具",
+                        "#data modify storage asset:mob Armor.Head set value {}",
+                        "#data modify storage asset:mob Armor.Chest set value {}",
+                        "#data modify storage asset:mob Armor.Legs set value {}",
+                        "#data modify storage asset:mob Armor.Feet set value {}",
+                        "",
+                        "### 武器",
+                        "#data modify storage asset:mob Weapon.Mainhand set value {}",
+                        "#data modify storage asset:mob Weapon.Offhand set value {}",
+                        "",
+                        "",
+                        "## ステータス : int",
+                        "data modify storage asset:mob Status.Lvl set value ",
+                        "data modify storage asset:mob Status.Exp set value ",
+                        "data modify storage asset:mob Status.Money set value ",
+                        "data modify storage asset:mob Status.HP set value ",
+                        "data modify storage asset:mob Status.MP set value ",
+                        "data modify storage asset:mob Status.ATK set value ",
+                        "data modify storage asset:mob Status.DEF set value ",
+                        "data modify storage asset:mob Status.Speed set value ",
+                        "",
+                        "## NBT? : Compound",
+                        "#data modify storage asset:mob NBT set value {}"
+                    ]
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "mob",
+                    "question": "MOBのID",
+                    "pattern": "[a-z_]+",
+                    "patternErrorMessage": "MOBのidのみが許されるよ"
+                },
+                {
+                    "name": "Type",
+                    "question": "MOBのタイプ",
+                    "pattern": "(Enemy)",
+                    "patternErrorMessage": "タイプのみが許されるよ"
+                }
+            ]
+        },
+        {
+            "label": "Spawner/テンプレート",
+            "picked": false,
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/function/spawner/%namespace%/set/.mcfunction",
+                    "content": [
+                        "#> asset:spawner/%namespace%/set/",
+                        "#",
+                        "# @within function asset:spawner/set/main",
+                        "",
+                        "## 何がスポーンするか : [{ID: int(asset:mob)}] @ N",
+                        "    data modify storage asset:spawner Data set value [{ID: 53000}]",
+                        "",
+                        "## 何体スポーンするか : int",
+                        "    data modify storage asset:spawner Count set value {Min: 1,Max: 5}",
+                        "",
+                        "## スポーンまでの時間 : int",
+                        "    data modify storage asset:spawner Delay set value {Min: 300,Max: 400}",
+                        "",
+                        "## 範囲 : float",
+                        "    data modify storage asset:spawner Range set value 4.0f",
+                        "",
+                        "## 周囲のMOBの最大数 : int",
+                        "    data modify storage asset:spawner MaxNearbyEntities set value 6",
+                        "",
+                        "## 稼働範囲 : float",
+                        "    data modify storage asset:spawner RequiredPlayerRange set value 8.0f"
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Dungeon/テンプレート",
+            "picked": false,
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/asset/function/dungeon/%namespace%/tick/.mcfunction",
+                    "content": [
+                        "#> asset:dungeon/%namespace%/tick/",
+                        "#",
+                        "# @within tag/function asset:dungeon/tick",
+                        "",
+                        "## 何がスポーンするか : [{ID: int(asset:mob)}] @ N",
+                        "    data modify storage asset:spawner Data set value [{ID: 53000}]",
+                        "",
+                        "## 何体スポーンするか : int",
+                        "    data modify storage asset:spawner Count set value {Min: 1,Max: 5}",
+                        "",
+                        "## スポーンまでの時間 : int",
+                        "    data modify storage asset:spawner Delay set value {Min: 300,Max: 400}",
+                        "",
+                        "## 範囲 : float",
+                        "    data modify storage asset:spawner Range set value 4.0f",
+                        "",
+                        "## 周囲のMOBの最大数 : int",
+                        "    data modify storage asset:spawner MaxNearbyEntities set value 6",
+                        "",
+                        "## 稼働範囲 : float",
+                        "    data modify storage asset:spawner RequiredPlayerRange set value 8.0f"
+                    ]
+                }
+            ]
+        }
+    ],
+    "mcdutil.createDatapackTemplate.defaultFolder": false,
+    "mcdutil.createDatapackTemplate.defaultLoadAndTick": false,
+    "mcdutil.createDatapackTemplate.defaultVanillaData": false,
+    "git.branchProtection": [
+        "master"
+    ],
+    "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
+    "git.autofetch": "all",
+    "git.confirmSync": false,
+    "git.pruneOnFetch": true,
+    "git.suggestSmartCommit": false,
+    "githubPullRequests.createOnPublishBranch": "never",
+    "githubIssues.ignoreUserCompletionTrigger": [
+        "mcfunction"
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.insertSpaces": false,
+    "workbench.iconTheme": "mc-dp-icons"
 }
