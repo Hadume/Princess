@@ -1,6 +1,6 @@
 {
-	"replace": false,
-	"values": [
-		"math:sort/ascend/"
-	]
+    "replace": false,
+    "values": [
+        "math:sort/ascend/"
+    ]
 }

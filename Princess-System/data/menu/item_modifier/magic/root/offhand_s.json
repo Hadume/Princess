@@ -1,75 +1,75 @@
 [
-	{
-		"function": "set_lore",
-		"entity": "this",
-		"mode": "insert",
-		"offset": 0,
-		"lore": [
-			[
-				{
-					"text": "",
-					"italic": false,
-					"color": "white"
-				},
-				{
-					"block": "0 -64 0",
-					"nbt": "Items[0].components.\"minecraft:custom_name\"",
-					"interpret": true
-				}
-			]
-		],
-		"conditions": [
-			{
-				"condition": "inverted",
-				"term": {
-					"condition": "value_check",
-					"value": {
-						"type": "storage",
-						"storage": "asset:magic",
-						"path": "ID"
-					},
-					"range": {
-						"min": 0,
-						"max": 0
-					}
-				}
-			}
-		]
-	},
-	{
-		"function": "set_name",
-		"entity": "this",
-		"name": [
-			{
-				"text": "",
-				"italic": false,
-				"color": "yellow",
-				"bold": true
-			},
-			{
-				"translate": "key.sneak"
-			},
-			{
-				"text": " + ",
-				"bold": false
-			},
-			{
-				"text": "オフハンド"
-			}
-		]
-	},
-	{
-		"function": "set_components",
-		"components": {
-			"max_stack_size": 1
-		}
-	},
-	{
-		"function": "set_count",
-		"count": 1
-	},
-	{
-		"function": "set_custom_data",
-		"tag": "{Menu:{Magic:{OffhandS:1b}}}"
-	}
+    {
+        "function": "set_lore",
+        "entity": "this",
+        "mode": "insert",
+        "offset": 0,
+        "lore": [
+            [
+                {
+                    "text": "",
+                    "italic": false,
+                    "color": "white"
+                },
+                {
+                    "block": "0 -64 0",
+                    "nbt": "Items[0].components.\"minecraft:custom_name\"",
+                    "interpret": true
+                }
+            ]
+        ],
+        "conditions": [
+            {
+                "condition": "inverted",
+                "term": {
+                    "condition": "value_check",
+                    "value": {
+                        "type": "storage",
+                        "storage": "asset:magic",
+                        "path": "ID"
+                    },
+                    "range": {
+                        "min": 0,
+                        "max": 0
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": [
+            {
+                "text": "",
+                "italic": false,
+                "color": "yellow",
+                "bold": true
+            },
+            {
+                "translate": "key.sneak"
+            },
+            {
+                "text": " + ",
+                "bold": false
+            },
+            {
+                "text": "オフハンド"
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "max_stack_size": 1
+        }
+    },
+    {
+        "function": "set_count",
+        "count": 1
+    },
+    {
+        "function": "set_custom_data",
+        "tag": "{Menu:{Magic:{OffhandS:1b}}}"
+    }
 ]

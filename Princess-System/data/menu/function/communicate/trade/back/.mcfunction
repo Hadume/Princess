@@ -6,14 +6,14 @@
 #   menu:home
 
 ## 相手の状態も戻してあげる
-	scoreboard players operation #Trade.With Temp = @s Trade.With
-	execute as @a if score @s ID = #Trade.With Temp run function menu:communicate/trade/back/trader
+    scoreboard players operation #Trade.With Temp = @s Trade.With
+    execute as @a if score @s ID = #Trade.With Temp run function menu:communicate/trade/back/trader
 
 ## 自身のスコアをリセット
-	scoreboard players reset @s Trade.With
+    scoreboard players reset @s Trade.With
 
 ## 一時使用ScoreHolderをリセット
-	scoreboard players reset #Trade.With Temp
+    scoreboard players reset #Trade.With Temp
 
 ## ホームに戻る
-	return run function menu:communicate/back
+    return run function menu:communicate/back

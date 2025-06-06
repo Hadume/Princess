@@ -5,7 +5,7 @@
 #   menu:*/root/
 
 ## UI
-	function menu:-common/repair {Parent:"home",Child:"root"}
+    function menu:-common/repair {Parent:"home",Child:"root"}
 
 ## ページ変更しました
-	return 1
+    return 1

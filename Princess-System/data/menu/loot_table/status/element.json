@@ -1,242 +1,242 @@
 {
-	"pools": [
-		{
-			"rolls": 1.0,
-			"entries": [
-				{
-					"type": "item",
-					"name": "paper",
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": {
-								"text": "属性",
-								"color": "gray",
-								"italic": false,
-								"bold": true
-							}
-						},
-						{
-							"function": "set_lore",
-							"mode": "append",
-							"entity": "this",
-							"lore": [
-								[
-									{
-										"text": "",
-										"color": "white",
-										"italic": false
-									},
-									{
-										"text": "炎属性攻撃力",
-										"color": "red"
-									},
-									{
-										"text": " "
-									},
-									{
-										"score": {
-											"name": "@s",
-											"objective": "ATK.Flamme"
-										}
-									}
-								],
-								[
-									{
-										"text": "",
-										"color": "white",
-										"italic": false
-									},
-									{
-										"text": "炎属性耐性",
-										"color": "red"
-									},
-									{
-										"text": " "
-									},
-									{
-										"score": {
-											"name": "@s",
-											"objective": "DEF.Flamme"
-										}
-									}
-								],
-								[
-									{
-										"text": "",
-										"color": "white",
-										"italic": false
-									},
-									{
-										"text": "水属性攻撃力",
-										"color": "blue"
-									},
-									{
-										"text": " "
-									},
-									{
-										"score": {
-											"name": "@s",
-											"objective": "ATK.Wasser"
-										}
-									}
-								],
-								[
-									{
-										"text": "",
-										"color": "white",
-										"italic": false
-									},
-									{
-										"text": "水属性耐性",
-										"color": "blue"
-									},
-									{
-										"text": " "
-									},
-									{
-										"score": {
-											"name": "@s",
-											"objective": "DEF.Wasser"
-										}
-									}
-								],
-								[
-									{
-										"text": "",
-										"color": "white",
-										"italic": false
-									},
-									{
-										"text": "風属性攻撃力",
-										"color": "green"
-									},
-									{
-										"text": " "
-									},
-									{
-										"score": {
-											"name": "@s",
-											"objective": "ATK.Wind"
-										}
-									}
-								],
-								[
-									{
-										"text": "",
-										"color": "white",
-										"italic": false
-									},
-									{
-										"text": "風属性耐性",
-										"color": "green"
-									},
-									{
-										"text": " "
-									},
-									{
-										"score": {
-											"name": "@s",
-											"objective": "DEF.Wind"
-										}
-									}
-								],
-								[
-									{
-										"text": "",
-										"color": "white",
-										"italic": false
-									},
-									{
-										"text": "光属性攻撃力",
-										"color": "white"
-									},
-									{
-										"text": " "
-									},
-									{
-										"score": {
-											"name": "@s",
-											"objective": "ATK.Licht"
-										}
-									}
-								],
-								[
-									{
-										"text": "",
-										"color": "white",
-										"italic": false
-									},
-									{
-										"text": "光属性耐性",
-										"color": "white"
-									},
-									{
-										"text": " "
-									},
-									{
-										"score": {
-											"name": "@s",
-											"objective": "DEF.Licht"
-										}
-									}
-								],
-								[
-									{
-										"text": "",
-										"color": "white",
-										"italic": false
-									},
-									{
-										"text": "闇属性攻撃力",
-										"color": "dark_gray"
-									},
-									{
-										"text": " "
-									},
-									{
-										"score": {
-											"name": "@s",
-											"objective": "ATK.Dunkel"
-										}
-									}
-								],
-								[
-									{
-										"text": "",
-										"color": "white",
-										"italic": false
-									},
-									{
-										"text": "闇属性耐性",
-										"color": "dark_gray"
-									},
-									{
-										"text": " "
-									},
-									{
-										"score": {
-											"name": "@s",
-											"objective": "DEF.Dunkel"
-										}
-									}
-								]
-							]
-						},
-						{
-							"function": "set_components",
-							"components": {
-								"max_stack_size": 1
-							}
-						},
-						{
-							"function": "set_custom_data",
-							"tag": "{Menu:{}}"
-						}
-					]
-				}
-			]
-		}
-	]
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "paper",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {
+                                "text": "属性",
+                                "color": "gray",
+                                "italic": false,
+                                "bold": true
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "mode": "append",
+                            "entity": "this",
+                            "lore": [
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "炎属性攻撃力",
+                                        "color": "red"
+                                    },
+                                    {
+                                        "text": " "
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "ATK.Flamme"
+                                        }
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "炎属性耐性",
+                                        "color": "red"
+                                    },
+                                    {
+                                        "text": " "
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "DEF.Flamme"
+                                        }
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "水属性攻撃力",
+                                        "color": "blue"
+                                    },
+                                    {
+                                        "text": " "
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "ATK.Wasser"
+                                        }
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "水属性耐性",
+                                        "color": "blue"
+                                    },
+                                    {
+                                        "text": " "
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "DEF.Wasser"
+                                        }
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "風属性攻撃力",
+                                        "color": "green"
+                                    },
+                                    {
+                                        "text": " "
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "ATK.Wind"
+                                        }
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "風属性耐性",
+                                        "color": "green"
+                                    },
+                                    {
+                                        "text": " "
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "DEF.Wind"
+                                        }
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "光属性攻撃力",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "text": " "
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "ATK.Licht"
+                                        }
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "光属性耐性",
+                                        "color": "white"
+                                    },
+                                    {
+                                        "text": " "
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "DEF.Licht"
+                                        }
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "闇属性攻撃力",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "text": " "
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "ATK.Dunkel"
+                                        }
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "white",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "闇属性耐性",
+                                        "color": "dark_gray"
+                                    },
+                                    {
+                                        "text": " "
+                                    },
+                                    {
+                                        "score": {
+                                            "name": "@s",
+                                            "objective": "DEF.Dunkel"
+                                        }
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "max_stack_size": 1
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{Menu:{}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }

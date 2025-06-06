@@ -1,14 +1,14 @@
 {
-	"pools": [
-		{
-			"rolls": 9.0,
-			"entries": [
-				{
-					"type": "tag",
-					"name": "skilltree:air",
-					"expand": false
-				}
-			]
-		}
-	]
+    "pools": [
+        {
+            "rolls": 9.0,
+            "entries": [
+                {
+                    "type": "tag",
+                    "name": "skilltree:air",
+                    "expand": false
+                }
+            ]
+        }
+    ]
 }

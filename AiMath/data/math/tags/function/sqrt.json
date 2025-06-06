@@ -1,6 +1,6 @@
 {
-	"replace": false,
-	"values": [
-		"math:sqrt/"
-	]
+    "replace": false,
+    "values": [
+        "math:sqrt/"
+    ]
 }

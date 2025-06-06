@@ -1,26 +1,26 @@
 {
-	"pack": {
-		"pack_format": 57,
-		"description": ""
-	},
-	"filter": {
-		"block": [
-			{
-				"namespace": "minecraft",
-				"path": "recipe"
-			},
-			{
-				"namespace": "minecraft",
-				"path": "advancement"
-			},
-			{
-				"namespace": "minecraft",
-				"path": "tags/block/anvil"
-			},
-			{
-				"namespace": "minecraft",
-				"path": "tags/block/mineable/pickaxe"
-			}
-		]
-	}
+    "pack": {
+        "pack_format": 57,
+        "description": ""
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "recipe"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "advancement"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "tags/block/anvil"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "tags/block/mineable/pickaxe"
+            }
+        ]
+    }
 }

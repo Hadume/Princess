@@ -1,10 +1,10 @@
 {
-	"criteria": {
-		"trigger": {
-			"trigger": "tick"
-		}
-	},
-	"rewards": {
-		"function": "player:init"
-	}
+    "criteria": {
+        "trigger": {
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "player:init"
+    }
 }

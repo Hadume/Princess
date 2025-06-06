@@ -1,43 +1,43 @@
 {
-	"pools": [
-		{
-			"rolls": 1.0,
-			"entries": [
-				{
-					"type": "alternatives",
-					"children": [
-						{
-							"type": "loot_table",
-							"value": "menu:communicate/trade/decided",
-							"conditions": [
-								{
-									"condition": "entity_scores",
-									"entity": "this",
-									"scores": {
-										"Trade.DecideTimer": 0
-									}
-								}
-							],
-							"functions": [
-								{
-									"function": "set_custom_data",
-									"tag": "{Menu:{Display:1b}}"
-								}
-							]
-						},
-						{
-							"type": "loot_table",
-							"value": "menu:communicate/trade/decide",
-							"functions": [
-								{
-									"function": "set_custom_data",
-									"tag": "{Menu:{Display:1b}}"
-								}
-							]
-						}
-					]
-				}
-			]
-		}
-	]
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "alternatives",
+                    "children": [
+                        {
+                            "type": "loot_table",
+                            "value": "menu:communicate/trade/decided",
+                            "conditions": [
+                                {
+                                    "condition": "entity_scores",
+                                    "entity": "this",
+                                    "scores": {
+                                        "Trade.DecideTimer": 0
+                                    }
+                                }
+                            ],
+                            "functions": [
+                                {
+                                    "function": "set_custom_data",
+                                    "tag": "{Menu:{Display:1b}}"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "menu:communicate/trade/decide",
+                            "functions": [
+                                {
+                                    "function": "set_custom_data",
+                                    "tag": "{Menu:{Display:1b}}"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }

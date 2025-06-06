@@ -3,7 +3,7 @@
 # @within function menu:home/root/
 
 ## UI
-	function menu:-common/repair {Parent:"status",Child:"root"}
+    function menu:-common/repair {Parent:"status",Child:"root"}
 
 ## ページ変更しました
-	return 4000
+    return 4000
