@@ -1,99 +1,99 @@
 {
-	"pools": [
-		{
-			"rolls": 1.0,
-			"entries": [
-				{
-					"type": "loot_table",
-					"value": "menu:back"
-				}
-			]
-		},
-		{
-			"rolls": 7.0,
-			"entries": [
-				{
-					"type": "loot_table",
-					"value": "menu:frame.light_gray"
-				}
-			]
-		},
-		{
-			"rolls": 1.0,
-			"entries": [
-				{
-					"type": "alternatives",
-					"children": [
-						{
-							"type": "loot_table",
-							"value": "menu:frame.black",
-							"conditions": [
-								{
-									"condition": "value_check",
-									"value": {
-										"type": "score",
-										"target": {
-											"type": "fixed",
-											"name": "#Page"
-										},
-										"score": "Temp"
-									},
-									"range": 0
-								}
-							]
-						},
-						{
-							"type": "loot_table",
-							"value": "menu:page.prev"
-						}
-					]
-				}
-			]
-		},
-		{
-			"rolls": 1.0,
-			"entries": [
-				{
-					"type": "loot_table",
-					"value": "menu:frame.black"
-				}
-			]
-		},
-		{
-			"rolls": 7.0,
-			"entries": [
-				{
-					"type": "loot_table",
-					"value": "menu:frame.light_gray"
-				}
-			]
-		},
-		{
-			"rolls": 2.0,
-			"entries": [
-				{
-					"type": "loot_table",
-					"value": "menu:frame.black"
-				}
-			]
-		},
-		{
-			"rolls": 7.0,
-			"entries": [
-				{
-					"type": "loot_table",
-					"value": "menu:frame.light_gray"
-				}
-			]
-		},
-		{
-			"rolls": 1.0,
-			"entries": [
-				{
-					"type": "loot_table",
-					"value": "menu:frame.black"
-				}
-			]
-		}
-	]
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "menu:back"
+                }
+            ]
+        },
+        {
+            "rolls": 7.0,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "menu:frame.light_gray"
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "alternatives",
+                    "children": [
+                        {
+                            "type": "loot_table",
+                            "value": "menu:frame.black",
+                            "conditions": [
+                                {
+                                    "condition": "value_check",
+                                    "value": {
+                                        "type": "score",
+                                        "target": {
+                                            "type": "fixed",
+                                            "name": "#Page"
+                                        },
+                                        "score": "Temp"
+                                    },
+                                    "range": 0
+                                }
+                            ]
+                        },
+                        {
+                            "type": "loot_table",
+                            "value": "menu:page.prev"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "menu:frame.black"
+                }
+            ]
+        },
+        {
+            "rolls": 7.0,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "menu:frame.light_gray"
+                }
+            ]
+        },
+        {
+            "rolls": 2.0,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "menu:frame.black"
+                }
+            ]
+        },
+        {
+            "rolls": 7.0,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "menu:frame.light_gray"
+                }
+            ]
+        },
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "menu:frame.black"
+                }
+            ]
+        }
+    ]
 }

@@ -3,5 +3,5 @@
 # @within function menu:communicate/trade/ui/
 
 ##
-	loot replace entity @a[tag=This,limit=1] inventory.17 loot menu:communicate/player_head
-	loot replace entity @a[tag=This,limit=1] inventory.26 loot menu:communicate/trade/display/trader
+    loot replace entity @a[tag=This,limit=1] inventory.17 loot menu:communicate/player_head
+    loot replace entity @a[tag=This,limit=1] inventory.26 loot menu:communicate/trade/display/trader

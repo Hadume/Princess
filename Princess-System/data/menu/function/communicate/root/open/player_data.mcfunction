@@ -3,8 +3,8 @@
 # @within function menu:pages/communicate/open/
 
 ## プレイヤーヘッドを取得
-	execute in overworld run loot replace block 0 -64 0 container.0 loot menu:communicate/player_head
-	execute in overworld run data modify storage temp: Players append from block 0 -64 0 Items[0]
+    execute in overworld run loot replace block 0 -64 0 container.0 loot menu:communicate/player_head
+    execute in overworld run data modify storage temp: Players append from block 0 -64 0 Items[0]
 
 ## IDを保存
-	execute store result storage temp: Players[-1].components."minecraft:custom_data".ID int 1 run scoreboard players get @s ID
+    execute store result storage temp: Players[-1].components."minecraft:custom_data".ID int 1 run scoreboard players get @s ID

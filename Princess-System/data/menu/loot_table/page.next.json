@@ -1,54 +1,54 @@
 {
-	"pools": [
-		{
-			"rolls": 1.0,
-			"entries": [
-				{
-					"type": "item",
-					"name": "arrow",
-					"functions": [
-						{
-							"function": "set_name",
-							"entity": "this",
-							"name": {
-								"text": "次のページへ",
-								"italic": false,
-								"bold": true
-							}
-						},
-						{
-							"function": "set_lore",
-							"entity": "this",
-							"mode": "append",
-							"lore": [
-								[
-									{
-										"score": {
-											"name": "#Page.Next",
-											"objective": "Temp"
-										},
-										"color": "gray",
-										"italic": false
-									},
-									{
-										"text": "ページ"
-									}
-								]
-							]
-						},
-						{
-							"function": "set_components",
-							"components": {
-								"max_stack_size": 1
-							}
-						},
-						{
-							"function": "set_custom_data",
-							"tag": "{Menu:{PageNext:1b}}"
-						}
-					]
-				}
-			]
-		}
-	]
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "arrow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {
+                                "text": "次のページへ",
+                                "italic": false,
+                                "bold": true
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "mode": "append",
+                            "lore": [
+                                [
+                                    {
+                                        "score": {
+                                            "name": "#Page.Next",
+                                            "objective": "Temp"
+                                        },
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "ページ"
+                                    }
+                                ]
+                            ]
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "max_stack_size": 1
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{Menu:{PageNext:1b}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
