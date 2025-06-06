@@ -20,8 +20,8 @@
 ## 装備効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
 #data modify storage asset:item Stats append value {}
 
-## CMD? : String
-#data modify storage asset:item CMD set value ""
+## ItemModel? : String
+#data modify storage asset:item ItemModel set value ""
 
 ## シリーズ? : String
 #data modify storage asset:item Series set value ""
@@ -33,4 +33,4 @@
 #data modify storage asset:item Effects append value {}
 
 ## NBT? : NBTCompound
-	data modify storage asset:item NBT set value {QualificationStone:1b}
+	data modify storage asset:item NBT set value {"minecraft:enchantment_glint_override":true,"minecraft:custom_data":{QualificationStone:1b}}

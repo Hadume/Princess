@@ -21,8 +21,8 @@
     data modify storage asset:item Stats append value {Name:"ATK",Amount:30}
     data modify storage asset:item Stats append value {Name:"MP.Max",Amount:500}
 
-## CMD? : String
-    data modify storage asset:item CMD set value "staff15"
+## ItemModel? : String
+    data modify storage asset:item ItemModel set value "wand/magicstaff15"
 
 ## シリーズ? : String
 #data modify storage asset:item Series set value ""

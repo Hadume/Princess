@@ -20,8 +20,8 @@
 ## 装備効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
     data modify storage asset:item Stats append value {Name:"MP.Max",Amount:5}
 
-## CMD? : String
-    data modify storage asset:item CMD set value "staff3"
+## ItemModel? : String
+    data modify storage asset:item ItemModel set value "wand/magicstaff3"
 
 ## シリーズ? : String
 #data modify storage asset:item Series set value ""

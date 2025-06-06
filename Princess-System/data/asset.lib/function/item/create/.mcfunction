@@ -27,6 +27,7 @@
 	data remove storage asset:item Rarity
 	execute if data storage asset:item Lore run data remove storage asset:item Lore
 	execute if data storage asset:item CanEquip run data remove storage asset:item CanEquip
+	execute if data storage asset:item ItemModel run data remove storage asset:item ItemModel
 	execute if data storage asset:item Series run data remove storage asset:item Series
 	execute if data storage asset:item Stats run data remove storage asset:item Stats
 	execute if data storage asset:item Effects run data remove storage asset:item Effects
