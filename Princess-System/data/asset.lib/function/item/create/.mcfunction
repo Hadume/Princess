@@ -12,26 +12,26 @@
 # @within function asset:item/create/
 
 ## 足りていなかったら
-	execute store success storage temp: Error byte 1 unless data storage asset:item id run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item id"]
-	execute store success storage temp: Error byte 1 unless data storage asset:item Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item Name"]
-	execute store success storage temp: Error byte 1 unless data storage asset:item Category run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item Category"]
-	execute store success storage temp: Error byte 1 unless data storage asset:item Rarity run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item Rarity"]
+    execute store success storage temp: Error byte 1 unless data storage asset:item id run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item id"]
+    execute store success storage temp: Error byte 1 unless data storage asset:item Name run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item Name"]
+    execute store success storage temp: Error byte 1 unless data storage asset:item Category run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item Category"]
+    execute store success storage temp: Error byte 1 unless data storage asset:item Rarity run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"asset:item Rarity"]
 
 ## 足りていたら
-	execute unless data storage temp: Error as 0-0-1-0-0 run function asset.lib:item/create/main
+    execute unless data storage temp: Error as 0-0-1-0-0 run function asset.lib:item/create/main
 
 ## Storageを削除
-	data remove storage asset:item id
-	data remove storage asset:item Category
-	data remove storage asset:item Name
-	data remove storage asset:item Rarity
-	execute if data storage asset:item Lore run data remove storage asset:item Lore
-	execute if data storage asset:item CanEquip run data remove storage asset:item CanEquip
-	execute if data storage asset:item ItemModel run data remove storage asset:item ItemModel
-	execute if data storage asset:item Series run data remove storage asset:item Series
-	execute if data storage asset:item Stats run data remove storage asset:item Stats
-	execute if data storage asset:item Effects run data remove storage asset:item Effects
-	execute if data storage asset:item NBT run data remove storage asset:item NBT
+    data remove storage asset:item id
+    data remove storage asset:item Category
+    data remove storage asset:item Name
+    data remove storage asset:item Rarity
+    execute if data storage asset:item Lore run data remove storage asset:item Lore
+    execute if data storage asset:item CanEquip run data remove storage asset:item CanEquip
+    execute if data storage asset:item ItemModel run data remove storage asset:item ItemModel
+    execute if data storage asset:item Series run data remove storage asset:item Series
+    execute if data storage asset:item Stats run data remove storage asset:item Stats
+    execute if data storage asset:item Effects run data remove storage asset:item Effects
+    execute if data storage asset:item NBT run data remove storage asset:item NBT
 
 ## 一時使用Storageを削除
-	execute if data storage temp: Error run data remove storage temp: Error
+    execute if data storage temp: Error run data remove storage temp: Error

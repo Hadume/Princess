@@ -1,19 +1,19 @@
 {
-	"function": "set_lore",
-	"entity": "this",
-	"mode": "append",
-	"lore": [
-		[
-			{
-				"text": "",
-				"italic": false,
-				"color": "white"
-			},
-			{
-				"storage": "asset:item",
-				"nbt": "Lore[0]",
-				"interpret": true
-			}
-		]
-	]
+    "function": "set_lore",
+    "entity": "this",
+    "mode": "append",
+    "lore": [
+        [
+            {
+                "text": "",
+                "italic": false,
+                "color": "white"
+            },
+            {
+                "storage": "asset:item",
+                "nbt": "Lore[0]",
+                "interpret": true
+            }
+        ]
+    ]
 }

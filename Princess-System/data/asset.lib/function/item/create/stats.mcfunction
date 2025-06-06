@@ -6,14 +6,14 @@
 # @within
 #   function asset.lib:item/create/lore/stats/*
 #   loot_table asset.lib:item/lore/stats
-	#declare score_holder #Amount
+    #declare score_holder #Amount
 
 ## 効果の共通処理
-	execute in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/stats
+    execute in overworld run item modify block 0 -64 0 container.0 asset.lib:item/create/stats
 
 ## 効果値を追加
-	function asset.lib:item/create/lore/stats.loop
+    function asset.lib:item/create/lore/stats.loop
 
 ## 一時使用Storageを削除
-	data remove storage temp: Stat
-	data remove storage temp: Amount
+    data remove storage temp: Stat
+    data remove storage temp: Amount
