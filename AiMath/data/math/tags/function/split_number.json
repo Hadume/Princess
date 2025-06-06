@@ -1,6 +1,6 @@
 {
-	"replace": false,
-	"values": [
-		"math:split_number/"
-	]
+    "replace": false,
+    "values": [
+        "math:split_number/"
+    ]
 }

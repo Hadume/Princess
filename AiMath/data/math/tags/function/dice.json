@@ -1,6 +1,6 @@
 {
-	"replace": false,
-	"values": [
-		"math:dice/"
-	]
+    "replace": false,
+    "values": [
+        "math:dice/"
+    ]
 }

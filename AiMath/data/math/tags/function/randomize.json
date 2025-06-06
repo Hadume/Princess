@@ -1,6 +1,6 @@
 {
-	"replace": false,
-	"values": [
-		"math:randomize/"
-	]
+    "replace": false,
+    "values": [
+        "math:randomize/"
+    ]
 }

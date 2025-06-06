@@ -1,6 +1,6 @@
 {
-	"replace": false,
-	"values": [
-		"math:length/"
-	]
+    "replace": false,
+    "values": [
+        "math:length/"
+    ]
 }
