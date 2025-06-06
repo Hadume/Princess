@@ -3,4 +3,4 @@
 # @within function asset:dungeon/boss/enter
 
 ##
-	tp @s 221.5 1.0 -297.5 180.0 0.0
+    tp @s 221.5 1.0 -297.5 180.0 0.0

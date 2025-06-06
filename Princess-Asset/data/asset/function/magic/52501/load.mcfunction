@@ -4,4 +4,4 @@
 
 #> Scoreboard
 # @within function asset:magic/52501/*/*
-	scoreboard objectives add TimeLock dummy
+    scoreboard objectives add TimeLock dummy
