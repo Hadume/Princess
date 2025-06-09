@@ -9,12 +9,12 @@
 ###################################################
 
 ## データを削除
-    data modify storage temp: ID set from storage dat: id[0]
-    function api:e_dat/remove.data with storage temp:
+    data modify storage temp:api dat.id set from storage dat: id[0]
+    function api:e_dat/remove.data with storage temp:api
 
-## 割り当て済みIDを削除
+## 割り当て済みidを削除
     data remove storage dat: id[0]
 
-## 不要なデータを解放(先頭から続く基準より大きいIDは全部要らない)
-    execute store result score #ID Global run data get storage dat: id[0]
-    execute if score #ID Global > #DatID Temp run function api:e_dat/id/gc_loop
+## 不要なデータを解放(先頭から続く基準より大きいidは全部要らない)
+    execute store result score #id global run data get storage dat: id[0]
+    execute if score #id global > #datId temp run function api:e_dat/id/gc_loop

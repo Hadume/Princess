@@ -6,9 +6,9 @@
     data modify storage temp: SelectedItem set from entity @s SelectedItem
 
 ##
-    execute if data storage temp: SelectedItem run data modify storage dat: _.NBT.SelectedItem.Data set from storage temp: SelectedItem
-    execute unless data storage temp: SelectedItem if data storage dat: _.NBT.SelectedItem.Data run data remove storage dat: _.NBT.SelectedItem.Data
+    execute if data storage temp: SelectedItem run data modify storage dat: _.NBT.selectedItem.data set from storage temp: SelectedItem
+    execute unless data storage temp: SelectedItem if data storage dat: _.NBT.selectedItem.data run data remove storage dat: _.NBT.selectedItem.data
 
-## 一時使用Storageを削除
+## 一時使用storageを削除
     data remove storage temp: SelectedItem
-    data remove storage api: SelectedItem
+    data remove storage api:nbt selectedItem

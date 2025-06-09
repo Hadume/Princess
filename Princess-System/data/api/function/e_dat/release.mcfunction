@@ -3,11 +3,14 @@
 # @within tag/function api:e_dat/release
 
 # データを消す
-    execute store result storage temp: ID int 1 run scoreboard players get @s ID
-    function api:e_dat/remove.data with storage temp:
+    execute store result storage temp:api dat.id int 1 run scoreboard players get @s id
+    function api:e_dat/remove.data with storage temp:api
 
 ## 最後にアクセスした奴をリセット
-    data modify storage dat: LastID set value 0
+    data modify storage dat: lastId set value 0
 
-## IDを剥奪
-    scoreboard players reset @s ID
+## idを剥奪
+    scoreboard players reset @s id
+
+## 一時使用storageを削除
+    data remove storage temp:api dat

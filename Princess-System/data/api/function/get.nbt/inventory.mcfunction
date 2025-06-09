@@ -8,8 +8,8 @@
     function #api:e_dat/please
 
 ##
-    execute store success score #LeastTime Temp store result storage dat: _.NBT.Inventory.Time int 1 run time query gametime
-    execute if score #LeastTime Temp matches 1 run data modify storage dat: _.NBT.Inventory.Data set from entity @s Inventory
+    execute store success score #leastTime temp store result storage dat: _.NBT.inventory.timeStamp long 1 run time query gametime
+    execute if score #leastTime temp matches 1 run data modify storage dat: _.NBT.inventory.data set from entity @s Inventory
 
 ## Inventoryをコピー
-    data modify storage api: Inventory set from storage dat: _.NBT.Inventory.Data
+    data modify storage api:nbt inventory set from storage dat: _.NBT.inventory.data

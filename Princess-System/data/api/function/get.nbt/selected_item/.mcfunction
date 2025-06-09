@@ -8,8 +8,8 @@
     function #api:e_dat/please
 
 ##
-    execute store success score #LeastTime Temp store result storage dat: _.NBT.SelectedItem.Time int 1 run time query gametime
-    execute if score #LeastTime Temp matches 1 run function api:get.nbt/selected_item/update
+    execute store success score #leastTime temp store result storage dat: _.NBT.selectedItem.timeStamp long 1 run time query gametime
+    execute if score #leastTime temp matches 1 run function api:get.nbt/selected_item/update
 
 ## SelectedItemをコピー
-    data modify storage api: SelectedItem set from storage dat: _.NBT.SelectedItem.Data
+    data modify storage api:nbt selectedItem set from storage dat: _.NBT.selectedItem.data

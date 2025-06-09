@@ -12,8 +12,8 @@
                             "entity": "this",
                             "name": [
                                 {
-                                    "storage": "temp:",
-                                    "nbt": "NameColor",
+                                    "storage": "temp:api",
+                                    "nbt": "mobName.color",
                                     "interpret": true,
                                     "italic": false
                                 },
@@ -28,7 +28,7 @@
                                 {
                                     "score": {
                                         "name": "@s",
-                                        "objective": "Lvl"
+                                        "objective": "lvl"
                                     },
                                     "color": "white"
                                 },
