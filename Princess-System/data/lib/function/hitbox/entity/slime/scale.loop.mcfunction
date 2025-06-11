@@ -1,12 +1,16 @@
 #> lib:hitbox/entity/slime/scale.loop
 # 倍率
 # @within function lib:hitbox/entity/slime/*
+# @private
+
+## ループ終了
+    execute if score #size temp matches ..0 run return 1
 
 ##
-    scoreboard players operation #Scale Temp *= #2 Const
+    scoreboard players operation #scale temp *= #2 const
 
 ## スコアを減らす
-    scoreboard players remove #Size Temp 1
+    scoreboard players remove #size temp 1
 
 ## ループ
-    execute if score #Size Temp matches 1.. run function lib:hitbox/entity/slime/scale.loop
+    function lib:hitbox/entity/slime/scale.loop
