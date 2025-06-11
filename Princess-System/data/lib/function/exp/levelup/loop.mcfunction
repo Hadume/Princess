@@ -3,21 +3,21 @@
 # @within function lib:exp/levelup/*
 
 ## レベルを上げる
-    scoreboard players add @s Lvl 1
+    scoreboard players add @s lvl 1
 
 ## ステータス上昇
-    scoreboard players add @s HP.Max.Base 10
-    scoreboard players add @s MP.Max.Base 10
-    scoreboard players add @s ATK.Base 1
-    scoreboard players add @s DEF.Base 1
+    scoreboard players add @s hpMaxBase 10
+    scoreboard players add @s mpMaxBase 10
+    scoreboard players add @s atkBase 1
+    scoreboard players add @s defBase 1
 
 ## 次レベルで必要な経験値量を計算
-    scoreboard players operation #Exp.Need Temp = @s Exp.Need
-    scoreboard players operation #Exp.Need Temp /= #10 Const
-    scoreboard players operation @s Exp.Need += #Exp.Need Temp
+    scoreboard players operation #expNeed temp = @s expNeed
+    scoreboard players operation #expNeed temp /= #10 const
+    scoreboard players operation @s expNeed += #expNeed temp
 
 ## 経験値を反映
-    scoreboard players operation @s Exp += @s Exp.Need
+    scoreboard players operation @s exp += @s expNeed
 
 ## まだレベルアップできるなら
-    execute if entity @s[scores={Exp=..0}] run function lib:exp/levelup/loop
+    execute if entity @s[scores={exp=..0}] run function lib:exp/levelup/loop
