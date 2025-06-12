@@ -3,7 +3,7 @@
 # @within tag/function lib:hitbox
 
 ## 引数が足りなかったら
-    execute unless data storage lib:hitbox input run return run tellraw @a [{"storage":"main:","nbt":"tell.ARGUMENT_ERROR"},"lib:hitbox : storage[lib:hitbox input]"]
+    execute unless data storage lib:hitbox input run return run function lib:_common {function:"lib:hitbox ",argument:"input"}
 
 ##a
     ### enemy
@@ -72,5 +72,5 @@
 ## MOBが登録されていなかったら
     execute unless data storage lib:hitbox output run tellraw @a [{"storage":"main:","nbt":"Tell.Error"},"HitBoxが登録されていないMOBがいます。"]
 
-## 引数を削除
-    data remove storage lib:hitbox input
+## ライブラリ共通処理
+    function lib:_common {function:"lib:hitbox ",argument:"null"}

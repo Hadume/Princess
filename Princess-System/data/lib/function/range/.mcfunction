@@ -3,8 +3,8 @@
 # @within tag/function lib:range
 
 ## 引数の確認
-    execute unless data storage lib:range input.amount run return run tellraw @a [{"storage":"main:","nbt":"tell.ARGUMENT_ERROR"},"lib:range : storage[lib:range input.amount]"]
-    execute unless data storage lib:range input.pierce run return run tellraw @a [{"storage":"main:","nbt":"tell.ARGUMENT_ERROR"},"lib:range : storage[lib:range input.pierce]"]
+    execute unless data storage lib:range input.amount run return run function lib:_common {function:"lib:range ",argument:"input.amount"}
+    execute unless data storage lib:range input.pierce run return run function lib:_common {function:"lib:range ",argument:"input.pierce"}
 
 ## データを用意
     execute store result score #range temp run data get storage lib:range input.amount 1000
@@ -19,7 +19,7 @@
 
 ## 座標取得
     function #api:get.nbt/pos
-    data modify storage temp:lib range.pos set from storage api:nbt pos.data
+    data modify storage temp:lib range.at set from storage api:nbt pos.data
 
 ## ダメージを受けているMOBを除外
     execute unless data storage lib:range input{noHurtTime:true} run data modify storage lib:range input.noHurtTime set value false
@@ -40,9 +40,6 @@
     execute if score #pierce temp matches 1.. store result storage lib:range output.pierce int 1 run scoreboard players get #pierce temp
     execute if score #pierce temp matches ..0 run data modify storage lib:range output.pierce set value 0
 
-## 引数を削除
-    data remove storage lib:range input
-
 ## 一時使用scoreHolderをリセット
     scoreboard players reset #range temp
     scoreboard players reset #pierce temp
@@ -60,3 +57,6 @@
 
 ## 一時使用storageを削除
     data remove storage temp:lib range
+
+## ライブラリ共通処理
+    function lib:_common {function:"lib:range ",argument:"null"}

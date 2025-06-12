@@ -3,7 +3,7 @@
 # @within tag/function lib:status/hp/recovery
 
 ## 引数の確認
-    execute unless data storage lib:status hp.recovery.input run return run tellraw @a [{"storage":"main:","nbt":"tell.ARGUMENT_ERROR"},"lib:status : storage[lib:status hp.recovery.input]"]
+    execute unless data storage lib:status hp.recovery.input run return run function lib:_common {function:"lib:status hp.recovery.",argument:"input"}
 
 ## 回復量を取得
     execute store result score #recovery temp run data get storage lib:status hp.recovery.input
@@ -17,8 +17,8 @@
 ## 体力表示を更新
     function #lib:status/hp/update
 
-## 引数を削除
-    data remove storage lib:status hp.recovery.input
-
 ## 一時使用scoreHolderをリセット
     scoreboard players reset #recovery temp
+
+## ライブラリ共通処理
+    function lib:_common {function:"lib:status hp.recovery.",argument:"null"}

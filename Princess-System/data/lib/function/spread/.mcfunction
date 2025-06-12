@@ -3,7 +3,7 @@
 # @within tag/function lib:spread
 
 ## 引数の確認
-    execute unless data storage lib:spread input.amount run return run tellraw @a [{"storage":"main:","nbt":"tell.ARGUMENT_ERROR"},"lib:spread : storage[lib:spread input.amount]"]
+    execute unless data storage lib:spread input.amount run return run function lib:_common {function:"lib:spread ",argument:"input.amount"}
 
 ## posを取得
     execute if data storage lib:spread input.at run data modify storage temp:lib spread.at set from storage lib:spread input.at
@@ -58,9 +58,6 @@
 ## 地面に設置させる
     execute if data storage lib:spread input{onGround:1b} run function lib:spread/on_ground/
 
-## 引数を削除
-    data remove storage lib:spread input
-
 ## 一時使用scoreHolderをリセット
     scoreboard players reset #spreadXZ1 temp
     scoreboard players reset #spreadXZ2 temp
@@ -73,3 +70,6 @@
 
 ## 一時使用storageを削除
     data remove storage temp:lib spread
+
+## ライブラリ共通処理
+    function lib:_common {function:"lib:spread ",argument:"null"}
