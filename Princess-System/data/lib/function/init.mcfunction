@@ -3,5 +3,6 @@
 # @within function main:init/
 
 ##
+    function lib:damage/init
     function lib:stats/init
     function lib:die/init
