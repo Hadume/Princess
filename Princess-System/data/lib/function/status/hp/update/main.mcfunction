@@ -2,22 +2,22 @@
 # HPを更新
 # @within function lib:status/hp/update/
 
-#> ScoreHolder
-# @private
-    #declare score_holder #HP.Display
+## 最大体力を取得
+    scoreboard players operation #hpMax temp = @s hpMax
 
 ## 表示
-    scoreboard players set #HP.Display Temp 2000
-    scoreboard players operation #HP.Display Temp *= #HP Temp
-    scoreboard players operation #HP.Display Temp /= @s HP.Max
-    scoreboard players operation @s ScoreToHealth = #HP.Display Temp
+    scoreboard players set #hpDisplay temp 2000
+    scoreboard players operation #hpDisplay temp *= #hp temp
+    scoreboard players operation #hpDisplay temp /= #hpMax temp
+    scoreboard players operation @s ScoreToHealth = #hpDisplay temp
 
 ## プレイヤーを回復
-    execute if entity @s[type=player] unless score @s HP.Rgn.Timer matches 1.. if score #HP Temp < @s HP.Max run scoreboard players operation @s HP.Rgn.Timer = @s HP.Rgn.Intrvl
+    execute if entity @s[type=player] unless score @s hpRgnTimer matches 1.. if score #hp temp < #hpMax temp run scoreboard players operation @s hpRgnTimer = @s hpRgnIntrvl
 
 ## MOBのステータス表示
-    execute if entity @s[tag=Enemy] run function #api:display/mob.name
-    execute if entity @s[tag=Boss,tag=aj.catboss.root] run scoreboard players operation $catboss ok_boss_health = @s HP
+    execute if entity @s[tag=enemy] run function #api:display/mob.name
+    execute if entity @s[tag=boss,tag=aj.catboss.root] run scoreboard players operation $catboss ok_boss_health = @s hp
 
-## 一時使用ScoreHolderをリセット
-    scoreboard players reset #HP.Display Temp
+## 一時使用scoreHolderをリセット
+    scoreboard players reset #hpMax temp
+    scoreboard players reset #hpDisplay temp
