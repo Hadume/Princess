@@ -11,7 +11,7 @@
             },
             {
                 "storage": "asset:item",
-                "nbt": "Lore[0]",
+                "nbt": "lore[0]",
                 "interpret": true
             }
         ]

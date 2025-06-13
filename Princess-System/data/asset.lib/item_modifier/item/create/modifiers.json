@@ -8,8 +8,8 @@
         "ops": [
             {
                 "op": "replace",
-                "source": "Stats",
-                "target": "Stats"
+                "source": "modifiers",
+                "target": "modifiers"
             }
         ]
     },

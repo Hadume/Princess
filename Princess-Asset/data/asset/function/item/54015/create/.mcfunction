@@ -2,33 +2,29 @@
 #
 # @within function asset:item/create/
 
-## アイテムid : id(minecraft:item)
+## アイテムid
     data modify storage asset:item id set value "warped_fungus_on_a_stick"
 
-## 名前 : TextComponent
-    data modify storage asset:item Name set value '{"text": "原初の杖"}'
+## 名前
+    data modify storage asset:item name set value '{"text": "原初の杖"}'
 
-## 説明? : [TextComponent] @ N
-#data modify storage asset:item Lore set value []
+## 説明
+#data modify storage asset:item lore set value []
 
-## レアリティ : int @ 1..10
-    data modify storage asset:item Rarity set value 6
+## レアリティ
+    data modify storage asset:item rarity set value 6
 
-## 種類 : Category
-    data modify storage asset:item Category set value "Wand"
+## 種類
+    data modify storage asset:item category set value "wand"
 
-## 装備効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N
-    data modify storage asset:item Stats append value {Name:"ATK",Amount:30}
-    data modify storage asset:item Stats append value {Name:"MP.Max",Amount:500}
+## 装備効果
+    data modify storage asset:item modifiers set value [\
+    {name:"atk",amount:30},\
+    {name:"mpMax",amount:500}\
+    ]
 
-## ItemModel? : String
-    data modify storage asset:item ItemModel set value "wand/magicstaff15"
+## itemModel
+    data modify storage asset:item itemModel set value "wand/magicstaff15"
 
-## シリーズ? : String
-#data modify storage asset:item Series set value ""
-
-## どこに装備できるか? : String
-#data modify storage asset:item CanEquip set value ""
-
-## NBT? : NBTCompound
-#data modify storage asset:item NBT set value {}
+## コンポーネント
+#data modify storage asset:item components set value {}

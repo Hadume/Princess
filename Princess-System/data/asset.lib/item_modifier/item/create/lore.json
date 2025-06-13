@@ -7,8 +7,8 @@
     "ops": [
         {
             "op": "replace",
-            "source": "Lore",
-            "target": "rawText.Lore"
+            "source": "lore",
+            "target": "rawText.lore"
         }
     ]
 }

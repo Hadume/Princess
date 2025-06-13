@@ -17,7 +17,7 @@
                 "value": {
                     "type": "storage",
                     "storage": "asset:item",
-                    "path": "Rarity"
+                    "path": "rarity"
                 },
                 "range": {
                     "max": 1
@@ -47,7 +47,7 @@
                 "value": {
                     "type": "storage",
                     "storage": "asset:item",
-                    "path": "Rarity"
+                    "path": "rarity"
                 },
                 "range": 2
             }
@@ -75,7 +75,7 @@
                 "value": {
                     "type": "storage",
                     "storage": "asset:item",
-                    "path": "Rarity"
+                    "path": "rarity"
                 },
                 "range": 3
             }
@@ -103,7 +103,7 @@
                 "value": {
                     "type": "storage",
                     "storage": "asset:item",
-                    "path": "Rarity"
+                    "path": "rarity"
                 },
                 "range": 4
             }
@@ -131,7 +131,7 @@
                 "value": {
                     "type": "storage",
                     "storage": "asset:item",
-                    "path": "Rarity"
+                    "path": "rarity"
                 },
                 "range": 5
             }
@@ -159,7 +159,7 @@
                 "value": {
                     "type": "storage",
                     "storage": "asset:item",
-                    "path": "Rarity"
+                    "path": "rarity"
                 },
                 "range": 6
             }
@@ -187,7 +187,7 @@
                 "value": {
                     "type": "storage",
                     "storage": "asset:item",
-                    "path": "Rarity"
+                    "path": "rarity"
                 },
                 "range": 7
             }
@@ -215,7 +215,7 @@
                 "value": {
                     "type": "storage",
                     "storage": "asset:item",
-                    "path": "Rarity"
+                    "path": "rarity"
                 },
                 "range": 8
             }
@@ -243,7 +243,7 @@
                 "value": {
                     "type": "storage",
                     "storage": "asset:item",
-                    "path": "Rarity"
+                    "path": "rarity"
                 },
                 "range": 9
             }
@@ -271,7 +271,7 @@
                 "value": {
                     "type": "storage",
                     "storage": "asset:item",
-                    "path": "Rarity"
+                    "path": "rarity"
                 },
                 "range": {
                     "min": 10

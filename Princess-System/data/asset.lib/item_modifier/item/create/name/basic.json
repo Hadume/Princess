@@ -8,7 +8,7 @@
         },
         {
             "storage": "asset:item",
-            "nbt": "Name",
+            "nbt": "name",
             "interpret": true
         }
     ]

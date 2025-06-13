@@ -8,8 +8,8 @@
         "ops": [
             {
                 "op": "replace",
-                "source": "Category",
-                "target": "Category"
+                "source": "category",
+                "target": "category"
             }
         ]
     },
@@ -22,8 +22,8 @@
         "ops": [
             {
                 "op": "replace",
-                "source": "Name",
-                "target": "rawText.Name"
+                "source": "name",
+                "target": "rawText.name"
             }
         ]
     },
