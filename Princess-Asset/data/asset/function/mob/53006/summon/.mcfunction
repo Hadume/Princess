@@ -2,5 +2,5 @@
 #
 # @within function asset:mob/summon/
 
-## 元になるEntityを召喚 : id(minecraft:entity)
+## 元になるEntityを召喚
     execute at @s run function asset:mob/summon/init with storage asset:mob

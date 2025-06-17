@@ -2,52 +2,52 @@
 #
 # @within function asset:mob/summon/init
 
-## 名前 : TextComponent
-    data modify storage asset:mob Name set value '{"text": "ダンケルゾンビ"}'
+## 名前
+    data modify storage asset:mob name set value '{"text": "ダンケルゾンビ"}'
 
-## タイプ : Type
-    data modify storage asset:mob Type set value "Enemy"
+## タイプ
+    data modify storage asset:mob type set value "enemy"
 
-## 装備? : {{id: id(minecraft:item), Count: boolean @ 1..64, tag: Compound} || int(asset:item)} @ ..6
+## 装備
     ### 防具
-        data modify storage asset:mob Armor.Head set value {ID:54016}
-        #data modify storage asset:mob Armor.Chest set value {}
-        #data modify storage asset:mob Armor.Legs set value {}
-        #data modify storage asset:mob Armor.Feet set value {}
+        data modify storage asset:mob armor.head set value {ID:54016}
+        #data modify storage asset:mob armor.chest set value {}
+        #data modify storage asset:mob armor.legs set value {}
+        #data modify storage asset:mob armor.feet set value {}
 
     ### 武器
-    #data modify storage asset:mob Weapon.Mainhand set value {}
-    #data modify storage asset:mob Weapon.Offhand set value {}
+    #data modify storage asset:mob weapon.mainhand set value {}
+    #data modify storage asset:mob weapon.offhand set value {}
 
 
-## ステータス : int
-    data modify storage asset:mob Status.Lvl set value 1
-    data modify storage asset:mob Status.Exp set value 5
-    data modify storage asset:mob Status.Money set value 10
-    data modify storage asset:mob Status.HP set value 150
-    data modify storage asset:mob Status.MP set value 0
-    data modify storage asset:mob Status.ATK set value 15
-    data modify storage asset:mob Status.DEF set value 2
-    data modify storage asset:mob Status.Speed set value 300
+## ステータス
+    data modify storage asset:mob status.lvl set value 1
+    data modify storage asset:mob status.exp set value 5
+    data modify storage asset:mob status.money set value 10
+    data modify storage asset:mob status.hp set value 150
+    data modify storage asset:mob status.mp set value 0
+    data modify storage asset:mob status.atk set value 15
+    data modify storage asset:mob status.def set value 2
+    data modify storage asset:mob status.speed set value 300
 
-## ドロップ品? : {Item: {{id: id(minecraft:item), Count: boolean @ 1..64, tag: Compound} || ID: id(asset:item)}, Weight: float} @ N
-    data modify storage asset:mob Drop set value [\
-    {Item:{ID:54002},Weight:0.01},\
-    {Item:{ID:54003},Weight:0.005},\
-    {Item:{ID:54004},Weight:0.001},\
-    {Item:{ID:54016},Weight:0.005},\
-    {Item:{ID:54017},Weight:0.005},\
-    {Item:{ID:54018},Weight:0.005},\
-    {Item:{ID:54019},Weight:0.005},\
-    {Item:{ID:54020},Weight:0.001},\
-    {Item:{ID:54021},Weight:0.001},\
-    {Item:{ID:54022},Weight:0.001},\
-    {Item:{ID:54023},Weight:0.001},\
-    {Item:{ID:54501},Weight:0.1},\
-    {Item:{ID:54508},Weight:0.1},\
-    {Item:{ID:54511},Weight:0.05},\
-    {Item:{ID:54901},Weight:0.05}\
+## ドロップ品
+    data modify storage asset:mob loot set value [\
+    {item:{ID:54002},weight:0.01},\
+    {item:{ID:54003},weight:0.005},\
+    {item:{ID:54004},weight:0.001},\
+    {item:{ID:54016},weight:0.005},\
+    {item:{ID:54017},weight:0.005},\
+    {item:{ID:54018},weight:0.005},\
+    {item:{ID:54019},weight:0.005},\
+    {item:{ID:54020},weight:0.001},\
+    {item:{ID:54021},weight:0.001},\
+    {item:{ID:54022},weight:0.001},\
+    {item:{ID:54023},weight:0.001},\
+    {item:{ID:54501},weight:0.1},\
+    {item:{ID:54508},weight:0.1},\
+    {item:{ID:54511},weight:0.05},\
+    {item:{ID:54901},weight:0.05}\
     ]
 
-## NBT? : Compound
+## NBT
 #data modify storage asset:mob NBT set value {}
