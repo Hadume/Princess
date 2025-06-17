@@ -4,7 +4,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.0.0\"]}"
+                    "nbt": "{Tags:[\"dmgFlag00\"]}"
                 }
             }
         },
@@ -12,7 +12,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.0.1\"]}"
+                    "nbt": "{Tags:[\"dmgFlag01\"]}"
                 }
             }
         },
@@ -20,7 +20,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.0.2\"]}"
+                    "nbt": "{Tags:[\"dmgFlag02\"]}"
                 }
             }
         },
@@ -28,7 +28,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.0.3\"]}"
+                    "nbt": "{Tags:[\"dmgFlag03\"]}"
                 }
             }
         },
@@ -36,7 +36,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.1.0\"]}"
+                    "nbt": "{Tags:[\"dmgFlag10\"]}"
                 }
             }
         },
@@ -44,7 +44,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.1.1\"]}"
+                    "nbt": "{Tags:[\"dmgFlag11\"]}"
                 }
             }
         },
@@ -52,7 +52,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.1.2\"]}"
+                    "nbt": "{Tags:[\"dmgFlag12\"]}"
                 }
             }
         },
@@ -60,7 +60,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.1.3\"]}"
+                    "nbt": "{Tags:[\"dmgFlag13\"]}"
                 }
             }
         },
@@ -68,7 +68,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.2.0\"]}"
+                    "nbt": "{Tags:[\"dmgFlag20\"]}"
                 }
             }
         },
@@ -76,7 +76,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.2.1\"]}"
+                    "nbt": "{Tags:[\"dmgFlag21\"]}"
                 }
             }
         },
@@ -84,7 +84,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.2.2\"]}"
+                    "nbt": "{Tags:[\"dmgFlag22\"]}"
                 }
             }
         },
@@ -92,7 +92,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.2.3\"]}"
+                    "nbt": "{Tags:[\"dmgFlag23\"]}"
                 }
             }
         },
@@ -100,7 +100,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.3.0\"]}"
+                    "nbt": "{Tags:[\"dmgFlag30\"]}"
                 }
             }
         },
@@ -108,7 +108,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.3.1\"]}"
+                    "nbt": "{Tags:[\"dmgFlag31\"]}"
                 }
             }
         },
@@ -116,7 +116,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.3.2\"]}"
+                    "nbt": "{Tags:[\"dmgFlag32\"]}"
                 }
             }
         },
@@ -124,7 +124,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.3.3\"]}"
+                    "nbt": "{Tags:[\"dmgFlag33\"]}"
                 }
             }
         },
@@ -132,7 +132,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.4.0\"]}"
+                    "nbt": "{Tags:[\"dmgFlag40\"]}"
                 }
             }
         },
@@ -140,7 +140,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.4.1\"]}"
+                    "nbt": "{Tags:[\"dmgFlag41\"]}"
                 }
             }
         },
@@ -148,7 +148,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.4.2\"]}"
+                    "nbt": "{Tags:[\"dmgFlag42\"]}"
                 }
             }
         },
@@ -156,7 +156,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.4.3\"]}"
+                    "nbt": "{Tags:[\"dmgFlag43\"]}"
                 }
             }
         },
@@ -164,7 +164,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.5.0\"]}"
+                    "nbt": "{Tags:[\"dmgFlag50\"]}"
                 }
             }
         },
@@ -172,7 +172,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.5.1\"]}"
+                    "nbt": "{Tags:[\"dmgFlag51\"]}"
                 }
             }
         },
@@ -180,7 +180,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.5.2\"]}"
+                    "nbt": "{Tags:[\"dmgFlag52\"]}"
                 }
             }
         },
@@ -188,7 +188,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.5.3\"]}"
+                    "nbt": "{Tags:[\"dmgFlag53\"]}"
                 }
             }
         },
@@ -196,7 +196,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.6.0\"]}"
+                    "nbt": "{Tags:[\"dmgFlag60\"]}"
                 }
             }
         },
@@ -204,7 +204,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.6.1\"]}"
+                    "nbt": "{Tags:[\"dmgFlag61\"]}"
                 }
             }
         },
@@ -212,7 +212,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.6.2\"]}"
+                    "nbt": "{Tags:[\"dmgFlag62\"]}"
                 }
             }
         },
@@ -220,7 +220,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.6.3\"]}"
+                    "nbt": "{Tags:[\"dmgFlag63\"]}"
                 }
             }
         },
@@ -228,7 +228,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.7.0\"]}"
+                    "nbt": "{Tags:[\"dmgFlag70\"]}"
                 }
             }
         },
@@ -236,7 +236,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.7.1\"]}"
+                    "nbt": "{Tags:[\"dmgFlag71\"]}"
                 }
             }
         },
@@ -244,7 +244,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.7.2\"]}"
+                    "nbt": "{Tags:[\"dmgFlag72\"]}"
                 }
             }
         },
@@ -252,7 +252,7 @@
             "trigger": "player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "nbt": "{Tags:[\"DmgFlag.7.3\"]}"
+                    "nbt": "{Tags:[\"dmgFlag73\"]}"
                 }
             }
         }
