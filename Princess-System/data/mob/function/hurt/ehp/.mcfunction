@@ -4,7 +4,7 @@
 
 ##
     tag @s add this
-    execute as @e[type=#mob:living,scores={idDmgFlag=..2147483647}] store result storage lib:damage input.atk int 1 run function mob:hurt/ehp/0
+    execute as @e[type=#mob:living,scores={dmgFlag=..2147483647}] store result storage lib:damage input.atk int 1 run function mob:hurt/ehp/0
     tag @s remove this
 
 ## ステータスを取得
@@ -17,4 +17,4 @@
     advancement revoke @s only mob:entity_hurt_player
 
 ## 一時使用scoreHolderをリセット
-    scoreboard players reset #idDmgFlag temp
+    scoreboard players reset #dmgFlag temp

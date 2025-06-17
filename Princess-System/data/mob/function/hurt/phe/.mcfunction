@@ -4,7 +4,7 @@
 
 ##
     tag @s add this
-    execute as @e[type=#mob:living,scores={idDmgFlag=..2147483647}] run function mob:hurt/phe/0
+    execute as @e[type=#mob:living,scores={dmgFlag=..2147483647}] run function mob:hurt/phe/0
     tag @s remove this
 
 ## 進捗を剥奪

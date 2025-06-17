@@ -12,8 +12,8 @@
                             "entity": "this",
                             "name": [
                                 {
-                                    "storage": "temp:api",
-                                    "nbt": "mobName.color",
+                                    "storage": "temp:",
+                                    "nbt": "color",
                                     "interpret": true,
                                     "italic": false
                                 },
