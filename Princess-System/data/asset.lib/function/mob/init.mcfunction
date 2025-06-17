@@ -3,5 +3,4 @@
 # @within function asset.lib:init
 
 ## Scoreboard
-    scoreboard objectives add idAsset dummy
-    scoreboard objectives add idDmgFlag dummy
+    scoreboard objectives add dmgFlag dummy

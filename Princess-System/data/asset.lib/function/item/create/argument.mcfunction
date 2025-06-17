@@ -3,10 +3,10 @@
 # @within function asset.lib:item/create/
 
 ## 引数を設定
-    $data modify storage temp:asset.lib argument set value $(argument)
+    $data modify storage temp: argument set value $(argument)
 
 ## 引数が足りなかったら
-    $execute unless data storage temp:asset.lib {argument:"null"} run tellraw @a [{"storage":"main:","nbt":"tell.ARGUMENT_ERROR"},"asset:item $(argument)"]
+    $execute unless data storage temp: {argument:"null"} run tellraw @a [{"storage":"main:","nbt":"tell.ARGUMENT_ERROR"},"asset:item $(argument)"]
 
 ## 引数を削除
     data remove storage asset:item id
@@ -20,4 +20,4 @@
     execute if data storage asset:item components run data remove storage asset:item components
 
 ## 一時使用storageを削除
-    data remove storage temp:asset.lib argument
+    data remove storage temp: argument

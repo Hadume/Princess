@@ -8,8 +8,8 @@
                 "condition": "value_check",
                 "value": {
                     "type": "storage",
-                    "storage": "temp:asset.lib",
-                    "path": "item.modifier.amount"
+                    "storage": "temp:",
+                    "path": "modifier.amount"
                 },
                 "range": {
                     "min": 1
@@ -24,8 +24,8 @@
                     "italic": false
                 },
                 {
-                    "storage": "temp:asset.lib",
-                    "nbt": "item.amount.name",
+                    "storage": "temp:",
+                    "nbt": "amount.name",
                     "color": "white"
                 },
                 {
@@ -36,12 +36,12 @@
                     "text": "+"
                 },
                 {
-                    "storage": "temp:asset.lib",
-                    "nbt": "item.modifier.amount"
+                    "storage": "temp:",
+                    "nbt": "modifier.amount"
                 },
                 {
-                    "storage": "temp:asset.lib",
-                    "nbt": "item.amount.suffix"
+                    "storage": "temp:",
+                    "nbt": "amount.suffix"
                 }
             ]
         ]
@@ -55,8 +55,8 @@
                 "condition": "value_check",
                 "value": {
                     "type": "storage",
-                    "storage": "temp:asset.lib",
-                    "path": "item.modifier.amount"
+                    "storage": "temp:",
+                    "path": "modifier.amount"
                 },
                 "range": 0
             }
@@ -69,19 +69,19 @@
                     "italic": false
                 },
                 {
-                    "storage": "temp:asset.lib",
-                    "nbt": "item.amount.name"
+                    "storage": "temp:",
+                    "nbt": "amount.name"
                 },
                 {
                     "text": ": "
                 },
                 {
-                    "storage": "temp:asset.lib",
-                    "nbt": "item.modifier.amount"
+                    "storage": "temp:",
+                    "nbt": "modifier.amount"
                 },
                 {
-                    "storage": "temp:asset.lib",
-                    "nbt": "item.amount.suffix"
+                    "storage": "temp:",
+                    "nbt": "amount.suffix"
                 }
             ]
         ]
@@ -95,8 +95,8 @@
                 "condition": "value_check",
                 "value": {
                     "type": "storage",
-                    "storage": "temp:asset.lib",
-                    "path": "item.modifier.amount"
+                    "storage": "temp:",
+                    "path": "modifier.amount"
                 },
                 "range": {
                     "max": -1
@@ -111,8 +111,8 @@
                     "italic": false
                 },
                 {
-                    "storage": "temp:asset.lib",
-                    "nbt": "item.amount.name",
+                    "storage": "temp:",
+                    "nbt": "amount.name",
                     "color": "white"
                 },
                 {
@@ -120,12 +120,12 @@
                     "color": "white"
                 },
                 {
-                    "storage": "temp:asset.lib",
-                    "nbt": "item.modifier.amount"
+                    "storage": "temp:",
+                    "nbt": "modifier.amount"
                 },
                 {
-                    "storage": "temp:asset.lib",
-                    "nbt": "item.amount.suffix"
+                    "storage": "temp:",
+                    "nbt": "amount.suffix"
                 }
             ]
         ]

@@ -9,4 +9,5 @@
     function asset.lib:item/create/lore/modifiers/loop
 
 ## 一時使用storageを削除
-    data remove storage temp:asset.lib item
+    data remove storage temp: modifier
+    data remove storage temp: amount

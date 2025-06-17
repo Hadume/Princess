@@ -17,8 +17,8 @@
 ## 個人ストレージを呼ぶ
     function #api:e_dat/please
 
-## idを保存
-    execute store result score @s asset run data get storage asset:mob ID
+## IDを保存
+    execute store result score @s assetID run data get storage asset:mob ID
 
 ## 名前
     data modify storage dat: _.rawName set from storage asset:mob name
@@ -38,24 +38,24 @@
         execute if data storage asset:mob weapon.offhand.ID run function asset.lib:mob/summon/equipments {parts:"offhand"}
 
     ### データを用意
-        data modify storage temp:asset.lib mob.armorItems set value [{},{},{},{}]
-        data modify storage temp:asset.lib mob.handItems set value [{},{}]
+        data modify storage temp: armorItems set value [{},{},{},{}]
+        data modify storage temp: handItems set value [{},{}]
 
     ### データを移行
-        execute if data storage asset:mob armor.head run data modify storage temp:asset.lib mob.armorItems[-1] set from storage asset:mob armor.head
-        execute if data storage asset:mob armor.chest run data modify storage temp:asset.lib mob.armorItems[-2] set from storage asset:mob armor.chest
-        execute if data storage asset:mob armor.legs run data modify storage temp:asset.lib mob.armorItems[-3] set from storage asset:mob armor.legs
-        execute if data storage asset:mob armor.feet run data modify storage temp:asset.lib mob.armorItems[-4] set from storage asset:mob armor.feet
-        execute if data storage asset:mob weapon.mainhand run data modify storage temp:asset.lib mob.handItems[-2] set from storage asset:mob weapon.mainhand
-        execute if data storage asset:mob weapon.offhand run data modify storage temp:asset.lib mob.handItems[-1] set from storage asset:mob weapon.offhand
+        execute if data storage asset:mob armor.head run data modify storage temp: armorItems[-1] set from storage asset:mob armor.head
+        execute if data storage asset:mob armor.chest run data modify storage temp: armorItems[-2] set from storage asset:mob armor.chest
+        execute if data storage asset:mob armor.legs run data modify storage temp: armorItems[-3] set from storage asset:mob armor.legs
+        execute if data storage asset:mob armor.feet run data modify storage temp: armorItems[-4] set from storage asset:mob armor.feet
+        execute if data storage asset:mob weapon.mainhand run data modify storage temp: handItems[-2] set from storage asset:mob weapon.mainhand
+        execute if data storage asset:mob weapon.offhand run data modify storage temp: handItems[-1] set from storage asset:mob weapon.offhand
 
     ### データを反映
-        data modify entity @s ArmorItems set from storage temp:asset.lib mob.armorItems
-        data modify entity @s HandItems set from storage temp:asset.lib mob.handItems
+        data modify entity @s ArmorItems set from storage temp: armorItems
+        data modify entity @s HandItems set from storage temp: handItems
 
     ### 保存
-        data modify storage dat: _.armor set from storage temp:asset.lib mob.armorItems
-        data modify storage dat: _.weapon set from storage temp:asset.lib mob.handItems
+        data modify storage dat: _.armor set from storage temp: armorItems
+        data modify storage dat: _.weapon set from storage temp: handItems
 
 
 ## ステータス
@@ -71,7 +71,7 @@
 
     ### 装備の数値を反映
         data modify storage lib:modifier input set value ["PHYSICS","MAGICS"]
-        function #lib:stats/update
+        function #lib:modifier/update
 
 
 ## ドロップ品
@@ -94,4 +94,5 @@
     function asset.lib:mob/summon/argument {argument:"null"}
 
 ## 一時使用storageを削除
-    data remove storage temp:asset.lib mob
+    data remove storage temp: armorItems
+    data remove storage temp: handItems

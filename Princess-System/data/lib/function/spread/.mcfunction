@@ -6,9 +6,9 @@
     execute unless data storage lib:spread input.amount run return run function lib:_common {function:"lib:spread ",argument:"input.amount"}
 
 ## posを取得
-    execute if data storage lib:spread input.at run data modify storage temp:lib spread.at set from storage lib:spread input.at
+    execute if data storage lib:spread input.at run data modify storage temp: at set from storage lib:spread input.at
     execute unless data storage lib:spread input.at run function #api:get.nbt/pos
-    execute unless data storage lib:spread input.at run data modify storage temp:lib spread.at set from storage api:nbt pos.data
+    execute unless data storage lib:spread input.at run data modify storage temp: at set from storage api:nbt pos.data
 
 ## 拡散値を取得
     ### XZ
@@ -27,33 +27,33 @@
 
 
 ## データを用意
-    data modify storage temp:lib spread.pos set value [0.0d,0.0d,0.0d]
+    data modify storage temp: pos set value [0.0d,0.0d,0.0d]
 
 ## 座標を計算
-    execute store result score #posX temp run data get storage temp:lib spread.at[0] 100
-    execute store result score #posY temp run data get storage temp:lib spread.at[1] 100
-    execute store result score #posZ temp run data get storage temp:lib spread.at[2] 100
+    execute store result score #posX temp run data get storage temp: at[0] 100
+    execute store result score #posY temp run data get storage temp: at[1] 100
+    execute store result score #posZ temp run data get storage temp: at[2] 100
     ### X
         execute store result score #spread temp run random value 1..
         scoreboard players operation #spread temp %= #spreadXZ1 temp
         scoreboard players operation #spread temp -= #spreadXZ2 temp
-        execute store result storage temp:lib spread.pos[0] double 0.01 run scoreboard players operation #posX temp += #spread temp
+        execute store result storage temp: pos[0] double 0.01 run scoreboard players operation #posX temp += #spread temp
 
     ### Z
         execute store result score #spread temp run random value 1..
         scoreboard players operation #spread temp %= #spreadXZ1 temp
         scoreboard players operation #spread temp -= #spreadXZ2 temp
-        execute store result storage temp:lib spread.pos[2] double 0.01 run scoreboard players operation #posZ temp += #spread temp
+        execute store result storage temp: pos[2] double 0.01 run scoreboard players operation #posZ temp += #spread temp
 
     ### Y
         execute store result score #spread temp run random value 1..
         scoreboard players operation #spread temp %= #spreadY1 temp
         scoreboard players operation #spread temp -= #spreadY2 temp
-        execute store result storage temp:lib spread.pos[1] double 0.01 run scoreboard players operation #posY temp += #spread temp
+        execute store result storage temp: pos[1] double 0.01 run scoreboard players operation #posY temp += #spread temp
 
 
 ## 座標を代入
-    execute if entity @s[type=!player] run data modify entity @s Pos set from storage temp:lib spread.pos
+    execute if entity @s[type=!player] run data modify entity @s Pos set from storage temp: pos
 
 ## 地面に設置させる
     execute if data storage lib:spread input{onGround:1b} run function lib:spread/on_ground/
@@ -69,7 +69,8 @@
     scoreboard players reset #posZ temp
 
 ## 一時使用storageを削除
-    data remove storage temp:lib spread
+    data remove storage temp: at
+    data remove storage temp: pos
 
 ## ライブラリ共通処理
     function lib:_common {function:"lib:spread ",argument:"null"}

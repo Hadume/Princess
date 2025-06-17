@@ -9,9 +9,9 @@
 
 ## 座標を取得
     ### 魔法
-        execute store result score #posX1 temp run data get storage temp:lib range.at[0] 1000
-        execute store result score #posY1 temp run data get storage temp:lib range.at[1] 1000
-        execute store result score #posZ1 temp run data get storage temp:lib range.at[2] 1000
+        execute store result score #posX1 temp run data get storage temp: at[0] 1000
+        execute store result score #posY1 temp run data get storage temp: at[1] 1000
+        execute store result score #posZ1 temp run data get storage temp: at[2] 1000
 
     ### MOB
         execute store result score #posX2 temp run data get storage api:nbt pos.data[0] 1000

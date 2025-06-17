@@ -7,7 +7,7 @@
     execute if entity @s[type=!#mob:enemy] run function asset.lib:mob/summon/id/neutral
 
 ## idを保存
-    data modify storage dat: _.entityType set from storage temp:asset.lib mob.entityType
+    data modify storage dat: _.entityType set from storage temp: entityType
 
 ## 一時使用storageを削除
-    data remove storage temp:asset.lib mob.entityType
+    data remove storage temp: entityType

@@ -6,7 +6,7 @@
     scoreboard players add #dmgFlag global 1
 
 ## MOBに渡す
-    scoreboard players operation @s idDmgFlag = #dmgFlag global
+    scoreboard players operation @s dmgFlag = #dmgFlag global
 
 ## tagを追加する
     function asset.lib:mob/summon/damage_flags/add.tags

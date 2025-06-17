@@ -3,7 +3,7 @@
 # @within function asset.lib:mob/summon/damage_flags/
 
 ## 計算
-    scoreboard players operation #dmgFlag temp = @s idDmgFlag
+    scoreboard players operation #dmgFlag temp = @s dmgFlag
     scoreboard players operation #dmgFlag temp %= #2^15 const
 
 ## タグを与える

@@ -9,17 +9,17 @@
 ## データを用意
     execute store result score #range temp run data get storage lib:range input.amount 1000
     execute store result score #pierce temp run data get storage lib:range input.pierce
-    execute if data storage lib:range input.targets run data modify storage temp:lib range.targets set from storage lib:range input.targets
+    execute if data storage lib:range input.targets run data modify storage temp: targets set from storage lib:range input.targets
     ### 範囲^2
         scoreboard players operation #range temp *= #range temp
 
     ### 対象がいなかったら、全員を対象に
-        execute unless data storage temp:lib range.targets run data modify storage temp:lib range.targets set value ["enemy","player"]
+        execute unless data storage temp: targets run data modify storage temp: targets set value ["enemy","player"]
 
 
 ## 座標取得
     function #api:get.nbt/pos
-    data modify storage temp:lib range.at set from storage api:nbt pos.data
+    data modify storage temp: at set from storage api:nbt pos.data
 
 ## ダメージを受けているMOBを除外
     execute unless data storage lib:range input{noHurtTime:true} run data modify storage lib:range input.noHurtTime set value false
@@ -56,7 +56,8 @@
     scoreboard players reset #sizeY temp
 
 ## 一時使用storageを削除
-    data remove storage temp:lib range
+    data remove storage temp: targets
+    data remove storage temp: at
 
 ## ライブラリ共通処理
     function lib:_common {function:"lib:range ",argument:"null"}
