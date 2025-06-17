@@ -30,32 +30,20 @@
 
 ## 装備
     ### Assetから
-        execute if data storage asset:mob armor.head.ID run function asset.lib:mob/summon/equipments {parts:"head"}
-        execute if data storage asset:mob armor.chest.ID run function asset.lib:mob/summon/equipments {parts:"chest"}
-        execute if data storage asset:mob armor.legs.ID run function asset.lib:mob/summon/equipments {parts:"legs"}
-        execute if data storage asset:mob armor.feet.ID run function asset.lib:mob/summon/equipments {parts:"feet"}
-        execute if data storage asset:mob weapon.mainhand.ID run function asset.lib:mob/summon/equipments {parts:"mainhand"}
-        execute if data storage asset:mob weapon.offhand.ID run function asset.lib:mob/summon/equipments {parts:"offhand"}
-
-    ### データを用意
-        data modify storage temp: armorItems set value [{},{},{},{}]
-        data modify storage temp: handItems set value [{},{}]
-
-    ### データを移行
-        execute if data storage asset:mob armor.head run data modify storage temp: armorItems[-1] set from storage asset:mob armor.head
-        execute if data storage asset:mob armor.chest run data modify storage temp: armorItems[-2] set from storage asset:mob armor.chest
-        execute if data storage asset:mob armor.legs run data modify storage temp: armorItems[-3] set from storage asset:mob armor.legs
-        execute if data storage asset:mob armor.feet run data modify storage temp: armorItems[-4] set from storage asset:mob armor.feet
-        execute if data storage asset:mob weapon.mainhand run data modify storage temp: handItems[-2] set from storage asset:mob weapon.mainhand
-        execute if data storage asset:mob weapon.offhand run data modify storage temp: handItems[-1] set from storage asset:mob weapon.offhand
+        execute if data storage asset:mob armor[-4].ID run function asset.lib:mob/summon/equipments {equipment:"armor",index:-4}
+        execute if data storage asset:mob armor[-3].ID run function asset.lib:mob/summon/equipments {equipment:"armor",index:-3}
+        execute if data storage asset:mob armor[-2].ID run function asset.lib:mob/summon/equipments {equipment:"armor",index:-2}
+        execute if data storage asset:mob armor[-1].ID run function asset.lib:mob/summon/equipments {equipment:"armor",index:-1}
+        execute if data storage asset:mob weapon[-2].ID run function asset.lib:mob/summon/equipments {equipment:"weapon",index:-2}
+        execute if data storage asset:mob weapon[-1].ID run function asset.lib:mob/summon/equipments {equipment:"weapon",index:-1}
 
     ### データを反映
-        data modify entity @s ArmorItems set from storage temp: armorItems
-        data modify entity @s HandItems set from storage temp: handItems
+        data modify entity @s ArmorItems set from storage asset:mob armor
+        data modify entity @s HandItems set from storage asset:mob weapon
 
     ### 保存
-        data modify storage dat: _.armor set from storage temp: armorItems
-        data modify storage dat: _.weapon set from storage temp: handItems
+        data modify storage dat: _.armor set from storage asset:mob armor
+        data modify storage dat: _.weapon set from storage asset:mob weapon
 
 
 ## ステータス
@@ -92,7 +80,3 @@
 
 ## 引数を削除
     function asset.lib:mob/summon/argument {argument:"null"}
-
-## 一時使用storageを削除
-    data remove storage temp: armorItems
-    data remove storage temp: handItems

@@ -9,16 +9,8 @@
     data modify storage asset:mob type set value "boss"
 
 ## 装備
-    ### 防具
-    #data modify storage asset:mob armor.head set value {}
-    #data modify storage asset:mob armor.chest set value {}
-    #data modify storage asset:mob armor.legs set value {}
-    #data modify storage asset:mob armor.feet set value {}
-
-    ### 武器
-    #data modify storage asset:mob weapon.mainhand set value {}
-    #data modify storage asset:mob weapon.offhand set value {}
-
+#data modify storage asset:mob armor set value [{},{},{},{}]
+#data modify storage asset:mob weapon set value [{},{}]
 
 ## ステータス
     data modify storage asset:mob status.lvl set value 5

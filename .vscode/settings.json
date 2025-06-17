@@ -134,7 +134,7 @@
                         "#",
                         "# @within function asset:mob/summon/",
                         "",
-                        "## 元になるEntityを召喚 : id(minecraft:entity)",
+                        "## 元になるEntityを召喚",
                         "execute summon %mob% at @s run function asset:mob/summon/init with storage asset:mob"
                     ]
                 },
@@ -153,16 +153,8 @@
                         "data modify storage asset:mob type set value \"%Type%\"",
                         "",
                         "## 装備",
-                        "### 防具",
-                        "#data modify storage asset:mob armor.head set value {}",
-                        "#data modify storage asset:mob armor.chest set value {}",
-                        "#data modify storage asset:mob armor.legs set value {}",
-                        "#data modify storage asset:mob armor.feet set value {}",
-                        "",
-                        "### 武器",
-                        "#data modify storage asset:mob weapon.mainhand set value {}",
-                        "#data modify storage asset:mob weapon.offhand set value {}",
-                        "",
+                        "#data modify storage asset:mob armor set value [{},{},{},{}]",
+                        "#data modify storage asset:mob weapon set value [{},{}]",
                         "",
                         "## ステータス",
                         "data modify storage asset:mob status.lvl set value ",
@@ -208,39 +200,6 @@
                         "#> asset:spawner/%namespace%/set/",
                         "#",
                         "# @within function asset:spawner/set/main",
-                        "",
-                        "## 何がスポーンするか : [{id: int(asset:mob)}] @ N",
-                        "    data modify storage asset:spawner Data set value [{id: 53000}]",
-                        "",
-                        "## 何体スポーンするか : int",
-                        "    data modify storage asset:spawner Count set value {Min: 1,Max: 5}",
-                        "",
-                        "## スポーンまでの時間 : int",
-                        "    data modify storage asset:spawner Delay set value {Min: 300,Max: 400}",
-                        "",
-                        "## 範囲 : float",
-                        "    data modify storage asset:spawner range set value 4.0f",
-                        "",
-                        "## 周囲のMOBの最大数 : int",
-                        "    data modify storage asset:spawner MaxNearbyEntities set value 6",
-                        "",
-                        "## 稼働範囲 : float",
-                        "    data modify storage asset:spawner RequiredPlayerrange set value 8.0f"
-                    ]
-                }
-            ]
-        },
-        {
-            "label": "dungeon/テンプレート",
-            "picked": false,
-            "generates": [
-                {
-                    "type": "file",
-                    "rel": "data/asset/function/dungeon/%namespace%/tick/.mcfunction",
-                    "content": [
-                        "#> asset:dungeon/%namespace%/tick/",
-                        "#",
-                        "# @within tag/function asset:dungeon/tick",
                         "",
                         "## 何がスポーンするか : [{id: int(asset:mob)}] @ N",
                         "    data modify storage asset:spawner Data set value [{id: 53000}]",
