@@ -29,7 +29,7 @@
 
 ## ダメージ表示
     execute anchored eyes run loot spawn ^ ^ ^ loot lib:damage/display
-    execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{lib:{damage:1b,new:1b}}}}}] at @s run function lib:damage/display/
+    execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{lib:{damage:{new:1b}}}}}}] at @s run function lib:damage/display/
 
 ## 回復
     execute if entity @s[type=!#mob:undead] run effect give @s instant_health 1 200 true

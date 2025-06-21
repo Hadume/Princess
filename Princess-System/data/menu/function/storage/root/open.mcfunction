@@ -8,7 +8,7 @@
     loot replace entity @s inventory.19 loot menu:storage/root/clear
 
 ## ページを仮変更しておく
-    scoreboard players set @s Menu 0
+    scoreboard players set @s menu 0
 
 ## アイテムを設置
     function menu:storage/root/items/

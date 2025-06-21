@@ -2,18 +2,18 @@
 # MPを回復
 # @within function player:regen/mp/tick
 
-#> ScoreHolder
+#> scoreHolder
 # @private
-    #declare score_holder #MP.RgnPer
+    #declare score_holder #mpRgnPer
 
 ## 回復値
-    scoreboard players operation #MP.RgnPer Temp = @s MP.Rgn.Per
-    scoreboard players operation #MP.RgnPer Temp *= @s MP.Max
-    scoreboard players operation #MP.RgnPer Temp /= #100 Const
-    execute store result storage lib: RcvrMP.Amount int 1 run scoreboard players get #MP.RgnPer Temp
+    scoreboard players operation #mpRgnPer temp = @s mpRgnPer
+    scoreboard players operation #mpRgnPer temp *= @s mpMax
+    scoreboard players operation #mpRgnPer temp /= #100 const
+    execute store result storage lib: RcvrMP.amount int 1 run scoreboard players get #mpRgnPer temp
 
 ## 回復
     function #lib:status/mp/recover
 
-## 一時使用ScoreHolderをリセット
-    scoreboard players reset #MP.RgnPer Temp
+## 一時使用scoreHolderをリセット
+    scoreboard players reset #mpRgnPer temp

@@ -3,151 +3,150 @@
 # @within function main:load
 
 ## 初期化完了
-#data modify storage main: Init set value 1b
+#data modify storage main: init set value 1b
 
 #> Scoreboard.Public
 # @public
-    scoreboard objectives add Global dummy
-    scoreboard objectives add Asset dummy
-    scoreboard objectives add Const dummy
-    scoreboard objectives add Temp dummy
-    scoreboard objectives add Lib dummy
+    scoreboard objectives add global dummy
+    scoreboard objectives add const dummy
+    scoreboard objectives add temp dummy
+    scoreboard objectives add lib dummy
     ### Used
-        scoreboard objectives add Used.WFOAS used:warped_fungus_on_a_stick
+        scoreboard objectives add usedWFOAS used:warped_fungus_on_a_stick
 
     ### Custom
-        scoreboard objectives add LeaveGame custom:leave_game
+        scoreboard objectives add leaveGame custom:leave_game
 
     ### Status
-        scoreboard objectives add Lvl dummy
-        scoreboard objectives add Money dummy
-        #### Exp
-            scoreboard objectives add Exp dummy
-            scoreboard objectives add Exp.Need dummy
+        scoreboard objectives add lvl dummy
+        scoreboard objectives add money dummy
+        #### exp
+            scoreboard objectives add exp dummy
+            scoreboard objectives add expNeed dummy
 
-        #### HP
-            scoreboard objectives add HP dummy
-            scoreboard objectives add HP.Max dummy
-            scoreboard objectives add HP.Max.Base dummy
-            scoreboard objectives add HP.Rgn.Intrvl dummy
-            scoreboard objectives add HP.Rgn.Intrvl.Base dummy
-            scoreboard objectives add HP.Rgn.Per dummy
-            scoreboard objectives add HP.Rgn.Per.Base dummy
-            scoreboard objectives add HP.Rgn.Timer dummy
+        #### hp
+            scoreboard objectives add hp dummy
+            scoreboard objectives add hpMax dummy
+            scoreboard objectives add hpMaxBase dummy
+            scoreboard objectives add hpRgnIntrvl dummy
+            scoreboard objectives add hpRgnIntrvlBase dummy
+            scoreboard objectives add hpRgnPer dummy
+            scoreboard objectives add hpRgnPerBase dummy
+            scoreboard objectives add hpRgnTimer dummy
 
-        #### MP
-            scoreboard objectives add MP dummy
-            scoreboard objectives add MP.Max dummy
-            scoreboard objectives add MP.Max.Base dummy
-            scoreboard objectives add MP.Rgn.Intrvl dummy
-            scoreboard objectives add MP.Rgn.Intrvl.Base dummy
-            scoreboard objectives add MP.Rgn.Per dummy
-            scoreboard objectives add MP.Rgn.Per.Base dummy
-            scoreboard objectives add MP.Rgn.Timer dummy
+        #### mp
+            scoreboard objectives add mp dummy
+            scoreboard objectives add mpMax dummy
+            scoreboard objectives add mpMaxBase dummy
+            scoreboard objectives add mpRgnIntrvl dummy
+            scoreboard objectives add mpRgnIntrvlBase dummy
+            scoreboard objectives add mpRgnPer dummy
+            scoreboard objectives add mpRgnPerBase dummy
+            scoreboard objectives add mpRgnTimer dummy
 
-        #### ATK
-            scoreboard objectives add ATK dummy
-            scoreboard objectives add ATK.Base dummy
-            scoreboard objectives add ATK.Flamme dummy
-            scoreboard objectives add ATK.Flamme.Base dummy
-            scoreboard objectives add ATK.Wasser dummy
-            scoreboard objectives add ATK.Wasser.Base dummy
-            scoreboard objectives add ATK.Wind dummy
-            scoreboard objectives add ATK.Wind.Base dummy
-            scoreboard objectives add ATK.Licht dummy
-            scoreboard objectives add ATK.Licht.Base dummy
-            scoreboard objectives add ATK.Dunkel dummy
-            scoreboard objectives add ATK.Dunkel.Base dummy
+        #### atk
+            scoreboard objectives add atk dummy
+            scoreboard objectives add atkBase dummy
+            scoreboard objectives add atkFlamme dummy
+            scoreboard objectives add atkFlammeBase dummy
+            scoreboard objectives add atkWasser dummy
+            scoreboard objectives add atkWasserBase dummy
+            scoreboard objectives add atkWind dummy
+            scoreboard objectives add atkWindBase dummy
+            scoreboard objectives add atkLicht dummy
+            scoreboard objectives add atkLichtBase dummy
+            scoreboard objectives add atkDunkel dummy
+            scoreboard objectives add atkDunkelBase dummy
 
-        #### DEF
-            scoreboard objectives add DEF dummy
-            scoreboard objectives add DEF.Base dummy
-            scoreboard objectives add DEF.Flamme dummy
-            scoreboard objectives add DEF.Flamme.Base dummy
-            scoreboard objectives add DEF.Wasser dummy
-            scoreboard objectives add DEF.Wasser.Base dummy
-            scoreboard objectives add DEF.Wind dummy
-            scoreboard objectives add DEF.Wind.Base dummy
-            scoreboard objectives add DEF.Licht dummy
-            scoreboard objectives add DEF.Licht.Base dummy
-            scoreboard objectives add DEF.Dunkel dummy
-            scoreboard objectives add DEF.Dunkel.Base dummy
+        #### def
+            scoreboard objectives add def dummy
+            scoreboard objectives add defBase dummy
+            scoreboard objectives add defFlamme dummy
+            scoreboard objectives add defFlammeBase dummy
+            scoreboard objectives add defWasser dummy
+            scoreboard objectives add defWasserBase dummy
+            scoreboard objectives add defWind dummy
+            scoreboard objectives add defWindBase dummy
+            scoreboard objectives add defLicht dummy
+            scoreboard objectives add defLichtBase dummy
+            scoreboard objectives add defDunkel dummy
+            scoreboard objectives add defDunkelBase dummy
 
-        #### Speed
-            scoreboard objectives add Speed dummy
-            scoreboard objectives add Speed.Base dummy
+        #### speed
+            scoreboard objectives add speed dummy
+            scoreboard objectives add speedBase dummy
 
 
     ### Magic
-        scoreboard objectives add Duration dummy
-        scoreboard objectives add CT.Click dummy
-        scoreboard objectives add CT.ClickS dummy
-        scoreboard objectives add CT.Offhand dummy
-        scoreboard objectives add CT.OffhandS dummy
+        scoreboard objectives add duration dummy
+        scoreboard objectives add ctClick dummy
+        scoreboard objectives add ctClickS dummy
+        scoreboard objectives add ctOffhand dummy
+        scoreboard objectives add ctOffhandS dummy
         #### Types
-            ##### MP
-                scoreboard objectives add Mgc.MP dummy
-                scoreboard objectives add Mgc.MP.Base dummy
+            ##### mp
+                scoreboard objectives add mgcMp dummy
+                scoreboard objectives add mgcMpBase dummy
 
             ##### Cooltime
-                scoreboard objectives add Mgc.Cooltime dummy
-                scoreboard objectives add Mgc.Cooltime.Base dummy
+                scoreboard objectives add mgcCooltime dummy
+                scoreboard objectives add mgcCooltimeBase dummy
 
-            ##### Multiple
-                scoreboard objectives add Mgc.Multiple dummy
-                scoreboard objectives add Mgc.Multiple.Base dummy
+            ##### multiple
+                scoreboard objectives add mgcMultiple dummy
+                scoreboard objectives add mgcMultipleBase dummy
 
-            ##### Amount
-                scoreboard objectives add Mgc.Amount dummy
-                scoreboard objectives add Mgc.Amount.Base dummy
+            ##### amount
+                scoreboard objectives add mgcAmount dummy
+                scoreboard objectives add mgcAmountBase dummy
 
-            ##### Duration
-                scoreboard objectives add Mgc.Duration dummy
-                scoreboard objectives add Mgc.Duration.Base dummy
+            ##### duration
+                scoreboard objectives add mgcDuration dummy
+                scoreboard objectives add mgcDurationBase dummy
 
             ##### Pierce
-                scoreboard objectives add Mgc.Pierce dummy
-                scoreboard objectives add Mgc.Pierce.Base dummy
+                scoreboard objectives add mgcPierce dummy
+                scoreboard objectives add mgcPierceBase dummy
 
-            ##### Spread
-                scoreboard objectives add Mgc.Spread dummy
-                scoreboard objectives add Mgc.Spread.Base dummy
+            ##### spread
+                scoreboard objectives add mgcSpread dummy
+                scoreboard objectives add mgcSpreadBase dummy
 
-            ##### Range
-                scoreboard objectives add Mgc.Range dummy
-                scoreboard objectives add Mgc.Range.Base dummy
+            ##### range
+                scoreboard objectives add mgcRange dummy
+                scoreboard objectives add mgcRangeBase dummy
 
-            ##### Speed
-                scoreboard objectives add Mgc.Speed dummy
-                scoreboard objectives add Mgc.Speed.Base dummy
+            ##### speed
+                scoreboard objectives add mgcSpeed dummy
+                scoreboard objectives add mgcSpeedBase dummy
 
 
 
     ### Misc
-        scoreboard objectives add 4tickInterval dummy
+        scoreboard objectives add fourTickInterval dummy
 
 
-#> ScoreHolder
+#> scoreHolder
 # @public
-    scoreboard players set #-1 Const -1
-    scoreboard players set #2 Const 2
-    scoreboard players set #4 Const 4
-    scoreboard players set #10 Const 10
-    scoreboard players set #21 Const 21
-    scoreboard players set #51 Const 51
-    scoreboard players set #100 Const 100
-    scoreboard players set #200 Const 200
-    scoreboard players set #1000 Const 1000
-    scoreboard players set #1600 Const 1600
-    scoreboard players set #10000 Const 10000
-    scoreboard players set #18000 Const 18000
-    scoreboard players set #2^2 Const 4
-    scoreboard players set #2^15 Const 32768
-    scoreboard players set #2^16 Const 65536
-    scoreboard players set #2^18 Const 262144
-    scoreboard players set #2^24 Const 16777216
-    data modify storage main: Const.Root2 set value 1.41421356237d
-    data modify storage main: Const.Pi set value 3.14159265359d
+    scoreboard players set #-1 const -1
+    scoreboard players set #2 const 2
+    scoreboard players set #4 const 4
+    scoreboard players set #10 const 10
+    scoreboard players set #21 const 21
+    scoreboard players set #51 const 51
+    scoreboard players set #100 const 100
+    scoreboard players set #200 const 200
+    scoreboard players set #1000 const 1000
+    scoreboard players set #1600 const 1600
+    scoreboard players set #10000 const 10000
+    scoreboard players set #18000 const 18000
+    scoreboard players set #2^2 const 4
+    scoreboard players set #2^15 const 32768
+    scoreboard players set #2^16 const 65536
+    scoreboard players set #2^18 const 262144
+    scoreboard players set #2^24 const 16777216
+    data modify storage main: const.SQRT2 set value 1.41421356237d
+    data modify storage main: const.PI set value 3.14159265359d
 
 ## ゲームルール
     function main:init/gamerule
@@ -164,15 +163,14 @@
     execute in overworld run setblock 0 -64 0 shulker_box
 
 ## エラーログ
-    data modify storage main: Tell.Error set value "§c[Error] §o§n"
-    data modify storage main: Tell.ArgumentError set value "§c[Error] 引数が足りません: §o§n"
+    data modify storage main: tell.ERROR set value "§c[Error] §o§n"
+    data modify storage main: tell.ARGUMENT_ERROR set value "§c[Error] 引数が足りません: §o§n"
 
 ## 各システムの初期化
     function api:init
     function asset.lib:init
     function lib:init
     function menu:init
-    function skilltree:init
 
 ## Assetの初期化
     function #asset:magic/load

@@ -5,8 +5,8 @@
 ## 個人ストレージを呼ぶ
     function #api:e_dat/please
 
-## id
-    data modify storage dat: _.id set value "player"
+## entityType
+    data modify storage dat: _.entityType set value "player"
 
 ## 装備
     data modify storage dat: _.Armor set value [{},{},{},{}]
@@ -16,49 +16,49 @@
     data modify storage dat: _.Magic set value {Known:[]}
 
 ## Status
-    scoreboard players set @s Lvl 1
-    ### Exp
-        execute store result score @s Exp.Need run scoreboard players set @s Exp 10
+    scoreboard players set @s lvl 1
+    ### exp
+        execute store result score @s expNeed run scoreboard players set @s exp 10
 
-    ### HP
-        execute store result score @s HP run scoreboard players set @s HP.Max.Base 100
-        scoreboard players set @s HP.Rgn.Intrvl.Base 40
-        scoreboard players set @s HP.Rgn.Per.Base 0
+    ### hp
+        execute store result score @s hp run scoreboard players set @s hpMaxBase 100
+        scoreboard players set @s hpRgnIntrvlBase 40
+        scoreboard players set @s hpRgnPerBase 0
 
-    ### MP
-        execute store result score @s MP run scoreboard players set @s MP.Max.Base 100
-        scoreboard players set @s MP.Rgn.Intrvl.Base 40
-        scoreboard players set @s MP.Rgn.Per.Base 5
+    ### mp
+        execute store result score @s mp run scoreboard players set @s mpMaxBase 100
+        scoreboard players set @s mpRgnIntrvlBase 40
+        scoreboard players set @s mpRgnPerBase 5
 
-    ## ATK
-        scoreboard players set @s ATK.Base 1
-        scoreboard players set @s ATK.Flamme.Base 0
-        scoreboard players set @s ATK.Wasser.Base 0
-        scoreboard players set @s ATK.Wind.Base 0
-        scoreboard players set @s ATK.Licht.Base 0
-        scoreboard players set @s ATK.Dunkel.Base 0
+    ## atk
+        scoreboard players set @s atkBase 1
+        scoreboard players set @s atkFlammeBase 0
+        scoreboard players set @s atkWasserBase 0
+        scoreboard players set @s atkWindBase 0
+        scoreboard players set @s atkLichtBase 0
+        scoreboard players set @s atkDunkelBase 0
 
-    ## DEF
-        scoreboard players set @s DEF.Base 0
-        scoreboard players set @s DEF.Flamme.Base 0
-        scoreboard players set @s DEF.Wasser.Base 0
-        scoreboard players set @s DEF.Wind.Base 0
-        scoreboard players set @s DEF.Licht.Base 0
-        scoreboard players set @s DEF.Dunkel.Base 0
+    ## def
+        scoreboard players set @s defBase 0
+        scoreboard players set @s defFlammeBase 0
+        scoreboard players set @s defWasserBase 0
+        scoreboard players set @s defWindBase 0
+        scoreboard players set @s defLichtBase 0
+        scoreboard players set @s defDunkelBase 0
 
-    ### Speed
-        scoreboard players set @s Speed.Base 100
+    ### speed
+        scoreboard players set @s speedBase 100
 
     ### Magic
-        scoreboard players set @s Mgc.MP.Base 0
-        scoreboard players set @s Mgc.Cooltime.Base 0
-        scoreboard players set @s Mgc.Multiple.Base 0
-        scoreboard players set @s Mgc.Amount.Base 0
-        scoreboard players set @s Mgc.Duration.Base 0
-        scoreboard players set @s Mgc.Pierce.Base 0
-        scoreboard players set @s Mgc.Spread.Base 0
-        scoreboard players set @s Mgc.Range.Base 0
-        scoreboard players set @s Mgc.Speed.Base 0
+        scoreboard players set @s mgcMpBase 0
+        scoreboard players set @s mgcCooltimeBase 0
+        scoreboard players set @s mgcmultipleBase 0
+        scoreboard players set @s mgcamountBase 0
+        scoreboard players set @s mgcDurationBase 0
+        scoreboard players set @s mgcPierceBase 0
+        scoreboard players set @s mgcspreadBase 0
+        scoreboard players set @s mgcrangeBase 0
+        scoreboard players set @s mgcSpeedBase 0
 
 
 ## インベントリUI

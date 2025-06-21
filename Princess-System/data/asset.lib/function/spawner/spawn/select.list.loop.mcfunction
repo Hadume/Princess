@@ -7,7 +7,7 @@
     data remove storage temp: data.Data[-1]
 
 ## スコアを減らす
-    scoreboard players remove #Rand Temp 1
+    scoreboard players remove #rand temp 1
 
 ## まだ減らすなら
-    execute if score #Rand Temp matches 1.. run function asset.lib:spawner/spawn/select.list.loop
+    execute if score #rand temp matches 1.. run function asset.lib:spawner/spawn/select.list.loop

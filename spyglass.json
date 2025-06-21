@@ -129,22 +129,15 @@
             "type": "double"
         },
         "idOmitDefaultNamespace": true,
-        "nameOfNbtKey": "^(_|[a-z]+([A-Z][a-z\\d]+)*|[A-Z\\d]+(_[A-Z\\d]+)*)$",
-        "nameOfObjective": "^[a-z]+([A-Za-z\\d]+)*$",
+        "nameOfNbtKey": "^(_|[a-z]+([A-Za-z\\d]+)*|[A-Z\\d]+(_[A-Z\\d]+)*)$",
+        "nameOfObjective": "^([a-z]+([A-Za-z\\d]+)*|[A-Z\\d]+(_[A-Z\\d]+)*)$",
         "nameOfScoreHolder": "^#(-?\\d+(\\^\\d+)?|[a-z]+([A-Za-z\\d]+)*|[A-Z\\d]+(_[A-Z\\d]+)*)$",
         "nameOfTag": "^[a-z]+([A-Za-z\\d]+)*$",
         "nameOfTeam": "^[a-z]+([A-Za-z\\d]+)*$",
         "nbtArrayLengthCheck": true,
         "nbtBoolean": true,
         "nbtListLengthCheck": true,
-        "nbtTypeCheck": "strictly",
-        "undeclaredSymbol": [
-            {
-                "then": {
-                    "declare": "block"
-                }
-            }
-        ]
+        "nbtTypeCheck": "strictly"
     },
     "snippet": {
         "executeIfScoreSet": "execute if score ${1:score_holder} ${2:objective} = ${1:score_holder} ${2:objective} $0",

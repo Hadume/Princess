@@ -25,7 +25,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{Storage:1b}}"
+                            "tag": "{menu:{storage:1b}}"
                         }
                     ]
                 }

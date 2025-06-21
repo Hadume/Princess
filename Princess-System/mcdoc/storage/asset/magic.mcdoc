@@ -1,0 +1,38 @@
+use super::super::lib::range::target
+
+/// asset魔法
+dispatch minecraft:storage["asset:magic"] to struct{
+    ...body,
+    /// 魔法のID
+    "ID": int,
+    /// 名前
+    "name": #[text_component] string,
+    /// 消費MP
+    "mp": int,
+    /// クールタイム
+    "cooltime": int @ 0..,
+    /// 発動数
+    "multiple"?: int @ 0..,
+    /// 持続時間
+    "duration"?: int @ 0..,
+    /// 速度
+    "speed"?: float,
+    /// 拡散範囲
+    "spread"?: float @ 0.00..,
+    /// アイコンのアイテム
+    "icon": #[id(registry="item", exclude=["air"])] string,
+}
+
+/// 魔法の本体が持つデータ
+struct body {
+    /// 効果値
+    "amount"?: int,
+    /// 範囲
+    "range"?: float @ 0.00..,
+    /// 貫通数
+    "pierce"?: int @ 0..,
+    /// 対象
+    "targets"?: [target],
+    /// 属性
+    "elements"?: [("flamme" | "wasser" | "wind" | "licht" | "dunkel")],
+}

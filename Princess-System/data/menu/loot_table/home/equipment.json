@@ -25,7 +25,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{Equipment:1b}}"
+                            "tag": "{menu:{Equipment:1b}}"
                         }
                     ]
                 }

@@ -1,0 +1,3 @@
+/// okican
+dispatch mcdoc:custom_data["ok_buy"] to int
+dispatch mcdoc:custom_data["qualificationStone"] to boolean

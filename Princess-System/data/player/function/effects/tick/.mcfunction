@@ -14,10 +14,10 @@
 ## データを返す
     data modify storage dat: _.Effects set from storage temp: UpdatedEffects
 
-## 一時使用ScoreHolderをリセット
-    scoreboard players reset #Duration Temp
+## 一時使用scoreHolderをリセット
+    scoreboard players reset #duration temp
 
-## 一時使用Storageを削除
+## 一時使用storageを削除
     data remove storage temp: Effect
     data remove storage temp: Effects
     data remove storage temp: UpdatedEffects

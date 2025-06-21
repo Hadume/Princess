@@ -6,11 +6,11 @@
     function #lib:status/speed/update
 
 ## メニューをホームへ
-    execute unless entity @s[scores={Menu=1}] store result score #Menu Temp run function menu:home
-    execute if score #Menu Temp = #Menu Temp run function menu:change_page
+    execute unless entity @s[scores={menu=1}] store result score #menu temp run function menu:home
+    execute if score #menu temp = #menu temp run function menu:change_page
 
 ## スコアをリセット
-    scoreboard players reset @s LeaveGame
+    scoreboard players reset @s leaveGame
 
-## 一時使用ScoreHolderをリセット
-    scoreboard players reset #Menu Temp
+## 一時使用scoreHolderをリセット
+    scoreboard players reset #menu temp

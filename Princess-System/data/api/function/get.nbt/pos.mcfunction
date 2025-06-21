@@ -12,4 +12,4 @@
     execute if score #leastTime temp matches 1 run data modify storage dat: _.NBT.pos.data set from entity @s Pos
 
 ## posをコピー
-    data modify storage api:nbt pos set from storage dat: _.NBT.pos.data
+    data modify storage api:nbt pos set from storage dat: _.NBT.pos

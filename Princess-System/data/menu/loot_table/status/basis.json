@@ -38,7 +38,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "Lvl"
+                                            "objective": "lvl"
                                         }
                                     }
                                 ],
@@ -58,7 +58,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "HP.Max"
+                                            "objective": "hpMax"
                                         }
                                     }
                                 ],
@@ -78,7 +78,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "MP.Max"
+                                            "objective": "mpMax"
                                         }
                                     }
                                 ],
@@ -98,7 +98,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "ATK"
+                                            "objective": "atk"
                                         }
                                     }
                                 ],
@@ -118,7 +118,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "DEF"
+                                            "objective": "def"
                                         }
                                     }
                                 ],
@@ -138,7 +138,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "Speed"
+                                            "objective": "speed"
                                         }
                                     }
                                 ]
@@ -152,7 +152,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{}}"
+                            "tag": "{menu:{}}"
                         }
                     ]
                 }

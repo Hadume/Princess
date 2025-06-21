@@ -24,8 +24,8 @@
                                 [
                                     {
                                         "score": {
-                                            "name": "#Page.Prev",
-                                            "objective": "Temp"
+                                            "name": "#pagePrev",
+                                            "objective": "temp"
                                         },
                                         "color": "gray",
                                         "italic": false
@@ -44,7 +44,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{PagePrev:1b}}"
+                            "tag": "{menu:{pagePrev:1b}}"
                         }
                     ]
                 }

@@ -1,0 +1,12 @@
+/// ライブラリの実行者を拡散する処理
+dispatch minecraft:storage["lib:spread"] to struct{
+    /// 入力データ
+    "input": struct{
+        /// 拡散量
+        "amount": ([float] @ 2 | float),
+        /// 拡散基準位置
+        "at"?: [double] @ 3,
+        /// 地面に設置するか
+        "onGround"?: boolean
+    }
+}

@@ -3,8 +3,8 @@
 # @within function menu:**
 
 ## アイテムを消す
-    clear @s *[custom_data~{Menu:{}}]
-    execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{Menu:{}}}}}] run kill @s
+    clear @s *[custom_data~{menu:{}}]
+    execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{menu:{}}}}}] run kill @s
 
 ## UIを修復
     $function menu:$(Parent)/$(Child)/ui/

@@ -1,0 +1,54 @@
+use ::java::world::item::ItemStack
+use ::java::world::entity::EntityBase
+
+/// assetモブ
+dispatch minecraft:storage["asset:mob"] to struct{
+    /// assetID
+    "ID": int,
+    /// 名前
+    "name": #[text_component] string,
+    /// 種類
+    "type": ("enemy" | "boss"),
+    /// 防具
+    "armor"?: [Item] @ 4,
+    /// 武器
+    "weapon"?: [Item] @ 2,
+    /// ステータス
+    "status": struct {
+        /// レベル
+        "lvl": int @ 1..,
+        /// 経験値
+        "exp": int,
+        /// お金
+        "money": int,
+        /// 体力
+        "hp": int @ 1..,
+        /// 魔力
+        "mp"?: int @ 0..,
+        /// 攻撃力
+        "atk"?: int @ 0..,
+        /// 防御力
+        "def"?: int @ 0..,
+        /// スピード
+        "speed"?: int @ 0..,
+    },
+    /// ドロップアイテム
+    "loot"?: [loot],
+    /// その他NBT
+    "NBT": EntityBase
+}
+
+/// アイテム
+type Item = (
+    ItemStack |
+    struct {"ID": int} |
+    struct {}
+)
+
+/// ドロップ品
+struct loot {
+    /// アイテム
+    "item": Item,
+    /// 比重
+    "chance": float @ 0.00..1.00,
+}

@@ -9,7 +9,7 @@
     function player:equipments/update/armor/
 
 ## オフハンドにアイテムがあったら
-    execute if data storage api: Inventory[{Slot:-106b}] run function player:offhand
+    execute if data storage api: Inventory[{slot:-106b}] run function player:offhand
 
 ## インベントリUIを更新
     execute if entity @s[gamemode=adventure] run function menu:

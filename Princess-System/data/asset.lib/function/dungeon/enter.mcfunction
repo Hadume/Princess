@@ -6,7 +6,7 @@
     function #asset:dungeon/enter with storage asset:dungeon
 
 ## ダンジョンIDを記録
-    scoreboard players operation @s Dungeon = #DungeonID Temp
+    scoreboard players operation @s dungeon = #dungeonID temp
 
 ## 少し暗くする
     effect give @s blindness 2 0 true

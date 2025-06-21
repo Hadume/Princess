@@ -4,10 +4,10 @@
 
 #> Scoreboard
 # @internal
-    scoreboard objectives add Menu dummy
-    scoreboard objectives add Trade.With dummy
-    scoreboard objectives add Trade.Action trigger
-    scoreboard objectives add Trade.DecideTimer dummy
+    scoreboard objectives add menu dummy
+    scoreboard objectives add tradeWith dummy
+    scoreboard objectives add rradeAction trigger
+    scoreboard objectives add tradeDecideTimer dummy
 
 ##
     data modify storage menu: Blanks21 set value [{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b},{_:1b}]

@@ -1,0 +1,18 @@
+dispatch minecraft:storage["lib:status"] to struct{
+    /// 体力
+    "hp": struct{
+        /// 回復
+        "recovery": struct{
+            /// 入力データ
+            "input": int
+        }
+    },
+    /// 魔力
+    "mp": struct{
+        /// 回復
+        "recovery": struct{
+            /// 入力データ
+            "input": int
+        }
+    },
+}

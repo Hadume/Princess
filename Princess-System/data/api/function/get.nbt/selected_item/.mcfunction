@@ -12,4 +12,4 @@
     execute if score #leastTime temp matches 1 run function api:get.nbt/selected_item/update
 
 ## SelectedItemをコピー
-    data modify storage api:nbt selectedItem set from storage dat: _.NBT.selectedItem.data
+    data modify storage api:nbt selectedItem set from storage dat: _.NBT.selectedItem

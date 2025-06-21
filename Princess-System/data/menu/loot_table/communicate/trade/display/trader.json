@@ -14,14 +14,14 @@
                                     "condition": "entity_scores",
                                     "entity": "this",
                                     "scores": {
-                                        "Trade.DecideTimer": 0
+                                        "tradeDecideTimer": 0
                                     }
                                 }
                             ],
                             "functions": [
                                 {
                                     "function": "set_custom_data",
-                                    "tag": "{Menu:{Display:1b}}"
+                                    "tag": "{menu:{display:1b}}"
                                 }
                             ]
                         },
@@ -31,7 +31,7 @@
                             "functions": [
                                 {
                                     "function": "set_custom_data",
-                                    "tag": "{Menu:{Display:1b}}"
+                                    "tag": "{menu:{display:1b}}"
                                 }
                             ]
                         }

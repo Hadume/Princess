@@ -5,7 +5,7 @@
             "condition": "entity_scores",
             "entity": "this",
             "scores": {
-                "CT.Click": {
+                "ctClick": {
                     "min": 1
                 }
             }
@@ -14,7 +14,7 @@
             "condition": "entity_scores",
             "entity": "this",
             "scores": {
-                "CT.ClickS": {
+                "ctClickS": {
                     "min": 1
                 }
             }
@@ -23,7 +23,7 @@
             "condition": "entity_scores",
             "entity": "this",
             "scores": {
-                "CT.Offhand": {
+                "ctOffhand": {
                     "min": 1
                 }
             }
@@ -32,7 +32,7 @@
             "condition": "entity_scores",
             "entity": "this",
             "scores": {
-                "CT.OffhandS": {
+                "ctOffhandS": {
                     "min": 1
                 }
             }

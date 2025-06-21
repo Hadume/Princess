@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{SkillTree:{Flamme:1b}}}"
+                            "tag": "{menu:{skillTree:{Flamme:1b}}}"
                         }
                     ]
                 }

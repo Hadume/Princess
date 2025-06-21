@@ -1,0 +1,9 @@
+use ::java::world::entity::AnyEntity
+
+/// ライブラリのhitboxを取得するためのstorage
+dispatch minecraft:storage["lib:hitbox"] to struct{
+    /// 入力データ
+    "input": #[id="entity_type"] string,
+    /// 出力データ
+    "output": [float] @ 2
+}

@@ -25,7 +25,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{SkillTree:{SkillPoint:1b}}}"
+                            "tag": "{menu:{skillTree:{skillPoint:1b}}}"
                         }
                     ]
                 }

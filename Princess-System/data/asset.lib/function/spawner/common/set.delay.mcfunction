@@ -4,32 +4,32 @@
 #   asset.lib:spawner/set/main
 #   asset.lib:spawner/spawn/
 
-#> ScoreHolder
+#> scoreHolder
 # @private
-    #declare score_holder #Delay.Min
-    #declare score_holder #Delay.Max
+    #declare score_holder #delayMin
+    #declare score_holder #delayMax
 
 ## データをコピー
     data modify storage temp: Delay set from entity @s data.Delay
 
 ## 数値を取得
-    execute store result score #Delay.Min Temp run data get storage temp: Delay.Min
-    execute store result score #Delay.Max Temp run data get storage temp: Delay.Max
+    execute store result score #delayMin temp run data get storage temp: delayMin
+    execute store result score #delayMax temp run data get storage temp: delayMax
 
 ## ランダム
-    scoreboard players operation #Delay.Max Temp -= #Delay.Min Temp
-    scoreboard players add #Delay.Max Temp 1
-    execute store result score #Rand Temp run random value 1..
-    scoreboard players operation #Rand Temp %= #Delay.Max Temp
+    scoreboard players operation #delayMax temp -= #delayMin temp
+    scoreboard players add #delayMax temp 1
+    execute store result score #rand temp run random value 1..
+    scoreboard players operation #rand temp %= #delayMax temp
 
 ## 値を設定
-    scoreboard players operation #Delay.Min Temp += #Rand Temp
-    scoreboard players operation @s Spawner.Delay = #Delay.Min Temp
+    scoreboard players operation #delayMin temp += #rand temp
+    scoreboard players operation @s spawnerDelay = #delayMin temp
 
-## 一時使用ScoreHolderをリセット
-    scoreboard players reset #Delay.Min Temp
-    scoreboard players reset #Delay.Max Temp
-    scoreboard players reset #Rand Temp
+## 一時使用scoreHolderをリセット
+    scoreboard players reset #delayMin temp
+    scoreboard players reset #delayMax temp
+    scoreboard players reset #rand temp
 
-## 一時使用Storageを削除
+## 一時使用storageを削除
     data remove storage temp: Delay

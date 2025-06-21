@@ -6,14 +6,14 @@
     function asset.lib:dungeon/get.id
 
 ## ダンジョンに入場する
-    execute if score #DungeonMisc Temp matches 6 as @a[distance=..2] at @s run function #asset.lib:dungeon/enter
+    execute if score #dungeonMisc temp matches 6 as @a[distance=..2] at @s run function #asset.lib:dungeon/enter
 
 ## ダンジョンから退出する
-    execute if score #DungeonMisc Temp matches 7 as @a[distance=..2] at @s run function #asset.lib:dungeon/exit
+    execute if score #dungeonMisc temp matches 7 as @a[distance=..2] at @s run function #asset.lib:dungeon/exit
 
 ## ボス戦を開始する
-    execute if score #DungeonMisc Temp matches 1..3 as @a[distance=..2.5] at @s run function asset.lib:dungeon/player/boss/enter/
+    execute if score #dungeonMisc temp matches 1..3 as @a[distance=..2.5] at @s run function asset.lib:dungeon/player/boss/enter/
 
-## 一時使用ScoreHolderをリセット
-    scoreboard players reset #DungeonID Temp
-    scoreboard players reset #DungeonMisc Temp
+## 一時使用scoreHolderをリセット
+    scoreboard players reset #dungeonID temp
+    scoreboard players reset #dungeonMisc temp

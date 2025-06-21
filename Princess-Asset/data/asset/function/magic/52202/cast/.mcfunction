@@ -3,7 +3,7 @@
 # @within function asset:magic/cast
 
 ##
-    data modify storage asset:magic Damage set value 1b
+    data modify storage asset:magic damage set value 1b
     function #asset.lib:magic/action/range/
 
 ## 音を鳴らす

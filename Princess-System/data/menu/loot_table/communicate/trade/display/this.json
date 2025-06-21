@@ -11,7 +11,7 @@
                             "condition": "entity_scores",
                             "entity": "this",
                             "scores": {
-                                "Trade.DecideTimer": -1
+                                "tradeDecideTimer": -1
                             }
                         }
                     ]
@@ -24,7 +24,7 @@
                             "condition": "entity_scores",
                             "entity": "this",
                             "scores": {
-                                "Trade.DecideTimer": {
+                                "tradeDecideTimer": {
                                     "min": 41,
                                     "max": 60
                                 }
@@ -52,7 +52,7 @@
                             "condition": "entity_scores",
                             "entity": "this",
                             "scores": {
-                                "Trade.DecideTimer": {
+                                "tradeDecideTimer": {
                                     "min": 21,
                                     "max": 40
                                 }
@@ -80,7 +80,7 @@
                             "condition": "entity_scores",
                             "entity": "this",
                             "scores": {
-                                "Trade.DecideTimer": {
+                                "tradeDecideTimer": {
                                     "min": 1,
                                     "max": 20
                                 }
@@ -102,7 +102,7 @@
                             "condition": "entity_scores",
                             "entity": "this",
                             "scores": {
-                                "Trade.DecideTimer": 0
+                                "tradeDecideTimer": 0
                             }
                         }
                     ]

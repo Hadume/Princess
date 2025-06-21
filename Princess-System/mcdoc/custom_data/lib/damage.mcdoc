@@ -1,0 +1,7 @@
+dispatch mcdoc:custom_data["lib"] to struct {
+    /// ダメージ表示用
+    "damage": struct{
+        /// 新しい
+        "new": boolean,
+    }
+}

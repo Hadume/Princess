@@ -1,0 +1,15 @@
+/// ライブラリのダメージ計算で使用されるstorage
+dispatch minecraft:storage["lib:damage"] to struct{
+    /// 入力データ
+    "input": struct{
+        /// 攻撃力
+        "atk": int,
+        /// 防御力
+        "def": int
+    },
+    /// 出力データ
+    "output": struct{
+        /// ダメージ
+        "damage": int
+    }
+}

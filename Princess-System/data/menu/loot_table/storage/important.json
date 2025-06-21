@@ -24,7 +24,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{StorageImportant:1b}}"
+                            "tag": "{menu:{storageImportant:1b}}"
                         }
                     ]
                 }

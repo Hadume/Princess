@@ -3,26 +3,26 @@
 # @within function menu:magic/select/open
 
 ## 何ページ目か
-    scoreboard players operation #Index Temp = @s Menu
-    scoreboard players operation #Index Temp %= #100 Const
+    scoreboard players operation #index temp = @s menu
+    scoreboard players operation #index temp %= #100 const
 
 ## 前ページへ
-    execute if score #Index Temp matches 1.. run loot replace block 0 -64 0 container.8 loot menu:page.prev
+    execute if score #index temp matches 1.. run loot replace block 0 -64 0 container.8 loot menu:page.prev
 
 ## 魔法のアイコンを設定
-    ### Slotリスト
-        data modify storage temp: Slots set value [25b,24b,23b,22b,21b,20b,19b,16b,15b,14b,13b,12b,11b,10b,7b,6b,5b,4b,3b,2b,1b]
+    ### slotリスト
+        data modify storage temp: slots set value [25b,24b,23b,22b,21b,20b,19b,16b,15b,14b,13b,12b,11b,10b,7b,6b,5b,4b,3b,2b,1b]
 
     ### 取得済み魔法リスト
         data modify storage temp: Magics set from storage dat: _.Magic.Known
-        execute if score #Index Temp matches 0 run function menu:magic/select/ui/first.page
+        execute if score #index temp matches 0 run function menu:magic/select/ui/first.page
 
     ### 魔法の数
-        scoreboard players operation #Index Temp *= #21 Const
-        execute store result storage temp: Index int 1 run scoreboard players get #Index Temp
+        scoreboard players operation #index temp *= #21 const
+        execute store result storage temp: index int 1 run scoreboard players get #index temp
 
     ###
-        execute store result score #UntilList Temp in overworld run function menu:magic/select/ui/main/loop with storage temp:
+        execute store result score #untilList temp in overworld run function menu:magic/select/ui/main/loop with storage temp:
 
 
 ## 外枠
@@ -67,14 +67,14 @@
     execute in overworld run loot replace entity @s inventory.0 27 mine 0 -64 0 debug_stick
 
 ## 次ページにいく
-    execute if score #UntilList Temp matches 10 run loot replace entity @s inventory.26 loot menu:page.next
+    execute if score #untilList temp matches 10 run loot replace entity @s inventory.26 loot menu:page.next
 
-## 一時使用ScoreHolderをリセット
-    scoreboard players reset #Index Temp
+## 一時使用scoreHolderをリセット
+    scoreboard players reset #index temp
 
-## 一時使用Storageを削除
+## 一時使用storageを削除
     data remove storage temp: Magics
-    data remove storage temp: Slots
-    data remove storage temp: Index
+    data remove storage temp: slots
+    data remove storage temp: index
     data remove storage temp: Icon
     data remove storage temp: Items

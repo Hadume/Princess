@@ -70,6 +70,6 @@
     },
     {
         "function": "set_custom_data",
-        "tag": "{Menu:{Magic:{ClickS:1b}}}"
+        "tag": "{menu:{Magic:{ClickS:1b}}}"
     }
 ]

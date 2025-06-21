@@ -8,10 +8,10 @@
 ## ループ
     function player:effects/take/loop/
 
-## 一時使用ScoreHolderをリセット
-    scoreboard players reset #EffectAmount.1 Temp
-    scoreboard players reset #EffectAmount.2 Temp
+## 一時使用scoreHolderをリセット
+    scoreboard players reset #effectAmount1 temp
+    scoreboard players reset #effectAmount2 temp
 
-## 一時使用Storageを削除
+## 一時使用storageを削除
     data remove storage temp: Effects
     data remove storage temp: Effect

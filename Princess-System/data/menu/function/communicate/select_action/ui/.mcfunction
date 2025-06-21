@@ -40,5 +40,5 @@ say communicate:select_action.ui
 
 
 ## プレイヤーヘッドを設置
-    data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage dat: _.Menu.Communicate.SelectedPlayer
+    data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage dat: _.menu.Communicate.SelectedPlayer
     item replace entity @s inventory.4 from entity 0-0-1-0-0 armor.head

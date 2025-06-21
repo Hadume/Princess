@@ -10,7 +10,7 @@
                             "condition": "entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "nbt": "{Tags:[\"LockedInventory\"]}"
+                                "nbt": "{Tags:[\"lockedInventory\"]}"
                             }
                         }
                     }

@@ -1,0 +1,60 @@
+use ::java::world::component::DataComponentPatch
+use super::super::lib::modifier::status
+
+/// assetアイテム
+dispatch minecraft:storage["asset:item"] to struct{
+    /// assetID
+    "ID": int,
+    /// アイテムid
+    "id": #[id="item"] string,
+    /// 名前
+    "name": #[text_component] string,
+    /// 説明
+    "lore"?: [#[text_component] string],
+    /// 種類
+    "category": category,
+    /// レアリティ
+    "rarity": int @ 1..10,
+    /// 装備効果
+    "modifiers"?: [modifier],
+    /// 追加効果
+    "effects"?: [effect],
+    /// item_modelのパス
+    "itemModel"?: #[id(registry="item_definition")] string,
+    /// その他components
+    "components"?: DataComponentPatch
+}
+
+/// アイテムの種類
+enum(string) category {
+    weapon = "weapon",
+    armor = "armor",
+    wand = "wand",
+    food = "food",
+    crystal = "crystal",
+    misc = "misc"
+}
+
+
+/// アイテムの追加効果
+struct modifier {
+    /// 追加の種類
+    "name": status,
+    /// 効果の値
+    "amount": int,
+    /// 効果の仕方
+    /// 0: 元の値にamountを加算
+    /// 1: 元の値にamount%を加算
+    /// 2: 元の値にamount%を乗算
+    "operation"?: int @ 0..2,
+}
+
+/// アイテムの追加効果
+struct effect {
+    /// 効果の種類
+    "name": (status | "hp" | "mp"),
+    /// 効果の値
+    "amount": int,
+    /// 時間
+    "duration"?: int @ 0..,
+}

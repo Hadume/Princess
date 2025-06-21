@@ -24,7 +24,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{Back:1b}}"
+                            "tag": "{menu:{Back:1b}}"
                         }
                     ]
                 }

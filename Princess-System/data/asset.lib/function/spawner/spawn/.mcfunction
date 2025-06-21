@@ -2,32 +2,32 @@
 # スポーン
 # @within function asset.lib:spawner/tick/spawn
 
-#> ScoreHolder
+#> scoreHolder
 # @within function asset.lib:spawner/spawn/*
-    #declare score_holder #Spawn.Count
-    #declare score_holder #List.Length
-#> ScoreHolder.Private
+    #declare score_holder #spawnCount
+    #declare score_holder #listLength
+#> scoreHolder.Private
 # @private
-    #declare score_holder #Count.Min
-    #declare score_holder #Count.Max
+    #declare score_holder #countMin
+    #declare score_holder #countMax
 
 ## データをコピー
     data modify storage temp: data set from entity @s data
 
 ## 何体スポーンさせるか
     ### 数値を取得
-        execute store result score #Count.Min Temp run data get storage temp: data.Count.Min
-        execute store result score #Count.Max Temp run data get storage temp: data.Count.Max
+        execute store result score #countMin temp run data get storage temp: data.countMin
+        execute store result score #countMax temp run data get storage temp: data.countMax
 
     ### ランダム
-        scoreboard players operation #Count.Max Temp -= #Count.Min Temp
-        scoreboard players add #Count.Max Temp 1
-        execute store result score #Rand Temp run random value 1..
-        scoreboard players operation #Rand Temp %= #Count.Max Temp
+        scoreboard players operation #countMax temp -= #countMin temp
+        scoreboard players add #countMax temp 1
+        execute store result score #rand temp run random value 1..
+        scoreboard players operation #rand temp %= #countMax temp
 
     ### 値を設定
-        scoreboard players operation #Count.Min Temp += #Rand Temp
-        scoreboard players operation #Spawn.Count Temp = #Count.Min Temp
+        scoreboard players operation #countMin temp += #rand temp
+        scoreboard players operation #spawnCount temp = #countMin temp
 
 
 ## MOBを召喚
@@ -36,12 +36,12 @@
 ## 次のスポーン
     function asset.lib:spawner/common/set.delay
 
-## 一時使用ScoreHolderをリセット
-    scoreboard players reset #Count.Min Temp
-    scoreboard players reset #Count.Max Temp
-    scoreboard players reset #Spawn.Count Temp
-    scoreboard players reset #List.Length Temp
-    scoreboard players reset #Rand Temp
+## 一時使用scoreHolderをリセット
+    scoreboard players reset #countMin temp
+    scoreboard players reset #countMax temp
+    scoreboard players reset #spawnCount temp
+    scoreboard players reset #listLength temp
+    scoreboard players reset #rand temp
 
-## 一時使用Storageを削除
+## 一時使用storageを削除
     data remove storage temp: data

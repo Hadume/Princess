@@ -12,4 +12,4 @@
     execute if score #leastTime temp matches 1 run data modify storage dat: _.NBT.rotation.data set from entity @s Rotation
 
 ## Rotationをコピー
-    data modify storage api:nbt rotation set from storage dat: _.NBT.rotation.data
+    data modify storage api:nbt rotation set from storage dat: _.NBT.rotation

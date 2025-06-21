@@ -1,0 +1,6 @@
+dispatch minecraft:storage["temp:asset"] to struct {
+    /// 座標
+        "pos": [double] @ 3,
+    /// 稼働しているか
+        "activating": boolean
+}

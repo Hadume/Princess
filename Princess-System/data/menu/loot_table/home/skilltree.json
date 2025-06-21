@@ -25,7 +25,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{SkillTree:1b}}"
+                            "tag": "{menu:{skillTree:1b}}"
                         }
                     ]
                 }

@@ -24,7 +24,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{TradeDecide:1b}}"
+                            "tag": "{menu:{TradeDecide:1b}}"
                         }
                     ]
                 }

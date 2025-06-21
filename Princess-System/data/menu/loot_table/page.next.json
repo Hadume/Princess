@@ -24,8 +24,8 @@
                                 [
                                     {
                                         "score": {
-                                            "name": "#Page.Next",
-                                            "objective": "Temp"
+                                            "name": "#pageNext",
+                                            "objective": "temp"
                                         },
                                         "color": "gray",
                                         "italic": false
@@ -44,7 +44,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{PageNext:1b}}"
+                            "tag": "{menu:{pageNext:1b}}"
                         }
                     ]
                 }

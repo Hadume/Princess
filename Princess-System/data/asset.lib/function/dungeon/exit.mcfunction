@@ -6,7 +6,7 @@
     function #asset:dungeon/exit with storage asset:dungeon
 
 ## ダンジョンIDを消す
-    scoreboard players reset @s Dungeon
+    scoreboard players reset @s dungeon
 
 ## 少し暗くする
     effect give @s blindness 2 0 true

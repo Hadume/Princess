@@ -8,8 +8,8 @@
 ##
     execute unless data storage temp: Error as 0-0-1-0-0 run function asset.lib:magic/icon/create
 
-## Storageを削除
+## storageを削除
     data remove storage asset:magic Icon
 
-## 一時使用Storageを削除
+## 一時使用storageを削除
     execute if data storage temp: Error run data remove storage temp: Error

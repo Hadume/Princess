@@ -3,10 +3,10 @@
 # @within function player:equipments/update/armor/loop/
 
 ##
-    execute if score #Slot Temp matches 3 run function player:equipments/update/armor/loop/parts/main {Parts:"Head"}
-    execute if score #Slot Temp matches 2 run function player:equipments/update/armor/loop/parts/main {Parts:"Chest"}
-    execute if score #Slot Temp matches 1 run function player:equipments/update/armor/loop/parts/main {Parts:"Legs"}
-    execute if score #Slot Temp matches 0 run function player:equipments/update/armor/loop/parts/main {Parts:"Feet"}
+    execute if score #slot temp matches 3 run function player:equipments/update/armor/loop/parts/main {Parts:"Head"}
+    execute if score #slot temp matches 2 run function player:equipments/update/armor/loop/parts/main {Parts:"Chest"}
+    execute if score #slot temp matches 1 run function player:equipments/update/armor/loop/parts/main {Parts:"Legs"}
+    execute if score #slot temp matches 0 run function player:equipments/update/armor/loop/parts/main {Parts:"Feet"}
 
 ## Statsを追加
     function #lib:stats/add

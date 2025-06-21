@@ -38,7 +38,7 @@
                                 },
                                 {
                                     "storage": "dat:",
-                                    "nbt": "_.rawName",
+                                    "nbt": "_.name",
                                     "interpret": true,
                                     "bold": true
                                 }

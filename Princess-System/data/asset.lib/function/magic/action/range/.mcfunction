@@ -1,26 +1,26 @@
 #> asset.lib:magic/action/range/
 #
-# @input storage asset:magic
-#   Range : float
-#   Pierce? : int
-#   Targets? : [Target] @ ..2
-#   Damage? : boolean
-# @within function
-#   asset.lib:magic/cast/action
-#   asset.lib:magic/action/range/spell/
 # @within tag/function asset.lib:magic/action/range/
 
-## 引数を確認
-    execute store success storage temp: Error byte 1 unless data storage asset:magic Range run tellraw @a [{"storage":"main:","nbt":"Tell.ArgumentError"},"temp: Magic.Range"]
+## 引数が足りなかったら
+    execute unless data storage asset:magic range run return run function asset.lib:magic/action/range/argument {argument:"range"}
 
-## 実行
-    execute unless data storage temp: Error run function asset.lib:magic/action/range/main
+## 各数値取得
+    data modify storage lib:range input.amount set from storage asset:magic range
+    execute if data storage asset:magic targets run data modify storage lib:range input.targets set from storage asset:magic targets
+    ### 対象数
+        execute if data storage asset:magic pierce run data modify storage lib:range input.pierce set from storage asset:magic pierce
+        execute unless data storage asset:magic pierce run data modify storage lib:range input.pierce set value 2147483647
 
-## 引数を削除
-    data remove storage asset:magic Range
-    execute if data storage asset:magic Pierce run data remove storage asset:magic Pierce
-    execute if data storage asset:magic Targets run data remove storage asset:magic Targets
-    execute if data storage asset:magic Damage run data remove storage asset:magic Damage
 
-## 一時使用Storageを削除
-    execute if data storage temp: Error run data remove storage temp: Error
+## ダメージを受けているMOBを除外
+    execute if data storage asset:magic {damage:1b} run data modify storage lib:range input.noHurtTime set value 1b
+
+## 範囲内のMOBを特定
+    function #lib:range
+
+## ボスが特定されたら
+    execute as @e[tag=libInRange,tag=boss] at @s run function asset.lib:magic/action/range/boss
+
+## ついでに攻撃する
+    execute if data storage asset:magic {damage:1b} run function asset.lib:magic/action/damage/

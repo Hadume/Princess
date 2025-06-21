@@ -17,7 +17,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{lib:{damage:1b,new:1b}}"
+                            "tag": "{lib:{damage:{new:true}}}"
                         }
                     ]
                 }

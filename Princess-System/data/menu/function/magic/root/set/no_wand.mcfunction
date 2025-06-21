@@ -3,7 +3,7 @@
 # @within function menu:magic/root/set/
 
 ## いらないアイテムを消す
-    data remove storage api: Inventory[{Slot:22b}]
+    data remove storage api: Inventory[{slot:22b}]
 
 ## UIの修復
     function menu:-common/repair {Parent:"magic",Child:"root"}

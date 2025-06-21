@@ -1,0 +1,50 @@
+/// ライブラリのStats機能で使用されるstorage
+dispatch minecraft:storage["lib:modifier"] to struct{
+    /// 何を 更新/追加 するか
+    "input": [(status | "PHYSICS" | "MAGICS" | "ELEMENTS")]
+}
+
+/// 実装済みステータス群
+type status = (
+    physics | magics | elements
+)
+
+/// 物理ステータス
+enum(string) physics{
+    HP_Max = "hpMax",
+    HP_Regeneration_Rate = "hpRegenRate",
+    HP_Regeneration_Interval = "hpRegenInterval",
+    MP_Max = "mpMax",
+    MP_Regeneration_Rate = "mpRegenRate",
+    MP_Regeneration_Interval = "mpRegenInterval",
+    ATK = "atk",
+    DEF = "def",
+    Speed = "speed"
+}
+
+/// 魔法ステータス
+enum(string) magics{
+    Magic_MP = "mgcMp",
+    Magic_Cooltime = "mgcCooltime",
+    Magic_Multiple = "mgcMultiple",
+    Magic_Amount = "mgcAmount",
+    Magic_Duration = "mgcDuration",
+    Magic_Pierce = "mgcPierce",
+    Magic_Spread = "mgcSpread",
+    Magic_Range = "mgcRange",
+    Magic_Speed = "mgcSpeed",
+}
+
+/// 属性ステータス
+enum(string) elements{
+    ATK_Flamme = "atkFlamme",
+    ATK_Wasser = "atkWasser",
+    ATK_Wind = "atkWind",
+    ATK_Licht = "atkLicht",
+    ATK_Dunkel = "atkDunkel",
+    DEF_Flamme = "defFlamme",
+    DEF_Wasser = "defWasser",
+    DEF_Wind = "defWind",
+    DEF_Licht = "defLicht",
+    DEF_Dunkel = "defDunkel"
+}

@@ -6,4 +6,4 @@
     function #api:display/mp
 
 ## スコアをリセット
-    scoreboard players reset @s 4tickInterval
+    scoreboard players reset @s fourTickInterval

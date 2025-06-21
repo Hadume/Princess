@@ -63,6 +63,6 @@
     },
     {
         "function": "set_custom_data",
-        "tag": "{Menu:{Magic:{Offhand:1b}}}"
+        "tag": "{menu:{Magic:{Offhand:1b}}}"
     }
 ]

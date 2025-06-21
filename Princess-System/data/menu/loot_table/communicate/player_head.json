@@ -31,7 +31,7 @@
                                 {
                                     "score": {
                                         "name": "@s",
-                                        "objective": "Lvl"
+                                        "objective": "lvl"
                                     }
                                 },
                                 {
@@ -47,7 +47,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{CommunicatePlayer:1b}}"
+                            "tag": "{menu:{CommunicatePlayer:1b}}"
                         }
                     ]
                 }

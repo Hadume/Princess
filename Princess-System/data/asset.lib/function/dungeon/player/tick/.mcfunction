@@ -8,6 +8,6 @@
 ## メイン処理を実行
     function asset.lib:dungeon/player/tick/main with storage asset:dungeon
 
-## 一時使用ScoreHolderをリセット
-    scoreboard players reset #DungeonID Temp
-    scoreboard players reset #DungeonMisc Temp
+## 一時使用scoreHolderをリセット
+    scoreboard players reset #dungeonID temp
+    scoreboard players reset #dungeonMisc temp

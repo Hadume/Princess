@@ -6,7 +6,7 @@
     execute in overworld run data remove block 0 -64 0 Items
 
 ## ID
-    $data modify storage asset:magic ID set from storage temp: Data.Magic[$(Index)]
+    $data modify storage asset:magic ID set from storage temp: Data.Magic[$(index)]
 
 ## アイコン生成
     execute unless data storage asset:magic {ID:0} if data storage temp: Data{Category:"Wand"} run return run function #asset:magic/icon with storage asset:magic

@@ -21,7 +21,7 @@
     execute store result score @s assetID run data get storage asset:mob ID
 
 ## 名前
-    data modify storage dat: _.rawName set from storage asset:mob name
+    data modify storage dat: _.name set from storage asset:mob name
 
 ## タイプ
     execute if data storage asset:mob {type:"enemy"} run tag @s add enemy

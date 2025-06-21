@@ -1,0 +1,25 @@
+// ライブラリのrangeを図る機能
+dispatch minecraft:storage["lib:range"] to struct{
+    /// 入力データ
+    "input": struct{
+        /// 距離
+        "amount": float,
+        /// 何体貫通するか
+        "pierce": int,
+        /// 対象
+        "targets"?: [target],
+        /// ダメージを受けているMOBを含むか否か省くか
+        "noHurtTime"?: boolean
+    },
+    /// 出力データ
+    "output": struct{
+        /// 残り何体を貫通できるか
+        "pierce": int
+    }
+}
+
+enum(string) target {
+    self = "self",
+    player = "player",
+    enemy = "enemy"
+}

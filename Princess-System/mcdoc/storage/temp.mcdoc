@@ -1,0 +1,88 @@
+use ::java::world::item::ItemStack
+use ::java::world::entity::display::Transformation
+use super::asset::item::modifier
+use super::lib::range::target
+
+
+/// 一時使用storage
+dispatch minecraft:storage["temp:"] to struct {
+    ...api,
+    ...lib,
+    ...asset_lib,
+    /// 引数
+    "argument": string
+}
+
+/// API用
+struct api{
+    // 個人storage
+    /// 呼び出されたID
+    "ID": int,
+    /// 前回呼び出されたID
+    "lastID": int,
+    /// IDが変更されたか
+    "updated": boolean,
+
+    // MOBの名前表示
+    /// 色
+    "color": #[text_component] string,
+
+    // NBT
+    /// 手に持っているアイテム
+    "selectedItem": ItemStack,
+}
+
+/// ライブラリ用
+struct lib{
+    // 共通処理
+    /// 座標
+    "at": [double] @ 3,
+
+    // 死亡処理
+    /// 誰に攻撃されたか
+    "attackBy": [int],
+
+    // hitbox取得
+    /// ふぐの大きさ
+    "puffState": int,
+
+    // range取得
+    /// 対象
+    "targets": [target],
+
+    // 拡散させる
+    /// 移動位置
+    "pos": [double] @ 3
+}
+
+/// assetライブラリ用
+struct asset_lib{
+    // アイテム
+    /// 追加効果単体
+    "modifier": modifier,
+    /// 効果値
+    "amount": struct{
+        /// 効果の名前\
+        "name": (
+            "最大体力" |
+            "最大魔力" |
+            "攻撃力" |
+            "防御力" |
+            "スピード" |
+            "体力回復力" |
+            "魔力回復力"
+            ),
+        /// 効果の接尾語
+        "suffix": ("%" | "%"),
+    },
+
+    // モブ
+    /// モブの種類
+    "entityType": #[id(registry="entity_type",tags="allowed")] string,
+
+    // 魔法
+    /// 発動できなかった
+    "failed": boolean,
+    /// 変形
+    "transformation": Transformation
+}

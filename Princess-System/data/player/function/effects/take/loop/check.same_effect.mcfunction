@@ -6,9 +6,9 @@
     $execute unless data storage dat: _.Effects[{Name:$(Name)}] run return 1
 
 ## 効果値を取得
-    execute store result score #EffectAmount.1 Temp run data get storage temp: Effect.Amount
-    $execute if data storage dat: _.Effects[{Name:$(Name)}] store result score #EffectAmount.2 Temp run data get storage dat: _.Effects[{Name:$(Name)}].Amount
+    execute store result score #effectAmount1 temp run data get storage temp: Effect.amount
+    $execute if data storage dat: _.Effects[{Name:$(Name)}] store result score #effectAmount2 temp run data get storage dat: _.Effects[{Name:$(Name)}].amount
 
 ## 効果値がでかい方を残す
-    execute if score #EffectAmount.1 Temp >= #EffectAmount.2 Temp run return 1
-    execute if score #EffectAmount.1 Temp < #EffectAmount.2 Temp run return run data remove storage temp: Effect
+    execute if score #effectAmount1 temp >= #effectAmount2 temp run return 1
+    execute if score #effectAmount1 temp < #effectAmount2 temp run return run data remove storage temp: Effect

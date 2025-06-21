@@ -34,9 +34,9 @@
                                         "type": "score",
                                         "target": {
                                             "type": "fixed",
-                                            "name": "#Page"
+                                            "name": "#page"
                                         },
-                                        "score": "Temp"
+                                        "score": "temp"
                                     },
                                     "range": 0
                                 }

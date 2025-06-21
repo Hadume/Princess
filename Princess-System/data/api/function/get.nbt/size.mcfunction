@@ -12,4 +12,4 @@
     execute if score #leastTime temp matches 1 run data modify storage dat: _.NBT.size.data set from entity @s Size
 
 ## Inventoryをコピー
-    data modify storage api:nbt size set from storage dat: _.NBT.size.data
+    data modify storage api:nbt size set from storage dat: _.NBT.size

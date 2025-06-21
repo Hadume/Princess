@@ -3,14 +3,14 @@
 # @within function asset:magic/cast
 
 ## データをコピー
-    data modify storage temp: Activating set from storage dat: _.Magic[{ID:52302}].Activating
+    execute store result storage temp:asset activating byte 1 if data storage dat: _.magic[{ID:52302}]
 
 ## 発動を解除
-    execute if data storage temp: {Activating:1b} run data modify storage dat: _.Magic[{ID:52302}] set value {ID:52302}
-    execute if data storage temp: {Activating:1b} at @s run playsound block.beacon.deactivate master @a ~ ~ ~ 1 2
+    execute if data storage temp:asset {activating:1b} run data remove storage dat: _.magic[{ID:52302}]
+    execute if data storage temp:asset {activating:1b} at @s run playsound block.beacon.deactivate master @a ~ ~ ~ 1 2
 
 ##
-    execute unless data storage temp: Activating run function asset:magic/52302/cast/main
+    execute unless data storage temp:asset activating run function asset:magic/52302/cast/main
 
-## 一時使用Storageを削除
-    data remove storage temp: Activating
+## 一時使用storageを削除
+    data remove storage temp:asset activating

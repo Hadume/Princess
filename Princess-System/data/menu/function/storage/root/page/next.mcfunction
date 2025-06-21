@@ -3,10 +3,10 @@
 # @within function menu:storage/root/
 
 ## ページ番号を追加
-    execute if entity @s[scores={Menu=..5098}] run scoreboard players add @s Menu 1
+    execute if entity @s[scores={menu=..5098}] run scoreboard players add @s menu 1
 
 ## アイテムを出す
     function menu:storage/root/items/
 
 ## ページ変更しました
-    return run scoreboard players get @s Menu
+    return run scoreboard players get @s menu

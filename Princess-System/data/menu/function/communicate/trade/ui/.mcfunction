@@ -20,58 +20,58 @@ say Communicate:Trade.UI
     loot replace entity @s inventory.18 loot menu:communicate/trade/display/this
 
 ## 相手の状態を表示
-    tag @s add This
-    execute as @a if score @s ID = @a[tag=This,limit=1] Trade.With run function menu:communicate/trade/ui/trader
-    tag @s remove This
+    tag @s add this
+    execute as @a if score @s ID = @a[tag=this,limit=1] tradeWith run function menu:communicate/trade/ui/trader
+    tag @s remove this
 
 ## 相手トレーダーのアイテムを表示
     function #api:e_dat/please
-    data modify storage temp: TradeItems set from storage dat: _.Menu.Communicate.TradeItems
+    data modify storage temp: TradeItems set from storage dat: _.menu.Communicate.TradeItems
     ###
-        execute unless data storage temp: TradeItems[{Slot:10b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
-        execute if data storage temp: TradeItems[{Slot:10b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{Slot:10b}]
+        execute unless data storage temp: TradeItems[{slot:10b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
+        execute if data storage temp: TradeItems[{slot:10b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{slot:10b}]
         item replace entity @s inventory.5 from entity 0-0-1-0-0 armor.head
 
     ###
-        execute unless data storage temp: TradeItems[{Slot:11b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
-        execute if data storage temp: TradeItems[{Slot:11b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{Slot:11b}]
+        execute unless data storage temp: TradeItems[{slot:11b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
+        execute if data storage temp: TradeItems[{slot:11b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{slot:11b}]
         item replace entity @s inventory.6 from entity 0-0-1-0-0 armor.head
 
     ###
-        execute unless data storage temp: TradeItems[{Slot:12b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
-        execute if data storage temp: TradeItems[{Slot:12b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{Slot:12b}]
+        execute unless data storage temp: TradeItems[{slot:12b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
+        execute if data storage temp: TradeItems[{slot:12b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{slot:12b}]
         item replace entity @s inventory.7 from entity 0-0-1-0-0 armor.head
 
     ###
-        execute unless data storage temp: TradeItems[{Slot:19b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
-        execute if data storage temp: TradeItems[{Slot:19b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{Slot:19b}]
+        execute unless data storage temp: TradeItems[{slot:19b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
+        execute if data storage temp: TradeItems[{slot:19b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{slot:19b}]
         item replace entity @s inventory.14 from entity 0-0-1-0-0 armor.head
 
     ###
-        execute unless data storage temp: TradeItems[{Slot:20b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
-        execute if data storage temp: TradeItems[{Slot:20b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{Slot:20b}]
+        execute unless data storage temp: TradeItems[{slot:20b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
+        execute if data storage temp: TradeItems[{slot:20b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{slot:20b}]
         item replace entity @s inventory.15 from entity 0-0-1-0-0 armor.head
 
     ###
-        execute unless data storage temp: TradeItems[{Slot:21b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
-        execute if data storage temp: TradeItems[{Slot:21b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{Slot:21b}]
+        execute unless data storage temp: TradeItems[{slot:21b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
+        execute if data storage temp: TradeItems[{slot:21b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{slot:21b}]
         item replace entity @s inventory.16 from entity 0-0-1-0-0 armor.head
 
     ###
-        execute unless data storage temp: TradeItems[{Slot:28b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
-        execute if data storage temp: TradeItems[{Slot:28b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{Slot:28b}]
+        execute unless data storage temp: TradeItems[{slot:28b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
+        execute if data storage temp: TradeItems[{slot:28b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{slot:28b}]
         item replace entity @s inventory.23 from entity 0-0-1-0-0 armor.head
 
     ###
-        execute unless data storage temp: TradeItems[{Slot:29b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
-        execute if data storage temp: TradeItems[{Slot:29b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{Slot:29b}]
+        execute unless data storage temp: TradeItems[{slot:29b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
+        execute if data storage temp: TradeItems[{slot:29b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{slot:29b}]
         item replace entity @s inventory.24 from entity 0-0-1-0-0 armor.head
 
     ###
-        execute unless data storage temp: TradeItems[{Slot:30b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
-        execute if data storage temp: TradeItems[{Slot:30b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{Slot:30b}]
+        execute unless data storage temp: TradeItems[{slot:30b}].id run loot replace entity 0-0-1-0-0 armor.head loot menu:frame.light_gray
+        execute if data storage temp: TradeItems[{slot:30b}].id run data modify entity 0-0-1-0-0 ArmorItems[-1] set from storage temp: TradeItems[{slot:30b}]
         item replace entity @s inventory.25 from entity 0-0-1-0-0 armor.head
 
 
-## 一時使用Storageを削除
+## 一時使用storageを削除
     data remove storage temp: TradeItems

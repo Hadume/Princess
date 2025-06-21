@@ -1,0 +1,38 @@
+use ::java::world::item::ItemStack
+use ::java::util::slot::SlottedItem
+use ::java::world::entity::mob::player::PlayerSlot
+
+dispatch minecraft:storage["api:nbt"] to struct{
+    ...NBT
+}
+
+struct NBT{
+    "pos": struct{
+        "timeStamp": long,
+        "data": [double] @ 3
+    },
+    "rotation": struct{
+        "timeStamp": long,
+        "data": [float] @ 2
+    },
+    "inventory": struct{
+        "timeStamp": long,
+        "data": [SlottedItem<PlayerSlot>] @ 0..41
+    },
+    "selectedItem": struct{
+        "timeStamp": long,
+        "data": SlottedItem<byte @ 0..8>
+    },
+    "armorItems": struct{
+        "timeStamp": long,
+        "data": [(ItemStack | struct {})] @ 4
+    },
+    "handItems": struct{
+        "timeStamp": long,
+        "data": [(ItemStack | struct {})] @ 2
+    },
+    "size": struct{
+        "timeStamp": long,
+        "data": int @ 0..126
+    }
+}

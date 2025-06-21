@@ -6,12 +6,12 @@
     function #api:e_dat/please
 
 ## アイテムをUI化
-    data modify storage temp: DisplayItems[].components."minecraft:custom_data".Menu set value {}
+    data modify storage temp: displayItems[].components."minecraft:custom_data".menu set value {}
 
 ## データを保存
-    data modify storage dat: _.Menu.Communicate.TradeItems set from storage temp: DisplayItems
+    data modify storage dat: _.menu.Communicate.TradeItems set from storage temp: displayItems
 
 ## UIを再表示
-    tag @s add LockedInventory
+    tag @s add lockedInventory
     function menu:communicate/trade/ui/
-    tag @s remove LockedInventory
+    tag @s remove lockedInventory

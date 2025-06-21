@@ -35,7 +35,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "Mgc.Cooltime"
+                                            "objective": "mgcCooltime"
                                         }
                                     },
                                     {
@@ -55,7 +55,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "Mgc.Multiple"
+                                            "objective": "mgcmultiple"
                                         }
                                     }
                                 ],
@@ -72,7 +72,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "Mgc.Amount"
+                                            "objective": "mgcamount"
                                         }
                                     }
                                 ],
@@ -89,7 +89,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "Mgc.Duration"
+                                            "objective": "mgcDuration"
                                         }
                                     },
                                     {
@@ -109,7 +109,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "Mgc.Pierce"
+                                            "objective": "mgcPierce"
                                         }
                                     }
                                 ],
@@ -126,7 +126,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "Mgc.Spread"
+                                            "objective": "mgcspread"
                                         }
                                     }
                                 ],
@@ -143,7 +143,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "Mgc.Range"
+                                            "objective": "mgcrange"
                                         }
                                     }
                                 ],
@@ -160,7 +160,7 @@
                                     {
                                         "score": {
                                             "name": "@s",
-                                            "objective": "Mgc.Speed"
+                                            "objective": "mgcSpeed"
                                         }
                                     }
                                 ]
@@ -174,7 +174,7 @@
                         },
                         {
                             "function": "set_custom_data",
-                            "tag": "{Menu:{}}"
+                            "tag": "{menu:{}}"
                         }
                     ]
                 }

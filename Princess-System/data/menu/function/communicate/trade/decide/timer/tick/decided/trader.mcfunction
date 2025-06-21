@@ -3,9 +3,9 @@
 # @within function menu:communicate/trade/decide/timer/tick/decided/
 
 ## 取引する！
-    execute if entity @s[scores={Trade.DecideTimer=0}] run return run function menu:communicate/trade/decide/trade/
+    execute if entity @s[scores={tradeDecideTimer=0}] run return run function menu:communicate/trade/decide/trade/
 
 ##
-    tag @s add LockedInventory
+    tag @s add lockedInventory
     function menu:communicate/trade/ui/
-    tag @s remove LockedInventory
+    tag @s remove lockedInventory

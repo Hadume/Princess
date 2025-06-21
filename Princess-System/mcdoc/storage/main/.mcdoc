@@ -1,0 +1,19 @@
+/// システム全体で使用されるstorage
+dispatch minecraft:storage["main:"] to struct{
+    /// 初期化
+    "init": boolean,
+    /// 定数
+    "const": struct{
+        /// ルート2
+        "SQRT2": double,
+        /// 円周率
+        "PI": double
+    },
+    /// 固定文章
+    "tell": struct{
+        /// 通常エラー
+        "ERROR": string,
+        /// 引数エラー
+        "ARGUMENT_ERROR": string
+    }
+}

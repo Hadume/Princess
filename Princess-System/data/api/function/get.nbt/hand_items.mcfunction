@@ -12,4 +12,4 @@
     execute if score #leastTime temp matches 1 run data modify storage dat: _.NBT.handItems.data set from entity @s HandItems
 
 ## HandItemsをコピー
-    data modify storage api:nbt handItems set from storage dat: _.NBT.handItems.data
+    data modify storage api:nbt handItems set from storage dat: _.NBT.handItems

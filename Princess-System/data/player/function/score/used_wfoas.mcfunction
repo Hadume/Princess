@@ -11,8 +11,8 @@
 ## 杖を持っていたら、魔法を発動
     execute if data storage player: {Mainhand:{components:{"minecraft:custom_data":{Category:"Wand"}}}} run function asset.lib:magic/cast/
 
-## Storageを削除
+## storageを削除
     data remove storage player: Mainhand
 
 ## スコアをリセット
-    scoreboard players reset @s Used.WFOAS
+    scoreboard players reset @s usedWFOAS

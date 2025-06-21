@@ -1,0 +1,64 @@
+use super::api::nbt::NBT
+use super::asset::mob::loot
+use super::asset::magic::body
+use ::java::world::item::ItemStack
+
+dispatch minecraft:storage["dat:"] to struct{
+    /// 追加済みのID
+    "ID": [int],
+    /// 前回呼び出したID
+    "lastID": int,
+    /// 呼び出されたデータ
+    "_": struct{
+        ...player,
+        ...entity,
+        ...magic,
+        ...body,
+        /// APIにより保存されたNBT
+        "NBT": NBT,
+        /// entityType
+        "entityType": #[id(registry="entity_type",tags="allowed")] string,
+        /// 誰に攻撃されたか
+        "attackBy": [int],
+    }
+}
+
+
+/// プレイヤー
+struct player {
+    /// リスポーンのデータ
+    "spawnPoint"?: struct{
+        /// ディメンション
+        "dimension": #[id="dimension"] string,
+        /// X座標
+        "posX": double,
+        /// Y座標
+        "posY": double,
+        /// Z座標
+        "posZ": double,
+        /// X回転
+        "rotX": float,
+        /// Y回転
+        "rotY": float
+    },
+    /// 魔法のデータ
+    "magic": [any]
+}
+
+/// エンティティ
+struct entity {
+    /// 名前
+    "name": #[text_component] string,
+    /// 防具
+    "armor": [(ItemStack | struct {})] @ 4,
+    /// 武器
+    "weapon": [(ItemStack | struct {})] @ 2,
+    /// ドロップ品
+    "loot": [loot]
+}
+
+/// 魔法
+struct magic {
+    /// 誰が発動したか
+    "caster": int,
+}
