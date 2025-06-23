@@ -77,38 +77,32 @@
                         "#",
                         "# @within function asset:item/create/",
                         "",
-                        "## アイテムid : id(minecraft:item)",
+                        "## アイテムid",
                         "data modify storage asset:item id set value \"\"",
                         "",
-                        "## 名前 : TextComponent",
-                        "data modify storage asset:item Name set value '{\"text\": \"\"}'",
+                        "## 名前",
+                        "data modify storage asset:item name set value '{\"text\": \"\"}'",
                         "",
-                        "## 説明? : [TextComponent] @ N",
-                        "#data modify storage asset:item Lore set value []",
+                        "## 説明",
+                        "#data modify storage asset:item lore set value []",
                         "",
-                        "## レアリティ : int @ 1..10",
-                        "data modify storage asset:item Rarity set value %Rarity%",
+                        "## レアリティ",
+                        "data modify storage asset:item rarity set value %Rarity%",
                         "",
-                        "## 種類 : Category",
-                        "data modify storage asset:item Category set value \"%Category%\"",
+                        "## 種類",
+                        "data modify storage asset:item category set value \"%Category%\"",
                         "",
-                        "## 装備効果? : [{Name: Stats, Operation: int @ 0..2, Amount: int}] @ N",
-                        "#data modify storage asset:item Stats append value {}",
+                        "## 装備効果",
+                        "#data modify storage asset:item modifiers set value []",
                         "",
-                        "## CMD? : String",
-                        "#data modify storage asset:item CMD set value \"\"",
+                        "## itemModel",
+                        "#data modify storage asset:item itemModel set value \"\"",
                         "",
-                        "## シリーズ? : String",
-                        "#data modify storage asset:item Series set value \"\"",
+                        "## 追加効果",
+                        "#data modify storage asset:item effects set value []",
                         "",
-                        "## どこに装備できるか? : String",
-                        "#data modify storage asset:item CanEquip set value \"\"",
-                        "",
-                        "## 追加効果? : [{Name: Food, Amount: int, Duration: int}] @ N",
-                        "#data modify storage asset:item Effects append value {}",
-                        "",
-                        "## NBT? : NBTCompound",
-                        "#data modify storage asset:item NBT set value {}",
+                        "## コンポーネント",
+                        "#data modify storage asset:item components set value {}",
                         ""
                     ]
                 }
@@ -123,7 +117,7 @@
                 {
                     "name": "Category",
                     "question": "アイテムのカテゴリ",
-                    "pattern": "(Armor|Wand|Crystal|Food|Misc)",
+                    "pattern": "(armor|wand|food|misc)",
                     "patternErrorMessage": "カテゴリのみが許されるよ"
                 }
             ]
@@ -140,7 +134,7 @@
                         "#",
                         "# @within function asset:mob/summon/",
                         "",
-                        "## 元になるEntityを召喚 : id(minecraft:entity)",
+                        "## 元になるEntityを召喚",
                         "execute summon %mob% at @s run function asset:mob/summon/init with storage asset:mob"
                     ]
                 },
@@ -152,35 +146,30 @@
                         "#",
                         "# @within function asset:mob/summon/init",
                         "",
-                        "## 名前 : TextComponent",
-                        "data modify storage asset:mob Name set value '{\"text\": \"\"}'",
+                        "## 名前",
+                        "data modify storage asset:mob name set value '{\"text\": \"\"}'",
                         "",
-                        "## タイプ : Type",
-                        "data modify storage asset:mob Type set value \"%Type%\"",
+                        "## タイプ",
+                        "data modify storage asset:mob type set value \"%Type%\"",
                         "",
-                        "## 装備? : {{id: id(minecraft:item), Count: boolean @ 1..64, tag: Compound} || int(asset:item)} @ ..6",
-                        "### 防具",
-                        "#data modify storage asset:mob Armor.Head set value {}",
-                        "#data modify storage asset:mob Armor.Chest set value {}",
-                        "#data modify storage asset:mob Armor.Legs set value {}",
-                        "#data modify storage asset:mob Armor.Feet set value {}",
+                        "## 装備",
+                        "#data modify storage asset:mob armor set value [{},{},{},{}]",
+                        "#data modify storage asset:mob weapon set value [{},{}]",
                         "",
-                        "### 武器",
-                        "#data modify storage asset:mob Weapon.Mainhand set value {}",
-                        "#data modify storage asset:mob Weapon.Offhand set value {}",
+                        "## ステータス",
+                        "data modify storage asset:mob status.lvl set value ",
+                        "data modify storage asset:mob status.exp set value ",
+                        "data modify storage asset:mob status.money set value ",
+                        "data modify storage asset:mob status.hp set value ",
+                        "data modify storage asset:mob status.mp set value ",
+                        "data modify storage asset:mob status.atk set value ",
+                        "data modify storage asset:mob status.def set value ",
+                        "data modify storage asset:mob status.speed set value ",
                         "",
+                        "ドロップ品",
+                        "#data modify storage asset:mob loot set value []",
                         "",
-                        "## ステータス : int",
-                        "data modify storage asset:mob Status.Lvl set value ",
-                        "data modify storage asset:mob Status.Exp set value ",
-                        "data modify storage asset:mob Status.Money set value ",
-                        "data modify storage asset:mob Status.HP set value ",
-                        "data modify storage asset:mob Status.MP set value ",
-                        "data modify storage asset:mob Status.ATK set value ",
-                        "data modify storage asset:mob Status.DEF set value ",
-                        "data modify storage asset:mob Status.Speed set value ",
-                        "",
-                        "## NBT? : Compound",
+                        "## NBT",
                         "#data modify storage asset:mob NBT set value {}"
                     ]
                 }
@@ -188,20 +177,20 @@
             "customQuestion": [
                 {
                     "name": "mob",
-                    "question": "MOBのID",
+                    "question": "MOBのid",
                     "pattern": "[a-z_]+",
                     "patternErrorMessage": "MOBのidのみが許されるよ"
                 },
                 {
                     "name": "Type",
                     "question": "MOBのタイプ",
-                    "pattern": "(Enemy)",
+                    "pattern": "(enemy | boss)",
                     "patternErrorMessage": "タイプのみが許されるよ"
                 }
             ]
         },
         {
-            "label": "Spawner/テンプレート",
+            "label": "spawner/テンプレート",
             "picked": false,
             "generates": [
                 {
@@ -212,8 +201,8 @@
                         "#",
                         "# @within function asset:spawner/set/main",
                         "",
-                        "## 何がスポーンするか : [{ID: int(asset:mob)}] @ N",
-                        "    data modify storage asset:spawner Data set value [{ID: 53000}]",
+                        "## 何がスポーンするか : [{id: int(asset:mob)}] @ N",
+                        "    data modify storage asset:spawner Data set value [{id: 53000}]",
                         "",
                         "## 何体スポーンするか : int",
                         "    data modify storage asset:spawner Count set value {Min: 1,Max: 5}",
@@ -222,46 +211,13 @@
                         "    data modify storage asset:spawner Delay set value {Min: 300,Max: 400}",
                         "",
                         "## 範囲 : float",
-                        "    data modify storage asset:spawner Range set value 4.0f",
+                        "    data modify storage asset:spawner range set value 4.0f",
                         "",
                         "## 周囲のMOBの最大数 : int",
                         "    data modify storage asset:spawner MaxNearbyEntities set value 6",
                         "",
                         "## 稼働範囲 : float",
-                        "    data modify storage asset:spawner RequiredPlayerRange set value 8.0f"
-                    ]
-                }
-            ]
-        },
-        {
-            "label": "Dungeon/テンプレート",
-            "picked": false,
-            "generates": [
-                {
-                    "type": "file",
-                    "rel": "data/asset/function/dungeon/%namespace%/tick/.mcfunction",
-                    "content": [
-                        "#> asset:dungeon/%namespace%/tick/",
-                        "#",
-                        "# @within tag/function asset:dungeon/tick",
-                        "",
-                        "## 何がスポーンするか : [{ID: int(asset:mob)}] @ N",
-                        "    data modify storage asset:spawner Data set value [{ID: 53000}]",
-                        "",
-                        "## 何体スポーンするか : int",
-                        "    data modify storage asset:spawner Count set value {Min: 1,Max: 5}",
-                        "",
-                        "## スポーンまでの時間 : int",
-                        "    data modify storage asset:spawner Delay set value {Min: 300,Max: 400}",
-                        "",
-                        "## 範囲 : float",
-                        "    data modify storage asset:spawner Range set value 4.0f",
-                        "",
-                        "## 周囲のMOBの最大数 : int",
-                        "    data modify storage asset:spawner MaxNearbyEntities set value 6",
-                        "",
-                        "## 稼働範囲 : float",
-                        "    data modify storage asset:spawner RequiredPlayerRange set value 8.0f"
+                        "    data modify storage asset:spawner RequiredPlayerrange set value 8.0f"
                     ]
                 }
             ]
@@ -283,6 +239,15 @@
         "mcfunction"
     ],
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.insertSpaces": false,
-    "workbench.iconTheme": "mc-dp-icons"
+    "editor.insertSpaces": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/AiMath": true,
+        "**/ScoreToHealth": true,
+        "**/SmartMotion": true
+    }
 }
