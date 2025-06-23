@@ -12,34 +12,30 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-function score_to_health:anti_glitch/restore
-
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-17
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-16
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-15
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-14
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-13
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-12
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-11
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-10
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-0f
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-0e
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-0d
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-0c
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-0b
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-0a
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-09
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-08
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-07
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-06
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-05
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-04
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-03
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-02
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-01
-attribute @s max_health modifier remove bab7cdc2-fb6a-47f6-0001-00
-
-function score_to_health:anti_glitch/unprotect
+attribute @s minecraft:max_health modifier remove score_to_health:17
+attribute @s minecraft:max_health modifier remove score_to_health:16
+attribute @s minecraft:max_health modifier remove score_to_health:15
+attribute @s minecraft:max_health modifier remove score_to_health:14
+attribute @s minecraft:max_health modifier remove score_to_health:13
+attribute @s minecraft:max_health modifier remove score_to_health:12
+attribute @s minecraft:max_health modifier remove score_to_health:11
+attribute @s minecraft:max_health modifier remove score_to_health:10
+attribute @s minecraft:max_health modifier remove score_to_health:0f
+attribute @s minecraft:max_health modifier remove score_to_health:0e
+attribute @s minecraft:max_health modifier remove score_to_health:0d
+attribute @s minecraft:max_health modifier remove score_to_health:0c
+attribute @s minecraft:max_health modifier remove score_to_health:0b
+attribute @s minecraft:max_health modifier remove score_to_health:0a
+attribute @s minecraft:max_health modifier remove score_to_health:09
+attribute @s minecraft:max_health modifier remove score_to_health:08
+attribute @s minecraft:max_health modifier remove score_to_health:07
+attribute @s minecraft:max_health modifier remove score_to_health:06
+attribute @s minecraft:max_health modifier remove score_to_health:05
+attribute @s minecraft:max_health modifier remove score_to_health:04
+attribute @s minecraft:max_health modifier remove score_to_health:03
+attribute @s minecraft:max_health modifier remove score_to_health:02
+attribute @s minecraft:max_health modifier remove score_to_health:01
+attribute @s minecraft:max_health modifier remove score_to_health:00
 
 tag @s remove ScoreToHealth.Modified
 tag @s add ScoreToHealth.Return
